@@ -1,155 +1,185 @@
-'''
-Luis Antonio Coêlho - 156435 - Universidade Estadual de Campinas - 2016
-'''
-
-import pickle
-import random
-import sys
-
-
-'''
-Algoritmo euclidiano para determinar o MDC
-'''
-def gcd(a, b):
-    while b != 0:
-        a, b = b, a % b
-    return a
-
-'''
-Algoritmo para determinar o inverso multiplicativo de dois números 
-'''
-def multiplicative_inverse(e, phi):
-    d = 0
-    x1 = 0
-    x2 = 1
-    y1 = 1
-    temp_phi = phi
-    
-    while e > 0:
-        temp1 = temp_phi/e
-        temp2 = temp_phi - temp1 * e
-        temp_phi = e
-        e = temp2
-        
-        x = x2- temp1* x1
-        y = d - temp1 * y1
-        
-        x2 = x1
-        x1 = x
-        d = y1
-        y1 = y
-    
-    if temp_phi == 1:
-        return d + phi
-    else:
-        return phi
-
-'''
-Teste de 'primidade'
-'''
-def is_prime(num):
-    num = int(num)
-    if num == 2:
-        return True
-    if (num < 2 or num % 2 == 0):
-        return False
-    for n in range(3,int(num**0.5)+2, 2):
-        if num % n == 0:
+#!/usr/bin/python3
+#
+# Author: Joao H de A Franco (jhafranco@acm.org)
+#
+# Description: RSA implementation in Python 3
+#
+# Date: 2012-01-30
+#
+# License: Attribution-NonCommercial-ShareAlike 3.0 Unported
+#          (CC BY-NC-SA 3.0)
+#===========================================================
+from random import randrange, getrandbits
+from itertools import repeat
+from functools import reduce
+ 
+def getPrime(n):
+    """Get a n-bit pseudo-random prime"""
+    def isProbablePrime(n, t = 7):
+        """Miller-Rabin primality test"""
+        def isComposite(a):
+            """Check if n is composite"""
+            if pow(a, d, n) == 1:
+                return False
+            for i in range(s):
+                if pow(a, 2 ** i * d, n) == n - 1:
+                    return False
+            return True
+     
+        assert n > 0
+        if n < 3:
+            return [False, False, True][n]
+        elif not n & 1:
             return False
-    return True
-
-def generate_keypair(p, q):
-    if not (is_prime(p) and is_prime(q)):
-        raise ValueError('Ambos devem ser primos')
-    elif p == q:
-        raise ValueError('p e q não podem ser iguais')
-    n = p * q
-    #Phi é totiente de n
-    phi = (p-1) * (q-1)
-
-    #Escolhe o inteiro e verifica se ele é coprimo
-    e = random.randrange(1, phi)
-
-    #Usa algoritmo para verificar se phi(n) é coprimo
-    g = gcd(e, phi)
-    while g != 1:
-        e = random.randrange(1, phi)
-        g = gcd(e, phi)
-
-    #Define a chave
-    d = multiplicative_inverse(e, phi)
-    
-    #Chaves públicas são (e, n) e privadas são (d, n)
-    return (e, n), (d, n)
-
-def string2numList(strn):
-    """Converts a string to a list of integers based on ASCII values"""
-    return [ ord(chars) for chars in pickle.dumps(strn) ]
-
-
-def numList2string(l):
-    """Converts a list of integers to a string based on ASCII values"""
-    return pickle.loads(''.join(map(chr, l)))
-
-
-def numList2blocks(l, n):
-    """Take a list of integers(each between 0 and 127), and combines them
-    into block size n using base 256. If len(L) % n != 0, use some random
-    junk to fill L to make it."""
-    # Note that ASCII printable characters range is 0x20 - 0x7E
-    returnList = []
-    toProcess = copy.copy(l)
-    if len(toProcess) % n != 0:
-        for i in range(0, n - len(toProcess) % n):
-            toProcess.append(random.randint(32, 126))
-    for i in range(0, len(toProcess), n):
-        block = 0
-        for j in range(0, n):
-            block += toProcess[i + j] << (8 * (n - j - 1))
-        returnList.append(block)
-    return returnList
-
-
-def blocks2numList(blocks, n):
-    """inverse function of numList2blocks."""
-    toProcess = copy.copy(blocks)
-    returnList = []
-    for numBlock in toProcess:
-        inner = []
-        for i in range(0, n):
-            inner.append(numBlock % 256)
-            numBlock >>= 8
-        inner.reverse()
-        returnList.extend(inner)
-    return returnList
-
-def encrypt(message, modN, e, blockSize):
-    """given a string message, public keys and blockSize, encrypt using
-    RSA algorithms."""
-    numList = string2numList(message)
-    numBlocks = numList2blocks(numList, blockSize)
-    return [modExp(blocks, e, modN) for blocks in numBlocks]
-
-
-def decrypt(secret, modN, d, blockSize):
-    """reverse function of encrypt"""
-    numBlocks = [modExp(blocks, d, modN) for blocks in secret]
-    numList = blocks2numList(numBlocks, blockSize)
-    return numList2string(numList)
-    
-
-if __name__ == '__main__':
-    print ("RSA Encriptador/Deesncriptador")
-    p = int(input("Insira um primo (17, 19, 23, etc): "))
-    q = int(input("Insira outro primo (Not one you entered above): "))
-    print ("Gerando chaves...")
-    public, private = generate_keypair(p, q)
-    print ("A chave pública é", public ," e a privada é ", private)
-    message = input("Entre com uma mensagem para encriptá-la com a chave privada: ")
-    encrypted_msg = encrypt(message, public[1], public[0],15)
-    print ("Sua mensagem encriptada é: ")
-    print (''.join(map(lambda x: str(x), encrypted_msg)))
-    print ("Desencriptando a mensagem com a chave pública ", public ," . . .")
-    print ("A mensagem é:")
-    decrypted_msg = decrypt(encrypted_msg, private[1], private[0],15)
-    print (''.join(map(lambda x: str(x), decrypted_msg)))
+        else:
+            s, d = 0, n - 1
+            while not d & 1:
+                s += 1
+                d >>= 1
+        for _ in repeat(None, t):
+            if isComposite(randrange(2, n)):
+                return False
+        return True   
+     
+    p = getrandbits(n)
+    while not isProbablePrime(p):
+        p = getrandbits(n)
+    return p
+ 
+def inv(p, q):
+    """Multiplicative inverse"""
+    def xgcd(x, y):
+        """Extended Euclidean Algorithm"""
+        s1, s0 = 0, 1
+        t1, t0 = 1, 0
+        while y:
+            q = x // y
+            x, y = y, x % y
+            s1, s0 = s0 - q * s1, s1
+            t1, t0 = t0 - q * t1, t1
+        return x, s0, t0      
+ 
+    s, t = xgcd(p, q)[0:2]
+    assert s == 1
+    if t < 0:
+        t += q
+    return t
+ 
+def genRSA(p, q):
+    """Generate public and private keys"""
+    phi, mod = (p - 1) * (q - 1), p * q
+    if mod < 65537:
+        return (3, inv(3, phi), mod)
+    else:
+        return (65537, inv(65537, phi), mod)    
+ 
+def text2Int(text):
+    """Convert a text string into an integer"""
+    return reduce(lambda x, y : (x << 8) + y, map(ord, text))
+ 
+def int2Text(number, size):
+    """Convert an integer into a text string"""
+    text = "".join([chr((number >> j) & 0xff)
+                    for j in reversed(range(0, size << 3, 8))])
+    return text.lstrip("\x00")
+ 
+def int2List(number, size):
+    """Convert an integer into a list of small integers"""
+    return [(number >> j) & 0xff
+            for j in reversed(range(0, size << 3, 8))]
+ 
+def list2Int(listInt):
+    """Convert a list of small integers into an integer"""
+    return reduce(lambda x, y : (x << 8) + y, listInt)
+ 
+def modSize(mod):
+    """Return length (in bytes) of modulus"""
+    modSize = len("{:02x}".format(mod)) // 2
+    return modSize
+ 
+def encrypt(ptext, pk, mod):
+    """Encrypt message with public key"""
+    size = modSize(mod)
+    output = []
+    while ptext:
+        nbytes = min(len(ptext), size - 1)
+        aux1 = text2Int(ptext[:nbytes])
+        assert aux1 < mod
+        aux2 = pow(aux1, pk, mod)
+        output += int2List(aux2, size + 2)
+        ptext = ptext[size:]
+    return output
+ 
+def decrypt(ctext, sk, p, q):
+    """Decrypt message with private key
+    using the Chinese Remainder Theorem"""
+    mod = p * q
+    size = modSize(mod)
+    output = ""
+    while ctext:
+        aux3 = list2Int(ctext[:size + 2])
+        assert aux3 < mod
+        m1 = pow(aux3, sk % (p - 1), p)
+        m2 = pow(aux3, sk % (q - 1), q)
+        h = (inv(q, p) * (m1 - m2)) % p
+        aux4 = m2 + h * q
+        output += int2Text(aux4, size)
+        ctext = ctext[size + 2:]
+    return output
+ 
+if __name__ == "__main__":
+ 
+    from math import log10
+    from time import time
+ 
+    def printHexList(intList):
+        """Print ciphertext in hex"""
+        for index, elem in enumerate(intList):
+            if index % 32 == 0:
+                print()            
+            print("{:02x}".format(elem), end = "")
+        print()
+ 
+    def printLargeInteger(number):
+        """Print long primes in a formatted way"""
+        string = "{:02x}".format(number)
+        for j in range(len(string)):
+            if j % 64 == 0:
+                print()
+            print(string[j], end = "")
+        print()
+ 
+    def testCase(p, q, msg, nTimes = 1):
+        """Execute test case: generate keys, encrypt message and
+           decrypt resulting ciphertext"""
+        print("Key size: {:0d} bits".format(round(log10(p * q) / log10(2))))
+        print("Prime #1:", end = "")
+        printLargeInteger(p)
+        print("Prime #2:", end = "")
+        printLargeInteger(q)
+        print("Plaintext:", msg)
+        pk, sk, mod = genRSA(p, q)
+        ctext = encrypt(msg, pk, mod)
+        print("Ciphertext:", end = "")
+        printHexList(ctext)
+        ptext = decrypt(ctext, sk, p, q)
+        print("Recovered plaintext:", ptext, "\n")
+ 
+    # First test: RSA-129 (see http://en.wikipedia.org/wiki/RSA_numbers#RSA-129)
+    p1 = 3490529510847650949147849619903898133417764638493387843990820577
+    p2 = 32769132993266709549961988190834461413177642967992942539798288533
+    testCase(p1, p2, "Paulo Martins merece uma viagem só de ida para o inferno !!!!!!!!!!!!!!!!!", 1000)
+   
+    # Second test: random primes (key size: 512 to 4096 bits)
+    for n in [256, 512, 1024, 2048]:    
+        t1 = time()
+        p5 = getPrime(n)
+        t2 = time()
+        print("Elapsed time for {:0d}-bit prime ".format(n), end = "")
+        print("generation: {:0.3f} s".format(round(t2 - t1, 3)))
+        t3 = time()
+        p6 = getPrime(n)
+        t4 = time()
+        print("Elapsed time for {:0d}-bit prime ".format(n), end = "")
+        print("generation: {:0.3f} s".format(round(t4 - t3, 3)))
+        testCase(p5, p6, "Isto é coisa do diabo")
