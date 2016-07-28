@@ -1,24 +1,22 @@
 #!/usr/bin/python3
 #
-# Author: Joao H de A Franco (jhafranco@acm.org)
+# Author: Luis Antonio Coêlho (l156435@dac.unicamp.br)
 #
-# Description: RSA implementation in Python 3
+# Description: RSA implementation in Python for final course project
 #
-# Date: 2012-01-30
+# Date: 2016-07-27
 #
-# License: Attribution-NonCommercial-ShareAlike 3.0 Unported
-#          (CC BY-NC-SA 3.0)
 #===========================================================
 from random import randrange, getrandbits
 from itertools import repeat
 from functools import reduce
  
-def getPrime(n):
-    """Get a n-bit pseudo-random prime"""
-    def isProbablePrime(n, t = 7):
-        """Miller-Rabin primality test"""
-        def isComposite(a):
-            """Check if n is composite"""
+def get_prime(n):
+    """Retorna um primo randômico"""
+    def is_prime(n, t = 7):
+        """Teste de primalidade Miller-Rabin"""
+        def is_composite(a):
+            """Checa se n é composto"""
             if pow(a, d, n) == 1:
                 return False
             for i in range(s):
@@ -37,19 +35,19 @@ def getPrime(n):
                 s += 1
                 d >>= 1
         for _ in repeat(None, t):
-            if isComposite(randrange(2, n)):
+            if is_composite(randrange(2, n)):
                 return False
         return True   
      
     p = getrandbits(n)
-    while not isProbablePrime(p):
+    while not is_prime(p):
         p = getrandbits(n)
     return p
  
 def inv(p, q):
-    """Multiplicative inverse"""
+    """Inverso multiplicativo"""
     def xgcd(x, y):
-        """Extended Euclidean Algorithm"""
+        """Algoritmo euclidiano extendido"""
         s1, s0 = 0, 1
         t1, t0 = 1, 0
         while y:
@@ -65,65 +63,64 @@ def inv(p, q):
         t += q
     return t
  
-def genRSA(p, q):
-    """Generate public and private keys"""
+def get_keys(p, q):
+    """Gera chaves públicas e privadas"""
     phi, mod = (p - 1) * (q - 1), p * q
     if mod < 65537:
         return (3, inv(3, phi), mod)
     else:
         return (65537, inv(65537, phi), mod)    
  
-def text2Int(text):
-    """Convert a text string into an integer"""
+def str_2_int(text):
+    """Transforma texto em números inteiros"""
     return reduce(lambda x, y : (x << 8) + y, map(ord, text))
  
-def int2Text(number, size):
-    """Convert an integer into a text string"""
+def int_2_str(number, size):
+    """Transforma inteiro em string"""
     text = "".join([chr((number >> j) & 0xff)
                     for j in reversed(range(0, size << 3, 8))])
     return text.lstrip("\x00")
  
-def int2List(number, size):
-    """Convert an integer into a list of small integers"""
+def int_2_list(number, size):
+    """Converte inteiro em lista de inteiros"""
     return [(number >> j) & 0xff
             for j in reversed(range(0, size << 3, 8))]
  
-def list2Int(listInt):
-    """Convert a list of small integers into an integer"""
+def list_2_int(listInt):
+    """Converte lisa em inteiro"""
     return reduce(lambda x, y : (x << 8) + y, listInt)
  
-def modSize(mod):
-    """Return length (in bytes) of modulus"""
-    modSize = len("{:02x}".format(mod)) // 2
-    return modSize
+def mod_size(mod):
+    """Retorna o tamanho em bytes do modulo"""
+    mod_size = len("{:02x}".format(mod)) // 2
+    return mod_size
  
 def encrypt(ptext, pk, mod):
-    """Encrypt message with public key"""
-    size = modSize(mod)
+    """Encripta com chave pública"""
+    size = mod_size(mod)
     output = []
     while ptext:
         nbytes = min(len(ptext), size - 1)
-        aux1 = text2Int(ptext[:nbytes])
+        aux1 = str_2_int(ptext[:nbytes])
         assert aux1 < mod
         aux2 = pow(aux1, pk, mod)
-        output += int2List(aux2, size + 2)
+        output += int_2_list(aux2, size + 2)
         ptext = ptext[size:]
     return output
  
 def decrypt(ctext, sk, p, q):
-    """Decrypt message with private key
-    using the Chinese Remainder Theorem"""
+    """Sesencripta com chave private usando o teorema chine da lembrança"""
     mod = p * q
-    size = modSize(mod)
+    size = mod_size(mod)
     output = ""
     while ctext:
-        aux3 = list2Int(ctext[:size + 2])
+        aux3 = list_2_int(ctext[:size + 2])
         assert aux3 < mod
         m1 = pow(aux3, sk % (p - 1), p)
         m2 = pow(aux3, sk % (q - 1), q)
         h = (inv(q, p) * (m1 - m2)) % p
         aux4 = m2 + h * q
-        output += int2Text(aux4, size)
+        output += int_2_str(aux4, size)
         ctext = ctext[size + 2:]
     return output
  
@@ -132,54 +129,62 @@ if __name__ == "__main__":
     from math import log10
     from time import time
  
-    def printHexList(intList):
-        """Print ciphertext in hex"""
-        for index, elem in enumerate(intList):
+    def print_cipher_msg(cipher_msg):
+        """Exibe a mensagem cifrada em hexadecimal"""
+        for index, elem in enumerate(cipher_msg):
             if index % 32 == 0:
                 print()            
             print("{:02x}".format(elem), end = "")
         print()
  
-    def printLargeInteger(number):
-        """Print long primes in a formatted way"""
-        string = "{:02x}".format(number)
+    def print_larg_int(long_int):
+        """Exibe primos longos formatados"""
+        string = "{:02x}".format(long_int)
         for j in range(len(string)):
             if j % 64 == 0:
                 print()
             print(string[j], end = "")
         print()
  
-    def testCase(p, q, msg, nTimes = 1):
-        """Execute test case: generate keys, encrypt message and
-           decrypt resulting ciphertext"""
-        print("Key size: {:0d} bits".format(round(log10(p * q) / log10(2))))
-        print("Prime #1:", end = "")
-        printLargeInteger(p)
-        print("Prime #2:", end = "")
-        printLargeInteger(q)
-        print("Plaintext:", msg)
-        pk, sk, mod = genRSA(p, q)
-        ctext = encrypt(msg, pk, mod)
-        print("Ciphertext:", end = "")
-        printHexList(ctext)
-        ptext = decrypt(ctext, sk, p, q)
-        print("Recovered plaintext:", ptext, "\n")
- 
-    # First test: RSA-129 (see http://en.wikipedia.org/wiki/RSA_numbers#RSA-129)
-    p1 = 3490529510847650949147849619903898133417764638493387843990820577
-    p2 = 32769132993266709549961988190834461413177642967992942539798288533
-    testCase(p1, p2, "Paulo Martins merece uma viagem só de ida para o inferno !!!!!!!!!!!!!!!!!", 1000)
-   
-    # Second test: random primes (key size: 512 to 4096 bits)
-    for n in [256, 512, 1024, 2048]:    
+    def run(msg):
+        """Executa o núcleo do código"""
+        n=512
         t1 = time()
-        p5 = getPrime(n)
+        p = get_prime(n)
         t2 = time()
-        print("Elapsed time for {:0d}-bit prime ".format(n), end = "")
-        print("generation: {:0.3f} s".format(round(t2 - t1, 3)))
-        t3 = time()
-        p6 = getPrime(n)
-        t4 = time()
-        print("Elapsed time for {:0d}-bit prime ".format(n), end = "")
-        print("generation: {:0.3f} s".format(round(t4 - t3, 3)))
-        testCase(p5, p6, "Isto é coisa do diabo")
+        print("Tempo gasto para gerar um primo de {:0d} bits: ".format(n), end = "")
+        print("{:0.3f} s".format(round(t2 - t1, 3)))
+        t1 = time()
+        q = get_prime(n)
+        t2 = time()
+        print("Tempo gasto para gerar um primo de {:0d} bits ".format(n), end = "")
+        print("{:0.3f} s".format(round(t2 - t1, 3)))
+        print("Tamanho da chave: {:0d} bits".format(round(log10(p * q) / log10(2))))
+        print("Primeiro primo:", end = "")
+        print_larg_int(p)
+        print("Segundo primo:", end = "")
+        print_larg_int(q)
+        print("Texto original:", msg)
+        t1 = time()
+        pk, sk, mod = get_keys(p, q)
+        cipher_msg = encrypt(msg, pk, mod)
+        t2 = time()
+        print("Tempo gasto para criptgrafar a mensagem")
+        print("{:0.3f} s".format(round(t2 - t1, 3)))
+
+        print("Texto criptografado:", end = "")
+        print_cipher_msg(cipher_msg)
+        t1 = time()
+        ptext = decrypt(cipher_msg, sk, p, q)
+        t2 = time()
+        print("Tempo gasto para recuperar a mensagem")
+        print("{:0.3f} s".format(round(t2 - t1, 3)))
+        print("Texto recuperado:", ptext, "\n")
+ 
+    # Execução teste
+    msg = input("Entre com a mensagem para ser criptografada:") 
+    t5 = time()
+    run(msg)
+    t6 = time()
+    print("Tempo gasto para execução da criptografia")
+    print("{:0.3f} s".format(round(t6 - t5, 3)))
