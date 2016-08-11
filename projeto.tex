@@ -1,0 +1,79 @@
+\documentclass[]{article}
+\usepackage[utf8]{inputenc}
+
+%opening
+\title{CRIPTOGRAFIA DE CHAVE PÚBLICA COM PRIMOS DE GAUSS}
+\author{LUIS ANTONIO COÊLHO}
+
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Projeto de pesquisa apresentado como requisito para aprovação da disciplina de Trabalho de Conclusão de Curso I na Faculdade de Tecnologia da Universidade Estadual de Campinas. 
+\end{abstract}
+
+\section{IDENTIFICAÇÃO DO PROJETO}
+O projeto será conduzido pelo aluno Luis Antonio Coêlho, sob a orientação da Profa. Dra. Juliana Bueno e será focado na comparação de algoritmos de criptografia de chave pública com relação a segurança dos dados.
+
+\section{TEMA}
+Criptografia de chave pública com uso do conjunto numérico dos primos Gaussianos e sua eficiência para a área de segurança da informação.
+
+\section{PROBLEMA}
+O problema a ser resolvido com este projeto é se o algoritmo de criptografia RSA é mais eficiente em termos de segurança da informação com primos naturais ou com primos de Gauss? 
+
+\section{JUSTIFICATIVA}
+Sempre foi uma necessidade humana guardar segredos e repassá-los a outras pessoas. Com isso surgiram as primeira tentativas de criptografia na Grécia Antiga, por meio de dispoditvos como o Scytale, onde uma fita de papel era enrolada e a mensagem escrita, para decifrá-la era necessário outro Scytale exatamente do mesmo diâmetro.\\
+Na era medieval as técnicas mais usadas consistiam na modificação monoalfabética e polialfabética, onde uma letra ou um conjunto de letras eram substituídos por outras.\\
+Embora a criptografia tenha toda esta história, apenas nas guerras mundiais ela passou a ter destaque, com o Enigma, alemão, Typex, britânico e o SIGABA, norte-americano.\\
+A criptografia moderna começa oficialmente com Communication Theory of Secrecy Systems (Shannon, 1949), onde se abordam os resultados das máquinas criptográficas de guerra.\\
+Em 1995, com o objetivo de se criar um padrão de criptografia único, foi criado em parceria entre IBM e governo dos Estados Unidos que culminou na criptografia DES, que foi substituída pela AES em 2001. Na mesma época houve a publicação de um artigo que revolucionou a área, em New Directions in Cryptography (Diffie e Hellman, 1976) houve a introdução do conceito de chave assimétrica, onde há chaves diferentes entre o emissor da mensagens e o receptor.\\
+Um dos algoritmos deste modelo é o RSA(RIVEST et al, 1983) algoritmo  desenvolvido por Rivest, Shamir e Adleman que utiliza números primos naturais para a geração de suas chaves.\\
+Buscando ainda mais segurança, é proposto neste artigo uma alteração no algoritmo RSA, substituindo o conjunto dos primos naturais pelo conjunto dos primos de Gauss, que é o conjunto dos números completos a+bi, onde a e b são diferentes de 0, com a2+b2 resultando em um primo natural.
+
+\section{OBJETIVOS}
+\subsection{OBJETIVO GERAL}
+Analisar se a substituição do algoritmo de criptografia RSA por um algoritmo derivado do RSA com a substituição do conjunto gerador de chaves de primos naturais para primos de gauss(Gauss, 1815) pode ser considerada mais eficiente em termos de segurança da informação.
+\subsection{OBJETIVOS ESPECÍFICOS}
+\begin{itemize}
+	\item Implementar o algoritmo de criptografia RSA em linguagem Python;
+	\item Implementar algoritmo derivado da criptografia RSA, baseado no conjunto dos primos de gauss, em linguagem Python
+	\item Criar e aplicar uma metodologia de comparação de segurança para os dois sistemas
+\end{itemize}
+
+\section{METODOLOGIA}
+\subsection{MÉTODO DE ABORDAGEM}
+O núcleo da pesquisa será a comparação do algoritmo RSA com o algortimo a ser desenvolvido no projeto por meio de uma metodologia para metrificar a segurança da informação em algoritmos.
+\subsection{TÉCNICAS DE PESQUISA}
+Na primeira fase do projeto será feita uma revisão bibliográfica na área de criptografias, focada nas de chave pública. Em uma segunda fase serão executados testes de comparação de segurança entre algoritmos de criptografia de chave pública, buscando descobri qual dos pesquisados e/ou produzidos é mais seguro.
+
+\section{CRONOGRAMA}
+As datas são apresentadas na tabela 1 e são apenas planejadas, podendo vir a sofrer alterações.\\
+\begin{table}
+	\caption{Cronograma}
+	\label{Cronograma}
+	\begin{tabular}{lccccccccccccc}
+		& \multicolumn{7}{c}{2016}     & \multicolumn{6}{c}{2017} \\
+		\textbf{ATIVIDADE}                                                                           & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 1  & 2  & 3  & 4 & 5 & 6 \\
+		\begin{tabular}[c]{@{}l@{}}Escolha do tema \\e do orientador\end{tabular}                 & X &   &   &   &    &    &    &    &    &    &   &   &   \\
+		\begin{tabular}[c]{@{}l@{}}Encontros com a \\ orientadora\end{tabular}                      & X & X & X & X & X  & X  & X  &    & X  & X  & X & X & X \\
+		\begin{tabular}[c]{@{}l@{}}Pesquisa bibliográfica \\preliminar\end{tabular}               & X & X & X &   &    &    &    &    &    &    &   &   &   \\
+		\begin{tabular}[c]{@{}l@{}}Implementação do \\algoritmo RSA clássico\end{tabular}         & X & X &   &   &    &    &    &    &    &    &   &   &   \\
+		\begin{tabular}[c]{@{}l@{}}Elaboração do algoritmo \\RSA com primos de Gauss\end{tabular} &   & X & X & X & X  &    &    &    &    &    &   &   &   \\
+		\begin{tabular}[c]{@{}l@{}}Elaboração da metodologia \\de comparação\end{tabular}         &   &   &   & X & X  &    &    &    &    &    &   &   &   \\
+		\begin{tabular}[c]{@{}l@{}}Realização das comparações \\de algoritmos\end{tabular}        &   &   &   &   &    & X  & X  &    &    &    &   &   &   \\
+		\begin{tabular}[c]{@{}l@{}}Montagem	e entrega do termo \\de prosseguimento\end{tabular}   &   &   &   &   &    &    & X  &    &    &    &   &   &   \\
+		\begin{tabular}[c]{@{}l@{}}Férias  			acadêmicas\end{tabular}                               &   &   &   &   &    &    &    & X  &    &    &   &   &   \\
+		\begin{tabular}[c]{@{}l@{}}Redação da monografia\end{tabular}                           &   &   &   &   &    &    &    &    & X  & X  & X &   &   \\
+		\begin{tabular}[c]{@{}l@{}}Revisão e entrega oficial \\do trabalho\end{tabular}           &   &   &   &   &    &    &    &    &    &    & X & X & X \\
+		\begin{tabular}[c]{@{}l@{}}Apresentação do trabalho \\em banca\end{tabular}               &   &   &   &   &    &    &    &    &    &    &   &   & X
+	\end{tabular}
+\end{table}
+
+\section{REFERÊNCIAS}
+DIFFIE, Whitfield; HELLMAN, Martin. New directions in cryptography. \textbf{IEEE transactions on Information Theory}, v. 22, n. 6, p. 644-654, 1976.\\
+GAUSS, Carl Friedrich. \textbf{Methodus nova integralium valores per approximationem inveniendi}. apvd Henricvm Dieterich, 1815.\\
+RIVEST, Ronald L.. ; SHAMIR, Adi; ADLEMAN, Leonard. A method for obtaining digital signatures and public-key cryptosystems. \textbf{Communications of the ACM}, v. 26, n. 1, p. 96-99, 1983.
+SHANNON, Claude E. \textbf{Communication theory of secrecy systems. Bell system technical journal}, v. 28, n. 4, p. 656-715, 1949.
+\end{document}
