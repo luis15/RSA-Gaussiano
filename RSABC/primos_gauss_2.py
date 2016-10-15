@@ -31,21 +31,26 @@ def get_prime(n):
     while not is_prime(p):
         p = getrandbits(n)
     return p
+def get_B(a):
+    return  math.ceil(math.sqrt(p - math.pow(a, 2)))
+def is_gaussian(a,b,p):
+    return (pow(a,2)+pow(b,2)!=p)
 n = 48
 p = get_prime(n)
 m = math.ceil(math.sqrt(math.pow(2,n)))
+m2 = math.ceil(m/2)
 t1 = time.time()
-tp1 = time.time()
 a=-1
 b=0
-while(pow(a,2)+pow(b,2)!=p):
+while(is_gaussian(a,b,p)):
     a+=1
-    b = math.ceil(math.sqrt(p - math.pow(a, 2)))
-    if(a>math.ceil(m/2)):
-        a=0
+    b = get_B(a)
+    if(a>m2):
+        a=-1
+        print("Primo ", p,"não resulta em gauss")
         p = get_prime(n)
 t2 = time.time()
 print("Par achado após", t2-t1,"s")
 print("Para o primo :", p )
 print(a , " + ", b ,"i")
-time.sleep(60)
+time.sleep(3600)
