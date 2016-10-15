@@ -31,20 +31,19 @@ def get_prime(n):
     while not is_prime(p):
         p = getrandbits(n)
     return p
-n = 20
+n = 48
 p = get_prime(n)
 m = math.ceil(math.sqrt(math.pow(2,n)))
 t1 = time.time()
-a=randint(0, m)
-b=randint(0,m)
 tp1 = time.time()
+a=-1
+b=0
 while(pow(a,2)+pow(b,2)!=p):
-    a=randint(0,m)
-    b=randint(0,m)
-    tp2 = time.time()
-    if(tp2 - tp1 > 1):
+    a+=1
+    b = math.ceil(math.sqrt(p - math.pow(a, 2)))
+    if(a>math.ceil(m/2)):
+        a=0
         p = get_prime(n)
-        tp1 = time.time()
 t2 = time.time()
 print("Par achado após", t2-t1,"s")
 print("Para o primo :", p )
