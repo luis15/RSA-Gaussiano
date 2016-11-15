@@ -1,0 +1,53 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {brazil}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Dados para identifica\IeC {\c c}\IeC {\~a}o do projeto}{1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Tema}{2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Formula\IeC {\c c}\IeC {\~a}o do problema}{2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Justificativa}{2}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{ A humanidade sempre quis manter algumas informa\IeC {\c c}\IeC {\~o}es em segredo e para isso veio a inventar a criptografia, que em sua ess\IeC {\^e}ncia \IeC {\'e} um meio de garantir que apenas as pessoas certas venham a comprrender certa mensagem, mesmo que esta venha a cair nas m\IeC {\~a}os de pessoas que n\IeC {\~a}o deveriam receb\IeC {\^e}-la. }{2}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{ Para poder ter essa garantia que foram inventados os primeiros algoritmos criptogr\IeC {\'a}ficos, como a criptografia de C\IeC {\'e}sar, criado pelo imperador romano C\IeC {\'e}sar Augusto. Nela toda a letra era substitu\IeC {\'\i }da pela que viesse tr\IeC {\^e}s posi\IeC {\c c}\IeC {\~o}es a frente, como, por exemplo, a letra A era substitu\IeC {\'\i }da pela letra D. }{2}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{ Baseado no algoritmo de C\IeC {\'e}sar surgiu a criptografia de substitui\IeC {\c c}\IeC {\~a}o monoalfab\IeC {\'e}tica, onde cada letra era substitu\IeC {\'\i }da pela letra n posi\IeC {\c c}\IeC {\~o}es a frente dela, sendo que n era conhecido apenas pelo emissor e pelo receptor da mensagem. A este n\IeC {\'u}mero n deu-se o nome de chave criptogr\IeC {\'a}fica. }{2}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{ O algoritmo monoalfab\IeC {\'e}tico possu\IeC {\'\i }a um problema de possuir apenas 26 chaves, o que o tornava f\IeC {\'a}cil de ser quebrado, por isso foi substitu\IeC {\'\i }do pelas cifras de substitui\IeC {\c c}\IeC {\~a}o polialfab\IeC {\'e}ticas. }{2}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{ Em um sistema polialfab\IeC {\'e}tico normalmente \IeC {\'e} utilizada uma palavra como chave, e para a substitui\IeC {\c c}\IeC {\~a}o usamos o monoalfabeto intercalando as chaves, ou seja, tomemos como chave a palavra SENHA, se a primeira letra de um texto for A, ela dever\IeC {\'a} ser substitu\IeC {\'\i }da pelo S, se a segunda for B, ela deve ser substitu\IeC {\'\i }da por F(pois aqui tomamos o E por A, logo usamos o monoalfabeto com a chave valendo 5). A partir da sexta letra repetimos a primeira chave. }{2}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{ Para exemplificar, assumindo que a palavra que queremos encriptar seja ABELHA e a chave seja SENHA a mensagem encriptada ser\IeC {\'a} SFRSHS. Repare que mesmo A e L sendo letras diferentes elas foram encriptadas com o mesmo valor(S). }{3}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{ Mesmo com a t\IeC {\'e}cnica polialfab\IeC {\'e}tica sendo mais avan\IeC {\c c}ada, ela ainda era muito suscet\IeC {\'\i }vel a quebra, por possu\IeC {\'\i }rem a chave sim\IeC {\'e}trica, ou seja igual para emissor e receptor, principalmente ap\IeC {\'o}s o surgimento dos decifradores nas guerras mundiais, como o alem\IeC {\~a}o Enigma, o ingl\IeC {\^e}s Typex e o norte-americano SIGABA CCM(M\IeC {\'a}quina de cifra combinada). }{3}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{ Baseado no resultado destas m\IeC {\'a}quinas, principalmente do SIGABA, foi publicado em 1949 o artigo Communication Theory of Secrecy Systems (Shannon, 1949), onde se abordam os resultados das m\IeC {\'a}quinas criptogr\IeC {\'a}ficas de guerra. Este artigo \IeC {\'e} tomado como in\IeC {\'\i }cio da criptografia moderna. }{3}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{ Em 1995, com o objetivo de se criar um padr\IeC {\~a}o de criptografia \IeC {\'u}nico, foi criado em parceria entre IBM e governo dos Estados Unidos que culminou na criptografia DES, que foi substitu\IeC {\'\i }da pela AES em 2001. }{3}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{ Antes disso houve a publica\IeC {\c c}\IeC {\~a}o de um artigo que revolucionou a \IeC {\'a}rea, em New Directions in Cryptography (Diffie e Hellman, 1976) houve a introdu\IeC {\c c}\IeC {\~a}o do conceito de chave assim\IeC {\'e}trica, onde h\IeC {\'a} chaves diferentes entre o emissor da mensagens e o receptor. }{3}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{ Um dos algoritmos deste modelo \IeC {\'e} o RSA(RIVEST et al, 1983) algoritmo desenvolvido por Rivest, Shamir e Adleman. Este algoritmo est\IeC {\'a} presente em muitas aplica\IeC {\c c}\IeC {\~o}es de alta seguran\IeC {\c c}a, como bancos, sistemas militares e servidores de internet, e ele utiliza para a gera\IeC {\c c}\IeC {\~a}o de chaves os n\IeC {\'u}meros primos naturais de grandeza superior a $2^{512}$ multiplicados entre si. }{3}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{ O grande problema no uso de primos naturais consiste na Hip\IeC {\'o}tese de Riemann (Riemann,1859), um dos sete desafios matem\IeC {\'a}ticos do mil\IeC {\^e}nio. A hip\IeC {\'o}tese diz que informando um n\IeC {\'u}mero teto, podemos saber quantos e quais s\IeC {\~a}o os primos presentes naquele conjunto, este tipo de dado \IeC {\'e} desastroso para modelos criptogr\IeC {\'a}ficos centrados nos primos naturais, como o RSA, pois tornaria extremament mais f\IeC {\'a}cil a realiza\IeC {\c c}\IeC {\~a}o da descoberta das chaves. }{3}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{ Uma forma para se evitar este problema seria uma substitui\IeC {\c c}\IeC {\~a}o dos primos naturais por um conjunto de primos n\IeC {\~a}o-naturais, como os primos de Gauss (Gauss, 1815). Este n\IeC {\'u}meros comp\IeC {\~o}em o conjunto de n\IeC {\'u}meros complexos $a+bi$ onde a e b s\IeC {\~a}o diferentes de 0, com $a^2+b^2$ resultando em um primo natural. }{4}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{ Por isso venho a propor esta pesquisa, para que possa testar a capacidade de um algoritmo criptogr\IeC {\'a}fico centrado nos primos de gauss de ser t\IeC {\~a}o efetivos quanto os algoritmos criptogr\IeC {\'a}ficos centrados em primos hoje existentes, para que em um futuro, caso ele seja necess\IeC {\'a}rio ele possa ser imediatamente e amplamente utilizado. }{4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Objetivos}{4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1}Objetivo geral}{4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2}Objetivos espec\IeC {\'\i }ficos}{4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Metodologia}{4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1}M\IeC {\'e}todo de abordagem}{4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2}T\IeC {\'e}cnicas de pesquisa}{4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}Refer\IeC {\^e}ncias}{5}

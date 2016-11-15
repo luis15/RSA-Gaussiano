@@ -1,0 +1,200 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\sortlist[entry]{nty/global/}
+  \entry{newdirections}{article}{}
+    \name{author}{2}{}{%
+      {{hash=DW}{%
+         family={Diffie},
+         familyi={D\bibinitperiod},
+         given={Whitfield},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Hellman},
+         familyi={H\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{DWHM1}
+    \strng{fullhash}{DWHM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{number}{6}
+    \field{pages}{644\bibrangedash 654}
+    \field{title}{New directions in cryptography}
+    \field{volume}{22}
+    \field{journaltitle}{IEEE transactions on Information Theory}
+    \field{year}{1976}
+  \endentry
+
+  \entry{gauss}{book}{}
+    \name{author}{1}{}{%
+      {{hash=GCF}{%
+         family={Gauss},
+         familyi={G\bibinitperiod},
+         given={Carl\bibnamedelima Friedrich},
+         giveni={C\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {apvd Henricvm Dieterich}%
+    }
+    \strng{namehash}{GCF1}
+    \strng{fullhash}{GCF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{title}{Methodus nova integralium valores per approximationem
+  inveniendi}
+    \field{year}{1815}
+  \endentry
+
+  \entry{millenial}{online}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{howpublished}{\url{http://www.claymath.org/millennium-problems}}
+    \field{note}{Acessado em 15/11/2016}
+    \field{title}{Millennium Problems | Clay Mathematics Institute}
+  \endentry
+
+  \entry{riemann}{article}{}
+    \name{author}{1}{}{%
+      {{hash=RB}{%
+         family={Riemann},
+         familyi={R\bibinitperiod},
+         given={Bernhard},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RB1}
+    \strng{fullhash}{RB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{pages}{145\bibrangedash 155}
+    \field{title}{Ueber die Anzahl der Primzahlen unter einer gegebenen Grosse}
+    \field{volume}{2}
+    \field{journaltitle}{Ges. Math. Werke und Wissenschaftlicher Nachla{\ss}}
+    \field{year}{1859}
+  \endentry
+
+  \entry{rivest}{article}{}
+    \name{author}{3}{}{%
+      {{hash=RRL}{%
+         family={Rivest},
+         familyi={R\bibinitperiod},
+         given={Ronald\bibnamedelima L},
+         giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Shamir},
+         familyi={S\bibinitperiod},
+         given={Adi},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=AL}{%
+         family={Adleman},
+         familyi={A\bibinitperiod},
+         given={Leonard},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{RRLSAAL1}
+    \strng{fullhash}{RRLSAAL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{number}{2}
+    \field{pages}{120\bibrangedash 126}
+    \field{title}{A method for obtaining digital signatures and public-key
+  cryptosystems}
+    \field{volume}{21}
+    \field{journaltitle}{Communications of the ACM}
+    \field{year}{1978}
+  \endentry
+
+  \entry{shannon}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SCE}{%
+         family={Shannon},
+         familyi={S\bibinitperiod},
+         given={Claude\bibnamedelima E},
+         giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{SCE1}
+    \strng{fullhash}{SCE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{4}
+    \field{pages}{656\bibrangedash 715}
+    \field{title}{Communication theory of secrecy systems}
+    \field{volume}{28}
+    \field{journaltitle}{Bell system technical journal}
+    \field{year}{1949}
+  \endentry
+
+  \entry{sinkov}{book}{}
+    \name{author}{2}{}{%
+      {{hash=SA}{%
+         family={Sinkov},
+         familyi={S\bibinitperiod},
+         given={Abraham},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=FT}{%
+         family={Feil},
+         familyi={F\bibinitperiod},
+         given={Todd},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {MAA}%
+    }
+    \strng{namehash}{SAFT1}
+    \strng{fullhash}{SAFT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Elementary cryptanalysis}
+    \field{volume}{22}
+    \field{year}{2009}
+  \endentry
+\endsortlist
+\endinput
