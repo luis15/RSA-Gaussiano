@@ -29,8 +29,7 @@
 \contentsline {paragraph}{ Em 1995, com o objetivo de se criar um padr\IeC {\~a}o de criptografia \IeC {\'u}nico, foi criado em parceria entre IBM e governo dos Estados Unidos que culminou na criptografia DES, que foi substitu\IeC {\'\i }da pela AES em 2001. }{3}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{ Antes disso houve a publica\IeC {\c c}\IeC {\~a}o de um artigo que revolucionou a \IeC {\'a}rea, em New Directions in Cryptography (Diffie e Hellman, 1976) houve a introdu\IeC {\c c}\IeC {\~a}o do conceito de chave assim\IeC {\'e}trica, onde h\IeC {\'a} chaves diferentes entre o emissor da mensagens e o receptor. }{3}
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{ Um dos algoritmos deste modelo \IeC {\'e} o RSA(RIVEST et al, 1983) algoritmo desenvolvido por Rivest, Shamir e Adleman. Este algoritmo est\IeC {\'a} presente em muitas aplica\IeC {\c c}\IeC {\~o}es de alta seguran\IeC {\c c}a, como bancos, sistemas militares e servidores de internet, e ele utiliza para a gera\IeC {\c c}\IeC {\~a}o de chaves os n\IeC {\'u}meros primos naturais de grandeza superior a $2^{512}$ multiplicados entre si. }{3}
+t, e ele utiliza para a gera\IeC {\c c}\IeC {\~a}o de chaves os n\IeC {\'u}meros primos naturais de grandeza superior a $2^{512}$ multiplicados entre si. }{3}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{ O grande problema no uso de primos naturais consiste na Hip\IeC {\'o}tese de Riemann (Riemann,1859), um dos sete desafios matem\IeC {\'a}ticos do mil\IeC {\^e}nio. A hip\IeC {\'o}tese diz que informando um n\IeC {\'u}mero teto, podemos saber quantos e quais s\IeC {\~a}o os primos presentes naquele conjunto, este tipo de dado \IeC {\'e} desastroso para modelos criptogr\IeC {\'a}ficos centrados nos primos naturais, como o RSA, pois tornaria extremament mais f\IeC {\'a}cil a realiza\IeC {\c c}\IeC {\~a}o da descoberta das chaves. }{3}
 \defcounter {refsection}{0}\relax 
