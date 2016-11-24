@@ -27,7 +27,7 @@
 	O problema a ser resolvido com este projeto é se uma criptografia baseada no conjunto dos números primos de Gauss é viável?
 	\section{Justificativa}
 	\paragraph{
-		A humanidade sempre quis manter algumas informações em segredo e para isso veio a inventar a criptografia, que em sua essência é um meio de garantir que apenas as pessoas certas venham a comprrender certa mensagem, mesmo que esta venha a cair nas mãos de pessoas que não deveriam recebê-la.
+		A humanidade sempre quis manter algumas informações em segredo e para isso veio a inventar a criptografia, que em sua essência é um meio de garantir que apenas as pessoas certas venham a compreender uma mensagem, mesmo que esta venha a cair nas mãos de pessoas que não deveriam recebê-la.
 	}
 	\paragraph{
 		Para poder ter essa garantia que foram inventados os primeiros algoritmos criptográficos, como a criptografia de César, criado pelo imperador romano César Augusto. Nela toda a letra era substituída pela que viesse três posições a frente, como,  por exemplo, a letra A era substituída pela letra D.
@@ -48,25 +48,25 @@
 		Mesmo com a técnica polialfabética sendo mais avançada, ela ainda era muito suscetível a quebra, por possuírem a chave simétrica, ou seja igual para emissor e receptor, principalmente após o surgimento dos decifradores nas guerras mundiais, como o alemão Enigma, o inglês Typex e o norte-americano SIGABA CCM(Máquina de cifra combinada). 
 	}
 	\paragraph{
-		Baseado no resultado destas máquinas, principalmente do SIGABA, foi publicado em 1949 o artigo Communication Theory of Secrecy Systems (Shannon, 1949), onde se abordam os resultados das máquinas criptográficas de guerra. Este artigo é tomado como início da criptografia moderna.
+		Baseado no resultado destas máquinas, principalmente do SIGABA, foi publicado em 1949 o artigo Communication Theory of Secrecy Systems (Shannon, 1949). Este artigo é tomado como início da criptografia moderna.
 	}
 	\paragraph{
-		Em 1995, com o objetivo de se criar um padrão de criptografia único, foi criado em parceria entre IBM e governo dos Estados Unidos que culminou na criptografia DES, que foi substituída pela AES em 2001. 
+		Em 1995, com o objetivo de se criar um padrão de criptografia único, foi criado em parceria entre IBM e governo dos Estados Unidos a criptografia DES, que foi substituída pela AES em 2001. 
 	}
 	\paragraph{
 		Antes disso houve a publicação de um artigo que revolucionou a área, em New Directions in Cryptography (Diffie e Hellman, 1976) houve a introdução do conceito de chave assimétrica, onde há chaves diferentes entre o emissor da mensagens e o receptor.
 	}
 	\paragraph{
-		Um dos algoritmos deste modelo é o RSA(RIVEST et al, 1983) algoritmo  desenvolvido por Rivest, Shamir e Adleman. Este algoritmo está presente em muitas aplicações de alta segurança, como bancos, sistemas militares e servidores de internet, e ele utiliza para a geração de chaves os números primos naturais de grandeza superior a $2^{512}$ multiplicados entre si.
+		Um dos algoritmos deste modelo de chave assimétrica é o RSA(RIVEST et al, 1983), algoritmo  desenvolvido por Rivest, Shamir e Adleman. Este algoritmo está presente em muitas aplicações de alta segurança, como bancos, sistemas militares e servidores de internet, e ele utiliza para a geração de chaves os números primos naturais de grandeza superior a $2^{512}$ multiplicados entre si.
 	}
 	\paragraph{
 		O grande problema no uso de primos naturais consiste na Hipótese de Riemann (Riemann,1859), um dos sete desafios matemáticos do milênio. A hipótese diz que informando um número teto, podemos saber quantos e quais são os primos presentes naquele conjunto, este tipo de dado é desastroso para modelos criptográficos centrados nos primos naturais, como o RSA, pois tornaria extremamente mais fácil a realização da descoberta das chaves.
 	}
 	\paragraph{
-		Uma forma para se evitar este problema seria uma substituição dos primos naturais por um conjunto de primos não-naturais, como os primos de Gauss (Gauss, 1815). Este números compõem o conjunto de números complexos $a+bi$ onde a e b são diferentes de 0, com $a^2+b^2$ resultando em um primo natural.
+		Uma forma para se evitar este problema seria uma substituição dos primos naturais por um conjunto de primos não-naturais, como os primos de Gauss (Gauss, 1815). Este números compõem o conjunto de números complexos $a+bi$, onde $a$ e $b$ são diferentes de $0$, com $a^2+b^2$ resultando em um primo natural.
 	}
 	\paragraph{
-		Por isso venho a propor esta pesquisa, para que possa testar a capacidade de um algoritmo criptográfico centrado nos primos de gauss de ser tão efetivos quanto os algoritmos criptográficos centrados em primos hoje existentes, para que em um futuro, caso ele seja necessário ele possa ser imediatamente e amplamente utilizado.
+		Por isso venho a propor esta pesquisa, para que possa testar a capacidade de um algoritmo criptográfico centrado nos primos de gauss de ser tão efetivos quanto os algoritmos criptográficos centrados em primos naturais, para que em um futuro, caso ele seja necessário ele possa ser imediatamente e amplamente utilizado.
 	}
 	\section{Objetivos}
 	\subsection{Objetivo geral}
