@@ -1,0 +1,470 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=latex 2016.11.29)  14 FEB 2017 16:35
+entering extended mode
+**./Mestre.tex
+(Mestre.tex
+LaTeX2e <2016/03/31> patch level 3
+Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\report.cls"
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size11.clo"
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: dvips.def on input line 99.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\dvips.def"
+File: dvips.def 2016/07/10 v3.1a Driver-dependent file (DPC,SPQR)
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2016/04/23 3.9r The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\coelh\AppData\Roaming\MiKTeX\2.9\tex\latex\arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+)
+(C:\Users\coelh\AppData\Roaming\MiKTeX\2.9\tex\latex\babel-portuges\portuges.ldf
+Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2016/04/23 3.9r Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen105
+)
+\l@brazil = a dialect from \language\l@portuges 
+Package babel Info: Making " an active character on input line 145.
+)) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\latin1.def"
+File: latin1.def 2015/03/17 v1.2c Input encoding file
+))
+(C:\Users\coelh\AppData\Roaming\MiKTeX\2.9\tex\latex\babelbib\babelbib.sty
+Package: babelbib 2012/01/03 v1.31 babelbib: multilingual bibliographies (HH)
+\c@btxromaniannumeral=\count89
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\latexsym.sty"
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks17
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
+Package: amsthm 2015/03/04 v2.20.2
+\thm@style=\toks18
+\thm@bodyfont=\toks19
+\thm@headfont=\toks20
+\thm@notefont=\toks21
+\thm@headpunct=\toks22
+\thm@preskip=\skip43
+\thm@postskip=\skip44
+\thm@headsep=\skip45
+\dth@everypar=\toks23
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xypic.sty" ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xy.sty" ("C
+:\Program Files\MiKTeX 2.9\tex\generic\xypic\xy.tex"
+Bootstrap'ing: catcodes, docmode, ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xyrecat.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xyidioms.tex")
+
+ Xy-pic version 3.8.9 <2013/10/06>
+ Copyright (c) 1991-2013 by Kristoffer H. Rose <krisrose@tug.org> and others
+ Xy-pic is free software: see the User's Guide for details.
+
+Loading kernel: messages; fonts; allocations: state,
+\X@c=\dimen106
+\Y@c=\dimen107
+\U@c=\dimen108
+\D@c=\dimen109
+\L@c=\dimen110
+\R@c=\dimen111
+\Edge@c=\toks24
+\X@p=\dimen112
+\Y@p=\dimen113
+\U@p=\dimen114
+\D@p=\dimen115
+\L@p=\dimen116
+\R@p=\dimen117
+\Edge@p=\toks25
+\X@origin=\dimen118
+\Y@origin=\dimen119
+\X@xbase=\dimen120
+\Y@xbase=\dimen121
+\X@ybase=\dimen122
+\Y@ybase=\dimen123
+\X@min=\dimen124
+\Y@min=\dimen125
+\X@max=\dimen126
+\Y@max=\dimen127
+\lastobjectbox@=\box26
+\zerodotbox@=\box27
+\almostz@=\dimen128
+ direction,
+\d@X=\dimen129
+\d@Y=\dimen130
+\K@=\count90
+\KK@=\count91
+\Direction=\count92
+\K@dXdY=\dimen131
+\K@dYdX=\dimen132
+\xyread@=\read1
+\xywrite@=\write3
+\csp@=\count93
+\quotPTK@=\dimen133
+ utility macros; pictures: \xy, positions,
+\swaptoks@@=\toks26
+\connectobjectbox@@=\box28
+ objects,
+\styletoks@=\toks27
+
+decorations; kernel objects: directionals, circles, text; options; algorithms: directions, edges, connections;
+ Xy-pic loaded) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+)
+
+LaTeX Warning: You have requested package `xypic',
+               but the package provides `xy'.
+
+Package: xy 2013/10/06 Xy-pic version 3.8.9
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xyv2.tex"  Xy-pic option: Version 2 Compatibility v.3.8
+
+Xy-pic Warning: `\stop' redefined.
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xyframe.tex"  Xy-pic option: Frame and Bracket extension v.3.14 loaded)
+("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xymatrix.tex"  Xy-pic option: Matrix feature v.3.14
+\Row=\count94
+\Col=\count95
+\queue@=\toks28
+\queue@@=\toks29
+\qcount@=\count96
+\qcount@@=\count97
+\matrixsize@=\count98
+ loaded)
+("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xyarrow.tex"  Xy-pic option: Arrow and Path feature v.3.9 path, \ar,
+loaded) loaded)) ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xy.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xy.tex" not reloaded)
+Package: xy 2013/10/06 Xy-pic version 3.8.9
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xyall.tex"  Xy-pic option: All features v.3.8
+("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xycurve.tex"  Xy-pic option: Curve and Spline extension v.3.12 curve,
+\crv@cnt@=\count99
+\crvpts@=\toks30
+\splinebox@=\box29
+\splineval@=\dimen134
+\splinedepth@=\dimen135
+\splinetol@=\dimen136
+\splinelength@=\dimen137
+
+circles,
+\L@=\dimen138
+ loaded) ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xycmtip.tex"
+ Xy-pic option: Computer Modern tip extension v.3.7 ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xytips.tex"
+ Xy-pic option: More Tips extension v.3.11 loaded) loaded) ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xyline.tex"
+ Xy-pic option: Line styles extension v.3.10
+\xylinethick@=\dimen139
+ loaded) ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xyrotate.tex"
+ Xy-pic option: Rotate and Scale extension v.3.8 loaded) ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xycolor.tex"
+ Xy-pic option: Colour extension v.3.11 loaded) ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xygraph.tex"
+ Xy-pic option: Graph feature v.3.11 loaded) loaded)) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\makeidx.sty"
+Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
+)
+\@indexfile=\write4
+\openout4 = `Mestre.idx'.
+
+
+Writing index file Mestre.idx
+
+Package amsthm Warning: Unknown theoremstyle `alpha' on input line 23.
+
+\c@Th=\count100
+(Mestre.aux (Pref.aux) (Cap1.aux) (Mod.aux) (Cap2.aux) (Cap3.aux) (Cap4.aux) (Cap5.aux) (Cap6.aux))
+\openout1 = `Mestre.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+
+babelbib: Use citation-dependent languages in bibliography
+babelbib: Set bibliography fall-back language to brazil
+(C:\Users\coelh\AppData\Roaming\MiKTeX\2.9\tex\latex\babelbib\portuguese.bdf
+File: portuguese.bdf 2012/01/03 v1.31 babelbib: multilingual bibliographies (HH)
+
+babelbib extension \bibsbrazil added to \extrasbrazil
+babelbib extension \btxifchangecaseoff added to \extrasbrazil
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 74.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 74.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 74.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Overfull \hbox (18.8837pt too wide) in paragraph at lines 74--74
+ [][] 
+ []
+
+[1
+
+]
+Abstract
+\openout2 = `Pref.aux'.
+
+(Pref.tex) [1
+
+] (Mestre.toc)
+\tf@toc=\write5
+\openout5 = `Mestre.toc'.
+
+ [1
+
+
+]
+\openout2 = `Cap1.aux'.
+
+ (Cap1.tex
+Cap\'{\i }tulo 1.
+[2
+
+
+]
+Overfull \hbox (60.72049pt too wide) detected at line 67
+[]
+ []
+
+[3] [4]) [5]
+\openout2 = `Mod.aux'.
+
+ (Mod.tex
+Cap\'{\i }tulo 2.
+! Undefined control sequence.
+<argument> ...ct \numberline {\thechapter }Aritm\´
+                                                  {e}tica Modular}{\thepage }}
+l.1 \chapter {Aritm\´{e}tica Modular}
+                                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> Aritm\´
+                  {e}tica Modular
+l.1 \chapter {Aritm\´{e}tica Modular}
+                                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> N\´
+              {u}meros Primos Naturais
+l.5 \section{N\´{u}meros Primos Naturais}
+                                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...csname thesection\endcsname }\fi N\´
+                                                  {u}meros Primos Naturais}{...
+l.5 \section{N\´{u}meros Primos Naturais}
+                                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> Per\´
+                {i}odo e Fatora\c {c}\~{a}o
+l.7 \section{Per\´{i}odo e Fatora\c{c}\~{a}o}
+                                             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...name thesection\endcsname }\fi Per\´
+                                                  {i}odo e Fatora\c {c}\~{a}...
+l.7 \section{Per\´{i}odo e Fatora\c{c}\~{a}o}
+                                             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+) [6
+
+
+
+]
+\openout2 = `Cap2.aux'.
+
+ (Cap2.tex
+Cap\'{\i }tulo 3.
+) [7
+
+
+
+]
+\openout2 = `Cap3.aux'.
+
+ (Cap3.tex
+Cap\'{\i }tulo 4.
+) [8
+
+
+
+]
+\openout2 = `Cap4.aux'.
+
+ (Cap4.tex
+Cap\'{\i }tulo 5.
+) [9
+
+
+
+]
+\openout2 = `Cap5.aux'.
+
+ (Cap5.tex
+Cap\'{\i }tulo 6.
+
+! LaTeX Error: Cannot determine size of graphic in figuras/cronograma.PNG (no BoundingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 ...graphics[scale=0.5]{figuras/cronograma.PNG}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: figuras/cronograma.PNG Graphic file (type eps)
+<figuras/cronograma.PNG>) [10
+
+
+
+]
+\openout2 = `Cap6.aux'.
+
+ (Cap6.tex
+Cap\'{\i }tulo 7.
+) [11
+
+
+
+]
+
+Package babelbib Warning: Command \selectbiblanguage used without package
+(babelbib)                option fixlanguage. Ignored on input line 116.
+
+(Mestre.bbl
+babelbib: Using the BibTeX style's default font for `name'.
+babelbib: Using the BibTeX style's default font for `lastname'.
+babelbib: Using the BibTeX style's default font for `title'.
+babelbib: Using the BibTeX style's default font for `jtitle'.
+babelbib: Using the BibTeX style's default font for `etal'.
+babelbib: Using the BibTeX style's default font for `journal'.
+babelbib: Using the BibTeX style's default font for `volume'.
+babelbib: Using the BibTeX style's default font for `ISBN'.
+babelbib: Using the BibTeX style's default font for `ISSN'.
+babelbib: Using the BibTeX style's default font for `url'.
+babelbib: Using the BibTeX style's default font for `numeral'.
+
+! Package babelbib Error: No \url command defined but field URL used
+(babelbib)                in bibliography.
+
+See the babelbib package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 ...tp://www.claymath.org/millennium-problems}
+                                                  .
+Please define a \url command for printing URLs before \begin{document}, e.\,g.
+by loading the package `url.sty'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--35
+[][]\OT1/cmr/m/it/10.95 Millennium Pro-blems | Clay Mathe-ma-tics Ins-ti-tute\OT1/cmr/m/n/10.95 .
+ []
+
+) [12
+
+
+] (Mestre.aux (Pref.aux) (Cap1.aux) (Mod.aux) (Cap2.aux) (Cap3.aux) (Cap4.aux) (Cap5.aux) (Cap6.aux)) )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 101 ({)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 4437 strings out of 493334
+ 53410 string characters out of 3139219
+ 163455 words of memory out of 3000000
+ 7822 multiletter control sequences out of 15000+200000
+ 15258 words of font info for 63 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 25i,7n,24p,966b,619s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on Mestre.dvi (14 pages, 22736 bytes).

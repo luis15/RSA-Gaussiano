@@ -1,0 +1,72 @@
+\chapter{No caminho das nuvens}
+\label{Cap2}
+
+ Vamos neste capítulo nos deter a alguns detalhes tal como deixar
+ o texto centralizado e como construir uma tabela.
+
+\section{Centralizando}
+
+Para dar destaque, por exemplo a uma equação no meio do texto,
+deixando a mesma centralizada, basta:
+
+$$a \wedge b \leq a $$
+
+\noindent{digitar a fórmula ou a equação entre o comando
+{\bf{dolar dolar}}, como no exemplo.}
+
+Note que para continuar o texto, foi digitado o comando
+{\bf{noindent}}. Este comando serve para o programa entender que
+o texto deve dar seqüencia ao texto acima, isto é, para não
+iniciar um novo parágrafo.
+
+\section{Tabelas}
+
+Considere as seguintes matrizes  trivalentes onde $T$ e $T^-$ são
+valores distinguidos:
+
+
+$$
+\begin{array}{|c|c|c|c|}\hline
+  \wedge    & T     & T^{-}     & F \\ \hline
+  T         & T^-   & T^-       & F \\ \hline
+  T^-       & T^-   & T^-       & F \\ \hline
+  F         & F     & F         & F \\ \hline
+\end{array}
+\hspace{1.5 cm}
+\begin{array}{|c|c|c|c|}\hline
+  \vee     & T      & T^-   & F     \\ \hline
+  T        & T^-    & T^-   & T^-   \\ \hline
+  T^-      & T^-    & T^-   & T^-   \\ \hline
+  F        & T^-    & T^-   & F     \\ \hline
+\end{array}
+$$
+
+$$
+\begin{array}{|c|c|c|c|}\hline
+  \rightarrow   & T     & T^-   & F     \\ \hline
+  T             & T^-   & T^-   & F     \\ \hline
+  T^-           & T^-   & T^-   & F     \\ \hline
+  F             & T^-   & T^-   & T^-   \\ \hline
+\end{array}
+\hspace{1.5 cm}
+\begin{array}{|c|c|c|c|c|}\hline
+        & \neg_w    & \neg_s    & {\circ}_w     & {\circ}_s     \\ \hline
+  T     & F         & F         & T             & T             \\ \hline
+  T^-   & T^-       & F         & T             & F             \\ \hline
+  F     & T         & T         & T             & T             \\ \hline
+\end{array}
+$$
+
+\
+
+As barras entre os {\bf{c}} servem para colocar as linhas
+horizontais da tabela e o comando {\bf{hline}} é colocado em cada
+linha que se deseja colocar a linha horizontal da tabela.
+
+A quantidade de {\bf{c}} indicam o número de colunas da tabela e
+a letra {\bf{c}} indica que os dados ficarão centralizados. Para
+alinhar a direita utiliza-se a letra {\bf{r}} e para alinhar a
+esquerda a letra {\bf{l}}.
+
+Os ítens das colunas são separados pelo \&. Para mais detalhes
+observe os exemplos.

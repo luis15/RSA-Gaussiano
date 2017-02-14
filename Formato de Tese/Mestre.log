@@ -1,0 +1,441 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.15)  28 NOV 2016 22:14
+entering extended mode
+**./Mestre.tex
+(Mestre.tex
+LaTeX2e <2016/03/31> patch level 3
+Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\report.cls"
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size11.clo"
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2016/04/23 3.9r The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\coelh\AppData\Roaming\MiKTeX\2.9\tex\latex\arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\coelh\AppData\Roaming\MiKTeX\2.9\tex\latex\babel-portuges\portuges.ld
+f
+Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
+ ("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2016/04/23 3.9r Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen103
+)
+\l@brazil = a dialect from \language\l@portuges 
+Package babel Info: Making " an active character on input line 145.
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\latin1.def"
+File: latin1.def 2015/03/17 v1.2c Input encoding file
+))
+(C:\Users\coelh\AppData\Roaming\MiKTeX\2.9\tex\latex\babelbib\babelbib.sty
+Package: babelbib 2012/01/03 v1.31 babelbib: multilingual bibliographies (HH)
+\c@btxromaniannumeral=\count89
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\latexsym.sty"
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks16
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
+Package: amsthm 2015/03/04 v2.20.2
+\thm@style=\toks17
+\thm@bodyfont=\toks18
+\thm@headfont=\toks19
+\thm@notefont=\toks20
+\thm@headpunct=\toks21
+\thm@preskip=\skip43
+\thm@postskip=\skip44
+\thm@headsep=\skip45
+\dth@everypar=\toks22
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xypic.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xy.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xy.tex" Bootstrap'ing:
+catcodes, docmode, ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xyrecat.tex"
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xyidioms.tex")
+
+ Xy-pic version 3.8.9 <2013/10/06>
+ Copyright (c) 1991-2013 by Kristoffer H. Rose <krisrose@tug.org> and others
+ Xy-pic is free software: see the User's Guide for details.
+
+Loading kernel: messages; fonts; allocations: state,
+\X@c=\dimen104
+\Y@c=\dimen105
+\U@c=\dimen106
+\D@c=\dimen107
+\L@c=\dimen108
+\R@c=\dimen109
+\Edge@c=\toks23
+\X@p=\dimen110
+\Y@p=\dimen111
+\U@p=\dimen112
+\D@p=\dimen113
+\L@p=\dimen114
+\R@p=\dimen115
+\Edge@p=\toks24
+\X@origin=\dimen116
+\Y@origin=\dimen117
+\X@xbase=\dimen118
+\Y@xbase=\dimen119
+\X@ybase=\dimen120
+\Y@ybase=\dimen121
+\X@min=\dimen122
+\Y@min=\dimen123
+\X@max=\dimen124
+\Y@max=\dimen125
+\lastobjectbox@=\box26
+\zerodotbox@=\box27
+\almostz@=\dimen126
+ direction,
+\d@X=\dimen127
+\d@Y=\dimen128
+\K@=\count90
+\KK@=\count91
+\Direction=\count92
+\K@dXdY=\dimen129
+\K@dYdX=\dimen130
+\xyread@=\read1
+\xywrite@=\write3
+\csp@=\count93
+\quotPTK@=\dimen131
+
+utility macros; pictures: \xy, positions,
+\swaptoks@@=\toks25
+\connectobjectbox@@=\box28
+ objects,
+\styletoks@=\toks26
+ decorations;
+kernel objects: directionals, circles, text; options; algorithms: directions,
+edges, connections;  Xy-pic loaded)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+)
+
+LaTeX Warning: You have requested package `xypic',
+               but the package provides `xy'.
+
+Package: xy 2013/10/06 Xy-pic version 3.8.9
+("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xypdf.tex"
+ Xy-pic option: PDF driver v.1.7 loaded))
+("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xyv2.tex"
+ Xy-pic option: Version 2 Compatibility v.3.8
+
+Xy-pic Warning: `\stop' redefined.
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xyframe.tex"
+ Xy-pic option: Frame and Bracket extension v.3.14 loaded)
+Xy-pic pdf driver: `frame' extension support
+("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xypdf-fr.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xycurve.tex"
+ Xy-pic option: Curve and Spline extension v.3.12 curve,
+\crv@cnt@=\count94
+\crvpts@=\toks27
+\splinebox@=\box29
+\splineval@=\dimen132
+\splinedepth@=\dimen133
+\splinetol@=\dimen134
+\splinelength@=\dimen135
+ circles,
+\L@=\dimen136
+ loaded)
+Xy-pic pdf driver: `curve' extension support
+("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xypdf-cu.tex" loaded) loaded)
+("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xymatrix.tex"
+ Xy-pic option: Matrix feature v.3.14
+\Row=\count95
+\Col=\count96
+\queue@=\toks28
+\queue@@=\toks29
+\qcount@=\count97
+\qcount@@=\count98
+\matrixsize@=\count99
+ loaded)
+("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xyarrow.tex"
+ Xy-pic option: Arrow and Path feature v.3.9 path, \ar, loaded) loaded))
+("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xy.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xy.tex" not reloaded)
+Package: xy 2013/10/06 Xy-pic version 3.8.9
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xyall.tex"
+ Xy-pic option: All features v.3.8
+("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xycmtip.tex"
+ Xy-pic option: Computer Modern tip extension v.3.7
+("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xytips.tex"
+ Xy-pic option: More Tips extension v.3.11 loaded) loaded)
+("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xyline.tex"
+ Xy-pic option: Line styles extension v.3.10
+\xylinethick@=\dimen137
+ loaded)
+Xy-pic pdf driver: `line' extension support
+("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xypdf-li.tex" loaded)
+("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xyrotate.tex"
+ Xy-pic option: Rotate and Scale extension v.3.8 loaded)
+Xy-pic pdf driver: `rotate' extension support
+("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xypdf-ro.tex" loaded)
+("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xycolor.tex"
+ Xy-pic option: Colour extension v.3.11 loaded)
+Xy-pic pdf driver: `color' extension support
+("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xypdf-co.tex" loaded)
+("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xygraph.tex"
+ Xy-pic option: Graph feature v.3.11 loaded) loaded))
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\makeidx.sty"
+Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
+)
+\@indexfile=\write4
+\openout4 = `Mestre.idx'.
+
+
+Writing index file Mestre.idx
+
+Package amsthm Warning: Unknown theoremstyle `alpha' on input line 22.
+
+\c@Th=\count100
+(Mestre.aux (Ded.aux) (Inv.aux) (Agrad.aux) (Pref.aux) (Int.aux) (Cap1.aux)
+(Cap2.aux) (Cap3.aux) (Concl.aux) (Ape1.aux))
+\openout1 = `Mestre.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+
+babelbib: Use citation-dependent languages in bibliography
+babelbib: Set bibliography fall-back language to brazil
+(C:\Users\coelh\AppData\Roaming\MiKTeX\2.9\tex\latex\babelbib\portuguese.bdf
+File: portuguese.bdf 2012/01/03 v1.31 babelbib: multilingual bibliographies (HH
+)
+
+babelbib extension \bibsbrazil added to \extrasbrazil
+babelbib extension \btxifchangecaseoff added to \extrasbrazil
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 66.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 66.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 66.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Package xypdf Info: Line width: 0.43799pt on input line 66.
+ [1
+
+{C:/Users/coelh/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+\openout2 = `Ded.aux'.
+
+ (Ded.tex) [1
+
+]
+\openout2 = `Inv.aux'.
+
+ (Inv.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--12
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--19
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--25
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--31
+
+ []
+
+) [2
+
+
+]
+Acknowledgements
+\openout2 = `Agrad.aux'.
+
+(Agrad.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 13--91
+
+ []
+
+[3
+
+
+]
+Abstract
+\openout2 = `Pref.aux'.
+
+(Pref.tex) [4
+
+
+] (Mestre.toc)
+\tf@toc=\write5
+\openout5 = `Mestre.toc'.
+
+
+Introducao
+[1
+
+
+]
+\openout2 = `Int.aux'.
+
+ (Int.tex) [2
+
+
+]
+\openout2 = `Cap1.aux'.
+
+ (Cap1.tex
+Cap\'{\i }tulo 1.
+
+Overfull \hbox (4.24126pt too wide) in paragraph at lines 28--28
+[]\OT1/cmr/bx/n/14.4 Como re-fe-ren-ciar e enu-me-rar au-to-ma-ti-ca-mente
+ []
+
+[3
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+
+ []
+
+) [4]
+\openout2 = `Cap2.aux'.
+
+ (Cap2.tex
+Cap\'{\i }tulo 2.
+[5
+
+
+
+]) [6]
+\openout2 = `Cap3.aux'.
+
+ (Cap3.tex
+Cap\'{\i }tulo 3.
+) [7
+
+
+
+]
+\openout2 = `Concl.aux'.
+
+ (Concl.tex
+
+LaTeX Warning: Citation `Sette_1973_On_the_Propositional_Calculus_P1' on page 8
+ undefined on input line 16.
+
+
+Overfull \hbox (175.3461pt too wide) in paragraph at lines 13--23
+\OT1/cmr/m/n/10.95 exem-plo, [[]] mas voc^e pode es-creve qual-quer coisa ao in
+ves de []\OT1/cmtt/m/n/10.95 Sette_1973_On_the_Propositional_Calculus_P1
+ []
+
+
+LaTeX Warning: Citation `Popper_1959_The_Logic_of_Scientific_Discovey' on page 
+8 undefined on input line 25.
+
+
+LaTeX Warning: Citation `Dottaviano_1987_Definability_and_quantifier_eliminatio
+n_for_J3_theories' on page 8 undefined on input line 26.
+
+) [8
+
+
+
+]
+\openout2 = `Ape1.aux'.
+
+ (Ape1.tex) [9
+
+
+
+]
+
+Package babelbib Warning: Command \selectbiblanguage used without package
+(babelbib)                option fixlanguage. Ignored on input line 115.
+
+(Mestre.bbl
+babelbib: Using the BibTeX style's default font for `name'.
+babelbib: Using the BibTeX style's default font for `lastname'.
+babelbib: Using the BibTeX style's default font for `title'.
+babelbib: Using the BibTeX style's default font for `jtitle'.
+babelbib: Using the BibTeX style's default font for `etal'.
+babelbib: Using the BibTeX style's default font for `journal'.
+babelbib: Using the BibTeX style's default font for `volume'.
+babelbib: Using the BibTeX style's default font for `ISBN'.
+babelbib: Using the BibTeX style's default font for `ISSN'.
+babelbib: Using the BibTeX style's default font for `url'.
+babelbib: Using the BibTeX style's default font for `numeral'.
+! TeX capacity exceeded, sorry [input stack size=5000].
+\originalTeX ->\noextrasbrazil \let \originalTeX 
+                                                 \@empty \babel@beginsave \l...
+l.17 imination_for_J3_theories}
+                               
+If you really absolutely need more capacity,
+you can ask a wizard to enlarge me.
+
+ 
+Here is how much of TeX's memory you used:
+ 4577 strings out of 493333
+ 55297 string characters out of 3139193
+ 171449 words of memory out of 3000000
+ 7964 multiletter control sequences out of 15000+200000
+ 18360 words of font info for 76 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 5000i,10n,24p,3217b,673s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!

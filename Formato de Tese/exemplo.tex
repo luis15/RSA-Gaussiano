@@ -1,0 +1,168 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{latexsym}
+\usepackage{amssymb}
+
+
+% OS SEGUINTES DOIS COMANDOS SAO PARA COLOCAR UM QUADRADO PRETO NO FINAL DAS PROVAS
+% TROCANDO $\blacksquare$ POR OUTRO SIMBOLO TROCA O QUADRADO POR ESSE OUTRO SIMBOLO
+\def\pushright#1{{\parfillskip=0pt\widowpenalty=10000
+  \displaywidowpenalty=10000\finalhyphendemerits=0
+  \leavevmode\unskip\nobreak\hfil\penalty50\hskip.2em\null
+  \hfill{#1}\par}}
+
+\newcommand{\curtains}     {\pushright{$\blacksquare$}\par \vspace{1ex}}
+
+
+% COMANDOS PARA DEFINICAO, TEOREMA ETC.
+\newtheorem{defi}{Defini\c c\~ao}[section]
+\newtheorem{coro}[defi]{Corol\'ario}
+\newtheorem{fato}[defi]{Fato}
+\newtheorem{lema}[defi]{Lema}
+\newtheorem{teor}[defi]{Teorema}
+\newtheorem{prop}[defi]{Proposi\c c\~ao}
+\newtheorem{exem}[defi]{Exemplo}
+\newtheorem{exems}[defi]{Exemplos}
+\newtheorem{obs}[defi]{Observa\c c\~ao}
+\newtheorem{obss}[defi]{Observa\c c\~oes}
+
+% COMANDO 1 PARA COMECAR E ACABAR AS DEMONSTRACOES
+\newenvironment{prova1}{\begin{trivlist}
+\item{\bf Demonstra\c c\~ao:}}{\curtains\end{trivlist}}
+
+% COMANDO 2 PARA COMECAR E ACABAR AS DEMONSTRACOES
+\newcommand{\prova}{{\bf Demonstra\c c\~ao: }}
+
+\begin{document}
+
+\title{Exemplo \LaTeX}
+
+\author{Marcelo E. Coniglio\\
+GTAL - Department of Philosophy and CLE\\
+State University of Campinas \\
+{\tt coniglio@cle.unicamp.br}}
+\date{}
+\maketitle
+\begin{abstract}
+Este texto \'e apenas para ver alguns comandos \LaTeX.
+\end{abstract}
+
+\section*{Introdu\c c\~ao}
+S\'o para mostrar como colocar uma se\c c\~ao sem n\'umero de se\c
+c\~ao.
+
+\section{Esta \'e a primeira se\c c\~ao} \label{secao1}
+Come\c camos. Como escrever teoremas, proposi\c c\~oes, etc.
+
+\begin{teor} \label{primeiro}
+Enunciado do teorema (observe que fica em it\'alico). Colocamos
+uma label nele, para depois poder mencion\'a-lo.
+\end{teor}
+
+\begin{prop} \label{segundo} \em
+Enunciado da proposi\c c\~ao (observe que agora n\~ao fica em
+it\'alico. Por que?). Tamb\'em tem label (mas isto nao \'e
+obrigat\'orio).
+\end{prop}
+\begin{prova1}
+Assim usa-se o comando de in\'\i cio e finaliza\c c\~ao de provas.
+\end{prova1}
+
+
+\begin{lema}
+Agora mostraremos como usar o outro comando de in\'\i cio e
+finaliza\c c\~ao de provas.
+\end{lema}
+\prova Observe que o in\'\i cio \'e manual. O final tamb\'em,
+usando ``curtains" (olhe, de passagem, o uso das aspas). \curtains
+
+\section{Esta \'e a segunda se\c c\~ao}
+
+Podemos passar para uma subse\c c\~ao
+
+\subsection{Outras coisas} \label{subsecao}
+
+Agora vamos ver outras coisas. Podemos mencionar resultados
+anteriores (note que a primeira linha n\~ao aparece indentada).
+
+Por exemplo, o Teorema \ref{primeiro} aparece em it\'alico. J\'a a
+Proposi\c c\~ao \ref{segundo} n\~ao. Isso foi na Se\c c\~ao
+\ref{secao1}. Agora estamos na subse\c c\~ao \ref{subsecao}.
+
+\subsection{Mais coisas}
+
+Faremos demonstra\c c\~oes:
+
+$\begin{array}{lll} 1.& a \rightarrow (b \rightarrow a) &
+\textrm{[Ax.]}\\
+2.& a & \textrm{[Hip\'otese]}\\
+3. & b\rightarrow a & \textrm{[MP 1, 2]}
+\end{array}
+$
+
+\
+
+\noindent E agora, tabelas de verdade:
+$$
+\begin{array}{|c|c|c|c|}\hline
+  \wedge & {\bf 1} & ^{1}/_{2} & {\bf 0} \\ \hline
+  {\bf 1} & 1 & ^{1}/_{2} & 0 \\ \hline
+  ^{1}/_{2} & ^{1}/_{2} & ^{1}/_{2} & 0 \\ \hline
+  {\bf 0} & 0 & 0 & 0 \\ \hline
+\end{array}
+\hspace{0.5 cm}
+\begin{array}{|c|c|c|c|}\hline
+  \vee & {\bf 1} & ^{1}/_{2} & {\bf 0} \\ \hline
+  {\bf 1} & 1 & 1 & 1 \\ \hline
+  ^{1}/_{2} & 1 & ^{1}/_{2} & ^{1}/_{2} \\ \hline
+  {\bf 0} & 1 & ^{1}/_{2} & 0 \\ \hline
+\end{array}
+\hspace{0.5 cm}
+\begin{array}{|c|c|c|c|}\hline
+  \rightarrow & {\bf 1} & ^{1}/_{2} & {\bf 0} \\ \hline
+  {\bf 1} & 1 & ^{1}/_{2} & 0 \\ \hline
+  ^{1}/_{2} & 1 & ^{1}/_{2} & 0 \\ \hline
+  {\bf 0} & 1 & 1 & 1 \\ \hline
+\end{array}
+\hspace{0.5 cm}
+\begin{array}{|c|c|}\hline
+   & \neg \\ \hline
+  {\bf 1} & 0 \\ \hline
+  ^{1}/_{2} & ^{1}/_{2} \\ \hline
+  {\bf 0} & 1 \\ \hline
+\end{array}
+$$
+
+\
+
+\begin{obs} \em As fra\c c\~oes podem ser escritas como $\frac{n}{m}$, mas
+na tabela n\~ao ficam muito bem.
+\end{obs}
+
+Finalmente, as equa\c c\~oes podem ser enumeradas para depois ser
+mencionadas:
+
+\begin{equation}
+2 + 2= 3,14  \ \textrm{(Tudo \'e relativo!)}\label{muito boba}
+\end{equation}
+
+\
+
+A equa\c c\~ao (\ref{muito boba}) faz jus ao seu nome.
+
+\begin{obss} \em \ \\
+(1) Notar que ``$\backslash$" \'e usado dentro de uma linha para
+deixar um espa\c co entre as palavras. Pode usar v\'arias vezes,
+mas separados por um espa\c  co, ou seja: ``$\backslash$
+$\backslash$", e n\~ao ``$\backslash\backslash$". Se colocado
+numa linha s\'o, ``$\backslash$" deixa uma linha vazia. Isto
+serve para separar tabelas do texto (como eu acabei de fazer).\\
+(2) Note que, para se referir a uma equa\c c\~ao como eu fiz
+antes, tem que colocar a refer\^encia entre par\^enteses,
+enquanto que, quando nos referimos a uma Se\c c\~ao, Teorema etc,
+n\~ao precisamos de botar par\^enteses. \curtains
+\end{obss}
+
+
+
+
+\end{document}

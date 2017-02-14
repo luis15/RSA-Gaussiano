@@ -1,0 +1,39 @@
+\begin{thebibliography}{D'O87}
+  \providebibliographyfont{name}{}%
+  \providebibliographyfont{lastname}{}%
+  \providebibliographyfont{title}{\emph}%
+  \providebibliographyfont{jtitle}{\btxtitlefont}%
+  \providebibliographyfont{etal}{\emph}%
+  \providebibliographyfont{journal}{}%
+  \providebibliographyfont{volume}{}%
+  \providebibliographyfont{ISBN}{\MakeUppercase}%
+  \providebibliographyfont{ISSN}{\MakeUppercase}%
+  \providebibliographyfont{url}{\url}%
+  \providebibliographyfont{numeral}{}%
+
+\expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+\bibitem [{\expandafter\btxselectlanguage\expandafter
+  {\btxfallbacklanguage}D'O87}]{Dottaviano_1987_Definability_and_quantifier_el%
+imination_for_J3_theories}
+\btxnamefont {\btxlastnamefont {D'Ottaviano}, I.M.L.}\btxauthorcolon\
+  \btxjtitlefont {\btxifchangecase {Definability and quantifier elimination for
+  {{\bf J}}$_{3}$-theories}{Definability and quantifier elimination for {{\bf
+  J}}$_{3}$-theories}}.
+\newblock \btxjournalfont {Studia Logica}, 46(1):37--54, 1987.
+
+\bibitem [{\expandafter\btxselectlanguage\expandafter
+  {\btxfallbacklanguage}Pop59}]{Popper_1959_The_Logic_of_Scientific_Discovey}
+\btxnamefont {\btxlastnamefont {Popper}, K.\btxfnamespacelong
+  R.}\btxauthorcolon\ \btxtitlefont {The Logic of Scientific Discovey}.
+\newblock Hutchinson \& Co., Ltd., London, 1959.
+\newblock (English translation of {\it Logik der Forschung}, Julius Springer
+  Verlag, Vienna, 1936).
+
+\bibitem [{\expandafter\btxselectlanguage\expandafter
+  {\btxfallbacklanguage}Set73}]{Sette_1973_On_the_Propositional_Calculus_P1}
+\btxnamefont {\btxlastnamefont {Sette}, A.M.}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {On the {P}ropositional {C}alculus ${P}^1$}{On the
+  {P}ropositional {C}alculus ${P}^1$}}.
+\newblock \btxjournalfont {Mathematica Japonicae}, 18(13):173--180, 1973.
+
+\end{thebibliography}

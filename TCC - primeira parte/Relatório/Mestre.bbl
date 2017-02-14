@@ -1,0 +1,66 @@
+\begin{thebibliography}{RSA78}
+  \providebibliographyfont{name}{}%
+  \providebibliographyfont{lastname}{}%
+  \providebibliographyfont{title}{\emph}%
+  \providebibliographyfont{jtitle}{\btxtitlefont}%
+  \providebibliographyfont{etal}{\emph}%
+  \providebibliographyfont{journal}{}%
+  \providebibliographyfont{volume}{}%
+  \providebibliographyfont{ISBN}{\MakeUppercase}%
+  \providebibliographyfont{ISSN}{\MakeUppercase}%
+  \providebibliographyfont{url}{\url}%
+  \providebibliographyfont{numeral}{}%
+  \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+
+\expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+\bibitem [{DH76}]{newdirections}
+\btxnamefont {\btxlastnamefont {Diffie}, Whitfield} \btxandlong {}\
+  \btxnamefont {Martin \btxlastnamefont {Hellman}}\btxauthorcolon\
+  \btxjtitlefont {\btxifchangecase {New directions in cryptography}{New
+  directions in cryptography}}.
+\newblock \btxjournalfont {IEEE transactions on Information Theory},
+  22(6):644--654, 1976.
+
+\bibitem [{Gau15}]{gauss}
+\btxnamefont {\btxlastnamefont {Gauss}, Carl\btxfnamespacelong
+  Friedrich}\btxauthorcolon\ \btxtitlefont {Methodus nova integralium valores
+  per approximationem inveniendi}.
+\newblock \btxpublisherfont {apvd Henricvm Dieterich}, 1815.
+
+\bibitem [{mil}]{millenial}
+\btxtitlefont {\btxifchangecase {Millennium problems | clay mathematics
+  institute}{Millennium Problems | Clay Mathematics Institute}}.
+\newblock \url{http://www.claymath.org/millennium-problems}.
+\newblock Acessado em 15/11/2016.
+
+\bibitem [{Rie59}]{riemann}
+\btxnamefont {\btxlastnamefont {Riemann}, Bernhard}\btxauthorcolon\
+  \btxjtitlefont {\btxifchangecase {Ueber die anzahl der primzahlen unter einer
+  gegebenen grosse}{Ueber die Anzahl der Primzahlen unter einer gegebenen
+  Grosse}}.
+\newblock \btxjournalfont {Ges. Math. Werke und Wissenschaftlicher
+  Nachla{\ss}}, 2:145--155, 1859.
+
+\bibitem [{RSA78}]{rivest}
+\btxnamefont {\btxlastnamefont {Rivest}, Ronald\btxfnamespacelong L},
+  \btxnamefont {Adi \btxlastnamefont {Shamir}}\btxandcomma {} \btxandlong {}\
+  \btxnamefont {Leonard \btxlastnamefont {Adleman}}\btxauthorcolon\
+  \btxjtitlefont {\btxifchangecase {A method for obtaining digital signatures
+  and public-key cryptosystems}{A method for obtaining digital signatures and
+  public-key cryptosystems}}.
+\newblock \btxjournalfont {Communications of the ACM}, 21(2):120--126, 1978.
+
+\bibitem [{SF09}]{sinkov}
+\btxnamefont {\btxlastnamefont {Sinkov}, Abraham} \btxandlong {}\ \btxnamefont
+  {Todd \btxlastnamefont {Feil}}\btxauthorcolon\ \btxtitlefont {Elementary
+  cryptanalysis}, \btxvolumelong {}~\btxvolumefont {22}.
+\newblock \btxpublisherfont {MAA}, 2009.
+
+\bibitem [{Sha49}]{shannon}
+\btxnamefont {\btxlastnamefont {Shannon}, Claude\btxfnamespacelong
+  E}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Communication theory of
+  secrecy systems}{Communication theory of secrecy systems}}.
+\newblock \btxjournalfont {Bell system technical journal}, 28(4):656--715,
+  1949.
+
+\end{thebibliography}

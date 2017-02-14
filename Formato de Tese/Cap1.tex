@@ -1,0 +1,63 @@
+\chapter {O início do que não existe}
+\label{Cap1}
+
+Neste capítulo iremos escrever alguns comandos básicos tais como:
+\begin{enumerate}
+    \item Enumerar uma lista de ítens.
+    \item Inserir marcador, isto é, uma bolinha preta na frente do
+          parágrafo.
+    \item Outros
+\end{enumerate}
+
+\section{Enumerar uma lista de axiomas}
+
+  A seguinte enumeração é  obviamente auto-referente,  porque o  foi
+  produzido usando-se a si mesmo...
+
+  Utilizamos  o comando
+  {\bf{description}}, mas poderíamos utilizar o {\bf{enumerate}}, como
+  feito acima.
+
+\begin{description}
+    \item[1.] $\vdash_{PC}\phi \rightarrow (\psi \rightarrow \phi)$
+    \item[2.] $\vdash_{PC}(\phi\rightarrow(\psi\rightarrow\lambda))\rightarrow((\phi\rightarrow\psi)\rightarrow(\phi\rightarrow\lambda))$
+    \item[3.] $\vdash_{PC}((\neg\phi\rightarrow\neg\psi)\rightarrow((\neg\phi\rightarrow\psi)\rightarrow\phi))$
+\end{description}
+
+
+\section{Como referenciar e enumerar automaticamente teoremas, lemas,  corolários, etc.}
+
+Os procedimentos  abaixo são auto-explicativos.
+
+ \begin{Le}\label{lema1}
+  O {\bf{label}} é utilizado para dar um código ao lema, teorema ou
+  definição, para facilitar a referência no corpo do trabalho.
+\end{Le}
+
+\begin{Cor}\label{corolario2}
+  Para citar um lema, teorema ou definição, basta digitar
+  o código deste, dentro do comando {\bf{ref}} .
+\end{Cor}
+\begin{proof}
+	   É imediato a partir do lema \ref{lema1}.
+\end{proof}
+
+\begin{Le}\label{lema3}
+$\vdash_{PC}(\neg\varphi\rightarrow\varphi)\rightarrow\varphi$)
+\end{Le}
+
+\begin{proof} Vejamos:\\
+
+$
+\begin{array}{lll}
+1.&\vdash_{PC}((\neg\varphi\rightarrow\neg\varphi)\rightarrow((\neg\varphi\rightarrow\varphi)\rightarrow\varphi))& [\textrm{ Ax3 }]\\
+2.&\vdash_{PC}(\neg\varphi \rightarrow \neg\varphi)                                                              & [\textrm{Lm \ref{lema1}}]\\
+3.&\vdash_{PC}((\neg\varphi\rightarrow\varphi)\rightarrow\varphi))                                               & [\textrm{ MP em 1 e 2 }]\\
+
+\end{array}
+$
+\end{proof}
+
+Estes comandos para enumeração  não precisam ser digitados, basta
+você procurar dentro do {\bf{insert}}, na barra de ferramentas do
+Winedit (se você estiver  trabalhando com ele) .

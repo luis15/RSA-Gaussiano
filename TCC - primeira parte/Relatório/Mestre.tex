@@ -1,0 +1,127 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% DISSERTAÇÃO OU TESE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{report}
+\usepackage{graphicx}
+\usepackage[brazil]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{babelbib} % Esse pacote gera a bibliografia em Português. Acho que deve ser instalado algum pacote, não me recordo.
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{xypic}
+\usepackage[all]{xy}
+
+\usepackage{makeidx} %cria o índice remissivo
+\makeindex
+
+\vfuzz2pt % Don't report over-full v-boxes if over-edge is small
+\hfuzz2pt % Don't report over-full h-boxes if over-edge is small
+
+% TEOREMAS -------------------------------------------------------
+\theoremstyle{alpha}
+\newtheorem{Th}{Teorema}[section]
+\newtheorem{Cor}[Th]{Corolário}
+\newtheorem{Le}[Th]{Lema}
+\newtheorem{Pro}[Th]{Proposição}
+\theoremstyle{definition}
+\newtheorem{Df}[Th]{Definição}
+\newtheorem{Obs}[Th]{Observação}
+\newtheorem{Dig}[Th]{Digressão}
+\newtheorem{Ex}[Th]{Exemplo}
+\newtheorem{Esc}[Th]{Escólio}
+\newtheorem{Ass}[Th]{Asserção}
+
+% MATEMATICA E LOGICA -------------------------------------------
+
+\newcommand{\lan}     {\langle}
+\newcommand{\ran}     {\rangle}
+\newcommand{\IN}      {\mathbb{N}}
+\newcommand{\A}       {\mathcal{A}}
+\newcommand{\B}       {\mathcal{B}}
+\newcommand{\C}       {\mathcal{C}}
+\newcommand{\D}       {\mathcal{D}}
+\newcommand{\F}       {\mathcal{F}}
+\newcommand{\I}       {\mathcal{I}}
+\newcommand{\T}       {\mathcal{T}}
+\newcommand{\prem}    {\textsf{Prem}}
+\newcommand{\con}     {\textsf{Con}}
+\newcommand{\ta}      {\textsf{T}}
+\newcommand{\ax}      {\textsf{Ax}}
+
+\newcommand{\VAL}     {\textsc{Val}}
+\newcommand{\SSB}     {{\bf SSbe}}
+\newcommand{\SSO}     {{\bf SSat}}
+\newcommand{\SSC}     {{\bf SSco}}
+\newcommand{\SSU}     {{\bf SSmu}}
+
+\newcommand{\two}     {{\bf 2}}
+\newcommand{\twi}     {{\bf \Omega}}
+\newcommand{\Rra}     {\Rrightarrow}
+
+\newcommand{\jul}{\mathnormal{^{1}\hspace{-0,12cm}/\hspace{-0,04cm}_{2}}} 
+
+\DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}
+
+\begin{document}
+
+\title{\textbf{Criptografia RSA gaussiana}}
+\author{\textbf{Luis Antonio Co\^{e}lho}\vspace{2cm}\\
+Relat\'{o}rio para Trabalho de Conclus\~{a}o de Curso - parte I apresentado \`{a}\\ Faculdade de Tecnologia da\\ Universidade Estadual de Campinas \vspace{2cm}\\
+Orientador:
+\textbf{Profa. Dra. Juliana Bueno}\vspace{2cm}\\}
+ \maketitle
+
+
+
+% ------------------------------------------------------------------------
+%{
+%\include{Ded}                   % dedicatória
+%}
+% ------------------------------------------------------------------------
+%{
+%\include{Inv}                   % invocação
+%}
+% ------------------------------------------------------------------------
+%{
+%\typeout{Acknowledgements}
+%\include{Agrad}                   % agradecimentos
+%}
+% -----------------------------------------------------------------------
+{ \typeout{Abstract}
+\include{Pref}                    % resumo
+}
+% ------------------------------------------------------------------------
+
+\setcounter{page}{1}
+\tableofcontents                  % cria o índice
+
+% ------------------------------------------------------------------------
+{ %\typeout{Introducao}
+%\include{Int}					 % Intr. Inserir a justificativa
+\include{Cap1}         %Cap. 1: O início do que não existe
+\include{Cap2}         %Cap. 2: No caminho das nuvens
+\include{Cap3}         %Cap. 3: Falando sério
+\include{Cap4}         %Cap. 4: Falando sério
+\include{Cap5}         %Cap. 5: Falando sério
+\include{Cap6}         %Cap. 6: Falando sério
+%\include{Concl}        %Considerações Finais
+%\include{Ape1}         %Apêndice 1: Opcional
+
+\addcontentsline{toc}{chapter}{Bibliografia} %para aparecer a  bibliografia no índice
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Comandos para gerar a bibliografia em Português %%%%%%%%%%%%%%%%%%%%%%%%
+
+\selectbiblanguage{brazil}
+%\bibliographystyle{babplain}
+\bibliographystyle{babalpha}
+\bibliography{Bibliografia}
+
+%%%%%%%%%%%%%%%%%%% Caso não gere a bibliografia por falta de pacotes rode com os comandos abaixo e retire o pacote \usepackage{babelbib} do início do documento %%%%%%%%%%%
+
+\bibliographystyle{alpha}
+\nocite{*}
+%\bibliography{Bibliografia}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
