@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.15)  14 FEB 2017 17:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.15)  15 FEB 2017 17:26
 entering extended mode
 **./Mestre.tex
 (Mestre.tex
@@ -228,7 +228,7 @@ Writing index file Mestre.idx
 Package amsthm Warning: Unknown theoremstyle `alpha' on input line 23.
 
 \c@Th=\count101
-(Mestre.aux)
+(Mestre.aux (Pref.aux) (Intro.aux) (Mod.aux))
 \openout1 = `Mestre.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
@@ -318,22 +318,123 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Package xypdf Info: Line width: 0.43799pt on input line 67.
 
-! I can't write on file `Mestre.pdf'.
-Please type another file name for output
-! Emergency stop.
-<to be read again> 
-                   \endgroup \set@typeset@protect 
-l.74  \maketitle
-                
-*** (job aborted, file error in nonstop mode)
+Overfull \hbox (18.8837pt too wide) in paragraph at lines 74--74
+ [][] 
+ []
 
- 
+[1
+
+{C:/Users/coelh/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Abstract
+\openout2 = `Pref.aux'.
+
+(Pref.tex) [1
+
+] (Mestre.toc
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 20.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 20.
+)
+\tf@toc=\write5
+\openout5 = `Mestre.toc'.
+
+ [1
+
+
+]
+\openout2 = `Intro.aux'.
+
+ (Intro.tex
+Cap\'{\i }tulo 1.
+[2
+
+
+] [3]
+Overfull \hbox (60.72049pt too wide) detected at line 70
+[]
+ []
+
+[4]
+
+LaTeX Warning: Citation `mil' on page 5 undefined on input line 94.
+
+[5]) [6]
+\openout2 = `Mod.aux'.
+
+ (Mod.tex
+Cap\'{\i }tulo 2.
+) [7
+
+
+
+]
+
+Package babelbib Warning: Command \selectbiblanguage used without package
+(babelbib)                option fixlanguage. Ignored on input line 112.
+
+(Mestre.bbl
+babelbib: Using the BibTeX style's default font for `name'.
+babelbib: Using the BibTeX style's default font for `lastname'.
+babelbib: Using the BibTeX style's default font for `title'.
+babelbib: Using the BibTeX style's default font for `jtitle'.
+babelbib: Using the BibTeX style's default font for `etal'.
+babelbib: Using the BibTeX style's default font for `journal'.
+babelbib: Using the BibTeX style's default font for `volume'.
+babelbib: Using the BibTeX style's default font for `ISBN'.
+babelbib: Using the BibTeX style's default font for `ISSN'.
+babelbib: Using the BibTeX style's default font for `url'.
+babelbib: Using the BibTeX style's default font for `numeral'.
+
+! Package babelbib Error: No \url command defined but field URL used
+(babelbib)                in bibliography.
+
+See the babelbib package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 ...tp://www.claymath.org/millennium-problems}
+                                                  .
+Please define a \url command for printing URLs before \begin{document}, e.\,g.
+by loading the package `url.sty'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--35
+[]\OT1/cmr/m/it/10.95 Millennium Pro-blems | Clay Mathe-ma-tics Ins-ti-tute\OT1/cmr/m/n/10.95 .
+ []
+
+) [8
+
+
+] (Mestre.aux (Pref.aux) (Intro.aux) (Mod.aux))
+
+LaTeX Warning: There were undefined references.
+
+ )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 101 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 5677 strings out of 493333
- 72258 string characters out of 3139193
- 186884 words of memory out of 3000000
- 9077 multiletter control sequences out of 15000+200000
- 12619 words of font info for 54 fonts, out of 3000000 for 9000
+ 5770 strings out of 493333
+ 73292 string characters out of 3139193
+ 196801 words of memory out of 3000000
+ 9131 multiletter control sequences out of 15000+200000
+ 15872 words of font info for 65 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,7n,25p,3217b,226s stack positions out of 5000i,500n,10000p,200000b,50000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 40i,7n,25p,3217b,597s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on Mestre.pdf (10 pages, 172643 bytes).
+PDF statistics:
+ 79 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -4,9 +4,9 @@
 \subparagraph{
 Faz parte da sobrevivência humana manter segredo acerca de alguns fatos e quando se trata de comunicação,
 seja escrita ou falada, essa prática se intensifica ainda mais à medida que se expandem os meios de comunicação.  
-A necessidade de manter algumas informa\c{c}\~{o}es em segredo levou o homem a se comunicar através de códigos  
+A necessidade de manter algumas informações em sigilo levou o homem a se comunicar através de códigos, 
 e à medida em que tais códigos são descobertos há a necessidade de se criar novos códigos para que a comunicação 
-seja antida em sigilo. Foi a partir desse tipo de necessidade que se inaugurou o que chamamos de \textit{criptografia}, 
+seja mantida em sigilo. Foi a partir desse tipo de necessidade que se inaugurou o que chamamos de \textit{criptografia}, 
 isto é, ao conjunto de técnicas usadas para se comunicar em códigos. O objetivo da comunicação em códigos 
 é garantir que apenas as pessoas interessadas (ou envolvidas na comunicação) possam compreender
 a mensagem codificada (ou criptogtafada), garantindo que a mensagem seja lida apenas pelos interessados.
@@ -14,10 +14,10 @@ a mensagem codificada (ou criptogtafada), garantindo que a mensagem seja lida ap
 \subparagraph{
 Para compreender como funciona o processo de codificação e decodificação fazemos uso de uma série de termos técnicos, com 
 intuito pedagógico iremos introduzir tais conceitos apresentando um dos primeiros algorítmos criptográficos que se tem 
-conhecimento, a criptografia de César, e suas sucessoras. 
+conhecimento, a criptografia de César, além de suas sucessoras. 
 }
 \subparagraph{
-A chamada \textit{criptografia de César}, criado pelo imperador romano César Augusto, consistia em substituir cada letra 
+A chamada \textit{criptografia de César}, criada pelo imperador romano César Augusto, consistia em substituir cada letra 
 por outra que estivesse a três posições a frente, como, por exemplo, a letra \textbf{A}
 era substituída pela letra \textbf{D}.  
 }
@@ -35,7 +35,7 @@ letras da chave para determinar o número de posições que devemos avançar para ob
 letra encriptada. Vejamos, por meio de um exemplo, como funciona esse sistema criptográfico.
 }
 \subparagraph{
-Sejam ``SENHA'' a nossa chave criptográfica e ``ABOBORA'' a mensagem a ser encriptada. Abaixo colocamos as letras 
+Sejam ''SENHA'' a nossa chave criptográfica e ''ABOBORA'' a mensagem a ser encriptada. Abaixo colocamos as letras 
 do alfabeto com suas respectivas posições. Observe que repetimos a primeira linha de letras para facilitar a 
 localização da posição da letra encriptada e usamos a barra para indicar que estamos estamos no segundo ciclo. 
 }
@@ -52,7 +52,7 @@ localização da posição da letra encriptada e usamos a barra para indicar que est
 \end{array}
 \]
 \subparagraph{
-Vejamos como encriptar a palavra ``ABOBORA''. Iniciamos o processo escrevendo a mensagem. Ao lado de cada letra da mensagem 
+Vejamos como encriptar a palavra ''ABOBORA''. Iniciamos o processo escrevendo a mensagem. Ao lado de cada letra da mensagem 
 aparece entre parênteses o número que indica a sua posição. Abaixo da mensagem escrevemos as letras da
 chave criptográfica, repetindo-as de forma cíclica quando necessário. Analogamente, ao lado de cada letra 
 da chave aparece entre parênteses o número da posição ocupada de cada letra, e o sinal de soma indica que devemos avançar 
@@ -80,16 +80,16 @@ O matemático Alan Turing foi o responsável por quebrar o código dos alemães dura
 mostrou a fragilidade da criptografia baseada em chave simétrica e colocou novos desafios à criptografia. O grande problema passou a ser a questão dos protocolos, isto é, como transmitir a chave para o receptor de forma segura sem que haja contato físico entre as partes? 
 }
 \subparagraph{
-Em 1949, com a publicação do artigo \textit{Communication Theory of Secrecy Systems} \cite{shannon} de Shannon, temos a inauguração da criptografia moderna. Neste artigo ele escreve metematicamente que cifras teoricamente inquebráveis tem os mesmo requisitos que as cifras polialfabéticas. Com isso ele transformou a criptografia que até então era uma arte em uma ciência.
+Em 1949, com a publicação do artigo \textit{Communication Theory of Secrecy Systems} \cite{shannon} de Shannon, temos a inauguração da criptografia moderna. Neste artigo ele escreve metematicamente que cifras teoricamente inquebráveis tem os mesmos requisitos que as cifras polialfabéticas. Com isso ele transformou a criptografia que até então era uma arte em uma ciência.
 }
 \subparagraph{
-Em 1976 Diffie e Hellman publicaram \textit{New Directions in Cryptography} \cite{newdirections}. Neste artigo há a introdução do conceito da \textit{chave assimetica}, onde há chaves diferentes entre o emissor de mensagens e seu receptor. Com a assimetria de chaves não era mais necessário um contato tão próximo entre emissor e receptor, que já havia sido problema no passado.
+Em 1976 Diffie e Hellman publicaram \textit{New Directions in Cryptography} \cite{newdirections}. Neste artigo há a introdução do conceito da \textit{chave assimétrica}, onde há chaves diferentes entre o emissor de mensagens e seu receptor. Com a assimetria de chaves não era mais necessário um contato tão próximo entre emissor e receptor, que já havia sido problema no passado.
 }
 \subparagraph{
 Um dos algoritmos deste modelo de chave assimétrica é o RSA(RIVEST et al, 1983) \cite{rivest}, algoritmo desenvolvido por Rivest, Shamir e Adleman. Este algoritmo está presente em muitas aplicações de alta segurança, como bancos, sistemas militares e servidores de internet, e ele utiliza para a geração de chaves os números primos naturais de grandeza superior a $2^{512}$ multiplicados entre si.
 }
 \subparagraph{ 
-O grande problema no uso de primos naturais consiste na Hipótese de Riemann (Riemann,1859) \cite{riemann}, um dos sete desafios matemáticos do milênio. A hipótese diz que informando um número teto, podemos saber quantos e quais são os primos presentes naquele conjunto, este tipo de dado é desastroso para modelos criptográficos centrados nos primos naturais, como o RSA, pois tornaria extremamente mais fácil a realização da descoberta das chaves.
+O grande problema no uso de primos naturais consiste na Hipótese de Riemann (Riemann,1859) \cite{riemann}, um dos sete desafios matemáticos do milênio \cite{mil}. A hipótese diz que informando um número teto, podemos saber quantos e quais são os primos presentes naquele conjunto, este tipo de dado é desastroso para modelos criptográficos centrados nos primos naturais, como o RSA, pois tornaria extremamente mais fácil a realização da descoberta das chaves.
 }
 \subparagraph{
 Uma forma para se evitar este problema seria uma substituição dos primos naturais por um conjunto de primos não-naturais, como os primos de Gauss (Gauss, 1815) \cite{gauss}. Estes números são números complexos da forma $a+bi$, onde $a$ e $b$ são diferentes de $0$, com $a^{2}+b^{2}$ resultando em um primo natural.
