@@ -29,4 +29,57 @@ Existe um tipo especial de n\'umero que s\'o \'e m\'ultiplo, ou seja, possui res
 Para que possa obter os n\'umeros primos o m\'etodo mais comum \'e o crivo de Erast\'otenes, que foi desenvolvido por volta do s\'eculo II a.C. Esse m\'etodo se baseia na ciclicidade dos n\'umeros n\~ao-primos, que se chamam \textit{n\'umeros compostos}. Para se come\c{c}ar o crivo deve-se fazer a listagem de todos os n\'umeros dos quais se deseja testar a primalidade em ordem. Para nosso exemplo iremos fazer o crivo para os n\'umeros de {1} at\'e {100}.
 }
 
+\[
+\begin{array}{cccccccccc}
+		1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\  
+		11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 \\
+		21 & 22 & 23 & 24 & 25 & 26 & 27 & 28 & 29 & 30 \\ 
+		31 & 32 & 33 & 34 & 35 & 36 & 37 & 38 & 39 & 40 \\
+		41 & 42 & 43 & 44 & 45 & 46 & 47 & 48 & 49 & 50 \\
+		51 & 52 & 53 & 54 & 55 & 56 & 57 & 58 & 59 & 60 \\
+		61 & 62 & 63 & 64 & 65 & 66 & 67 & 68 & 69 & 70 \\
+		71 & 72 & 73 & 74 & 75 & 76 & 77 & 78 & 79 & 80 \\
+		81 & 82 & 83 & 84 & 85 & 86 & 87 & 88 & 89 & 90 \\
+		91 & 92 & 93 & 94 & 95 & 96 & 97 & 98 & 99 & 100 \\
+\end{array}
+\]
+
+\subparagraph{
+Nossa primeira tarefa consiste em riscar todos os n\'umeros m\'ultiplos de {2}, exceto o {2}, em nossa tabela, repare que isso ser\'a um evento c\'iclico, cujo per\'iodo ser\'a {2}.
+}
+\[
+\begin{array}{cccccccccc}
+		1 & 2 & 3 & \xout{4} & 5 & \xout{6} & 7 & \xout{8} & 9 & \xout{10} \\  
+		11 & \xout{12} & 13 & \xout{14} & 15 & \xout{16} & 17 & \xout{18} & 19 & \xout{20} \\
+		21 & \xout{22} & 23 & \xout{24} & 25 & \xout{26} & 27 & \xout{28} & 29 & \xout{30} \\ 
+		31 & \xout{32} & 33 & \xout{34} & 35 & \xout{36} & 37 & \xout{38} & 39 & \xout{40} \\ 
+		41 & \xout{42} & 43 & \xout{44} & 45 & \xout{46} & 47 & \xout{48} & 49 & \xout{50} \\ 
+		51 & \xout{52} & 53 & \xout{54} & 55 & \xout{56} & 57 & \xout{58} & 59 & \xout{60} \\ 
+		61 & \xout{62} & 63 & \xout{64} & 65 & \xout{66} & 67 & \xout{68} & 69 & \xout{70} \\ 
+		71 & \xout{72} & 73 & \xout{74} & 75 & \xout{76} & 77 & \xout{78} & 79 & \xout{80} \\ 
+		81 & \xout{82} & 83 & \xout{84} & 85 & \xout{86} & 87 & \xout{88} & 89 & \xout{90} \\ 
+		91 & \xout{92} & 93 & \xout{94} & 95 & \xout{96} & 97 & \xout{98} & 99 & \xout{100} \\ 
+
+\end{array}
+\]
+
+\subparagraph{
+Agora pegamos o menor n\'umero n\~ao riscado e maior que {2}, que no caso \'e {3}, e riscamos seus m\'ultiplos.
+}
+\[
+\begin{array}{cccccccccc}
+		1 & 2 & 3 & \xout{4} & 5 & \xout{6} & 7 & \xout{8} & \xout{9} & \xout{10} \\  
+		11 & \xout{12} & 13 & \xout{14} & \xout{15} & \xout{16} & 17 & \xout{18} & 19 & \xout{20} \\
+		\xout{21} & \xout{22} & 23 & \xout{24} & 25 & \xout{26} & \xout{27} & \xout{28} & 29 & \xout{30} \\ 
+		31 & \xout{32} & \xout{33} & \xout{34} & 35 & \xout{36} & 37 & \xout{38} & \xout{39} & \xout{40} \\ 
+		41 & \xout{42} & 43 & \xout{44} & \xout{45} & \xout{46} & 47 & \xout{48} & 49 & \xout{50} \\ 
+		\xout{51} & \xout{52} & 53 & \xout{54} & 55 & \xout{56} & \xout{57} & \xout{58} & 59 & \xout{60} \\ 
+		61 & \xout{62} & \xout{63} & \xout{64} & 65 & \xout{66} & 67 & \xout{68} & \xout{69} & \xout{70} \\ 
+		71 & \xout{72} & 73 & \xout{74} & \xout{75} & \xout{76} & 77 & \xout{78} & 79 & \xout{80} \\ 
+		\xout{81} & \xout{82} & 83 & \xout{84} & 85 & \xout{86} & \xout{87} & \xout{88} & 89 & \xout{90} \\ 
+		91 & \xout{92} & \xout{93} & \xout{94} & 95 & \xout{96} & 97 & \xout{98} & \xout{99} & \xout{100} \\ 
+
+\end{array}
+\]
+
 \section{Inverso Multiplicativo}

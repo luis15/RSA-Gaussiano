@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.15)  16 FEB 2017 18:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.15)  16 FEB 2017 20:45
 entering extended mode
 **./Mestre.tex
 (Mestre.tex
@@ -200,7 +200,18 @@ circles,
 \matrixsize@=\count100
  loaded)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xyarrow.tex"  Xy-pic option: Arrow and Path feature v.3.9 path, \ar,
-loaded) loaded)) ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xy.sty"
+loaded) loaded)) (ulem.sty
+\UL@box=\box30
+\UL@hyphenbox=\box31
+\UL@skip=\skip46
+\UL@hook=\toks31
+\UL@height=\dimen139
+\UL@pe=\count101
+\UL@pixel=\dimen140
+\ULC@box=\box32
+Package: ulem 2012/05/18
+\ULdepth=\dimen141
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xy.sty"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xy.tex" not reloaded)
 Package: xy 2013/10/06 Xy-pic version 3.8.9
 
@@ -208,7 +219,7 @@ Package: xy 2013/10/06 Xy-pic version 3.8.9
 ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xycmtip.tex"  Xy-pic option: Computer Modern tip extension v.3.7
 ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xytips.tex"  Xy-pic option: More Tips extension v.3.11 loaded) loaded)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xyline.tex"  Xy-pic option: Line styles extension v.3.10
-\xylinethick@=\dimen139
+\xylinethick@=\dimen142
  loaded)
 Xy-pic pdf driver: `line' extension support ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xypdf-li.tex" loaded)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xyrotate.tex"  Xy-pic option: Rotate and Scale extension v.3.8 loaded)
@@ -225,37 +236,37 @@ Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 
 Writing index file Mestre.idx
 
-Package amsthm Warning: Unknown theoremstyle `alpha' on input line 23.
+Package amsthm Warning: Unknown theoremstyle `alpha' on input line 24.
 
-\c@Th=\count101
+\c@Th=\count102
 (Mestre.aux (Pref.aux) (Intro.aux) (Mod.aux))
 \openout1 = `Mestre.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
  (C:\Users\coelh\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count102
-\scratchdimen=\dimen140
-\scratchbox=\box30
-\nofMPsegments=\count103
-\nofMParguments=\count104
-\everyMPshowfont=\toks31
-\MPscratchCnt=\count105
-\MPscratchDim=\dimen141
-\MPnumerator=\count106
-\makeMPintoPDFobject=\count107
-\everyMPtoPDFconversion=\toks32
+\scratchcounter=\count103
+\scratchdimen=\dimen143
+\scratchbox=\box33
+\nofMPsegments=\count104
+\nofMParguments=\count105
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count106
+\MPscratchDim=\dimen144
+\MPnumerator=\count107
+\makeMPintoPDFobject=\count108
+\everyMPtoPDFconversion=\toks33
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
 Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO)
 
@@ -303,22 +314,22 @@ File: portuguese.bdf 2012/01/03 v1.31 babelbib: multilingual bibliographies (HH)
 babelbib extension \bibsbrazil added to \extrasbrazil
 babelbib extension \btxifchangecaseoff added to \extrasbrazil
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 67.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 68.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 67.
+LaTeX Font Info:    Try loading font information for U+msa on input line 68.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 67.
+LaTeX Font Info:    Try loading font information for U+msb on input line 68.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Package xypdf Info: Line width: 0.43799pt on input line 67.
+Package xypdf Info: Line width: 0.43799pt on input line 68.
 
-Overfull \hbox (18.8837pt too wide) in paragraph at lines 74--74
+Overfull \hbox (18.8837pt too wide) in paragraph at lines 75--75
  [][] 
  []
 
@@ -359,14 +370,29 @@ LaTeX Warning: Citation `mil' on page 5 undefined on input line 94.
 
  (Mod.tex
 Cap\'{\i }tulo 2.
+
+Overfull \hbox (29.50589pt too wide) in paragraph at lines 32--32
+\OT1/cmr/bx/n/10.95 para os numeros de 1 ate 100. [] [] 
+ []
+
 [7
 
 
 
-]) [8]
+]
+Overfull \hbox (55.4253pt too wide) in paragraph at lines 50--50
+\OT1/cmr/bx/n/10.95 evento cclico, cujo perodo sera 2. [] [] 
+ []
+
+
+Overfull \hbox (74.02496pt too wide) in paragraph at lines 69--69
+\OT1/cmr/bx/n/10.95 no caso e 3, e ris-ca-mos seus multiplos. [] [] 
+ []
+
+[8]) [9]
 
 Package babelbib Warning: Command \selectbiblanguage used without package
-(babelbib)                option fixlanguage. Ignored on input line 112.
+(babelbib)                option fixlanguage. Ignored on input line 113.
 
 (Mestre.bbl
 babelbib: Using the BibTeX style's default font for `name'.
@@ -380,6 +406,11 @@ babelbib: Using the BibTeX style's default font for `ISBN'.
 babelbib: Using the BibTeX style's default font for `ISSN'.
 babelbib: Using the BibTeX style's default font for `url'.
 babelbib: Using the BibTeX style's default font for `numeral'.
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--23
+[]\OT1/cmr/m/n/10.95 Diffie, Whit-fi-eld e Mar-tin Hell-man:
+ []
+
 
 ! Package babelbib Error: No \url command defined but field URL used
 (babelbib)                in bibliography.
@@ -395,10 +426,25 @@ by loading the package `url.sty'.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 32--35
-[]\OT1/cmr/m/it/10.95 Millennium Pro-blems | Clay Mathe-ma-tics Ins-ti-tute\OT1/cmr/m/n/10.95 .
+[]|   []\OT1/cmr/m/n/10.95 .
  []
 
-) [9
+
+Overfull \hbox (91.15569pt too wide) in paragraph at lines 37--43
+[]\OT1/cmr/m/n/10.95 Riemann, Ber-nhard: |   [].
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--52
+[]\OT1/cmr/m/n/10.95 Rivest, Ro-nald L, Adi Sha-mir e Le-o-nard Adle-man:
+ []
+
+
+Overfull \hbox (32.61884pt too wide) in paragraph at lines 45--52
+|   []\OT1/cmr/m/n/10.95 .
+ []
+
+) [10
 
 
 ] (Mestre.aux (Pref.aux) (Intro.aux) (Mod.aux))
@@ -408,26 +454,25 @@ LaTeX Warning: There were undefined references.
  )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 101 ({)
+### simple group (level 1) entered at line 102 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5750 strings out of 493333
- 72945 string characters out of 3139193
- 196801 words of memory out of 3000000
- 9115 multiletter control sequences out of 15000+200000
- 15617 words of font info for 64 fonts, out of 3000000 for 9000
+ 5824 strings out of 493333
+ 73539 string characters out of 3139193
+ 216662 words of memory out of 3000000
+ 9187 multiletter control sequences out of 15000+200000
+ 15271 words of font info for 63 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,7n,25p,3217b,597s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,8n,25p,3217b,597s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Progr
 am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.
-pfb>
-Output written on Mestre.pdf (11 pages, 168082 bytes).
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on Mestre.pdf (12 pages, 154438 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
+ 77 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
