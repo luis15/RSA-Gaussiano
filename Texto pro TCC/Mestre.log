@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.15)  17 FEB 2017 21:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.15)  17 FEB 2017 21:33
 entering extended mode
 **./Mestre.tex
 (Mestre.tex
@@ -358,7 +358,7 @@ Overfull \hbox (60.72049pt too wide) detected at line 46
 
 [4]
 
-LaTeX Warning: Citation `mil' on page 5 undefined on input line 69.
+LaTeX Warning: Citation `mil' on page 5 undefined on input line 70.
 
 [5]) [6]
 \openout2 = `Mod.aux'.
@@ -465,7 +465,7 @@ am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/
 m/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Mestre.pdf (12 pages, 153581 bytes).
+Output written on Mestre.pdf (12 pages, 154639 bytes).
 PDF statistics:
  77 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

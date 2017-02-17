@@ -55,14 +55,15 @@ Durante a  Primeira Guerra Mundial o contato f\'isico para a cria\c{c}\~ao de ch
 O matem\'atico Alan Turing foi o respons\'avel por quebrar o c\'odigo dos alem\~aes durante a Segunda Guerra Mundial. A descoberta de Turing mostrou a fragilidade da criptografia baseada em chave sim\'etrica e colocou novos desafios \`a criptografia. O grande problema passou a ser a quest\~ao dos protocolos, isto \'e, como transmitir a chave para o receptor de forma segura sem que haja contato f\'isico entre as partes? 
 }
 \subparagraph{
-Em 1949, com a publicação do artigo \textit{Communication Theory of Secrecy Systems} \cite{shannon} de Shannon, temos a inauguração da criptografia moderna. Neste artigo ele escreve metematicamente que cifras teoricamente inquebráveis tem os mesmos requisitos que as cifras polialfabéticas. Com isso ele transformou a criptografia que até então era uma arte em uma ciência.
+Em 1949, com a publica\c{c}\~ao do artigo \textit{Communication Theory of Secrecy Systems} \cite{shannon} de Shannon, temos a inaugura\c{c}\~ao da criptografia moderna. Neste artigo ele escreve matematicamente que cifras teoricamente inquebr\'aveis s\~ao semelhantes as cifras polialfab\'eticas. Com isso ele transformou a criptografia que at\'e ent\~ao era uma arte em uma ci\^encia.
 }
 \subparagraph{
-Em 1976 Diffie e Hellman publicaram \textit{New Directions in Cryptography} \cite{newdirections}. Neste artigo há a introdução do conceito da \textit{chave assimétrica}, onde há chaves diferentes entre o emissor de mensagens e seu receptor. Com a assimetria de chaves não era mais necessário um contato tão próximo entre emissor e receptor, que já havia sido problema no passado.
+Em 1976 Diffie e Hellman publicaram \textit{New Directions in Cryptography} \cite{newdirections}. Neste artigo h\'a a introdu\c{c}\~ao ao conceito de \textit{chave assim\'etrica}, onde h\'a chaves diferentes entre o emissor de mensagens e seu receptor. Com a assimetria de chaves n\~ao era mais necess\'ario um contato t\~ao pr\'oximo entre emissor e receptor, que j\'a havia sido problema no passado. Neste mesmo artigo \'e apresentado o primeiro algoritmo de criptografia de chave assim\'etrica ou como \'e mais conhecido nos dias atuais \textit{Algorito de Criptografia de Chave P\'ublica}, o protocolo de Diffie-Hellman.
 }
 \subparagraph{
-Um dos algoritmos deste modelo de chave assimétrica é o RSA(RIVEST et al, 1983) \cite{rivest}, algoritmo desenvolvido por Rivest, Shamir e Adleman. Este algoritmo está presente em muitas aplicações de alta segurança, como bancos, sistemas militares e servidores de internet, e ele utiliza para a geração de chaves os números primos naturais de grandeza superior a $2^{512}$ multiplicados entre si.
+Um dos algoritmos mais famosos da criptografia assim\'etrica \'e o \textit{RSA}(RIVEST et al, 1983) \cite{rivest}, algoritmo desenvolvido por Rivest, Shamir e Adleman. Este algoritmo est\'a presente em muitas aplica\c{c}\~oes de alta seguran\c{c}a, como bancos, sistemas militares e servidores de internet, e ele utiliza para a gera\c{c}\~ao de chaves dois n\'umeros primos de grandeza superior a $2^{512}$ multiplicados entre si.
 }
+%arrumar apos a reunião, território prigoso
 \subparagraph{ 
 O grande problema no uso de primos naturais consiste na Hipótese de Riemann (Riemann,1859) \cite{riemann}, um dos sete desafios matemáticos do milênio \cite{mil}. A hipótese diz que informando um número teto, podemos saber quantos e quais são os primos presentes naquele conjunto, este tipo de dado é desastroso para modelos criptográficos centrados nos primos naturais, como o RSA, pois tornaria extremamente mais fácil a realização da descoberta das chaves.
 }
@@ -70,6 +71,6 @@ O grande problema no uso de primos naturais consiste na Hipótese de Riemann (Rie
 Uma forma para se evitar este problema seria uma substituição dos primos naturais por um conjunto de primos não-naturais, como os primos de Gauss (Gauss, 1815) \cite{gauss}. Estes números são números complexos da forma $a+bi$, onde $a$ e $b$ são diferentes de $0$, com $a^{2}+b^{2}$ resultando em um primo natural.
 }
 \subparagraph{
-Por isso, com esta pesquisa, vamos testar a capacidade de um algoritmo criptográfico centrado nos primos de gauss de ser tão efetivos quanto os algoritmos criptográficos centrados em primos naturais, para que em um futuro, caso ele seja necessário ele possa ser imediatamente e amplamente utilizado.
+Por isso, com esta pesquisa, vamos testar a capacidade de um algoritmo criptográfico centrado nos primos de Gauss de ser tão efetivos quanto os algoritmos criptográficos centrados em primos naturais, para que em um futuro, caso ele seja necessário ele possa ser imediatamente e amplamente utilizado.
 }
 
