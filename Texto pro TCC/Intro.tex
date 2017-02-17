@@ -5,32 +5,20 @@
 O sigilo sempre foi uma arma explorada pelos seres humanos para vencer certas batalhas, mesmo que na cotidiana miss\~{a}o de se 	comunicar. Foi a partir dessa necessidade que se criou o que chamamos de \textit{criptografia}, nome dado ao conjunto de técnicas usadas para se falar e escrever em c\'odigos. Seu objetivo \'{e} garantir que apenas as pessoas  envolvidas na comunica\c{c}\~ao possam compreender a mensagem codificada (ou criptogtafada), garantindo que terceiros n\~ao saibam o que foi conversado.
 }
 \subparagraph{
-Para compreender como funciona o processo de codifica\c{c}\~ao e decodifica\c{c}\~ao fazemos uso de uma série de termos t\'ecnicos, com 
-intuito pedagógico iremos introduzir tais conceitos apresentando um dos primeiros algor\'itmos criptogr\'ificos que se tem 
-conhecimento, a criptografia de C\'esar, além de suas sucessoras. 
+Para compreender como funciona o processo de codifica\c{c}\~ao e decodifica\c{c}\~ao faz-se necess\'ario o uso de uma série de termos t\'ecnicos, para fins pedagógicos iremos introduzir tais conceitos apresentando um dos primeiros algor\'itmos criptogr\'ificos que se tem conhecimento, a criptografia de C\'esar, al\'em de seus sucessores. 
 }
 \subparagraph{
 A chamada \textit{criptografia de C\'esar}, criada pelo imperador romano C\'esar Augusto, consistia em substituir cada letra 
-por outra que estivesse a tr\^es posi\c{c}\~oes a frente, como, por exemplo, a letra \textbf{A}
-era substitu\'ida pela letra \textbf{D}.  
+por outra que estivesse a tr\^es posi\c{c}\~oes a frente, como, por exemplo, a letra \textbf{A} era substitu\'ida pela letra \textbf{D}.  
 }
 \subparagraph{
-Uma forma muito natural de se generalizar o algoritmo de César é fazer a troca da letra por outra em uma posição qualquer fixada. A chamada \textit{criptografia de substituição monoalfabética} consite em substituir cada letra pela letra que ocupa \textit{n} posições
-a sua frente, sendo que o número \textit{n} é conhecido apenas pelo emissor e pelo receptor da mensagem. Chamamos este número \textit{n} 
-de \textit{chave criptográfica}.
+Uma forma muito natural de se generalizar o algoritmo de C\'esar \'e fazer a troca da letra da mensagem por outra em uma posi\c{c}\~ao qualquer fixada. A chamada \textit{criptografia de substitui\c{c}\~ao monoalfab\'etica} consite em substituir cada letra pela a que ocupa \textit{n} posi\c{c}\~oes a sua frente, sendo que o n\'umero \textit{n} \'e conhecido apenas pelo emissor e pelo receptor da mensagem. Chamamos este n\'umero \textit{n} de \textit{chave criptogr\'afica}. Para podermos compreender a mensagem, precisamos substituir as letras que formam a mensagem criptografado pelas as que est\~ao {n} posi\c{c}\~oes antes.
 }
 \subparagraph{
-O algoritmo monoalfabético tem a característica indesejada de ser de fácil decodificação, pois possui apenas
-26 chaves, e isso faz com que no máximo 26 tentativas o código seja decifrado. Com o intuito de dificultar a quebra
-do código monoalfabético foram propostas as \textit{cifras de substituição polialfabéticas} em que a chave 
-criptográfica passa a ser uma \textit{palavra} ao invés de um número. A ideia é usar as posições ocupadas pelas 
-letras da chave para determinar o número de posições que devemos avançar para obter a posição da 
-letra encriptada. Vejamos, por meio de um exemplo, como funciona esse sistema criptográfico.
+O algoritmo monoalfab\'etico tem a caracter\'istica indesejada de ser de f\'acil decodifica\c{c}\~ao, pois possui apenas {26} chaves poss\'iveis, e isso faz com que no m\'aximo em {26} tentativas o c\'odigo seja decifrado. Com o intuito de dificultar a quebra do c\'odigo monoalfab\'etico foram propostas as \textit{cifras de substitui\c{c}\~ao polialfab\'eticas} em que a chave criptogr\'afica passa a ser uma \textit{palavra} ao inv\'es de um n\'umero. A ideia \'e usar as posi\c{c}\~oes ocupadas pelas letras da chave para determinar o n\'umero de posi\c{c}\~oes que devemos avan\c{c}ar para obter a posi\c{c}\~ao da letra encriptada. Vejamos, por meio de um exemplo, como funciona esse sistema criptogr\'afico.
 }
 \subparagraph{
-Sejam ''SENHA'' a nossa chave criptográfica e ''ABOBORA'' a mensagem a ser encriptada. Abaixo colocamos as letras 
-do alfabeto com suas respectivas posições. Observe que repetimos a primeira linha de letras para facilitar a 
-localização da posição da letra encriptada e usamos a barra para indicar que estamos estamos no segundo ciclo. 
+Sejam ``SENHA'' a nossa chave criptogr\'afica e ``ABOBORA'' a mensagem a ser encriptada. Abaixo colocamos as letras do alfabeto com suas respectivas posi\c{c}\~oes. Observe que repetimos a primeira linha de letras para facilitar a localiza\c{c}\~ao da posi\c{c}\~o da letra encriptada e usamos a barra para indicar que estamos estamos no segundo ciclo. 
 }
 \[
 \begin{array}{ccccccccccccc}
@@ -45,12 +33,7 @@ localização da posição da letra encriptada e usamos a barra para indicar que est
 \end{array}
 \]
 \subparagraph{
-Vejamos como encriptar a palavra ''ABOBORA''. Iniciamos o processo escrevendo a mensagem. Ao lado de cada letra da mensagem 
-aparece entre parênteses o número que indica a sua posição. Abaixo da mensagem escrevemos as letras da
-chave criptográfica, repetindo-as de forma cíclica quando necessário. Analogamente, ao lado de cada letra 
-da chave aparece entre parênteses o número da posição ocupada de cada letra, e o sinal de soma indica que devemos avançar 
-o aquele número de posições. Ao final do processo aparecem as letras encriptadas. Entre parênteses está a posições resultante
-da combinação das posições da mensagem e da chave.   
+Vejamos como encriptar a palavra ``ABOBORA''. Iniciamos o processo escrevendo a mensagem. Ao lado de cada letra da mensagem aparece entre par\^enteses o n\'umero que indica a sua posi\c{c}\~ao. Abaixo da mensagem escrevemos as letras da chave criptogr\'afica, repetindo-as de forma c\'iclica quando necess\'ario. Analogamente, ao lado de cada letra da chave aparece entre par\^enteses o n\'umero da posi\c{c}\~ao ocupada de cada letra, e o sinal de soma indica que devemos avan\c{c}ar aquele número de posições. Ao final do processo aparecem as letras encriptadas. Entre parênteses está a posi\c{c}\~ao resultante da combina\c{c}\~ao das posi\c{c}\~oes da mensagem e da chave.   
 }
 \[
 \begin{array}{lllllll||l}
@@ -63,7 +46,7 @@ da combinação das posições da mensagem e da chave.
 \]
   
 \subparagraph{
-Observe que a encriptação polialfabética é mais difícil de ser quebrada do que a monoalfabética uma vez que letras iguais não têm, necessariamente, a mesma encriptação. Observe que nesse tipo de criptografia o emissor precisa passar a chave para o receptor da mensagem de forma segura para que o receptor possa decifra a mensagem, isto é, a chave usada para encriptar a mensagem é mesma que deve ser usada para decifrar a mensagem. Veremos que esse é justamente o ponto fraco nesse tipo de encriptação pois usa a chamada \textit{chave simétrica}, ou seja, a chave usada pelo emissor para codificar a mensagem é a mesma usada pelo receptor para decodificar a mensagem. Nesse processo, a chave deve ser mantida em segredo e bem guardada para garantir que o código não seja quebrado e isso requer algum tipo de contato físico entre emissor e receptor. 
+Observe que a encripta\c{c}\~ao polialfab\'etica \'e mais dif\'icil de ser quebrada que a monoalfab\'etica uma vez que letras iguais n\~ao t\^em, necessariamente, a mesma encripta\c{c}\~ao. Observe que neste tipo de criptografia o emissor precisa passar a chave para o receptor da mensagem de forma segura para que o receptor possa decifrar a mensagem, isto \'e, a chave usada para encriptar a mensagem \'e a mesma que deve ser usada para decifrar a mensagem. Veremos que esse \'e justamente o ponto fraco nesse tipo de encripta\c{c}\~ao pois usa a chamada \textit{chave sim\'etrica}, ou seja, a chave usada pelo emissor para codificar a mensagem \'e a mesma usada pelo receptor para decodificar a mensagem. Nesse processo, a chave deve ser mantida em segredo e bem guardada para garantir que o c\'odigo n\~ao seja quebrado e isso requer algum tipo de contato f\'isico entre emissor e receptor. 
 }
 \subparagraph{
 O contato pessoal era um problema durante a Primeira Guerra Mundial, época em que houve muitos investimentos em máquinas de encriptação automática. O \textit{Enigma} foi uma destas máquinas e era utilizada pelos alemães tanto para criptografar como para descriptografar códigos de guerra. Semelhante a uma máquina de escrever, os primeiros modelos foram patenteados por Arthur Scherbius em 1918. Essas máquinas ganharam popularidade entre as forças militares alemãs devido a facilidade de uso e sua suposta indecifrabilidade do código. 
