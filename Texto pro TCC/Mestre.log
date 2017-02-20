@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.15)  17 FEB 2017 21:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.15)  20 FEB 2017 19:22
 entering extended mode
 **./Mestre.tex
 (Mestre.tex
@@ -356,11 +356,7 @@ Overfull \hbox (60.72049pt too wide) detected at line 46
 []
  []
 
-[4]
-
-LaTeX Warning: Citation `mil' on page 5 undefined on input line 70.
-
-[5]) [6]
+[4] [5]) [6]
 \openout2 = `Num.aux'.
 
  (Num.tex
@@ -427,20 +423,16 @@ Overfull \hbox (32.61884pt too wide) in paragraph at lines 45--52
 ) [9
 
 
-] (Mestre.aux (Pref.aux) (Intro.aux) (Num.aux))
-
-LaTeX Warning: There were undefined references.
-
- )
+] (Mestre.aux (Pref.aux) (Intro.aux) (Num.aux)) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 102 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5824 strings out of 493333
- 73539 string characters out of 3139193
+ 5823 strings out of 493333
+ 73534 string characters out of 3139193
  197661 words of memory out of 3000000
- 9187 multiletter control sequences out of 15000+200000
+ 9186 multiletter control sequences out of 15000+200000
  15271 words of font info for 63 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,7n,25p,3217b,597s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -450,7 +442,7 @@ am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/
 m/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Mestre.pdf (11 pages, 152819 bytes).
+Output written on Mestre.pdf (11 pages, 152468 bytes).
 PDF statistics:
  74 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
