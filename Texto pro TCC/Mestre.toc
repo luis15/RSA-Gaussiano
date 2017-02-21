@@ -33,8 +33,14 @@
 \contentsline {subparagraph}{ Quando acabamos de realizar a fatora\c {c}\~ao, chegamos a um n\'umero fatorado da forma $n = (2^{a_{1}})(3^{a_{2}}) ... (p^{a_{p}})$, todo o n\'umero inteiro pode ser escrito nessa forma, chamada forma fatorada, veja, por exemplo o $12 = (2^2)(3^1)$ e o $19 = (19^1)$. }{8}
 \contentsline {subparagraph}{ Essa forma fatorada nos \'e formalmente apresentada pelo \textit {Teorema da Fatora\c {c}\~ao \'Unica}. Ele nos diz que dado um n\'umero inteiro $n\geq 2$ pode-se escrev\^e-lo de forma \'unica como: }{8}
 \contentsline {paragraph}{ onde $1 < p_1 < ... < p_k $ s\~ao primos e $e_1, ..., e_k$ s\~ao inteiros. }{8}
-\contentsline {subparagraph}{ Mesmo algoritmo da fatora\c {c}\~ao sendo t\~ao simples de se compreender, ele \'e demorado at\'e para os mais modernos computadores. Para se ter uma ideia disto, um computador comum executa cerca de 50 divis\~oes por segundo, para se calcular com certeza que um n\'umero pr\'oximo a $10^{100}$ ele levaria cerca de 317 decilh\~oes de anos. }{9}
-\contentsline {chapter}{Bibliografia}{10}
+\contentsline {subparagraph}{ Mesmo algoritmo da fatora\c {c}\~ao sendo t\~ao simples de se compreender, ele \'e demorado at\'e para os mais modernos computadores. Para se ter uma ideia disto, um computador comum executa cerca de {50} divis\~oes por segundo, para se calcular com certeza que um n\'umero pr\'oximo a $10^{100}$ ele levaria cerca de {317} decilh\~oes de anos. }{9}
+\contentsline {chapter}{\numberline {3}Opera\c {c}\~oes Modulares}{10}
+\contentsline {section}{\numberline {3.1}Defini\c {c}\~ao de m\'odulo}{10}
+\contentsline {subparagraph}{ J\'a lhe foi apresentado anteriormente o conceito da ciclicidade para a defini\c {c}\~ao de restos, neste cap\'itulo iremos nos aprofundar mais sobre esse conceito, estudando as propiedades necess\'arias da aritm\'etica modular para a elabora\c {c}\~ao da cripotgrafia RSA. }{10}
+\contentsline {subparagraph}{ Um dos conceitos mais importantes da aritm\'etica modular \'e o de congru\^encia, representado pelo s\'imbolo $\equiv $. Talvez o exemplo mais comum de congru\^encia em nossas vidas sejam os dias da semana, embora o n\'umero do dia venha a variar ao longo do m\^es, sempre ap\'os {7} dias voltar\'a a ser domingo, por exemplo, logo a semana \'e uma congru\^encia de m\'odulo 7. }{10}
+\contentsline {subparagraph}{ Para exemplificar vamos supor que primeiro domingo deste m\^es foi dia 4, e o \'ultimo ser\'a dia 25, logo temos que }{10}
+\contentsline {subparagraph}{ Fique claro que tornou $25$ congruente a $4$ no m\'odulo $7$ n\~ao foi o fato de ca\'irem no mesmo dia, isso \'e apenas um consequ\^encia, o que os torna congruentes \'e o fato de que divididos pelo m\'odulo, no caso $7$, eles apresentam o mesmo resto. Esse fato n\~ao se repete, por exemplo, se o m\'odulo for 5, neste caso $ 4 \equiv 4 (mod 5)$ e $ 25 \equiv 0 (mod 5)$. }{10}
+\contentsline {chapter}{Bibliografia}{11}
 \select@language {brazil}
 \select@language {brazil}
 \select@language {brazil}
