@@ -28,8 +28,12 @@
 \contentsline {subparagraph}{ Existem infinitos n\'umeros primos, caso n\~ao acredite vamos supor que o conjunto finito de primos seja composto por $p_{1}, p_{2}, ..., p_{r} $. Considerando que o n\'umero inteiro $n=(p_{1})(p_{2})...(p_{r}) + 1$. $n$ deve possuir um fator $p$, que est\'a contido em $p_{1}, p_{2}, ..., p_{r} $, mas isso significa q $p$ divide $1$, o que \'e absurdo e prova que o conjunto n\~ao tem fim. }{8}
 \contentsline {subparagraph}{ Todo o n\'umero que n\~ao \'e primo \'e chamado de \textit {N\'umero Composto}, sendo que este n\'umero composto pode ser escrito em uma combina\c {c}\~ao \'unica de fatores primos. O processo de se descobrir estes fatores \'e chamado de \textit {fatora\c {c}\~ao}. }{8}
 \contentsline {section}{\numberline {2.3}Fatora\c {c}\~{a}o}{8}
-\contentsline {section}{\numberline {2.4}Inverso Multiplicativo}{8}
-\contentsline {chapter}{Bibliografia}{9}
+\contentsline {subparagraph}{ Anteriormente falamos que todo o n\'umero pode ser escrito por uma combina\c {c}\~ao de fatores primos, neste cap\'itulo vamos abordar como se pode obter estes fatores. }{8}
+\contentsline {subparagraph}{ Come\c {c}amos por escolher o n\'umero inteiro $n$ ao qual iremos fatorar, em seguida testamos a sua divisibilidade por $2$, se for tente divid\'i-lo novamente por $2$, sen\~ao passa-se para o pr\'oximo n\'umero primo, o $3$. Repete-se esse procedimento at\'e chegarmos a $\sqrt {n}$, caso n\~ao achemos nenhum fator primo at\'e $\sqrt {n}$, $n$ \'e primo. }{8}
+\contentsline {subparagraph}{ Quando acabamos de realizar a fatora\c {c}\~ao, chegamos a um n\'umero fatorado da forma $n = (2^{a_{1}})(3^{a_{2}}) ... (p^{a_{p}})$, todo o n\'umero inteiro pode ser escrito nessa forma, chamada forma fatorada, veja, por exemplo o $12 = (2^2)(3^1)$ e o $19 = (19^1)$. }{8}
+\contentsline {subparagraph}{ Mesmo sendo um algoritmo t\~ao simples de se compreender, ele \'e demorado at\'e para os mais modernos computadores. Para se ter uma ideia disto, um computador comum executa cerca de 50 divis\~oes por segundo, para se calcular com certeza que um n\'umero pr\'oximo a $10^{100}$ ele levaria cerca de 317 decilh\~oes de anos. }{8}
+\contentsline {section}{\numberline {2.4}Inverso Multiplicativo}{9}
+\contentsline {chapter}{Bibliografia}{10}
 \select@language {brazil}
 \select@language {brazil}
 \select@language {brazil}
