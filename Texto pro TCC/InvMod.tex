@@ -39,5 +39,32 @@ Antes de come\c{c}armos vamos tentar calcular o inverso multiplicativo de $2$ no
 N\~ao encontramos nenhuma resposta pois, simplesmente, n\~ao h\'a. Antes que se pergunte o motivo de n\~ao tentarmos com n\'umeros maiores que $7$, \'e v\'alido lembrar que a partir do $8$ ter\'iamos a repeti\c{c}\~ao de resultados por conta das congru\^encias.
 }
 \subparagraph{
-A opera\c{c}\~ao de inverso multiplicativo s\'o possui resultado em casos onde o n\'umero $n$ ao qual queremos calcular o inverso e o m'odulo s\~ao \textit{primos entre si}, ou seja, n\~ao possuam nenhum fator em comum. Por conta disso usamos os n\'umeros primos no algoritmo RSA.
+A opera\c{c}\~ao de inverso multiplicativo s\'o possui resultado em casos onde o n\'umero $a$ ao qual queremos calcular o inverso e o m'odulo s\~ao \textit{primos entre si}, ou seja, n\~ao possuam nenhum fator em comum. Por conta disso usamos os n\'umeros primos no algoritmo RSA.
+}
+\subparagraph{
+Para comprovar o que foi dito acima, vamos tomar um n\'umero $a$, tal que
+}
+\[	
+	\begin{array}{c}
+		\textit{$a \cdot a' \equiv 1(mod n)$}\\
+	\end{array}
+\]
+\paragraph{
+isso pode ser traduzido em linguagem humana como $n$ divide $ a \cdot a' - 1$. Isso em linguajar matem\'atico pode ser escrito como:
+}
+\[	
+	\begin{array}{c}
+		\textit{$a \cdot a' - 1 = n \cdot k$}\\
+	\end{array}
+\]
+\paragraph{
+como estamos atr\'as de saber se $a$ e $n$ n\~ao possuem fator comum, então h\'a de haver um $k$ inteiro para a equa\c{c}\~ao acima. Nosso primeiro passo para provar isso ser\'a de se criar o conjunto $V(a,n)$, esse conjunto \'e formado por inteiros positivos e pode ser escrito como
+}
+\[	
+	\begin{array}{c}
+		\textit{$x \cdot a + y \cdot n$}\\
+	\end{array}
+\]
+\subparagraph{
+Em um primeiro momento este conjunto e esta nova f\'ormula podem parecer estranhos ao que se via antes, mas 
 }
