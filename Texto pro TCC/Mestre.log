@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.15)  28 FEB 2017 17:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.15)  28 FEB 2017 18:04
 entering extended mode
 **./Mestre.tex
 (Mestre.tex
@@ -422,7 +422,31 @@ Overfull \hbox (52.44705pt too wide) in paragraph at lines 25--25
 
 
 
-]) [14]
+] [14]
+! Argument of \@sect has an extra }.
+<inserted text> 
+                \par 
+l.76 \subparagraph
+                  {
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+{\normalfont \normalsize \bfseries }{\def \@currenvir {array}\edef \@currenvline \ETC.
+! Paragraph ended before \@sect was complete.
+<to be read again> 
+                   \par 
+l.76 \subparagraph
+                  {
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+) [15]
 
 Package babelbib Warning: Command \selectbiblanguage used without package
 (babelbib)                option fixlanguage. Ignored on input line 115.
@@ -477,7 +501,7 @@ Overfull \hbox (32.61884pt too wide) in paragraph at lines 45--52
 |   []\OT1/cmr/m/n/10.95 .
  []
 
-) [15
+) [16
 
 
 ] (Mestre.aux (Pref.aux) (Intro.aux) (Num.aux) (Mod.aux) (InvMod.aux)) )
@@ -501,9 +525,9 @@ e1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
 msfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Mestre.pdf (17 pages, 202817 bytes).
+Output written on Mestre.pdf (18 pages, 204408 bytes).
 PDF statistics:
- 109 PDF objects out of 1000 (max. 8388607)
+ 112 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
