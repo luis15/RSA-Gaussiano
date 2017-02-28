@@ -55,8 +55,10 @@
 \contentsline {subparagraph}{ Nosso objetivo com o decorrer deste cap\'itulo \'e o de explicar a opera\c {c}\~ao matem\'atica mais importante para para o algoritmo RSA. Para podermos comprend\^e-la vamos relembrar do cenceito ensinado no col\'egio de inverso multiplicativo, que consiste em obter o n\'umero que multiplicado a um n\'umero $n$ qualquer resulte em $1$. A opera\c {c}\~ao do inverso modular parte do mesmo princ\'ipio. }{13}
 \contentsline {subparagraph}{ Vamos supor que queremos obter o inverso modular de $6$ para o m\'odulo $7$, o que n\'os teremos que fazer ent\~ao \'e encontrar qual o n\'umero que multiplicado por $6$ tem resto $1$ quando dividido por $7$. Come\c {c}amos pelo $1$, teremos que $6 \cdot 1 = 6$, $6 \equiv 6 (mod7)$. Com $2$ o resultado ser\'a $12$, logo $12 \equiv 5 (mod7)$, que para n\'os tamb\'em n\~ao serve. Tentando o $3$ obtemos $4$ e com $4$ obtemos $3$. Com o $5$ nosso retorno ser\'a $2$. Finalmente quando chegamos ao $6$ n\'os temos que $6 \cdot 6 = 36$, $36 \equiv 1 (mod 7)$. Com isso podemos concluir que o inverso multiplicativo de $6$ no m\'odulo $7$ \'e o pr\'opio $6$. }{13}
 \contentsline {subparagraph}{ Para simplificar o que foi dito acima, podemos dizer a opera\c {c}\~ao de inverso multiplicativo no m\'odulo $n$ para $a$ consiste em encontar um n\'umero $a'$ tal que: }{13}
-\contentsline {section}{\numberline {4.2}Inexist\^encia de inversos}{14}
+\contentsline {section}{\numberline {4.2}Inexist\^encia e exist\^encia de inversos}{14}
 \contentsline {subparagraph}{ Antes de come\c {c}armos vamos tentar calcular o inverso multiplicativo de $2$ no m\'odulo $8$, vamos l\'a: }{14}
+\contentsline {subparagraph}{ N\~ao encontramos nenhuma resposta pois, simplesmente, n\~ao h\'a. Antes que se pergunte o motivo de n\~ao tentarmos com n\'umeros maiores que $7$, \'e v\'alido lembrar que a partir do $8$ ter\'iamos a repeti\c {c}\~ao de resultados por conta das congru\^encias. }{14}
+\contentsline {subparagraph}{ A opera\c {c}\~ao de inverso multiplicativo s\'o possui resultado em casos onde o n\'umero $n$ ao qual queremos calcular o inverso e o m'odulo s\~ao \textit {primos entre si}, ou seja, n\~ao possuam nenhum fator em comum. Por conta disso usamos os n\'umeros primos no algoritmo RSA. }{14}
 \contentsline {chapter}{Bibliografia}{15}
 \select@language {brazil}
 \select@language {brazil}
