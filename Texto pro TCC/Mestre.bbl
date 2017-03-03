@@ -13,6 +13,13 @@
   \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
 
 \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+\bibitem [{Cou07}]{coutinho}
+\btxnamefont {\btxlastnamefont {Coutinho}, Severino\btxfnamespacelong
+  Collier}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase
+  {Criptografia}{Criptografia}}.
+\newblock \btxjournalfont {Rio de Janeiro, IMPA/SBM, Programa de
+  Inicia{\c{c}}{\~a}o Cient{\'\i}fica da OBMEP}, 2007.
+
 \bibitem [{DH76}]{newdirections}
 \btxnamefont {\btxlastnamefont {Diffie}, Whitfield} \btxandlong {}\
   \btxnamefont {Martin \btxlastnamefont {Hellman}}\btxauthorcolon\
@@ -39,7 +46,7 @@
   gegebenen grosse}{Ueber die Anzahl der Primzahlen unter einer gegebenen
   Grosse}}.
 \newblock \btxjournalfont {Ges. Math. Werke und Wissenschaftlicher
-  Nachla{\ss}}, 2:145--155, 1859.
+  Nachla{\s{s}}}, 2:145--155, 1859.
 
 \bibitem [{RSA78}]{rivest}
 \btxnamefont {\btxlastnamefont {Rivest}, Ronald\btxfnamespacelong L},

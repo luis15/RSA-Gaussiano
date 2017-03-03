@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.15)  3 MAR 2017 12:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.15)  3 MAR 2017 15:22
 entering extended mode
 **./Mestre.tex
 (Mestre.tex
@@ -343,14 +343,14 @@ Runaway argument?
 ! Paragraph ended before \@dottedtocline was complete.
 <to be read again> 
                    \par 
-l.65 ...se preferir $a'$ e $k$, logo: \[ \def \par
+l.64 ...se preferir $a'$ e $k$, logo: \[ \def \par
                                                    }{15}
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 ! Extra }, or forgotten \endgroup.
-l.65 ... preferir $a'$ e $k$, logo: \[ \def \par }
+l.64 ... preferir $a'$ e $k$, logo: \[ \def \par }
                                                   {15}
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -365,7 +365,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.68 \contentsline {chapter}{Bibliografia}{16}
+l.67 \contentsline {chapter}{Bibliografia}{16}
                                               
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -400,6 +400,18 @@ Cap\'{\i }tulo 2.
 
 
 ]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 35.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 35.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/ui' in size <10.95> not available
+(Font)              Font shape `OT1/cmr/m/ui' tried instead on input line 35.
+
+
 Overfull \hbox (116.78355pt too wide) in paragraph at lines 49--49
 \OML/cmm/m/it/10.95 n \OMS/cmsy/m/n/10.95  \OT1/cmr/m/n/10.95 2$ \OT1/cmr/bx/n/10.95 pode-se es-crev^e-lo de forma uni
 ca como: [] [] 
@@ -497,7 +509,12 @@ babelbib: Using the BibTeX style's default font for `ISSN'.
 babelbib: Using the BibTeX style's default font for `url'.
 babelbib: Using the BibTeX style's default font for `numeral'.
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--23
+Underfull \hbox (badness 2401) in paragraph at lines 17--22
+[]\OT1/cmr/m/n/10.95 Coutinho, Se-ve-rino Col-lier: |   [].  Rio de Ja-neiro,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--30
 []\OT1/cmr/m/n/10.95 Diffie, Whit-fi-eld e Mar-tin Hell-man:
  []
 
@@ -509,28 +526,28 @@ See the babelbib package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.33 ...tp://www.claymath.org/millennium-problems}
+l.40 ...tp://www.claymath.org/millennium-problems}
                                                   .
 Please define a \url command for printing URLs before \begin{document}, e.\,g.
 by loading the package `url.sty'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--35
+Underfull \hbox (badness 10000) in paragraph at lines 39--42
 []|   []\OT1/cmr/m/n/10.95 .
  []
 
 
-Overfull \hbox (91.15569pt too wide) in paragraph at lines 37--43
+Overfull \hbox (91.15569pt too wide) in paragraph at lines 44--50
 []\OT1/cmr/m/n/10.95 Riemann, Ber-nhard: |   [].
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--52
+Underfull \hbox (badness 10000) in paragraph at lines 52--59
 []\OT1/cmr/m/n/10.95 Rivest, Ro-nald L, Adi Sha-mir e Le-o-nard Adle-man:
  []
 
 
-Overfull \hbox (32.61884pt too wide) in paragraph at lines 45--52
+Overfull \hbox (32.61884pt too wide) in paragraph at lines 52--59
 |   []\OT1/cmr/m/n/10.95 .
  []
 
@@ -543,24 +560,25 @@ Overfull \hbox (32.61884pt too wide) in paragraph at lines 45--52
 ### simple group (level 1) entered at line 102 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5844 strings out of 493333
- 73705 string characters out of 3139193
- 198248 words of memory out of 3000000
- 9192 multiletter control sequences out of 15000+200000
- 15617 words of font info for 64 fonts, out of 3000000 for 9000
+ 5873 strings out of 493333
+ 74155 string characters out of 3139193
+ 198256 words of memory out of 3000000
+ 9216 multiletter control sequences out of 15000+200000
+ 16167 words of font info for 66 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,10n,25p,3217b,599s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Mestre.pdf (18 pages, 204554 bytes).
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmu10.pfb>
+Output written on Mestre.pdf (18 pages, 221908 bytes).
 PDF statistics:
- 112 PDF objects out of 1000 (max. 8388607)
+ 120 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
