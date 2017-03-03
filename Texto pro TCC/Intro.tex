@@ -5,20 +5,20 @@
 O sigilo sempre foi uma arma explorada pelos seres humanos para vencer certas batalhas, mesmo que na cotidiana miss\~{a}o de se 	comunicar. Foi a partir dessa necessidade que se criou o que chamamos de \textit{criptografia}, nome dado ao conjunto de técnicas usadas para se falar e escrever em c\'odigos. Seu objetivo \'{e} garantir que apenas as pessoas  envolvidas na comunica\c{c}\~ao possam compreender a mensagem codificada (ou criptogtafada), garantindo que terceiros n\~ao saibam o que foi conversado.
 }
 \subparagraph{
-Para compreender como funciona o processo de codifica\c{c}\~ao e decodifica\c{c}\~ao faz-se necess\'ario o uso de uma série de termos t\'ecnicos, para fins pedagógicos iremos introduzir tais conceitos apresentando um dos primeiros algor\'itmos criptogr\'ificos que se tem conhecimento, a criptografia de C\'esar, al\'em de seus sucessores. 
+Para compreender como funciona o processo de codifica\c{c}\~ao e decodifica\c{c}\~ao faz-se necess\'ario o uso de uma série de termos t\'ecnicos, para fins pedagógicos iremos introduzir tais conceitos apresentando um dos primeiros algor\'itmos criptogr\'aficos que se tem conhecimento, a criptografia de C\'esar, al\'em de seus sucessores. 
 }
 \subparagraph{
-A chamada \textit{criptografia de C\'esar}, criada pelo imperador romano C\'esar Augusto, consistia em substituir cada letra 
+A chamada \textit{criptografia de C\'esar}, criada pelo imperador romano C\'esar Augusto, consistia em substituir cada letra da mensagem
 por outra que estivesse a tr\^es posi\c{c}\~oes a frente, como, por exemplo, a letra \textbf{A} era substitu\'ida pela letra \textbf{D}.  
 }
 \subparagraph{
-Uma forma muito natural de se generalizar o algoritmo de C\'esar \'e fazer a troca da letra da mensagem por outra em uma posi\c{c}\~ao qualquer fixada. A chamada \textit{criptografia de substitui\c{c}\~ao monoalfab\'etica} consite em substituir cada letra pela a que ocupa \textit{n} posi\c{c}\~oes a sua frente, sendo que o n\'umero \textit{n} \'e conhecido apenas pelo emissor e pelo receptor da mensagem. Chamamos este n\'umero \textit{n} de \textit{chave criptogr\'afica}. Para podermos compreender a mensagem, precisamos substituir as letras que formam a mensagem criptografado pelas as que est\~ao {n} posi\c{c}\~oes antes.
+Uma forma muito natural de se generalizar o algoritmo de C\'esar \'e fazer a troca de cada letra da mensagem por outra em uma posi\c{c}\~ao qualquer fixada. A chamada \textit{criptografia de substitui\c{c}\~ao monoalfab\'etica} consite em substituir cada letra por outra que ocupe $n$ posi\c{c}\~oes a sua frente, sendo que o n\'umero $n$ \'e conhecido apenas pelo emissor e pelo receptor da mensagem. Chamamos este n\'umero $n$ de \textit{chave criptogr\'afica}. Para podermos compreender a mensagem, precisamos substituir as letras que formam a mensagem criptografada pelas as que est\~ao $n$ posi\c{c}\~oes antes.
 }
 \subparagraph{
 O algoritmo monoalfab\'etico tem a caracter\'istica indesejada de ser de f\'acil decodifica\c{c}\~ao, pois possui apenas {26} chaves poss\'iveis, e isso faz com que no m\'aximo em {26} tentativas o c\'odigo seja decifrado. Com o intuito de dificultar a quebra do c\'odigo monoalfab\'etico foram propostas as \textit{cifras de substitui\c{c}\~ao polialfab\'eticas} em que a chave criptogr\'afica passa a ser uma \textit{palavra} ao inv\'es de um n\'umero. A ideia \'e usar as posi\c{c}\~oes ocupadas pelas letras da chave para determinar o n\'umero de posi\c{c}\~oes que devemos avan\c{c}ar para obter a posi\c{c}\~ao da letra encriptada. Vejamos, por meio de um exemplo, como funciona esse sistema criptogr\'afico.
 }
 \subparagraph{
-Sejam ``SENHA'' a nossa chave criptogr\'afica e ``ABOBORA'' a mensagem a ser encriptada. Abaixo colocamos as letras do alfabeto com suas respectivas posi\c{c}\~oes. Observe que repetimos a primeira linha de letras para facilitar a localiza\c{c}\~ao da posi\c{c}\~o da letra encriptada e usamos a barra para indicar que estamos estamos no segundo ciclo. 
+Sejam ``SENHA'' a nossa chave criptogr\'afica e ``ABOBORA'' a mensagem a ser encriptada. Abaixo colocamos as letras do alfabeto com suas respectivas posi\c{c}\~oes. Observe que repetimos a primeira linha de letras para facilitar a localiza\c{c}\~ao da posi\c{c}\~ao da letra encriptada e usamos a barra para indicar que estamos no segundo ciclo. 
 }
 \[
 \begin{array}{ccccccccccccc}
@@ -49,29 +49,26 @@ Vejamos como encriptar a palavra ``ABOBORA''. Iniciamos o processo escrevendo a 
 Observe que a encripta\c{c}\~ao polialfab\'etica \'e mais dif\'icil de ser quebrada que a monoalfab\'etica uma vez que letras iguais n\~ao t\^em, necessariamente, a mesma encripta\c{c}\~ao. Observe que neste tipo de criptografia o emissor precisa passar a chave para o receptor da mensagem de forma segura para que o receptor possa decifrar a mensagem, isto \'e, a chave usada para encriptar a mensagem \'e a mesma que deve ser usada para decifrar a mensagem. Veremos que esse \'e justamente o ponto fraco nesse tipo de encripta\c{c}\~ao pois usa a chamada \textit{chave sim\'etrica}, ou seja, a chave usada pelo emissor para codificar a mensagem \'e a mesma usada pelo receptor para decodificar a mensagem. Nesse processo, a chave deve ser mantida em segredo e bem guardada para garantir que o c\'odigo n\~ao seja quebrado e isso requer algum tipo de contato f\'isico entre emissor e receptor. 
 }
 \subparagraph{
-Durante a  Primeira Guerra Mundial o contato f\'isico para a cria\c{c}\~ao de chaves era complicado, isso levou a cria\c{c}\~ao de m\'aquinas autom\'aticas de cripotgrafia. O \textit{Enigma} foi uma destas m\'aquinas e era utilizada pelos alem\~aes tanto para criptografar como para descriptografar c\'odigos de guerra. Semelhante a uma m\'aquina de escrever, os primeiros modelos foram patenteados por Arthur Scherbius em 1918. Essas m\'aquinas ganharam popularidade entre as for\c{c}as militares alem\~aes devido a facilidade de uso e sua suposta indecifrabilidade do c\'odigo. 
+Durante a  Primeira Guerra Mundial o contato f\'isico para a troca de chaves era complicado, e isso estimulou a cria\c{c}\~ao de m\'aquinas autom\'aticas de criptografia. O \textit{Enigma} foi uma destas m\'aquinas e era utilizada pelos alem\~aes tanto para criptografar como para descriptografar c\'odigos de guerra. Semelhante a uma m\'aquina de escrever, os primeiros modelos foram patenteados por Arthur Scherbius em 1918. Essas m\'aquinas ganharam popularidade entre as for\c{c}as militares alem\~aes devido a facilidade de uso e sua suposta indecifrabilidade do c\'odigo. 
 }
 \subparagraph{
-O matem\'atico Alan Turing foi o respons\'avel por quebrar o c\'odigo dos alem\~aes durante a Segunda Guerra Mundial. A descoberta de Turing mostrou a fragilidade da criptografia baseada em chave sim\'etrica e colocou novos desafios \`a criptografia. O grande problema passou a ser a quest\~ao dos protocolos, isto \'e, como transmitir a chave para o receptor de forma segura sem que haja contato f\'isico entre as partes? 
+O matem\'atico Alan Turing foi o respons\'avel por quebrar o c\'odigo dos alem\~aes durante a Segunda Guerra Mundial. A descoberta de Turing mostrou a fragilidade da criptografia baseada em chave sim\'etrica e colocou novos desafios \`a criptografia. O grande problema passou a ser a quest\~ao dos protocolos, isto \'e, como transmitir a chave para o receptor de forma segura sem que seja necess\'ario o contato f\'isico entre as partes? 
 }
-\subparagraph{
+\subparagraph{%reescrever este parágrafo
 Em 1949, com a publica\c{c}\~ao do artigo \textit{Communication Theory of Secrecy Systems} \cite{shannon} de Shannon, temos a inaugura\c{c}\~ao da criptografia moderna. Neste artigo ele escreve matematicamente que cifras teoricamente inquebr\'aveis s\~ao semelhantes as cifras polialfab\'eticas. Com isso ele transformou a criptografia que at\'e ent\~ao era uma arte em uma ci\^encia.
 }
 \subparagraph{
-Em 1976 Diffie e Hellman publicaram \textit{New Directions in Cryptography} \cite{newdirections}. Neste artigo h\'a a introdu\c{c}\~ao ao conceito de \textit{chave assim\'etrica}, onde h\'a chaves diferentes entre o emissor de mensagens e seu receptor. Com a assimetria de chaves n\~ao era mais necess\'ario um contato t\~ao pr\'oximo entre emissor e receptor, que j\'a havia sido problema no passado. Neste mesmo artigo \'e apresentado o primeiro algoritmo de criptografia de chave assim\'etrica ou como \'e mais conhecido nos dias atuais \textit{Algorito de Criptografia de Chave P\'ublica}, o protocolo de Diffie-Hellman.
+Em 1976 Diffie e Hellman publicaram \textit{New Directions in Cryptography} \cite{newdirections}. Neste artigo h\'a a introdu\c{c}\~ao ao conceito de \textit{chave assim\'etrica}, onde h\'a chaves diferentes entre o emissor da mensagem e seu receptor. Com a assimetria de chaves n\~ao era mais necess\'ario um contato t\~ao pr\'oximo entre emissor e receptor. Neste mesmo artigo \'e apresentado o primeiro algoritmo de criptografia de chave assim\'etrica ou como \'e mais conhecido nos dias atuais \textit{Algoritmo de Criptografia de Chave P\'ublica}, o protocolo de Diffie-Hellman.
 }
 \subparagraph{
 Um dos algoritmos mais famosos da criptografia assim\'etrica \'e o \textit{RSA}(RIVEST et al, 1983) \cite{rivest}, algoritmo desenvolvido por Rivest, Shamir e Adleman. Este algoritmo est\'a presente em muitas aplica\c{c}\~oes de alta seguran\c{c}a, como bancos, sistemas militares e servidores de internet, e ele utiliza para a gera\c{c}\~ao de chaves dois n\'umeros primos de grandeza superior a $2^{512}$ multiplicados entre si.
 }
 \subparagraph{
-Neste trabalho ser\'a feita a exposi\c{c}\~ao detalhada da chamada criptografia RSA cl\'assica, enfatizando a parte matem\'atica relacionada a teoria dos n\'umeros, necess\'aria para a constru\c{c}\~ao do algoritmo.
+Neste trabalho ser\'a feita a exposi\c{c}\~ao detalhada da chamada criptografia RSA cl\'assica, enfatizando a parte matem\'atica relacionada \`{a} Teoria dos n\'umeros, necess\'aria para a constru\c{c}\~ao do algoritmo.
 }
 \subparagraph{
-O maior objetivo deste \'e analisar a viabilidade em se propor um criptografia derivada do RSA, mas centrada no conjunto dos n\'umeros primos de Gauss, que s\~ao todos os n\'umeros complexos de forma $a + bi$ tais que $a$ e $b$ existam no conjunto dos inteiros e $a^2 + b^2$ resulte em um n\'umero primo, a qual chamamos de criptografia RSA gaussiana.
+O maior objetivo deste artigo \'e analisar a viabilidade de uma criptografia inspirada pelo algoritmo RSA cl\'assico, a qual substitui o s n\'umeros primos pelo conjunto denominado de \textit{primos de Gauss}, resultando, assim, no que chamamos por \textit{criptografia RSA gaussiana}. Para que tal algoritmo seja vi\'avel \'e necess\'ario se adaptar uma s\'erie de propiedades relativas aos n\'umeros primos aos n\'umero primos de Gauss. Dessa forma, nossa tarefa ser\' adaptar tanto quanto o poss\'ivel os primos de Gauss \`as dmosnta\c{c}\~oes desses teoremas.
 }
 \subparagraph{
-Como primeiro avanço necess\'ario para este novo algoritmo se faz necess\'aria a adapta\c{c}\~ao de uma s\'erie de resultados pr\'opios dos n\'umeros primos para os n\'umeros primos gaussianos, por isso grande parte do trabalho se centrar\'a em demonstrar resultados matem\'aticos e discutir algumas dificuladades em obt\^e-los.
-}
-\subparagraph{
-Como se trata de uma proposta inovadora, deixamos para trabalhos futuros a an\'alise comparativa entre a RSA cl\'assica e a RSA gaussiana.
+Como se trata de uma proposta inovadora, deixamos para trabalhos futuros uma an\'alise comparativa entre as criptografias RSA cl\'assica e a RSA gaussiana.
 }
