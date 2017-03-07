@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.15)  6 MAR 2017 21:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.15)  6 MAR 2017 21:36
 entering extended mode
 **./Mestre.tex
 (Mestre.tex
@@ -451,7 +451,18 @@ Overfull \hbox (42.16016pt too wide) in paragraph at lines 95--95
   \OT1/cmr/bx/n/10.95 Que pode ser or-ga-ni-zada como: [] [] 
  []
 
-) [15]
+
+Overfull \hbox (2.77716pt too wide) in paragraph at lines 114--114
+\OT1/cmr/bx/n/10.95 muito im-por-tante para nosso pros-se-gui-mento e o se-guinte co-rolario:
+ []
+
+[15]
+Overfull \hbox (170.34532pt too wide) in paragraph at lines 117--117
+  \OT1/cmr/bx/it/10.95 Se-jam $\OML/cmm/m/it/10.95 a < n$ \OT1/cmr/bx/it/10.95 in-tei-ros po-si-ti-vos sem fa-to-res co-
+muns, se : [] [] 
+ []
+
+) [16]
 
 Package babelbib Warning: Command \selectbiblanguage used without package
 (babelbib)                option fixlanguage. Ignored on input line 115.
@@ -520,7 +531,7 @@ Overfull \hbox (32.61884pt too wide) in paragraph at lines 52--59
 |   []\OT1/cmr/m/n/10.95 .
  []
 
-) [16
+) [17
 
 
 ] (Mestre.aux (Pref.aux) (Intro.aux) (Num.aux) (Mod.aux) (InvMod.aux)) )
@@ -546,9 +557,9 @@ fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Prog
 amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmu10.pfb>
-Output written on Mestre.pdf (18 pages, 230526 bytes).
+Output written on Mestre.pdf (19 pages, 233067 bytes).
 PDF statistics:
- 124 PDF objects out of 1000 (max. 8388607)
+ 128 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
