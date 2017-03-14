@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.15)  14 MAR 2017 20:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.15)  14 MAR 2017 20:18
 entering extended mode
 **./Mestre.tex
 (Mestre.tex
@@ -467,43 +467,33 @@ muns, se : [] []
 
  (TCR.tex
 Cap\'{\i }tulo 5.
-! Missing $ inserted.
-<inserted text> 
-                $
-l.11 		$n = 3q_
-               1 + 1$ e $n = 5q_2 + 3$
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.12 	\end{array}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+Overfull \hbox (49.33151pt too wide) in paragraph at lines 33--33
+  \OT1/cmr/bx/n/10.95 Como $\OT1/cmr/m/n/10.95 5 \OMS/cmsy/m/n/10.95  \OT1/cmr/m/n/10.95 2(\OML/cmm/m/it/10.95 mod\OT1/
+cmr/m/n/10.95 3)$\OT1/cmr/bx/n/10.95 , subs-titumos: [] [] 
+ []
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.19 		$n \equiv
-                 1 (mod 3)$ e $n \equiv 3 (mod 5)$
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.20 	\end{array}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+Overfull \hbox (144.94954pt too wide) in paragraph at lines 41--41
+  \OT1/cmr/bx/n/10.95 Feito isso, pas-sa-mos $\OT1/cmr/m/n/10.95 2$ \OT1/cmr/bx/n/10.95 para o ou-tro lado da equac~ao 
+[] [] 
+ []
 
-) [17
+
+Overfull \hbox (37.53688pt too wide) in paragraph at lines 49--49
+\OT1/cmr/bx/n/10.95 mos a equac~ao por $\OT1/cmr/m/n/10.95 2$\OT1/cmr/bx/n/10.95 , e ob-te-mos [] [] 
+ []
+
+[17
 
 
 
 ]
+Overfull \hbox (9.98108pt too wide) in paragraph at lines 57--57
+  \OT1/cmr/bx/n/10.95 Com isso, con-clumos que [] [] 
+ []
+
+) [18]
 
 Package babelbib Warning: Command \selectbiblanguage used without package
 (babelbib)                option fixlanguage. Ignored on input line 116.
@@ -572,7 +562,7 @@ Overfull \hbox (32.61884pt too wide) in paragraph at lines 52--59
 |   []\OT1/cmr/m/n/10.95 .
  []
 
-) [18
+) [19
 
 
 ] (Mestre.aux (Pref.aux) (Intro.aux) (Num.aux) (Mod.aux) (InvMod.aux) (TCR.aux)) )
@@ -598,9 +588,9 @@ fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Prog
 amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmu10.pfb>
-Output written on Mestre.pdf (20 pages, 234649 bytes).
+Output written on Mestre.pdf (21 pages, 236102 bytes).
 PDF statistics:
- 131 PDF objects out of 1000 (max. 8388607)
+ 134 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
