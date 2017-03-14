@@ -75,6 +75,8 @@
 \contentsline {subparagraph}{ Nos cap\'itulos seguintes poderemos ver como iremos aplicar estas propiedades, que nos ser\~ao muito \'uteis para agilizar nossos c\'alculos. }{16}
 \contentsline {chapter}{\numberline {5}T\'ecnicas para facilitar opera\c {c}\~oes}{17}
 \contentsline {section}{\numberline {5.1}Teorema chin\^es do resto}{17}
+\contentsline {subparagraph}{ Para sermos iniciados nesta t\'ecnica, vamos analisar o seguinte problema: Qual o menor inteiro que possui resto $1$ na divis\~ao por $3$ e resto $3$ na divis\~ao por $5$. Podemos vir a tranformar esse problema nas seguintes equa\c {c}\~oes: }{17}
+\contentsline {paragraph}{ Essas equa\c {c}\~oes tamb\'em podem ser denotadas em forma modular como: }{17}
 \contentsline {chapter}{Bibliografia}{18}
 \select@language {brazil}
 \select@language {brazil}
