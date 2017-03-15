@@ -95,7 +95,7 @@ Este procedimento foi feito apenas para provar que a equa\c{c}\~ao deixa resto 1
 Ap\'os tudo isso feito ainda n\~ao possu\'imos a solu\c{c}\~ao final, mas j\'a sabemos que \'e um n\'umero da forma $15q_3 + 7$, substituindo $q_3$ or $0$, iremos obter $7$, que \'e o resultado procurado.
 }
 
-\section{O teorema}
+\section{Provas ao teorema}
 
 \subparagraph{
 O teorema chin\^es do resto \'e um procedimento tomado ara resolver sistema de congru\^encias, como o descrito acima. Ele foi descrito pela primeira vez pelo Manual de aritm\'etica do mestre Sun, por volta do s\'eculo III d.C. 
@@ -150,3 +150,44 @@ Agora vamos supor que $m$ e $n$ s\~ao primos entre si. Pelo teorema apresentado 
 		\textit{$ k \equiv m'\cdot(b-a) (mod n)$}\\
 	\end{array}
 \]
+\paragraph{
+que pode ser escrita como:
+}
+\[	
+	\begin{array}{c}
+		\textit{$ k \equiv m'\cdot(b-a)+n \cdot t$, para um inteiro $t$ qualquer}\\
+	\end{array}
+\]
+\subparagraph{
+Substituindo a parte de $k$, n\'os obtemos
+}
+\[	
+	\begin{array}{c}
+		\textit{$ x_0 \equiv a + m (m'\cdot(b-a)+n \cdot t) $}\\
+	\end{array}
+\]
+\paragraph{
+Podemos ver agora que para qualquer $t$, $a + m (m'\cdot(b-a)+n \cdot t$ \'e parte da solu\c{c}\~ao da congru\^encia, sabendo disso, agora podemos descrever o teorema em si, que ser\'a feito na pr\'oxima se\c{c}\~ao.
+}
+
+\section{O teorema chin\^es do resto}
+\subparagraph{
+\textit{Teorema chin\^es do resto} - Sejam $m$ e $n$ inteiros positivos primos entre si. Se $a$ e $b$ s\~ao inteiros quaisquer, ent\~ao o sistema
+}
+\[	
+	\begin{array}{c}
+		\textit{$ x \equiv a (mod m) $}\\
+		\textit{$ x \equiv b (mod n) $}
+	\end{array}
+\]
+\paragraph{
+sempre tem solu\c{c}\~ao e qualquer uma de suas solu\c{c}\~oes pode ser escrita na forma
+}
+\[	
+	\begin{array}{c}
+		\textit{$ a + m \cdot(m' \cdot (b-a) + n \cdot n) $}\\
+	\end{array}
+\]
+\paragraph{
+onde $t$ \'e um inteiro qualquer e $m'$ \'e o inverso de $m$ no m\'odulo $n$.
+}

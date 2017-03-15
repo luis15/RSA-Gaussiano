@@ -87,7 +87,7 @@
 \contentsline {paragraph}{ Feito isso, vamos por o $3$ em evid\^encia em todos os lugares, obtendo: }{18}
 \contentsline {paragraph}{ Este procedimento foi feito apenas para provar que a equa\c {c}\~ao deixa resto 1 se dividida por 3, de forma an\'aloga, abaixo \'e mostrado como ela deixa resto $2$ quando dividida por $5$. }{18}
 \contentsline {subparagraph}{ Ap\'os tudo isso feito ainda n\~ao possu\'imos a solu\c {c}\~ao final, mas j\'a sabemos que \'e um n\'umero da forma $15q_3 + 7$, substituindo $q_3$ or $0$, iremos obter $7$, que \'e o resultado procurado. }{18}
-\contentsline {section}{\numberline {5.2}O teorema}{18}
+\contentsline {section}{\numberline {5.2}Provas ao teorema}{18}
 \contentsline {subparagraph}{ O teorema chin\^es do resto \'e um procedimento tomado ara resolver sistema de congru\^encias, como o descrito acima. Ele foi descrito pela primeira vez pelo Manual de aritm\'etica do mestre Sun, por volta do s\'eculo III d.C. }{18}
 \contentsline {subparagraph}{ Para ver a defini\c {c}\~ao formal desse teorema, vamos considerar o sistema }{19}
 \contentsline {paragraph}{ nele, $n$ e $m$ s\~ao inteiros diferentes entre si. Tomemos $x_0$ como um n\'umero cappaz de satisfazer ambas as congru\^encia de forma simult\^anea e teremos: }{19}
@@ -95,7 +95,14 @@
 \contentsline {paragraph}{ Feito isso, chegaremos em }{19}
 \contentsline {paragraph}{ que pode ser substitu\'ida por }{19}
 \contentsline {subparagraph}{ Agora vamos supor que $m$ e $n$ s\~ao primos entre si. Pelo teorema apresentado no cap\'ituo sobre inversos multiplicativos n\'os j\'a sabemos que eles possuem inverso multiplicativo um para o outro. Tomemos $m'$ como o inverso de $m$ no m\'odulo $n$. Multipplicando toda a congru\^encia por $m'$ obtemos }{19}
-\contentsline {chapter}{Bibliografia}{20}
+\contentsline {paragraph}{ que pode ser escrita como: }{19}
+\contentsline {subparagraph}{ Substituindo a parte de $k$, n\'os obtemos }{19}
+\contentsline {paragraph}{ Podemos ver agora que para qualquer $t$, $a + m (m'\cdot (b-a)+n \cdot t$ \'e parte da solu\c {c}\~ao da congru\^encia, sabendo disso, agora podemos descrever o teorema em si, que ser\'a feito na pr\'oxima se\c {c}\~ao. }{20}
+\contentsline {section}{\numberline {5.3}O teorema chin\^es do resto}{20}
+\contentsline {subparagraph}{ \textit {Teorema chin\^es do resto} - Sejam $m$ e $n$ inteiros positivos primos entre si. Se $a$ e $b$ s\~ao inteiros quaisquer, ent\~ao o sistema }{20}
+\contentsline {paragraph}{ sempre tem solu\c {c}\~ao e qualquer uma de suas solu\c {c}\~oes pode ser escrita na forma }{20}
+\contentsline {paragraph}{ onde $t$ \'e um inteiro qualquer e $m'$ \'e o inverso de $m$ no m\'odulo $n$. }{20}
+\contentsline {chapter}{Bibliografia}{21}
 \select@language {brazil}
 \select@language {brazil}
 \select@language {brazil}
