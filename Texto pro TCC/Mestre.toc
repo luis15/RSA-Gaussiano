@@ -73,7 +73,7 @@
 \contentsline {paragraph}{ \textit {Sejam $a<n$ inteiros positivos sem fatores comuns, se :} }{16}
 \contentsline {paragraph}{ \textit {ent\~ao:} }{16}
 \contentsline {subparagraph}{ Nos cap\'itulos seguintes poderemos ver como iremos aplicar estas propiedades, que nos ser\~ao muito \'uteis para agilizar nossos c\'alculos. }{16}
-\contentsline {chapter}{\numberline {5}Teorama chin\^es do resto}{17}
+\contentsline {chapter}{\numberline {5}Teorema chin\^es do resto}{17}
 \contentsline {section}{\numberline {5.1}Introdu\c {c}\~ao a t\'ecnica}{17}
 \contentsline {subparagraph}{ Para sermos iniciados nesta t\'ecnica, vamos analisar o seguinte problema: Qual o menor inteiro que possui resto $1$ na divis\~ao por $3$ e resto $2$ na divis\~ao por $5$. Podemos vir a tranformar esse problema nas seguintes equa\c {c}\~oes: }{17}
 \contentsline {paragraph}{ Essas equa\c {c}\~oes tamb\'em podem ser denotadas em forma modular como: }{17}
@@ -87,7 +87,15 @@
 \contentsline {paragraph}{ Feito isso, vamos por o $3$ em evid\^encia em todos os lugares, obtendo: }{18}
 \contentsline {paragraph}{ Este procedimento foi feito apenas para provar que a equa\c {c}\~ao deixa resto 1 se dividida por 3, de forma an\'aloga, abaixo \'e mostrado como ela deixa resto $2$ quando dividida por $5$. }{18}
 \contentsline {subparagraph}{ Ap\'os tudo isso feito ainda n\~ao possu\'imos a solu\c {c}\~ao final, mas j\'a sabemos que \'e um n\'umero da forma $15q_3 + 7$, substituindo $q_3$ or $0$, iremos obter $7$, que \'e o resultado procurado. }{18}
-\contentsline {chapter}{Bibliografia}{19}
+\contentsline {section}{\numberline {5.2}O teorema}{18}
+\contentsline {subparagraph}{ O teorema chin\^es do resto \'e um procedimento tomado ara resolver sistema de congru\^encias, como o descrito acima. Ele foi descrito pela primeira vez pelo Manual de aritm\'etica do mestre Sun, por volta do s\'eculo III d.C. }{18}
+\contentsline {subparagraph}{ Para ver a defini\c {c}\~ao formal desse teorema, vamos considerar o sistema }{19}
+\contentsline {paragraph}{ nele, $n$ e $m$ s\~ao inteiros diferentes entre si. Tomemos $x_0$ como um n\'umero cappaz de satisfazer ambas as congru\^encia de forma simult\^anea e teremos: }{19}
+\contentsline {paragraph}{ Para podermos juntar ambas as equa\c {c}\~oes converteremos uma em equa\c {c}\~ao, nesse caso teremos }{19}
+\contentsline {paragraph}{ Feito isso, chegaremos em }{19}
+\contentsline {paragraph}{ que pode ser substitu\'ida por }{19}
+\contentsline {subparagraph}{ Agora vamos supor que $m$ e $n$ s\~ao primos entre si. Pelo teorema apresentado no cap\'ituo sobre inversos multiplicativos n\'os j\'a sabemos que eles possuem inverso multiplicativo um para o outro. Tomemos $m'$ como o inverso de $m$ no m\'odulo $n$. Multipplicando toda a congru\^encia por $m'$ obtemos }{19}
+\contentsline {chapter}{Bibliografia}{20}
 \select@language {brazil}
 \select@language {brazil}
 \select@language {brazil}

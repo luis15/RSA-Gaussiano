@@ -114,7 +114,39 @@ nele, $n$ e $m$ s\~ao inteiros diferentes entre si. Tomemos $x_0$ como um n\'ume
 }
 \[	
 	\begin{array}{c}
-		\textit{$x_0 \equiv a (mod n)$}\\
-		\textit{$x_0 \equiv b (mod m)$}\\
+		\textit{$x_0 \equiv a (mod m)$}\\
+		\textit{$x_0 \equiv b (mod n)$}\\
+	\end{array}
+\]
+\paragraph{
+Para podermos juntar ambas as equa\c{c}\~oes converteremos uma em equa\c{c}\~ao, nesse caso teremos 
+}
+\[	
+	\begin{array}{c}
+		\textit{$x_0 = a + m\cdot k$, com $k$ sendo um inteiro qualquer}\\
+	\end{array}
+\]
+\paragraph{
+Feito isso, chegaremos em
+}
+\[	
+	\begin{array}{c}
+		\textit{$a + m\cdot k \equiv b (mod n)$}\\
+	\end{array}
+\]
+\paragraph{
+que pode ser substitu\'ida por
+}
+\[	
+	\begin{array}{c}
+		\textit{$ m\cdot k \equiv (b-a) (mod n)$}\\
+	\end{array}
+\]
+\subparagraph{
+Agora vamos supor que $m$ e $n$ s\~ao primos entre si. Pelo teorema apresentado no cap\'ituo sobre inversos multiplicativos n\'os j\'a sabemos que eles possuem inverso multiplicativo um para o outro. Tomemos $m'$ como o inverso de $m$ no m\'odulo $n$. Multipplicando toda a congru\^encia por $m'$ obtemos
+}
+\[	
+	\begin{array}{c}
+		\textit{$ k \equiv m'\cdot(b-a) (mod n)$}\\
 	\end{array}
 \]
