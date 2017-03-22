@@ -5,8 +5,9 @@ A level-1 auxiliary file: Num.aux
 A level-1 auxiliary file: Mod.aux
 A level-1 auxiliary file: InvMod.aux
 A level-1 auxiliary file: TCR.aux
+A level-1 auxiliary file: Pot.aux
 The style file: babalpha.bst
-Illegal, another \bibstyle command---line 27 of file Mestre.aux
+Illegal, another \bibstyle command---line 28 of file Mestre.aux
  : \bibstyle
  :          {alpha}
 I'm skipping whatever remains of this command
