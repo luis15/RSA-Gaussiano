@@ -62,3 +62,28 @@ Como isso, n\'os podemos dizer que $2^{13}^{98765} \equiv 2^{5q'+3} \equiv 2^{5q
 \subparagraph{
 Embora esse seja denominado como o pequeno teorema de Fermat, ele possui suma import\^ancia para o algoritmo RSA cl\'assico. Vamos apresentar abaixo uma de suas demonstra\c{c}\~oes.
 }
+\subparagraph{
+Sabemos que os poss\'iveis res\'iduos no m\'odulo $p$ s\~ao todos os inteiros entre $1$ e $p-1$. Vamos multiplic\'a-los por $a$, obtendo assim: 
+}
+\[
+\begin{array}{c}
+  \textit{$a \cdot 1,a \cdot 2,a \cdot 3,...,a \cdot (p-1)$} \\  
+\end{array}
+\]
+\subparagraph{
+Vamos levar em conta que $r_1 \equiv a\cdot 1(mod p)$,$r_2 = a\cdot 2(mod p)$, e assim por diante at\'e $r_{p-1} = a\cdot (p-1)(mod p)$. Tomemos par $r_k$ e $r_l$ um par de inteiros $k$ e $l$ que est\'a entre $1$ e $p-1$. Com isso teremos:
+}
+\[
+\begin{array}{c}
+  \textit{$a \cdot k \equiv k \equiv l \equiv a\cdot l (mod p)$} \\  
+\end{array}
+\]
+\paragraph{
+que equivale \`a:
+}
+\[
+\begin{array}{c}
+  \textit{$a \cdot k \equiv a\cdot l (mod p)$} \\  
+\end{array}
+\]
+
