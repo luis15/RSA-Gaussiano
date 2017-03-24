@@ -116,6 +116,13 @@
 \contentsline {subparagraph}{ \textit {Teorema de Fermat} - Se $p$ \'e um n\'umero primo e $a$ \'e um inteiro n\~ao divis\'ivel por $p$, ent\~ao: }{22}
 \contentsline {subparagraph}{ Embora esse seja denominado como o pequeno teorema de Fermat, ele possui suma import\^ancia para o algoritmo RSA cl\'assico. Vamos apresentar abaixo uma de suas demonstra\c {c}\~oes. }{22}
 \contentsline {subparagraph}{ Sabemos que os poss\'iveis res\'iduos no m\'odulo $p$ s\~ao todos os inteiros entre $1$ e $p-1$. Vamos multiplic\'a-los por $a$, obtendo assim: }{23}
+\contentsline {subparagraph}{ Vamos levar em conta que $r_1 \equiv a\cdot 1(mod p)$,$r_2 = a\cdot 2(mod p)$, e assim por diante at\'e $r_{p-1} = a\cdot (p-1)(mod p)$. Tomemos par $r_k$ e $r_l$ um par de inteiros $k$ e $l$ que est\'a entre $1$ e $p-1$. Com isso teremos: }{23}
+\contentsline {paragraph}{ que equivale \`a: }{23}
+\contentsline {subparagraph}{ Se viermos a cancelar pela equival\^encia, obteremos que $k \equiv l (mod p)$, mas sendo $k$ e $l$ positivos, inteiros e menores que $p$, estes s\'o podem ser congruentes se forem iguais, logo se: }{23}
+\contentsline {subparagraph}{ Isto demonstra que $r_1, r_2, r_3,...r_{p-1}$ s\~ao $p-1$ res\'iduos n\~ao nulos de m\'odulo $p$, que ser\~ao $1, 2, 3, ..., p-1$, o que nos permite dizer que a primeira sequ\^encia n\~ao \'e nada al\'em de um reordenamento da segunda. Com isso podemos dizer que: }{23}
+\contentsline {paragraph}{ Sabendo disso vemos que: }{23}
+\contentsline {paragraph}{ E apenas cortando os fatores iguais: }{23}
+\contentsline {paragraph}{ Provando assim o Teorema de Fermat. }{23}
 \contentsline {chapter}{Bibliografia}{24}
 \select@language {brazil}
 \select@language {brazil}

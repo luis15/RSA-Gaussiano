@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.15)  21 MAR 2017 22:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.15)  23 MAR 2017 20:45
 entering extended mode
 **./Mestre.tex
 (Mestre.tex
@@ -583,7 +583,27 @@ Overfull \hbox (8.46863pt too wide) in paragraph at lines 57--57
 \OT1/cmr/bx/n/10.95 n~ao di-visvel por $\OML/cmm/m/it/10.95 p$\OT1/cmr/bx/n/10.95 , ent~ao: [] [] 
  []
 
-[22]) [23]
+[22]
+Overfull \hbox (124.14473pt too wide) in paragraph at lines 92--92
+\OT1/cmr/bx/n/10.95 po-dem ser con-gru-en-tes se fo-rem iguais, logo se: [] [] 
+ []
+
+
+Overfull \hbox (69.16289pt too wide) in paragraph at lines 100--100
+\OT1/cmr/bx/n/10.95 gunda. Com isso po-de-mos di-zer que: [] [] 
+ []
+
+
+Overfull \hbox (13.02423pt too wide) in paragraph at lines 108--108
+  \OT1/cmr/bx/n/10.95 Sa-bendo disso ve-mos que: [] [] 
+ []
+
+
+Overfull \hbox (65.84253pt too wide) in paragraph at lines 116--116
+  \OT1/cmr/bx/n/10.95 E ape-nas cor-tando os fa-to-res iguais: [] [] 
+ []
+
+) [23]
 
 Package babelbib Warning: Command \selectbiblanguage used without package
 (babelbib)                option fixlanguage. Ignored on input line 117.
@@ -679,7 +699,7 @@ amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
 9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmu10.pfb>
-Output written on Mestre.pdf (26 pages, 260121 bytes).
+Output written on Mestre.pdf (26 pages, 262190 bytes).
 PDF statistics:
  154 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
