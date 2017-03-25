@@ -123,5 +123,92 @@ Provando assim o Teorema de Fermat.
 }
 \section{Aplicando o teorema de Fermat}
 \paragraph{
-Antes de prosseguirmos para o pr\'oximo cap\'itulo, vamos utilizar o Teorema de Fermat para resolver uma congru\^encia. Neste caso vamos tentar descobrir quem \'e congruente a $3^{1034}^{2}$ no m\'odulo $1033$. Como $1033$ \'e primo n\'os podemos usar o teorema de Fermat. Neste caso teremos :
+Antes de prosseguirmos para o pr\'oximo cap\'itulo, vamos utilizar o Teorema de Fermat para resolver uma congru\^encia. Neste caso vamos tentar descobrir quem \'e congruente a $3^{1034}^{2}$ no m\'odulo $1033$. Como $1033$ \'e primo n\'os podemos usar o teorema de Fermat. Neste caso teremos que:
 }
+\[
+\begin{array}{c}
+  \textit{$ 3^{1032} \equiv 1 (mod 1033)$} \\  
+\end{array}
+\]
+\subparagraph{
+O que faremos agora consiste em ``dividir'' $1034$ por $1032$, de forma a obter o resto da divis\~ao. e com isso vamos veirficar que:
+}
+\[
+\begin{array}{c}
+  \textit{$ 1034^2 \equiv 2^2 \equiv 4 (mod 1033)$} \\  
+\end{array}
+\]
+\paragraph{
+e com essa simplifica\c{c}\~ao chegamos \`a:
+}
+\[
+\begin{array}{c}
+  \textit{$ 3^{1034} \equiv 3^{1032}\cdot q+ 4} \equiv (3^{1032})^{q} + 3^4 (mod 1033)$} \\  
+\end{array}
+\]
+\subparagraph{
+Agora com a simples aplica\c{c}\~ao do Teorema de Fermat, podemos chegar a conclus\~ao que: 
+}
+\[
+\begin{array}{c}
+  \textit{$ {3^{1034}}^2 \equiv 1 \cdot 81 (mod 1033)$} \\  
+\end{array}
+\]
+\paragraph{
+verificando assim que ${3^{1034}}^2$ deixa resto $81$ na divis\~ao por $1033$.
+}
+\section{Teorema de Fermat para pot\^encias compostas}
+\subparagraph{
+Embora aplicar o teorema de Fermat diretamente sobre os n\'umeros compostos n\~ao seja poss\'ivel, n\'os ainda podemos resolver a estas congru\^encias com o aux\'ilio do teorema chin\^es d restos, como veremos a seguir.
+}
+\subparagraph{
+Para que possamos entender como resolver este problema com n\'umeros compostos vamos tentar resolver um problema n\'umerico, nesse caso o c\'alculo do m\'odulo de $2^{6754}$ por $1155$.
+}
+\subparagraph{
+Nosso primeiro passo \'e fatorar o $1155$. Ao fim da fatora\c{c}\~ao vamos obter que $1155 = 3 \cdot 5 \cdot 7 \cdot 11$. Em seguida vamos aplicar o teorema de Fermat a cada um dos primos, obtendo assim:
+}
+\[
+\begin{array}{c}
+  \textit{$ 2^2 \equiv 1 (mod 3)$} \\  
+	\textit{$ 2^4 \equiv 1 (mod 5)$} \\  
+	\textit{$ 2^6 \equiv 1 (mod 7)$} \\  
+	\textit{$ 2^{10} \equiv 1 (mod 11)$} \\  
+\end{array}
+\]
+\subparagraph{
+Agora dividimos $6754$ por $p-1$ para cada um dos m\'ultiplos:
+}
+\[
+\begin{array}{c}
+  \textit{$6754 = 2 \cdot 3377 $} \\  
+	\textit{$6754 = 4 \cdot 1688 + 2$} \\  
+	\textit{$6754 = 6 \cdot 1125 + 4$} \\  
+	\textit{$6754 = 10 \cdot 675 + 4$} \\  
+\end{array}
+\]
+\paragraph{
+Em seguida substitu\'imos nas congru\^encias e as reduzimos
+ }
+\[
+\begin{array}{c}
+  \textit{$2^{6754} \equiv {2^{3377}}^{2} \equiv 1 (mod 3) $} \\  
+	\textit{$2^{6754} \equiv {2^{1688}}^{4} \cdot 2^2 \equiv 1 \cdot 4 \equiv  4 (mod 5) $} \\  
+	\textit{$2^{6754} \equiv {2^{1125}}^{6} \cdot 2^4 \equiv 1 \cdot 16\equiv  2 (mod 7) $} \\  
+	\textit{$2^{6754} \equiv {2^{675}}^{10} \cdot 2^4 \equiv 1 \cdot 16\equiv  5 (mod 11) .$} \\  
+\end{array}
+\]
+\paragraph{
+Logo, nossa tarefa consiste em resolver o sistema
+ }
+\[
+\begin{array}{c}
+  \textit{$x \equiv 1 (mod 3) $} \\  
+	\textit{$x \equiv 4 (mod 5) $} \\  
+	\textit{$x \equiv  2 (mod 7) $} \\  
+	\textit{$x \equiv  5 (mod 11)$} \\  
+\end{array}
+\]
+\subparagraph{
+Podemos resolver esse sistema usando o algoritmo chin\^es, vamos começar substituindo na primeira congruência, onde $x = 3y + 1$, em seguida substitu\'imos $x$ por $y$ na segunda congru\^encia, tornando-a $3y + 1 \equiv 4 (mod 5)$, que equivale a $y \equiv 1 (mod 5)$ 
+como $3$ \'e invers\'ivel no m\'odulo $5$ ele pode ser anulado na equação. Com isso temos $x = 4+15z$ que se substiutindo na terceira equa\c{c}\~ao e resolvendo obtemos $z \equiv 5 (mod 7)$, que significa que $x = 79 + 105t$. Finalmente substituindo na \'ultima equa\c{c}\~ao, teremos que $t \equiv 6 (mod 11)$, o que resulta em $x = 709+1155u$. Concluímos com isso que $26754 \equiv 709 (mod 1155)$. 
+ }

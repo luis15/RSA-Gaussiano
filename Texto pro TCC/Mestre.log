@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.15)  23 MAR 2017 20:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.15)  25 MAR 2017 16:11
 entering extended mode
 **./Mestre.tex
 (Mestre.tex
@@ -603,7 +603,67 @@ Overfull \hbox (65.84253pt too wide) in paragraph at lines 116--116
   \OT1/cmr/bx/n/10.95 E ape-nas cor-tando os fa-to-res iguais: [] [] 
  []
 
-) [23]
+! Double superscript.
+\@svsechd ...brir quem \'e congruente a $3^{1034}^
+                                                  {2}$ no m\'odulo $1033$. C...
+l.128 \[
+        
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+[23]
+Overfull \hbox (70.10985pt too wide) in paragraph at lines 144--144
+  \OT1/cmr/bx/n/10.95 e com essa sim-pli-ficac~ao che-ga-mos a: [] [] 
+ []
+
+! Extra }, or forgotten $.
+\mbox #1->\leavevmode \hbox {#1}
+                                
+l.146 ...tit{$ 3^{1034} \equiv 3^{1032}\cdot q+ 4}
+                                                   \equiv (3^{1032})^{q} + 3...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\nfss@text #1->{\mbox {#1}}
+                           
+l.146 ...tit{$ 3^{1034} \equiv 3^{1032}\cdot q+ 4}
+                                                   \equiv (3^{1032})^{q} + 3...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.146 ...quiv (3^{1032})^{q} + 3^4 (mod 1033)$} \\
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (21.81308pt too wide) in paragraph at lines 152--152
+\OT1/cmr/bx/n/10.95 mos che-gar a con-clus~ao que: [] [] 
+ []
+
+[24]
+Overfull \hbox (182.07896pt too wide) in paragraph at lines 192--192
+  \OT1/cmr/bx/n/10.95 Em se-guida subs-titumos nas con-gru^encias e as re-du-zi-mos [] [] 
+ []
+
+
+Overfull \hbox (132.9077pt too wide) in paragraph at lines 203--203
+  \OT1/cmr/bx/n/10.95 Logo, nossa ta-refa con-siste em re-sol-ver o sis-tema [] [] 
+ []
+
+) [25]
 
 Package babelbib Warning: Command \selectbiblanguage used without package
 (babelbib)                option fixlanguage. Ignored on input line 117.
@@ -672,7 +732,7 @@ Overfull \hbox (32.61884pt too wide) in paragraph at lines 52--59
 |   []\OT1/cmr/m/n/10.95 .
  []
 
-) [24
+) [26
 
 
 ] (Mestre.aux (Pref.aux) (Intro.aux) (Num.aux) (Mod.aux) (InvMod.aux) (TCR.aux) (Pot.aux)) )
@@ -699,9 +759,9 @@ amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
 9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmu10.pfb>
-Output written on Mestre.pdf (26 pages, 262190 bytes).
+Output written on Mestre.pdf (28 pages, 267064 bytes).
 PDF statistics:
- 154 PDF objects out of 1000 (max. 8388607)
+ 160 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
