@@ -1,12 +1,12 @@
 \chapter {Inversos Modulares}
 \label{InvMod}
-
-\section{Inversos modulares}	
 \subparagraph{
-Nosso objetivo com o decorrer deste cap\'itulo \'e o de explicar a opera\c{c}\~ao matem\'atica mais importante para para o algoritmo RSA. Para podermos comprend\^e-la vamos relembrar do cenceito ensinado no col\'egio de inverso multiplicativo, que consiste em obter o n\'umero que multiplicado a um n\'umero $n$ qualquer resulte em $1$. A opera\c{c}\~ao do inverso modular parte do mesmo princ\'ipio.
+Nosso objetivo com o decorrer deste cap\'itulo \'e o de explicar a opera\c{c}\~ao matem\'atica mais importante para para o algoritmo RSA. Para podermos comprend\^e-la vamos relembrar do conceito ensinado no col\'egio de inverso multiplicativo, que consiste em obter o n\'umero que multiplicado a um n\'umero $n$ qualquer resulte em $1$. Juntos, n\'os iremos ver que na opera\c{c}\~ao do inverso modular se segue do mesmo princ\'ipio.
 }
+\section{Inversos modulares}	
+
 \subparagraph{
-Vamos supor que queremos obter o inverso modular de $6$ para o m\'odulo $7$, o que n\'os teremos que fazer ent\~ao \'e encontrar qual o n\'umero que multiplicado por $6$ tem resto $1$ quando dividido por $7$. Come\c{c}amos pelo $1$, teremos que $6 \cdot 1 = 6$, $6 \equiv 6 (mod7)$. Com $2$ o resultado será $12$, logo $12 \equiv 5 (mod7)$, que para n\'os tamb\'em n\~ao serve. Tentando o $3$ obtemos $4$ e com $4$ obtemos $3$. Com o $5$ nosso retorno ser\'a $2$. Finalmente quando chegamos ao $6$ n\'os temos que $6 \cdot 6 = 36$, $36 \equiv 1 (mod 7)$. Com isso podemos concluir que o inverso multiplicativo de $6$ no m\'odulo $7$ \'e o pr\'opio $6$.
+Para iniciarmos este cap\'itulo, vamos supor que queremos obter o inverso modular de $6$ para o m\'odulo $7$, o que n\'os teremos que fazer ent\~ao \'e encontrar qual o n\'umero que multiplicado por $6$ tem resto $1$ quando dividido por $7$. Come\c{c}amos pelo $1$, teremos que $6 \cdot 1 = 6$, $6 \equiv 6 (mod7)$. Com $2$ o resultado será $12$, logo $12 \equiv 5 (mod7)$, que para n\'os tamb\'em n\~ao serve. Tentando o $3$ obtemos $4$ e com $4$ obtemos $3$. Com o $5$ nosso retorno ser\'a $2$. Finalmente quando chegamos ao $6$ n\'os temos que $6 \cdot 6 = 36$, $36 \equiv 1 (mod 7)$. Com isso podemos concluir que o inverso multiplicativo de $6$ no m\'odulo $7$ \'e o pr\'opio $6$.
 }
 \subparagraph{
 Para simplificar o que foi dito acima, podemos dizer a opera\c{c}\~ao de inverso multiplicativo no m\'odulo $n$ para $a$ consiste em encontar um n\'umero $a'$ tal que:
@@ -106,7 +106,7 @@ Com isso podemos concluir que $r \in V(a,n)$, como $r$ \'e o resto da divis\~ao 
 Com base em tudo que j\'a foi lido e provado anteriormente neste cap\'itulo podems concluir o seguinte teorema:
 }
 \paragraph{
-		\textit{Sejam $a<n$ inteiros positicos. O res\'iduo $a$ em inverso no m\'odulo $n$ se, e somente se, $a$ e $n$ n\~ao possuem fatores primos em comum.}
+		\textit{Sejam $a<n$ inteiros positivos. O res\'iduo $a$ em inverso no m\'odulo $n$ se, e somente se, $a$ e $n$ n\~ao possuem fatores primos em comum.}
 }
 \paragraph{
 Esta informa\c{c}\~ao nos ser\'a muito \'util mais a frente. Outra coisa muito importante para nosso prosseguimento \'e o seguinte corol\'ario:

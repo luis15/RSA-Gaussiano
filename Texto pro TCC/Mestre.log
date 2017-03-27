@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.15)  25 MAR 2017 16:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.15)  27 MAR 2017 20:19
 entering extended mode
 **./Mestre.tex
 (Mestre.tex
@@ -367,24 +367,12 @@ Cap\'{\i }tulo 2.
 
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 35.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 35.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/bx/ui' in size <10.95> not available
-(Font)              Font shape `OT1/cmr/m/ui' tried instead on input line 35.
-
-
-Overfull \hbox (116.78355pt too wide) in paragraph at lines 49--49
+Overfull \hbox (116.78355pt too wide) in paragraph at lines 51--51
 \OML/cmm/m/it/10.95 n \OMS/cmsy/m/n/10.95  \OT1/cmr/m/n/10.95 2$ \OT1/cmr/bx/n/10.95 pode-se es-crev^e-lo de forma uni
 ca como: [] [] 
  []
 
-) [8] [9]
+[8]) [9]
 \openout2 = `Mod.aux'.
 
  (Mod.tex
@@ -468,20 +456,9 @@ muns, se : [] []
  (TCR.tex
 Cap\'{\i }tulo 5.
 
-Overfull \hbox (49.33151pt too wide) in paragraph at lines 33--33
+Overfull \hbox (49.33151pt too wide) in paragraph at lines 37--37
   \OT1/cmr/bx/n/10.95 Como $\OT1/cmr/m/n/10.95 5 \OMS/cmsy/m/n/10.95  \OT1/cmr/m/n/10.95 2(\OML/cmm/m/it/10.95 mod\OT1/
 cmr/m/n/10.95 3)$\OT1/cmr/bx/n/10.95 , subs-titumos: [] [] 
- []
-
-
-Overfull \hbox (144.94954pt too wide) in paragraph at lines 41--41
-  \OT1/cmr/bx/n/10.95 Feito isso, pas-sa-mos $\OT1/cmr/m/n/10.95 2$ \OT1/cmr/bx/n/10.95 para o ou-tro lado da equac~ao 
-[] [] 
- []
-
-
-Overfull \hbox (37.53688pt too wide) in paragraph at lines 49--49
-\OT1/cmr/bx/n/10.95 mos a equac~ao por $\OT1/cmr/m/n/10.95 2$\OT1/cmr/bx/n/10.95 , e ob-te-mos [] [] 
  []
 
 [17
@@ -489,48 +466,59 @@ Overfull \hbox (37.53688pt too wide) in paragraph at lines 49--49
 
 
 ]
-Overfull \hbox (9.98108pt too wide) in paragraph at lines 57--57
+Overfull \hbox (144.94954pt too wide) in paragraph at lines 45--45
+  \OT1/cmr/bx/n/10.95 Feito isso, pas-sa-mos $\OT1/cmr/m/n/10.95 2$ \OT1/cmr/bx/n/10.95 para o ou-tro lado da equac~ao 
+[] [] 
+ []
+
+
+Overfull \hbox (37.53688pt too wide) in paragraph at lines 53--53
+\OT1/cmr/bx/n/10.95 mos a equac~ao por $\OT1/cmr/m/n/10.95 2$\OT1/cmr/bx/n/10.95 , e ob-te-mos [] [] 
+ []
+
+
+Overfull \hbox (9.98108pt too wide) in paragraph at lines 61--61
   \OT1/cmr/bx/n/10.95 Com isso, con-clumos que [] [] 
  []
 
 
-Overfull \hbox (161.85197pt too wide) in paragraph at lines 65--65
+Overfull \hbox (161.85197pt too wide) in paragraph at lines 69--69
 \OT1/cmr/bx/n/10.95 soluc~ao mais com-plexa, mas va-mos a re-or-ga-ni-zar como [] [] 
  []
 
 
-Overfull \hbox (144.56232pt too wide) in paragraph at lines 89--89
+Overfull \hbox (144.56232pt too wide) in paragraph at lines 93--93
 \OT1/cmr/bx/n/10.95 trado como ela deixa resto $\OT1/cmr/m/n/10.95 2$ \OT1/cmr/bx/n/10.95 quando di-vi-dida por $\OT1/cm
 r/m/n/10.95 5$\OT1/cmr/bx/n/10.95 . [] [] 
  []
 
 [18]
-Overfull \hbox (20.309pt too wide) in paragraph at lines 124--124
+Overfull \hbox (20.309pt too wide) in paragraph at lines 128--128
 \OT1/cmr/bx/n/10.95 equac~ao, nesse caso te-re-mos [] [] 
  []
 
 
-Overfull \hbox (11.19774pt too wide) in paragraph at lines 132--132
+Overfull \hbox (11.19774pt too wide) in paragraph at lines 136--136
   \OT1/cmr/bx/n/10.95 Feito isso, che-ga-re-mos em [] [] 
  []
 
 
-Overfull \hbox (25.49498pt too wide) in paragraph at lines 140--140
+Overfull \hbox (25.49498pt too wide) in paragraph at lines 144--144
   \OT1/cmr/bx/n/10.95 que pode ser subs-tituda por [] [] 
  []
 
 
-Overfull \hbox (29.37993pt too wide) in paragraph at lines 148--148
+Overfull \hbox (29.37993pt too wide) in paragraph at lines 152--152
 \OT1/cmr/bx/n/10.95 a con-gru^encia por $\OML/cmm/m/it/10.95 m[]$ \OT1/cmr/bx/n/10.95 ob-te-mos [] [] 
  []
 
 
-Overfull \hbox (16.15562pt too wide) in paragraph at lines 156--156
+Overfull \hbox (16.15562pt too wide) in paragraph at lines 160--160
   \OT1/cmr/bx/n/10.95 que pode ser es-crita como: [] [] 
  []
 
 
-Overfull \hbox (98.02637pt too wide) in paragraph at lines 164--164
+Overfull \hbox (98.02637pt too wide) in paragraph at lines 168--168
   \OT1/cmr/bx/n/10.95 Subs-ti-tuindo a parte de $\OML/cmm/m/it/10.95 k$\OT1/cmr/bx/n/10.95 , nos ob-te-mos [] [] 
  []
 
@@ -540,17 +528,17 @@ Overfull \hbox (98.02637pt too wide) in paragraph at lines 164--164
  (Pot.tex
 Cap\'{\i }tulo 6.
 
-Overfull \hbox (5.04796pt too wide) in paragraph at lines 8--8
+Overfull \hbox (5.04796pt too wide) in paragraph at lines 6--6
   \OT1/cmr/bx/n/10.95 Ao longo deste captulo va-mos es-tu-dar como tor-nar as operac~oes
  []
 
 
-Overfull \hbox (50.9404pt too wide) in paragraph at lines 14--14
+Overfull \hbox (50.9404pt too wide) in paragraph at lines 13--13
 \OT1/cmr/bx/n/10.95 modulo $\OT1/cmr/m/n/10.95 7$\OT1/cmr/bx/n/10.95 . Logo te-re-mos a ta-bela: [] [] 
  []
 
 
-Overfull \hbox (96.86116pt too wide) in paragraph at lines 27--27
+Overfull \hbox (96.86116pt too wide) in paragraph at lines 26--26
 \OT1/cmr/bx/n/10.95 press~ao nos le-vara a se-guinte con-gru^encia: [] [] 
  []
 
@@ -559,7 +547,7 @@ Overfull \hbox (96.86116pt too wide) in paragraph at lines 27--27
 
 
 ]
-Overfull \hbox (114.49571pt too wide) in paragraph at lines 35--35
+Overfull \hbox (114.49571pt too wide) in paragraph at lines 34--34
 \OT1/cmr/bx/n/10.95 que e con-gru-ente a $\OT1/cmr/m/n/10.95 1$ \OT1/cmr/bx/n/10.95 no modulo $\OT1/cmr/m/n/10.95 31$\
 OT1/cmr/bx/n/10.95 . Ob-te-mos: [] [] 
  []
@@ -567,58 +555,58 @@ OT1/cmr/bx/n/10.95 . Ob-te-mos: [] []
 ! Double superscript.
 \@svsechd ... podemos calcular o resto de $2^{13}^
                                                   {98765}$, \'e descobrir o ...
-l.50 \subparagraph
+l.49 \subparagraph
                   {
 I treat `x^1^2' essentially like `x^1{}^2'.
 
 ! Double superscript.
 \@svsechd ...sso, n\'os podemos dizer que $2^{13}^
                                                   {98765} \equiv 2^{5q'+3} \...
-l.53 \section
+l.52 \section
              {O teorema de Fermat}
 I treat `x^1^2' essentially like `x^1{}^2'.
 
 
-Overfull \hbox (8.46863pt too wide) in paragraph at lines 57--57
+Overfull \hbox (8.46863pt too wide) in paragraph at lines 56--56
 \OT1/cmr/bx/n/10.95 n~ao di-visvel por $\OML/cmm/m/it/10.95 p$\OT1/cmr/bx/n/10.95 , ent~ao: [] [] 
  []
 
 [22]
-Overfull \hbox (124.14473pt too wide) in paragraph at lines 92--92
+Overfull \hbox (124.14473pt too wide) in paragraph at lines 91--91
 \OT1/cmr/bx/n/10.95 po-dem ser con-gru-en-tes se fo-rem iguais, logo se: [] [] 
  []
 
 
-Overfull \hbox (69.16289pt too wide) in paragraph at lines 100--100
+Overfull \hbox (69.16289pt too wide) in paragraph at lines 99--99
 \OT1/cmr/bx/n/10.95 gunda. Com isso po-de-mos di-zer que: [] [] 
  []
 
 
-Overfull \hbox (13.02423pt too wide) in paragraph at lines 108--108
+Overfull \hbox (13.02423pt too wide) in paragraph at lines 107--107
   \OT1/cmr/bx/n/10.95 Sa-bendo disso ve-mos que: [] [] 
  []
 
 
-Overfull \hbox (65.84253pt too wide) in paragraph at lines 116--116
+Overfull \hbox (65.84253pt too wide) in paragraph at lines 115--115
   \OT1/cmr/bx/n/10.95 E ape-nas cor-tando os fa-to-res iguais: [] [] 
  []
 
 ! Double superscript.
 \@svsechd ...brir quem \'e congruente a $3^{1034}^
                                                   {2}$ no m\'odulo $1033$. C...
-l.128 \[
+l.127 \[
         
 I treat `x^1^2' essentially like `x^1{}^2'.
 
 [23]
-Overfull \hbox (70.10985pt too wide) in paragraph at lines 144--144
+Overfull \hbox (70.10985pt too wide) in paragraph at lines 143--143
   \OT1/cmr/bx/n/10.95 e com essa sim-pli-ficac~ao che-ga-mos a: [] [] 
  []
 
 ! Extra }, or forgotten $.
 \mbox #1->\leavevmode \hbox {#1}
                                 
-l.146 ...tit{$ 3^{1034} \equiv 3^{1032}\cdot q+ 4}
+l.145 ...tit{$ 3^{1034} \equiv 3^{1032}\cdot q+ 4}
                                                    \equiv (3^{1032})^{q} + 3...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -629,7 +617,7 @@ deleted material, e.g., by typing `I$}'.
 ! Extra }, or forgotten $.
 \nfss@text #1->{\mbox {#1}}
                            
-l.146 ...tit{$ 3^{1034} \equiv 3^{1032}\cdot q+ 4}
+l.145 ...tit{$ 3^{1034} \equiv 3^{1032}\cdot q+ 4}
                                                    \equiv (3^{1032})^{q} + 3...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -640,7 +628,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.146 ...quiv (3^{1032})^{q} + 3^4 (mod 1033)$} \\
+l.145 ...quiv (3^{1032})^{q} + 3^4 (mod 1033)$} \\
                                                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -649,17 +637,17 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (21.81308pt too wide) in paragraph at lines 152--152
+Overfull \hbox (21.81308pt too wide) in paragraph at lines 151--151
 \OT1/cmr/bx/n/10.95 mos che-gar a con-clus~ao que: [] [] 
  []
 
 [24]
-Overfull \hbox (182.07896pt too wide) in paragraph at lines 192--192
+Overfull \hbox (182.07896pt too wide) in paragraph at lines 191--191
   \OT1/cmr/bx/n/10.95 Em se-guida subs-titumos nas con-gru^encias e as re-du-zi-mos [] [] 
  []
 
 
-Overfull \hbox (132.9077pt too wide) in paragraph at lines 203--203
+Overfull \hbox (132.9077pt too wide) in paragraph at lines 202--202
   \OT1/cmr/bx/n/10.95 Logo, nossa ta-refa con-siste em re-sol-ver o sis-tema [] [] 
  []
 
@@ -741,27 +729,25 @@ Overfull \hbox (32.61884pt too wide) in paragraph at lines 52--59
 ### simple group (level 1) entered at line 102 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5892 strings out of 493333
- 74275 string characters out of 3139193
+ 5864 strings out of 493333
+ 73835 string characters out of 3139193
  198842 words of memory out of 3000000
- 9221 multiletter control sequences out of 15000+200000
- 16167 words of font info for 66 fonts, out of 3000000 for 9000
+ 9198 multiletter control sequences out of 15000+200000
+ 15617 words of font info for 64 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,10n,25p,3217b,599s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmu10.pfb>
-Output written on Mestre.pdf (28 pages, 267064 bytes).
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on Mestre.pdf (28 pages, 251785 bytes).
 PDF statistics:
- 160 PDF objects out of 1000 (max. 8388607)
+ 152 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

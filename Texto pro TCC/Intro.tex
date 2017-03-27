@@ -61,13 +61,19 @@ Em 1949, com a publica\c{c}\~ao do artigo \textit{Communication Theory of Secrec
 Em 1976 Diffie e Hellman publicaram \textit{New Directions in Cryptography} \cite{newdirections}. Neste artigo h\'a a introdu\c{c}\~ao ao conceito de \textit{chave assim\'etrica}, onde h\'a chaves diferentes entre o emissor da mensagem e seu receptor. Com a assimetria de chaves n\~ao era mais necess\'ario um contato t\~ao pr\'oximo entre emissor e receptor. Neste mesmo artigo \'e apresentado o primeiro algoritmo de criptografia de chave assim\'etrica ou como \'e mais conhecido nos dias atuais \textit{Algoritmo de Criptografia de Chave P\'ublica}, o protocolo de Diffie-Hellman.
 }
 \subparagraph{
-Um dos algoritmos mais famosos da criptografia de chave p\'ublica \'e o \textit{RSA}(RIVEST et al, 1983) \cite{rivest}, algoritmo desenvolvido por Rivest, Shamir e Adleman. Este algoritmo est\'a presente em muitas aplica\c{c}\~oes de alta seguran\c{c}a, como bancos, sistemas militares e servidores de internet, e ele utiliza para a gera\c{c}\~ao de chaves dois n\'umeros primos de grandeza superior a $2^{512}$ multiplicados entre si.
+Um dos algoritmos mais famosos da criptografia de chave p\'ublica \'e o \textit{RSA}(RIVEST et al, 1983) \cite{rivest}, algoritmo desenvolvido por Rivest, Shamir e Adleman. Este algoritmo se tornou poular por estar presente em muitas aplica\c{c}\~oes de alta seguran\c{c}a, como bancos, sistemas militares e servidores de internet.
 }
 \subparagraph{
-Neste trabalho ser\'a feita uma exposi\c{c}\~ao detalhada da chamada criptografia RSA cl\'assica, enfatizando a parte matem\'atica relacionada \`{a} Teoria de n\'umeros, necess\'aria para a constru\c{c}\~ao do algoritmo RSA.
+Para que se possa compreender por completo o algoritmo faz-se necessário possuir alguns conhecimentos em Teoria de n\'umeros como fatora\c{c}\~ao e aritm\'etica modular. Estes conhecimentos ser\~ao apresentados mais  frente neste trabalho.
 }
 \subparagraph{
-O maior deste trabalho \'e analisar a viabilidade de uma criptografia inspirada pelo algoritmo RSA cl\'assico, a qual substitui os n\'umeros primos pelo conjunto denominado de \textit{primos de Gauss}, resultando, assim, no que chamamos por \textit{criptografia RSA gaussiana}. Para que tal algoritmo seja vi\'avel \'e necess\'ario adaptar uma s\'erie de resultados relativas aos n\'umeros primos aos n\'umero primos de Gauss. Dessa forma, nossa tarefa ser\'a adaptar tanto quanto o poss\'ivel os primos de Gauss \`as demosnta\c{c}\~oes desses teoremas.
+No algoritmo RSA existe uma chave p\'ublica $n$, que \'e a multiplica\c{c}\~ao dos primos $p$ e $q$. O emissor E codifica a mensagem usando um n\'umero primo $p$. Em seguida E envia publicamente a mensagem codificada junto com a chave $n$ para o receptor R. R possui o n\'umero $q$, que juntamente ao n\'umero $n$ servem para decodificar a mensagem. 
+}
+\subparagraph{
+Embora a quebra do RSA seja aparentemente simples, bastando fatorar $n$ para descobrir seus fatores. Porém a dificuldade neste caso n\~ao \'e matem\'atica e sim computacional, pois usa-se como $p$ e $q$ n\'umeros primos muito altos, pr\'oximos a $2^{512}$. Com um n\'umero t\~ao alto um computador comum levaria bem mais que uma vida humana para decifrar a mensagem.
+}
+\subparagraph{
+Com base nestes conhecimentos sobre criptografia, temos que o objetivo deste trabalho \'e analisar a viabilidade de uma criptografia inspirada pelo algoritmo RSA cl\'assico, a qual substitui os n\'umeros primos pelo conjunto denominado de \textit{primos de Gauss}, resultando, assim, no que chamamos por \textit{criptografia RSA gaussiana}. Para que tal algoritmo seja vi\'avel \'e necess\'ario adaptar uma s\'erie de resultados relativas aos n\'umeros primos aos n\'umero primos de Gauss. Dessa forma, nossa tarefa ser\'a adaptar tanto quanto o poss\'ivel os primos de Gauss \`as demosnta\c{c}\~oes desses teoremas.
 }
 \subparagraph{
 Como se trata de uma proposta inovadora, deixamos para trabalhos futuros uma an\'alise comparativa entre as criptografias RSA cl\'assica e a RSA gaussiana.
