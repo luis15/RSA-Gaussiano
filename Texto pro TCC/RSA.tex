@@ -1,0 +1,60 @@
+\chapter {Criptografia RSA}
+\label{RSA}
+
+\subparagraph{
+A criptografia RSA tem suma import\^ancia para toda a comunica\c{c}\~ao moderna. Ela \'e t\~ao importante que a descoberta de uma forma de se desencript\'a-la colocaria em risco a sociedade como a conhecemos.
+}
+\subparagraph{
+Ao longo deste cap\'itulo n\'os vamos ver como \'e seu funcionamento, unindo todos os conte\'udos j\'a vistos anteriormente. Al\'em disso
+}
+
+\section{Pr\'e-requisitos}
+\subparagraph{
+Para que o algoritmo RSA possa encriptar de forma eficiente, primeiro n\'os precisaremos seguir uma s\'erie de passos. Estes s\~ao necess\'arios para que o RSA funcione, mas ainda n\~ao s\~ao parte do algoritmo.
+}
+\subparagraph{
+O primeiro passo \'e a convers\~ao das letras da mensagem em n\'umeros. A essa etapa n\'os chamaremos de pr\'e-codifica\c{c}\~ao. Para que o RSA venha a funcionar precisamos seguir uma tabela como a abaixo:
+}
+\[
+\begin{array}{ccccccccccccc}
+A & B & C & D & E & F & G & H & I & J  &  K  & L  & M  \\ 
+10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 &  20 & 21 & 22 \\ 
+\\
+N & O  & P  & Q  & R  & S & T  & U  & V  & X  & Y  & W  & Z \\
+23 & 24 & 25 & 26 & 27 & 28 & 29 & 30 & 31 & 32 & 33 & 34 & 35 \\
+\end{array}
+\]
+\subparagraph{
+Para o espa\c{c}o vamos usar o 99. Avisamos que esta \'e uma tabela apenas com fim did\'atico, e, por isso h\'a v\'arios caracteres desconsiderados. Como exemplo vamos pr\'e-encriptar o poema Amor, de Oswald de Andrade. O texto do poema a ser encriptado é o  pr\'e-seguinte:
+}
+\[
+\begin{array}{ccccccccccccc}
+Amor  \\ 
+Humor. \\ 
+\end{array}
+\]
+\subparagraph{
+Como primeiro passo substituiremos cada letra da poesia por um n\'umero correspondente. Feito isso juntaremos todos os n\'umeros Ao terminarmos vamos obt\^e-lo convertido como: 
+}
+\[
+\begin{array}{c}
+ 10222427991730222427
+\end{array}
+\]
+\subparagraph{
+Preste aten\c{c}\~ao ao fato de todo o caracter convertido ter sempre o mesmo n\'umero de algarismos. Isso \'e \'util para evitar ambiguidades na desencripta\c{c}\~ao.
+}
+\subparagraph{
+Nosso pr'oximo passo nesta fase que antecede a encripta\c{c}\~ao consiste em definir que s\~ao os primos $p$ e $q$. Para nosso exemplo vamos usar $p=17$ e $q=23$, como $n = pq$. Temos que $n=391$
+}
+\subparagraph{
+O \'ultimo passo da pr\'e-encripta\c{c}\~ao consiste em quebrar o n\'umero qu obtemos acima em blocos menores. Essas blocos devem obedecer a duas regras b\'asicas, devem ser menores que $n$, ou no nosso exemplo $391$ e n\~ao podem se iniciar por 0, Vejamos como fica a nossa mensagem escrita nesta forma.
+}
+\[
+\begin{array}{c}
+ 102 | 224 | 279 | 91 | 7 | 30 | 222 | 42 | 7
+\end{array}
+\]
+\subparagraph{
+Perceba que n\~ao h\'a rela\c{c}\~ao entre nenhum dos n\'umeros obtidos com um caractere espec\'ifico, o que torna imposs\'ivel a associa\c{c}\~ao de um n\'umero a uma letra por frequ\^encia de aparecimento. 
+}
