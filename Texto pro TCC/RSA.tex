@@ -58,3 +58,47 @@ O \'ultimo passo da pr\'e-encripta\c{c}\~ao consiste em quebrar o n\'umero qu ob
 \subparagraph{
 Perceba que n\~ao h\'a rela\c{c}\~ao entre nenhum dos n\'umeros obtidos com um caractere espec\'ifico, o que torna imposs\'ivel a associa\c{c}\~ao de um n\'umero a uma letra por frequ\^encia de aparecimento. 
 }
+\section{Codificando e decodificando mensagens}
+\subparagraph{
+Encerrada a fase de pr\'e-codificando vamos agora codificar nossas mensagens. Manteremos os valores e exemplos da seção anterior a fim de facilitar a compreens\~ao.
+}
+\subsection{Codificando uma mensagem}
+\subparagraph{
+A esta altura n\'os j\'a conhecemos a $n$. Vamos chamar o bloco codificado que iremos encriptar de $b$, lembrando que $b$ \'e um n\'umero inteiro menor que $n$. Vamos chamao o bloco coficado de C(b). Para obt\^e-lo deveos aplicar a seguinte f\'ormula:
+}
+\[
+\begin{array}{c}
+$C(b)$ = resto da divis\~ao de $b^3$ por $n$
+\end{array}
+\]
+\subparagraph{
+Podemos para facilitar dizer que $C(b)$ é o resíduo de $b^3$ pelo m\'odulo $n$. Vamo a uma demonstra\c{c}\~ao pr\'atica com o primiro bloco de nossa mensagem, com o n\'umero $102$. Para simplificar o nosso trabalho vamos utilizar as opera\c{c}\~oes modulares.
+}
+\[
+\begin{array}{c}
+$102^3 \equiv 24276 \equiv 34 (mod 391) $
+\end{array}
+\]
+\subparagraph{
+Faremos o mesmo procedimento para todos nossos blocos
+}
+\[
+\begin{array}{c}
+$224^3 \equiv 11239424 \equiv 129 (mod 391) $
+$279^3 \equiv 21717639 \equiv 326 (mod 391) $
+$91^3  \equiv 753571   \equiv 114 (mod 391) $
+$7^3   \equiv 343      \equiv 343 (mod 391) $
+$30^3  \equiv 27000    \equiv 21  (mod 391) $
+$222^3 \equiv 10941048 \equiv 86  (mod 391) $
+$42^3  \equiv 74088    \equiv 189 (mod 391) $
+$7^3   \equiv 343      \equiv 343 (mod 391) $
+\end{array}
+\]
+\subparagraph{
+Portanto, ``Amor/Humor.'', encriptado pelo RSA com as chaves privadas $17$ e $23$ e a p\'ublica $391$ \'e: 
+}
+\[
+\begin{array}{c}
+ 34 | 129 | 326 | 114 | 343 | 21 | 86 | 189 | 343
+\end{array}
+\]

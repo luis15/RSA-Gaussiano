@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.15)  28 MAR 2017 20:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.15)  28 MAR 2017 21:28
 entering extended mode
 **./Mestre.tex
 (Mestre.tex
@@ -656,16 +656,75 @@ Overfull \hbox (132.9077pt too wide) in paragraph at lines 202--202
 
  (RSA.tex
 Cap\'{\i }tulo 7.
-
-Overfull \hbox (103.65224pt too wide) in paragraph at lines 30--30
-\OT1/cmr/bx/n/10.95 Oswald de An-drade. O po-ema e o se-guinte: [] [] 
- []
-
 [27
 
 
 
-]) [28]
+]
+Overfull \hbox (7.2261pt too wide) in paragraph at lines 39--39
+\OT1/cmr/bx/n/10.95 um numero cor-res-pon-dente. Feito isso jun-ta-re-mos to-dos os numeros
+ []
+
+
+Overfull \hbox (133.00046pt too wide) in paragraph at lines 39--39
+\OT1/cmr/bx/n/10.95 Ao ter-mi-nar-mos va-mos obt^e-lo con-ver-tido como: [] [] 
+ []
+
+
+Overfull \hbox (8.00311pt too wide) in paragraph at lines 53--53
+  \OT1/cmr/bx/n/10.95 O ultimo passo da pre-encriptac~ao con-siste em que-brar o numero
+ []
+
+
+Overfull \hbox (69.76668pt too wide) in paragraph at lines 53--53
+\OT1/cmr/bx/n/10.95 nossa men-sa-gem es-crita nesta forma. [] [] 
+ []
+
+
+Overfull \hbox (121.94408pt too wide) in paragraph at lines 69--69
+\OT1/cmr/bx/n/10.95 Para obt^e-lo de-veos apli-car a se-guinte formula: [] [] 
+ []
+
+[28]
+
+LaTeX Warning: Command \~ invalid in math mode on input line 71.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.71 $C(b)$ = resto da divis\~a
+                               o de $b^3$ por $n$
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.71 $C(b)$ = resto da divis\~a
+                               o de $b^3$ por $n$
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no è in font cmex10!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.71 $C(b)$ = resto da divis\~ao de $b^
+                                       3$ por $n$
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.72 \end{array}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+) [29]
 
 Package babelbib Warning: Command \selectbiblanguage used without package
 (babelbib)                option fixlanguage. Ignored on input line 118.
@@ -734,7 +793,7 @@ Overfull \hbox (32.61884pt too wide) in paragraph at lines 52--59
 |   []\OT1/cmr/m/n/10.95 .
  []
 
-) [29
+) [30
 
 
 ] (Mestre.aux (Pref.aux) (Intro.aux) (Num.aux) (Mod.aux) (InvMod.aux) (TCR.aux) (Pot.aux) (RSA.aux)) )
@@ -759,9 +818,9 @@ MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
 msfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Mestre.pdf (31 pages, 255527 bytes).
+Output written on Mestre.pdf (32 pages, 258301 bytes).
 PDF statistics:
- 162 PDF objects out of 1000 (max. 8388607)
+ 165 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

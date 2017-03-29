@@ -8,9 +8,18 @@
 \@writefile{toc}{\contentsline {section}{\numberline {7.1}Pr\'e-requisitos}{27}}
 \@writefile{toc}{\contentsline {subparagraph}{ Para que o algoritmo RSA possa encriptar de forma eficiente, primeiro n\'os precisaremos seguir uma s\'erie de passos. Estes s\~ao necess\'arios para que o RSA funcione, mas ainda n\~ao s\~ao parte do algoritmo. }{27}}
 \@writefile{toc}{\contentsline {subparagraph}{ O primeiro passo \'e a convers\~ao das letras da mensagem em n\'umeros. A essa etapa n\'os chamaremos de pr\'e-codifica\c {c}\~ao. Para que o RSA venha a funcionar precisamos seguir uma tabela como a abaixo: }{27}}
-\@writefile{toc}{\contentsline {subparagraph}{ Para o espa\c {c}o vamos usar o 99. Avisamos que esta \'e uma tabela apenas com fim did\'atico, e, por isso h\'a v\'arios caracteres desconsiderados. Como exemplo vamos encriptar o poema Amor, de Oswald de Andrade. O poema \'e o seguinte: }{28}}
+\@writefile{toc}{\contentsline {subparagraph}{ Para o espa\c {c}o vamos usar o 99. Avisamos que esta \'e uma tabela apenas com fim did\'atico, e, por isso h\'a v\'arios caracteres desconsiderados. Como exemplo vamos pr\'e-encriptar o poema Amor, de Oswald de Andrade. O texto do poema a ser encriptado \'e o pr\'e-seguinte: }{28}}
+\@writefile{toc}{\contentsline {subparagraph}{ Como primeiro passo substituiremos cada letra da poesia por um n\'umero correspondente. Feito isso juntaremos todos os n\'umeros Ao terminarmos vamos obt\^e-lo convertido como: }{28}}
+\@writefile{toc}{\contentsline {subparagraph}{ Preste aten\c {c}\~ao ao fato de todo o caracter convertido ter sempre o mesmo n\'umero de algarismos. Isso \'e \'util para evitar ambiguidades na desencripta\c {c}\~ao. }{28}}
+\@writefile{toc}{\contentsline {subparagraph}{ Nosso pr'oximo passo nesta fase que antecede a encripta\c {c}\~ao consiste em definir que s\~ao os primos $p$ e $q$. Para nosso exemplo vamos usar $p=17$ e $q=23$, como $n = pq$. Temos que $n=391$ }{28}}
+\@writefile{toc}{\contentsline {subparagraph}{ O \'ultimo passo da pr\'e-encripta\c {c}\~ao consiste em quebrar o n\'umero qu obtemos acima em blocos menores. Essas blocos devem obedecer a duas regras b\'asicas, devem ser menores que $n$, ou no nosso exemplo $391$ e n\~ao podem se iniciar por 0, Vejamos como fica a nossa mensagem escrita nesta forma. }{28}}
+\@writefile{toc}{\contentsline {subparagraph}{ Perceba que n\~ao h\'a rela\c {c}\~ao entre nenhum dos n\'umeros obtidos com um caractere espec\'ifico, o que torna imposs\'ivel a associa\c {c}\~ao de um n\'umero a uma letra por frequ\^encia de aparecimento. }{28}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.2}Codificando e decodificando mensagens}{28}}
+\@writefile{toc}{\contentsline {subparagraph}{ Encerrada a fase de pr\'e-codificando vamos agora codificar nossas mensagens. Manteremos os valores e exemplos da se\c c\~ao anterior a fim de facilitar a compreens\~ao. }{28}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.1}Codificando uma mensagem}{29}}
+\@writefile{toc}{\contentsline {subparagraph}{ A esta altura n\'os j\'a conhecemos a $n$. Vamos chamar o bloco codificado que iremos encriptar de $b$, lembrando que $b$ \'e um n\'umero inteiro menor que $n$. Vamos chamao o bloco coficado de C(b). Para obt\^e-lo deveos aplicar a seguinte f\'ormula: }{29}}
 \@setckpt{RSA}{
-\setcounter{page}{29}
+\setcounter{page}{30}
 \setcounter{equation}{0}
 \setcounter{enumi}{0}
 \setcounter{enumii}{0}
@@ -20,8 +29,8 @@
 \setcounter{mpfootnote}{0}
 \setcounter{part}{0}
 \setcounter{chapter}{7}
-\setcounter{section}{1}
-\setcounter{subsection}{0}
+\setcounter{section}{2}
+\setcounter{subsection}{1}
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
