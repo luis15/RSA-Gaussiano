@@ -102,3 +102,13 @@ Portanto, ``Amor/Humor.'', encriptado pelo RSA com as chaves privadas $17$ e $23
  34 | 129 | 326 | 114 | 343 | 21 | 86 | 189 | 343
 \end{array}
 \]
+
+\subsection{Decodificando uma mensagem}
+\subparagraph{
+Para podermos desencriptar uma mensagem n\'os precisamos de dois números. O primeiro \'e a nossa chave p\'ublica $n$. O segundo n\'umero \'e $d$, o $d$ é o inverso de $3$ para o m\'odulo $(p-1)(q-1)$. Mais a frente explicaremos o motivo de se adicionar este n\'umero. Pela defini\c{c}\~ao do inverso temos:
+}
+\[
+\begin{array}{c}
+$ 3d \equiv 1(mod((p-1)(q-1)))$
+\end{array}
+\]
