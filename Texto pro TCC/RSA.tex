@@ -64,11 +64,11 @@ Encerrada a fase de pr\'e-codificando vamos agora codificar nossas mensagens. Ma
 }
 \subsection{Codificando uma mensagem}
 \subparagraph{
-A esta altura n\'os j\'a conhecemos a $n$. Vamos chamar o bloco codificado que iremos encriptar de $b$, lembrando que $b$ \'e um n\'umero inteiro menor que $n$. Vamos chamao o bloco coficado de C(b). Para obt\^e-lo deveos aplicar a seguinte f\'ormula:
+A esta altura n\'os j\'a conhecemos a $n$. Vamos chamar o bloco codificado que iremos encriptar de $b$, lembrando que $b$ \'e um n\'umero inteiro menor que $n$. Vamos chamar o bloco codificado de C(b). Para obt\^e-lo deveos aplicar a seguinte f\'ormula:
 }
 \[
 \begin{array}{c}
-$C(b)$ = resto da divis\~ao de $b^3$ por $n$
+$C(b) \equiv b^3 (mod n)$
 \end{array}
 \]
 \subparagraph{
@@ -84,14 +84,14 @@ Faremos o mesmo procedimento para todos nossos blocos
 }
 \[
 \begin{array}{c}
-$224^3 \equiv 11239424 \equiv 129 (mod 391) $
-$279^3 \equiv 21717639 \equiv 326 (mod 391) $
-$91^3  \equiv 753571   \equiv 114 (mod 391) $
-$7^3   \equiv 343      \equiv 343 (mod 391) $
-$30^3  \equiv 27000    \equiv 21  (mod 391) $
-$222^3 \equiv 10941048 \equiv 86  (mod 391) $
-$42^3  \equiv 74088    \equiv 189 (mod 391) $
-$7^3   \equiv 343      \equiv 343 (mod 391) $
+$224^3 \equiv 11239424 \equiv 129 (mod 391) $\\
+$279^3 \equiv 21717639 \equiv 326 (mod 391) $\\
+$91^3  \equiv 753571   \equiv 114 (mod 391) $\\
+$7^3   \equiv 343      \equiv 343 (mod 391) $\\
+$30^3  \equiv 27000    \equiv 21  (mod 391) $\\
+$222^3 \equiv 10941048 \equiv 86  (mod 391) $\\
+$42^3  \equiv 74088    \equiv 189 (mod 391) $\\
+$7^3   \equiv 343      \equiv 343 (mod 391) $\\
 \end{array}
 \]
 \subparagraph{
@@ -112,3 +112,125 @@ Para podermos desencriptar uma mensagem n\'os precisamos de dois números. O prim
 $ 3d \equiv 1(mod((p-1)(q-1)))$
 \end{array}
 \]
+\subparagraph{
+A partir do momento em que estamos de posse de $d$, podemos usar o par $(n,d)$ para desencriptar a mensagem, onde $a$ \'e o bloco encriptado e $D(a)$ a mensagem desencriptada, usando a f\'ormula:
+}
+\[
+\begin{array}{c}
+$ D(a) \equiv a^d (mod n) $
+\end{array}
+\]
+\subparagraph{
+Note que na fun\c{c}\~ao acima n\'os assumimos o compromisso de que $D(C(b)) = b$. Para comprov\'a-la vamos mais adiante fazer sua demonstra\c{c}\~ao. Neste momento vamos apenas aplic\'a-la ao nosso exemplo. O primeiro passo consiste em calcular $d$. Vamos supor que $p$ e $q$ deixam resto $5$ na divis\~ao por $6$. Com isso podemos afirmar que:
+}
+\[
+\begin{array}{c}
+$(p-1)(q-1) \equiv 4 \cdot 4 \equiv 16 \equiv 4 \equiv -2(mod 6)$ 
+\end{array}
+\]
+\paragraph{
+ou seja:
+}
+\[
+\begin{array}{c}
+$(p-1)(q-1) = 6 \cdot k -2$
+\end{array}
+\]
+\subparagraph{
+No entanto, podemos dizer que $6 \cdot k - 2 \equiv 4 \cdot k - 1 (mod 3)$.Podendo dizer que assim que $d$ \'e igual a $4 \cdot k -1$. Feito isso vamos aos n\'umeros de nosso exemplo: $17$ e $23$, com isso vamos obter:
+}
+\[
+\begin{array}{c}
+$(p-1)(q-1) = 16 \cdot 22 = 352 = 6 \cdot 58 + 4 = 6\cdot 59 -2$
+\end{array}
+\]
+\paragraph{
+Com isso obtemos que $k=59$. Aplicando k teremos que:
+}
+\[
+\begin{array}{c}
+$d = 4 \cdot 59 - 1 = 235.$
+\end{array}
+\]
+\subparagraph{
+Agora que j\'a conhecemos a $d$ podemos decodificar a mensagem. Vamos fazer isso em nosso primeiro bloco codificado, que possui o valor $34$. Para achar a resposta precisaremos calcular $D(34) \equiv 34^{235} (mod 391)$. Esse c\'alculo seria praticamente imposs\'ivel sem o uso dos Teoremas chin\^es do resto e de Fermat.
+}
+\subparagraph{
+Nosso primeiro passo ser\'a o de calcular $34^{235}$ nos m\'odulos $17$ e $23$, que s\~ao os primos em que $n$ fatora. Neste caso, come\c{c}amos com:
+}
+\[
+\begin{array}{c}
+$34 \equiv 0 (mod 17)$\\
+$34 \equiv 11(mod 23)$\\
+\end{array}
+\]
+\subparagraph{
+Assim teremos que $34^{235} \equiv 0^{235} \equiv 0 (mod 17)$. Aplicando o teorema de Fermat a outra congr\^encia teremos:
+}
+\[
+\begin{array}{c}
+$11^{235} \equiv (11^{22})^{10} \cdot 11^{15} \equiv 11^{15}(mod 23)$
+\end{array}
+\]
+\subparagraph{
+Como $ 11 \equiv -12 \equiv -4 \cdot 3(mod 23)$. Desse modo podemos afirmar que:
+}
+\[
+\begin{array}{c}
+$11^{235} \equiv 11^{15} \equiv -4^{15} \cdot 3^{15}(mod 23)$
+\end{array}
+\]
+\paragraph{
+Com isso, teremos:
+}
+\[
+\begin{array}{c}
+$415 \equiv 230 \equiv (2^{11})^2 \cdot 2^8 \equiv 2^8 \equiv 3 (mod 23)$\\
+$315 \equiv 3^{11} \cdot 3^4 \equiv 3^4 \equiv 12 (mod 23)$
+\end{array}
+\]
+\paragraph{
+Concluindo assim:
+}
+\[
+\begin{array}{c}
+$11235 \equiv -415 \cdot 315 \equiv -3 \cdot 12 \equiv 10 (mod 23)$
+\end{array}
+\]
+\subparagraph{
+Temos assim as congru\^encias $34^{235} \equiv 0 (mod 17)$ e $34^{235} \equiv 10 (mod 23)$. Com isso podemoa aplicaro o teorema chin\^es do resto no sistema:
+}
+\[
+\begin{array}{c}
+$x \equiv 0 (mod 17)$\\
+$x \equiv 10 (mod 23)$\\
+\end{array}
+\]
+\subparagraph{
+Com ele n\'os iremos obter que 
+}
+\[
+\begin{array}{c}
+$10 + 23y \equiv 0 (mod 17)$\\
+\end{array}
+\]
+\paragraph{
+Obtendo assim:
+}
+\[
+\begin{array}{c}
+$6y \equiv 7 (mod 17)$\\
+\end{array}
+\]
+\paragraph{
+Porém, $3$ \'e o inverso de $6$ no m\'odulo $17$, e por isso teremos
+}
+\[
+\begin{array}{c}
+$y \equiv 3 \cdot 7 \equiv 4 (mod 17)$\\
+\end{array}
+\]
+\subparagraph{
+Com isso iremos chegar at\'e $x = 10 + 23y = 10 + 23·4 = 102$. Caso você venha a conferir na se\c{c}\~ao sobre codifica\c{c}\~ao de mensagens poder\'a confirmar o resultado. Os demais blocos podem ser decodificados da mesma forma, apenas n\~ao ser\~ao mostradas nesta obra por necessitar de muitos passos.
+}
+\section{Seguran\c{c}a}

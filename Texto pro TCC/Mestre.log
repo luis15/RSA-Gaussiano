@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.15)  28 MAR 2017 21:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.15)  2 APR 2017 14:14
 entering extended mode
 **./Mestre.tex
 (Mestre.tex
@@ -686,33 +686,11 @@ Overfull \hbox (121.94408pt too wide) in paragraph at lines 69--69
  []
 
 [28]
-
-LaTeX Warning: Command \~ invalid in math mode on input line 71.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ...@spacefactor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.71 $C(b)$ = resto da divis\~a
-                               o de $b^3$ por $n$
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! You can't use `\spacefactor' in math mode.
-\add@accent ...}\accent #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.71 $C(b)$ = resto da divis\~a
-                               o de $b^3$ por $n$
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no è in font cmex10!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.71 $C(b)$ = resto da divis\~ao de $b^
-                                       3$ por $n$
+l.71 $C(b) \equiv
+                  b^3 (mod n)$
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
@@ -724,7 +702,482 @@ l.72 \end{array}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-) [29]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.79 $102^
+          3 \equiv 24276 \equiv 34 (mod 391) $
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.80 \end{array}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.87 $224^
+          3 \equiv 11239424 \equiv 129 (mod 391) $\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.88 $
+      279^3 \equiv 21717639 \equiv 326 (mod 391) $\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.88 $279^
+          3 \equiv 21717639 \equiv 326 (mod 391) $\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.89 $
+      91^3  \equiv 753571   \equiv 114 (mod 391) $\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.89 $91^
+         3  \equiv 753571   \equiv 114 (mod 391) $\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.90 $
+      7^3   \equiv 343      \equiv 343 (mod 391) $\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.90 $7^
+        3   \equiv 343      \equiv 343 (mod 391) $\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.91 $
+      30^3  \equiv 27000    \equiv 21  (mod 391) $\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.91 $30^
+         3  \equiv 27000    \equiv 21  (mod 391) $\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.92 $
+      222^3 \equiv 10941048 \equiv 86  (mod 391) $\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.92 $222^
+          3 \equiv 10941048 \equiv 86  (mod 391) $\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.93 $
+      42^3  \equiv 74088    \equiv 189 (mod 391) $\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.93 $42^
+         3  \equiv 74088    \equiv 189 (mod 391) $\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.94 $
+      7^3   \equiv 343      \equiv 343 (mod 391) $\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.94 $7^
+        3   \equiv 343      \equiv 343 (mod 391) $\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.95 \end
+         {array}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (64.86026pt too wide) in paragraph at lines 100--100
+\OT1/cmr/bx/n/10.95 ves pri-va-das $\OT1/cmr/m/n/10.95 17$ \OT1/cmr/bx/n/10.95 e $\OT1/cmr/m/n/10.95 23$ \OT1/cmr/bx/n/1
+0.95 e a publica $\OT1/cmr/m/n/10.95 391$ \OT1/cmr/bx/n/10.95 e: [] [] 
+ []
+
+
+Overfull \hbox (3.62404pt too wide) in paragraph at lines 110--110
+\OT1/cmr/bx/n/10.95 finic~ao do in-verso te-mos: [] [] 
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.112 $ 3d \equiv
+                  1(mod((p-1)(q-1)))$
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.113 \end{array}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+[29]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.120 $ D(a) \equiv
+                    a^d (mod n) $
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.121 \end{array}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.128 $(p-1)(q-1) \equiv
+                         4 \cdot 4 \equiv 16 \equiv 4 \equiv -2(mod 6)$
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.129 \end{array}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.136 $(p-1)(q-1) = 6 \cdot
+                            k -2$
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.137 \end{array}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.144 $(p-1)(q-1) = 16 \cdot
+                             22 = 352 = 6 \cdot 58 + 4 = 6\cdot 59 -2$
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.145 \end{array}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.152 $d = 4 \cdot
+                   59 - 1 = 235.$
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.153 \end{array}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.163 $34 \equiv
+                 0 (mod 17)$\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.164 $
+       34 \equiv 11(mod 23)$\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.164 $34 \equiv
+                 11(mod 23)$\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.165 \end
+          {array}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (109.1753pt too wide) in paragraph at lines 170--170
+\OT1/cmr/bx/n/10.95 rema de Fer-mat a ou-tra congr^encia te-re-mos: [] [] 
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.172 $11^
+          {235} \equiv (11^{22})^{10} \cdot 11^{15} \equiv 11^{15}(mod 23)$
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.173 \end{array}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+[30]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.180 $11^
+          {235} \equiv 11^{15} \equiv -4^{15} \cdot 3^{15}(mod 23)$
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.181 \end{array}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.188 $415 \equiv
+                  230 \equiv (2^{11})^2 \cdot 2^8 \equiv 2^8 \equiv 3 (mod 2...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.189 $
+       315 \equiv 3^{11} \cdot 3^4 \equiv 3^4 \equiv 12 (mod 23)$
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.189 $315 \equiv
+                  3^{11} \cdot 3^4 \equiv 3^4 \equiv 12 (mod 23)$
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.190 \end{array}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.197 $11235 \equiv
+                    -415 \cdot 315 \equiv -3 \cdot 12 \equiv 10 (mod 23)$
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.198 \end{array}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (6.7498pt too wide) in paragraph at lines 203--203
+  \OT1/cmr/bx/n/10.95 Te-mos as-sim as con-gru^encias $\OT1/cmr/m/n/10.95 34[] \OMS/cmsy/m/n/10.95  \OT1/cmr/m/n/10.95 
+0(\OML/cmm/m/it/10.95 mod\OT1/cmr/m/n/10.95 17)$ \OT1/cmr/bx/n/10.95 e $\OT1/cmr/m/n/10.95 34[] \OMS/cmsy/m/n/10.95  \O
+T1/cmr/m/n/10.95 10(\OML/cmm/m/it/10.95 mod\OT1/cmr/m/n/10.95 23)$\OT1/cmr/bx/n/10.95 .
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.205 $x \equiv
+                0 (mod 17)$\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.206 $
+       x \equiv 10 (mod 23)$\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.206 $x \equiv
+                10 (mod 23)$\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.207 \end
+          {array}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (47.49701pt too wide) in paragraph at lines 212--212
+  \OT1/cmr/bx/n/10.95 Com ele nos ire-mos ob-ter que [] [] 
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.214 $10 + 23y \equiv
+                       0 (mod 17)$\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.215 \end
+          {array}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.222 $6y \equiv
+                 7 (mod 17)$\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.223 \end
+          {array}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.230 $y \equiv
+                3 \cdot 7 \equiv 4 (mod 17)$\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.231 \end
+          {array}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 236.
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 236.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 236.
+
+
+LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 236.
+
+) [31] [32]
 
 Package babelbib Warning: Command \selectbiblanguage used without package
 (babelbib)                option fixlanguage. Ignored on input line 118.
@@ -793,7 +1246,7 @@ Overfull \hbox (32.61884pt too wide) in paragraph at lines 52--59
 |   []\OT1/cmr/m/n/10.95 .
  []
 
-) [30
+) [33
 
 
 ] (Mestre.aux (Pref.aux) (Intro.aux) (Num.aux) (Mod.aux) (InvMod.aux) (TCR.aux) (Pot.aux) (RSA.aux)) )
@@ -802,13 +1255,13 @@ Overfull \hbox (32.61884pt too wide) in paragraph at lines 52--59
 ### simple group (level 1) entered at line 102 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5873 strings out of 493333
- 73891 string characters out of 3139193
+ 5892 strings out of 493333
+ 74216 string characters out of 3139193
  199135 words of memory out of 3000000
- 9200 multiletter control sequences out of 15000+200000
- 15617 words of font info for 64 fonts, out of 3000000 for 9000
+ 9215 multiletter control sequences out of 15000+200000
+ 15872 words of font info for 65 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,10n,25p,3217b,599s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,10n,25p,3217b,597s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Progr
 am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
@@ -818,9 +1271,9 @@ MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
 msfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Mestre.pdf (32 pages, 258301 bytes).
+Output written on Mestre.pdf (35 pages, 264896 bytes).
 PDF statistics:
- 165 PDF objects out of 1000 (max. 8388607)
+ 174 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -17,9 +17,31 @@
 \@writefile{toc}{\contentsline {section}{\numberline {7.2}Codificando e decodificando mensagens}{28}}
 \@writefile{toc}{\contentsline {subparagraph}{ Encerrada a fase de pr\'e-codificando vamos agora codificar nossas mensagens. Manteremos os valores e exemplos da se\c c\~ao anterior a fim de facilitar a compreens\~ao. }{28}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {7.2.1}Codificando uma mensagem}{29}}
-\@writefile{toc}{\contentsline {subparagraph}{ A esta altura n\'os j\'a conhecemos a $n$. Vamos chamar o bloco codificado que iremos encriptar de $b$, lembrando que $b$ \'e um n\'umero inteiro menor que $n$. Vamos chamao o bloco coficado de C(b). Para obt\^e-lo deveos aplicar a seguinte f\'ormula: }{29}}
+\@writefile{toc}{\contentsline {subparagraph}{ A esta altura n\'os j\'a conhecemos a $n$. Vamos chamar o bloco codificado que iremos encriptar de $b$, lembrando que $b$ \'e um n\'umero inteiro menor que $n$. Vamos chamar o bloco codificado de C(b). Para obt\^e-lo deveos aplicar a seguinte f\'ormula: }{29}}
+\@writefile{toc}{\contentsline {subparagraph}{ Podemos para facilitar dizer que $C(b)$ \'e o res\IeC {\'\i }duo de $b^3$ pelo m\'odulo $n$. Vamo a uma demonstra\c {c}\~ao pr\'atica com o primiro bloco de nossa mensagem, com o n\'umero $102$. Para simplificar o nosso trabalho vamos utilizar as opera\c {c}\~oes modulares. }{29}}
+\@writefile{toc}{\contentsline {subparagraph}{ Faremos o mesmo procedimento para todos nossos blocos }{29}}
+\@writefile{toc}{\contentsline {subparagraph}{ Portanto, ``Amor/Humor.'', encriptado pelo RSA com as chaves privadas $17$ e $23$ e a p\'ublica $391$ \'e: }{29}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.2}Decodificando uma mensagem}{29}}
+\@writefile{toc}{\contentsline {subparagraph}{ Para podermos desencriptar uma mensagem n\'os precisamos de dois n\'umeros. O primeiro \'e a nossa chave p\'ublica $n$. O segundo n\'umero \'e $d$, o $d$ \'e o inverso de $3$ para o m\'odulo $(p-1)(q-1)$. Mais a frente explicaremos o motivo de se adicionar este n\'umero. Pela defini\c {c}\~ao do inverso temos: }{29}}
+\@writefile{toc}{\contentsline {subparagraph}{ A partir do momento em que estamos de posse de $d$, podemos usar o par $(n,d)$ para desencriptar a mensagem, onde $a$ \'e o bloco encriptado e $D(a)$ a mensagem desencriptada, usando a f\'ormula: }{30}}
+\@writefile{toc}{\contentsline {subparagraph}{ Note que na fun\c {c}\~ao acima n\'os assumimos o compromisso de que $D(C(b)) = b$. Para comprov\'a-la vamos mais adiante fazer sua demonstra\c {c}\~ao. Neste momento vamos apenas aplic\'a-la ao nosso exemplo. O primeiro passo consiste em calcular $d$. Vamos supor que $p$ e $q$ deixam resto $5$ na divis\~ao por $6$. Com isso podemos afirmar que: }{30}}
+\@writefile{toc}{\contentsline {paragraph}{ ou seja: }{30}}
+\@writefile{toc}{\contentsline {subparagraph}{ No entanto, podemos dizer que $6 \cdot k - 2 \equiv 4 \cdot k - 1 (mod 3)$.Podendo dizer que assim que $d$ \'e igual a $4 \cdot k -1$. Feito isso vamos aos n\'umeros de nosso exemplo: $17$ e $23$, com isso vamos obter: }{30}}
+\@writefile{toc}{\contentsline {paragraph}{ Com isso obtemos que $k=59$. Aplicando k teremos que: }{30}}
+\@writefile{toc}{\contentsline {subparagraph}{ Agora que j\'a conhecemos a $d$ podemos decodificar a mensagem. Vamos fazer isso em nosso primeiro bloco codificado, que possui o valor $34$. Para achar a resposta precisaremos calcular $D(34) \equiv 34^{235} (mod 391)$. Esse c\'alculo seria praticamente imposs\'ivel sem o uso dos Teoremas chin\^es do resto e de Fermat. }{30}}
+\@writefile{toc}{\contentsline {subparagraph}{ Nosso primeiro passo ser\'a o de calcular $34^{235}$ nos m\'odulos $17$ e $23$, que s\~ao os primos em que $n$ fatora. Neste caso, come\c {c}amos com: }{30}}
+\@writefile{toc}{\contentsline {subparagraph}{ Assim teremos que $34^{235} \equiv 0^{235} \equiv 0 (mod 17)$. Aplicando o teorema de Fermat a outra congr\^encia teremos: }{31}}
+\@writefile{toc}{\contentsline {subparagraph}{ Como $ 11 \equiv -12 \equiv -4 \cdot 3(mod 23)$. Desse modo podemos afirmar que: }{31}}
+\@writefile{toc}{\contentsline {paragraph}{ Com isso, teremos: }{31}}
+\@writefile{toc}{\contentsline {paragraph}{ Concluindo assim: }{31}}
+\@writefile{toc}{\contentsline {subparagraph}{ Temos assim as congru\^encias $34^{235} \equiv 0 (mod 17)$ e $34^{235} \equiv 10 (mod 23)$. Com isso podemoa aplicaro o teorema chin\^es do resto no sistema: }{31}}
+\@writefile{toc}{\contentsline {subparagraph}{ Com ele n\'os iremos obter que }{31}}
+\@writefile{toc}{\contentsline {paragraph}{ Obtendo assim: }{31}}
+\@writefile{toc}{\contentsline {paragraph}{ Por\'em, $3$ \'e o inverso de $6$ no m\'odulo $17$, e por isso teremos }{31}}
+\@writefile{toc}{\contentsline {subparagraph}{ Com isso iremos chegar at\'e $x = 10 + 23y = 10 + 23\IeC {\textperiodcentered }4 = 102$. Caso voc\^e venha a conferir na se\c {c}\~ao sobre codifica\c {c}\~ao de mensagens poder\'a confirmar o resultado. Os demais blocos podem ser decodificados da mesma forma, apenas n\~ao ser\~ao mostradas nesta obra por necessitar de muitos passos. }{31}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.3}Seguran\c {c}a}{32}}
 \@setckpt{RSA}{
-\setcounter{page}{30}
+\setcounter{page}{33}
 \setcounter{equation}{0}
 \setcounter{enumi}{0}
 \setcounter{enumii}{0}
@@ -29,8 +51,8 @@
 \setcounter{mpfootnote}{0}
 \setcounter{part}{0}
 \setcounter{chapter}{7}
-\setcounter{section}{2}
-\setcounter{subsection}{1}
+\setcounter{section}{3}
+\setcounter{subsection}{0}
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
