@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.15)  9 APR 2017 20:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.15)  9 APR 2017 20:52
 entering extended mode
 **./Mestre.tex
 (Mestre.tex
@@ -555,99 +555,66 @@ OT1/cmr/bx/n/10.95 . Ob-te-mos: [] []
 ! Double superscript.
 \@svsechd ... podemos calcular o resto de $2^{13}^
                                                   {98765}$, \'e descobrir o ...
-l.49 \subparagraph
-                  {
+l.49 \section
+             {O teorema de Fermat}
 I treat `x^1^2' essentially like `x^1{}^2'.
 
 ! Double superscript.
 \@svsechd ...sso, n\'os podemos dizer que $2^{13}^
                                                   {98765} \equiv 2^{5q'+3} \...
-l.52 \section
+l.49 \section
              {O teorema de Fermat}
 I treat `x^1^2' essentially like `x^1{}^2'.
 
 
-Overfull \hbox (8.46863pt too wide) in paragraph at lines 56--56
+Overfull \hbox (8.46863pt too wide) in paragraph at lines 53--53
 \OT1/cmr/bx/n/10.95 n~ao di-visvel por $\OML/cmm/m/it/10.95 p$\OT1/cmr/bx/n/10.95 , ent~ao: [] [] 
  []
 
 [23]
-Overfull \hbox (124.14473pt too wide) in paragraph at lines 91--91
+Overfull \hbox (124.14473pt too wide) in paragraph at lines 88--88
 \OT1/cmr/bx/n/10.95 po-dem ser con-gru-en-tes se fo-rem iguais, logo se: [] [] 
  []
 
 
-Overfull \hbox (69.16289pt too wide) in paragraph at lines 99--99
+Overfull \hbox (69.16289pt too wide) in paragraph at lines 96--96
 \OT1/cmr/bx/n/10.95 gunda. Com isso po-de-mos di-zer que: [] [] 
  []
 
 
-Overfull \hbox (13.02423pt too wide) in paragraph at lines 107--107
+Overfull \hbox (13.02423pt too wide) in paragraph at lines 104--104
   \OT1/cmr/bx/n/10.95 Sa-bendo disso ve-mos que: [] [] 
  []
 
 
-Overfull \hbox (65.84253pt too wide) in paragraph at lines 115--115
+Overfull \hbox (65.84253pt too wide) in paragraph at lines 112--112
   \OT1/cmr/bx/n/10.95 E ape-nas cor-tando os fa-to-res iguais: [] [] 
  []
 
 ! Double superscript.
 \@svsechd ...brir quem \'e congruente a $3^{1034}^
                                                   {2}$ no m\'odulo $1033$. C...
-l.127 \[
+l.124 \[
         
 I treat `x^1^2' essentially like `x^1{}^2'.
 
 [24]
-Overfull \hbox (70.10985pt too wide) in paragraph at lines 143--143
+Overfull \hbox (70.10985pt too wide) in paragraph at lines 140--140
   \OT1/cmr/bx/n/10.95 e com essa sim-pli-ficac~ao che-ga-mos a: [] [] 
  []
 
-! Extra }, or forgotten $.
-\mbox #1->\leavevmode \hbox {#1}
-                                
-l.145 ...tit{$ 3^{1034} \equiv 3^{1032}\cdot q+ 4}
-                                                   \equiv (3^{1032})^{q} + 3...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
 
-! Extra }, or forgotten $.
-\nfss@text #1->{\mbox {#1}}
-                           
-l.145 ...tit{$ 3^{1034} \equiv 3^{1032}\cdot q+ 4}
-                                                   \equiv (3^{1032})^{q} + 3...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.145 ...quiv (3^{1032})^{q} + 3^4 (mod 1033)$} \\
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Overfull \hbox (21.81308pt too wide) in paragraph at lines 151--151
+Overfull \hbox (21.81308pt too wide) in paragraph at lines 148--148
 \OT1/cmr/bx/n/10.95 mos che-gar a con-clus~ao que: [] [] 
  []
 
 [25]
-Overfull \hbox (182.07896pt too wide) in paragraph at lines 191--191
+Overfull \hbox (182.07896pt too wide) in paragraph at lines 188--188
   \OT1/cmr/bx/n/10.95 Em se-guida subs-titumos nas con-gru^encias e as re-du-zi-mos [] [] 
  []
 
 
-Overfull \hbox (132.9077pt too wide) in paragraph at lines 202--202
+Overfull \hbox (132.9077pt too wide) in paragraph at lines 199--199
   \OT1/cmr/bx/n/10.95 Logo, nossa ta-refa con-siste em re-sol-ver o sis-tema [] [] 
  []
 
@@ -686,167 +653,6 @@ Overfull \hbox (121.94408pt too wide) in paragraph at lines 69--69
  []
 
 [28]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.71 $C(b) \equiv
-                  b^3 (mod n)$
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.72 \end{array}
-                
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.79 $102^
-          3 \equiv 24276 \equiv 34 (mod 391) $
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.80 \end{array}
-                
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.87 $224^
-          3 \equiv 11239424 \equiv 129 (mod 391) $\\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.88 $
-      279^3 \equiv 21717639 \equiv 326 (mod 391) $\\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.88 $279^
-          3 \equiv 21717639 \equiv 326 (mod 391) $\\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.89 $
-      91^3  \equiv 753571   \equiv 114 (mod 391) $\\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.89 $91^
-         3  \equiv 753571   \equiv 114 (mod 391) $\\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.90 $
-      7^3   \equiv 343      \equiv 343 (mod 391) $\\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.90 $7^
-        3   \equiv 343      \equiv 343 (mod 391) $\\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.91 $
-      30^3  \equiv 27000    \equiv 21  (mod 391) $\\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.91 $30^
-         3  \equiv 27000    \equiv 21  (mod 391) $\\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.92 $
-      222^3 \equiv 10941048 \equiv 86  (mod 391) $\\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.92 $222^
-          3 \equiv 10941048 \equiv 86  (mod 391) $\\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.93 $
-      42^3  \equiv 74088    \equiv 189 (mod 391) $\\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.93 $42^
-         3  \equiv 74088    \equiv 189 (mod 391) $\\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.94 $
-      7^3   \equiv 343      \equiv 343 (mod 391) $\\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.94 $7^
-        3   \equiv 343      \equiv 343 (mod 391) $\\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.95 \end
-         {array}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
 Overfull \hbox (64.86026pt too wide) in paragraph at lines 100--100
 \OT1/cmr/bx/n/10.95 ves pri-va-das $\OT1/cmr/m/n/10.95 17$ \OT1/cmr/bx/n/10.95 e $\OT1/cmr/m/n/10.95 23$ \OT1/cmr/bx/n/1
 0.95 e a publica $\OT1/cmr/m/n/10.95 391$ \OT1/cmr/bx/n/10.95 e: [] [] 
@@ -857,317 +663,27 @@ Overfull \hbox (3.62404pt too wide) in paragraph at lines 110--110
 \OT1/cmr/bx/n/10.95 finic~ao do in-verso te-mos: [] [] 
  []
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.112 $ 3d \equiv
-                  1(mod((p-1)(q-1)))$
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.113 \end{array}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
 [29]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.120 $ D(a) \equiv
-                    a^d (mod n) $
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.121 \end{array}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.128 $(p-1)(q-1) \equiv
-                         4 \cdot 4 \equiv 16 \equiv 4 \equiv -2(mod 6)$
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.129 \end{array}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.136 $(p-1)(q-1) = 6 \cdot
-                            k -2$
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.137 \end{array}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.144 $(p-1)(q-1) = 16 \cdot
-                             22 = 352 = 6 \cdot 58 + 4 = 6\cdot 59 -2$
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.145 \end{array}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.152 $d = 4 \cdot
-                   59 - 1 = 235.$
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.153 \end{array}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.163 $34 \equiv
-                 0 (mod 17)$\\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.164 $
-       34 \equiv 11(mod 23)$\\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.164 $34 \equiv
-                 11(mod 23)$\\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.165 \end
-          {array}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
 Overfull \hbox (109.1753pt too wide) in paragraph at lines 170--170
 \OT1/cmr/bx/n/10.95 rema de Fer-mat a ou-tra congr^encia te-re-mos: [] [] 
  []
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.172 $11^
-          {235} \equiv (11^{22})^{10} \cdot 11^{15} \equiv 11^{15}(mod 23)$
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.173 \end{array}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
 [30]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.180 $11^
-          {235} \equiv 11^{15} \equiv -4^{15} \cdot 3^{15}(mod 23)$
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.181 \end{array}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.188 $415 \equiv
-                  230 \equiv (2^{11})^2 \cdot 2^8 \equiv 2^8 \equiv 3 (mod 2...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.189 $
-       315 \equiv 3^{11} \cdot 3^4 \equiv 3^4 \equiv 12 (mod 23)$
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.189 $315 \equiv
-                  3^{11} \cdot 3^4 \equiv 3^4 \equiv 12 (mod 23)$
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.190 \end{array}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.197 $11235 \equiv
-                    -415 \cdot 315 \equiv -3 \cdot 12 \equiv 10 (mod 23)$
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.198 \end{array}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
 Overfull \hbox (6.7498pt too wide) in paragraph at lines 203--203
   \OT1/cmr/bx/n/10.95 Te-mos as-sim as con-gru^encias $\OT1/cmr/m/n/10.95 34[] \OMS/cmsy/m/n/10.95  \OT1/cmr/m/n/10.95 
 0(\OML/cmm/m/it/10.95 mod\OT1/cmr/m/n/10.95 17)$ \OT1/cmr/bx/n/10.95 e $\OT1/cmr/m/n/10.95 34[] \OMS/cmsy/m/n/10.95  \O
 T1/cmr/m/n/10.95 10(\OML/cmm/m/it/10.95 mod\OT1/cmr/m/n/10.95 23)$\OT1/cmr/bx/n/10.95 .
  []
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.205 $x \equiv
-                0 (mod 17)$\\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.206 $
-       x \equiv 10 (mod 23)$\\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.206 $x \equiv
-                10 (mod 23)$\\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.207 \end
-          {array}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
 
 Overfull \hbox (47.49701pt too wide) in paragraph at lines 212--212
   \OT1/cmr/bx/n/10.95 Com ele nos ire-mos ob-ter que [] [] 
  []
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.214 $10 + 23y \equiv
-                       0 (mod 17)$\\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.215 \end
-          {array}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.222 $6y \equiv
-                 7 (mod 17)$\\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.223 \end
-          {array}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.230 $y \equiv
-                3 \cdot 7 \equiv 4 (mod 17)$\\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.231 \end
-          {array}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
 ! Undefined control sequence.
 \@svsechd ... at\'e $x = 10 + 23y = 10 + 23 \codt 
                                                   4 = 102$. Caso você venha ...
-l.238 \section
+l.237 \section
               {Provando a funcionalidade do RSA}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1178,7 +694,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ...at\'e $x = 10 + 23y = 10 + 23 \codt 
                                                   4 = 102$. Caso você venha ...
-l.238 \section
+l.237 \section
               {Provando a funcionalidade do RSA}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1192,42 +708,9 @@ Overfull \hbox (17.5989pt too wide) in paragraph at lines 242--242
  []
 
 [31]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.244 $b \equiv
-                DC(b) (mod n) $
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.245 \end{array}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
 Overfull \hbox (100.47311pt too wide) in paragraph at lines 250--250
 \OT1/cmr/bx/n/10.95 nar-mos am-bos as con-gru^encia ire-mos ob-ter [] [] 
  []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.252 $DC(b) \equiv
-                    D(b^3) \equiv b^{3d}(mod n) $
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.253 \end{array}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
 
 
 Overfull \hbox (142.47556pt too wide) in paragraph at lines 258--258
@@ -1241,101 +724,10 @@ Overfull \hbox (3.12454pt too wide) in paragraph at lines 266--266
 \OT1/cmr/bx/n/10.95 para ob-ter $\OT1/cmr/m/n/10.95 3\OML/cmm/m/it/10.95 d$ \OT1/cmr/bx/n/10.95 te-mos que: [] [] 
  []
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.268 $b^
-         {3d} \equiv b(b^{p-1})^{k(q-1)}$
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.269 \end{array}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
 
 Overfull \hbox (23.69434pt too wide) in paragraph at lines 274--274
 \OT1/cmr/bx/n/10.95 de Fer-mat, de modo a ob-ter: [] [] 
  []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.276 $b^
-         {p-1} \equiv 1 (mod p)}$
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-l.276 $b^{p-1} \equiv 1 (mod p)}
-                                $
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.277 \end{array}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.284 $b^
-         {3d} \equiv b \cdot (1)^{k(q-1)}\equiv b (mod p)}$
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-l.284 ...uiv b \cdot (1)^{k(q-1)}\equiv b (mod p)}
-                                                  $
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.285 \end{array}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.292 $b^
-         {3d} \equiv b (mod p)}$
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-l.292 $b^{3d} \equiv b (mod p)}
-                               $
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.293 \end{array}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
 
 
 Overfull \hbox (176.04684pt too wide) in paragraph at lines 298--298
@@ -1343,142 +735,10 @@ Overfull \hbox (176.04684pt too wide) in paragraph at lines 298--298
 ] [] 
  []
 
-! Extra }, or forgotten $.
-\mbox #1->\leavevmode \hbox {#1}
-                                
-l.300 \textit{$b^{3d} \equiv b (mod p)}
-                                       $}\\
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\nfss@text #1->{\mbox {#1}}
-                           
-l.300 \textit{$b^{3d} \equiv b (mod p)}
-                                       $}\\
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.300 \textit{$b^{3d} \equiv b (mod p)}$}\\
-                                           
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Extra }, or forgotten $.
-\mbox #1->\leavevmode \hbox {#1}
-                                
-l.301 \textit{$b^{3d} \equiv b (mod q)}
-                                       $}\\
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\nfss@text #1->{\mbox {#1}}
-                           
-l.301 \textit{$b^{3d} \equiv b (mod q)}
-                                       $}\\
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.301 \textit{$b^{3d} \equiv b (mod q)}$}\\
-                                           
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
 [32]
 Overfull \hbox (15.7711pt too wide) in paragraph at lines 307--307
   \OT1/cmr/bx/n/10.95 Veja que $\OML/cmm/m/it/10.95 b$ \OT1/cmr/bx/n/10.95 e soluc~ao de: [] [] 
  []
-
-! Extra }, or forgotten $.
-\mbox #1->\leavevmode \hbox {#1}
-                                
-l.309 \textit{$x \equiv b (mod p)}
-                                  $}\\
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\nfss@text #1->{\mbox {#1}}
-                           
-l.309 \textit{$x \equiv b (mod p)}
-                                  $}\\
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.309 \textit{$x \equiv b (mod p)}$}\\
-                                      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Extra }, or forgotten $.
-\mbox #1->\leavevmode \hbox {#1}
-                                
-l.310 \textit{$x \equiv b (mod q)}
-                                  $}\\
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\nfss@text #1->{\mbox {#1}}
-                           
-l.310 \textit{$x \equiv b (mod q)}
-                                  $}\\
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.310 \textit{$x \equiv b (mod q)}$}\\
-                                      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
 
 [33]) [34]
 
@@ -1575,7 +835,7 @@ MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/
 msfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Mestre.pdf (37 pages, 272779 bytes).
+Output written on Mestre.pdf (37 pages, 272815 bytes).
 PDF statistics:
  187 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

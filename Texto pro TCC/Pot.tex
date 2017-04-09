@@ -44,10 +44,7 @@ Agora n\'os vamos deixar essa opera\c{c}\~ao um pouco mais complexa, ao passo qu
 Vamos dividir $124512$ por $5$ e obteremos $4016$ com resto $2$, obtendo assim que $2^{124512} \equiv 2^2 \equiv 4 (mod31)$.
 }
 \subparagraph{
-Tornando um pouco mais dif\'icil, podemos calcular o resto de $2^{13}^{98765}$, \'e descobrir o resto de ${13}^{98765}$ por $5$, podemos dizer que ${13}^{98765} \equiv {3}^{98765}(mod 5)$ como se sabe que $3^4 = 81 \equiv 1(mod 5)$, podemos usar isso em nosso favor, pois teremos ${3}^{98765}\equiv {3}^{4\cdot24691 + 1}\equiv 3 (mod 5)$, logo o resultado de ${13}^{98765}$ \'e um n\'umero da forma $5q'+3$.
-}
-\subparagraph{
-Como isso, n\'os podemos dizer que $2^{13}^{98765} \equiv 2^{5q'+3} \equiv 2^{5q'}\cdot{2^3}\equiv {1}^{q'}\cdot{2^3} \equiv 8 (mod 31)$.
+Tornando um pouco mais dif\'icil, podemos calcular o resto de $2^{13}^{98765}$, \'e descobrir o resto de ${13}^{98765}$ por $5$, podemos dizer que ${13}^{98765} \equiv {3}^{98765}(mod 5)$ como se sabe que $3^4 = 81 \equiv 1(mod 5)$, podemos usar isso em nosso favor, pois teremos ${3}^{98765}\equiv {3}^{4\cdot24691 + 1}\equiv 3 (mod 5)$, logo o resultado de ${13}^{98765}$ \'e um n\'umero da forma $5q'+3$. Como isso, n\'os podemos dizer que $2^{13}^{98765} \equiv 2^{5q'+3} \equiv 2^{5q'}\cdot{2^3}\equiv {1}^{q'}\cdot{2^3} \equiv 8 (mod 31)$.
 }
 \section{O teorema de Fermat}
 \subparagraph{
@@ -142,7 +139,7 @@ e com essa simplifica\c{c}\~ao chegamos \`a:
 }
 \[
 \begin{array}{c}
-  \textit{$ 3^{1034} \equiv 3^{1032}\cdot q+ 4} \equiv (3^{1032})^{q} + 3^4 (mod 1033)$} \\  
+  \textit{$ 3^{1034} \equiv 3^{1032}\cdot q + 4 \equiv (3^{1032})^{q} + 3^4 (mod 1033)$} \\  
 \end{array}
 \]
 \subparagraph{
