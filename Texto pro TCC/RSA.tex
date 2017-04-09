@@ -1,4 +1,4 @@
-\chapter {Criptografia RSA}
+\chapter {Aplicando a criptografia RSA}
 \label{RSA}
 
 \subparagraph{
@@ -245,7 +245,7 @@ $b \equiv DC(b) (mod n) $
 \end{array}
 \]
 \subparagraph{
-N\'os j\' vimos que $C(b) \equiv b^3 (mod n)$ e $D(a) \equiv a^d(mod n)$. Se combinarmos ambos as congru\^encia iremos obter
+N\'os j\'a vimos que $C(b) \equiv b^3 (mod n)$ e $D(a) \equiv a^d(mod n)$. Se combinarmos ambos as congru\^encia iremos obter
 }
 \[
 \begin{array}{c}
@@ -260,18 +260,82 @@ Logo o que n\'os temos de provar \'e que $b^{3d} \equiv b (mod n)$. Como por def
 $3d = 1+k(p-1)(q-1) $
 \end{array}
 \]
-
-
-
-
-
+\subparagraph{
+Pelo Teorema Chin\^es do Resto e levando em conta a express\~ao para obter $3d$ temos que:
+}
+\[
+\begin{array}{c}
+$b^{3d} \equiv b(b^{p-1})^{k(q-1)}$
+\end{array}
+\]
+\subparagraph{
+Tomando que $p$ n\~ao divide $b$, n\'os podemos vir usar o Teorema de Fermat, de modo a obter:
+}
+\[
+\begin{array}{c}
+$b^{p-1} \equiv 1 (mod p)}$
+\end{array}
+\]
+\paragraph{
+Obtendo assim
+}
+\[
+\begin{array}{c}
+$b^{3d} \equiv b \cdot (1)^{k(q-1)}\equiv b (mod p)}$
+\end{array}
+\]
+\subparagraph{
+Mesma que $b$ seja m\'ultiplo de $p$, teremos que $b$ e $b^{3d}$ s\~ao congruentes a $0$, logo nessa caso tamb\'em \'e v\'alida a congru\^encia, tendo assim: 
+}
+\[
+\begin{array}{c}
+$b^{3d} \equiv b (mod p)}$
+\end{array}
+\]
+\subparagraph{
+Pelo mesmo m\'etodo podemos  obter $q$, obtendo o par: 
+}
+\[
+\begin{array}{c}
+\textit{$b^{3d} \equiv b (mod p)}$}\\
+\textit{$b^{3d} \equiv b (mod q)}$}\\
+\end{array}
+\]
+\subparagraph{
+Veja que $b$ \'e solu\c{c}\~ao de: 
+}
+\[
+\begin{array}{c}
+\textit{$x \equiv b (mod p)}$}\\
+\textit{$x \equiv b (mod q)}$}\\
+\end{array}
+\]
+\paragraph{
+Pelo Teorema Chin\^es do resto esse sistema tem solu\c{c}\~ao igual:
+}
+\[
+\begin{array}{c}
+\textit{$b + p \cdot q \cdot t$}\\
+\end{array}
+\]
+\paragraph{
+Onde $t\in \mathbb{Z}$. Logo como provamos anteriormente temos que:
+}
+\[
+\begin{array}{c}
+\textit{$b^{3d} \equiv b + p \cdot q \cdot k$}\\
+\end{array}
+\]
+\paragraph{
+para algum inteiro $k$. Isso equivale a $b^{3d} \equiv b (mod (pq))$. Isso comprova a congru\^encia que quer\'iamos a efici\^encia do RSA.
+}
 \section{Discutindo a seguran\c{c}a do RSA}
 \subparagraph{
-Antes de mudarmos completamente o foco deste trabalho, vaos nos focar no que tange a seguran\c{c}a do RSA. Vamos supor que algu\'em, que vamos denominar Irineu, esteja com uma escuta em nossas mensagens, tendo assim acesso tanto a mensagem codificada quanto a chave p\'ublica $n$. Vamos lembrar que $n$ \'e a multiplica\c{c}\~ ao dos primos $p$ e $q$. Sabendo disso bastaria para Irineu fatorar $n$ para obter $p$ e $q$ e depois descobrir $d$ para poder decodificar a mensagem, como j\'a foi explicado neste cap\'itulo.
+Antes de mudarmos completamente o foco deste trabalho, vamos nos focar no que tange a seguran\c{c}a do RSA. Vamos supor que algu\'em, que vamos denominar Irineu, esteja com uma escuta em nossas mensagens, tendo assim acesso tanto a mensagem codificada quanto a chave p\'ublica $n$. Vamos lembrar que $n$ \'e a multiplica\c{c}\~ ao dos primos $p$ e $q$. Sabendo disso bastaria para Irineu fatorar $n$ para obter $p$ e $q$ e depois descobrir $d$ para poder decodificar a mensagem, como j\'a foi explicado neste cap\'itulo.
 }
 \subparagraph{
 Isto pode parecer muito simples, mas cmo j\'a mostramos na seção sobre fatora\c{c}\~ao n\~ao h\'a um algoritmo conhecido que possa fazer isso de forma eficiente. O que ocorre \'e que um algoritmo que fa\c{c}a a fatora\c{c}\~ao de forma eficinte pode vir a surgir a qualquer momento, do ponto que n\~ao h\'a nenhuma prova matem\'atica de que esse algoritmo n\~ao exista.
 }
 \subparagraph{
-O que iremos fazer nos pr\'oximos cap\'itulos consiste em propor uma varia\c{c}\~ao da criptografia RSA que n\~ao seja completamente vulner\'avel caso tal algoritmo sejja descoberto, a \textit{Criptografia RSA Gaussiana}.
+O que iremos fazer nos pr\'oximos cap\'itulos consiste em propor uma varia\c{c}\~ao da criptografia RSA que n\~ao seja completamente vulner\'avel caso tal algoritmo seja descoberto, a \textit{Criptografia RSA Gaussiana}.
 }
