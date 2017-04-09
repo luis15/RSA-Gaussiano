@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.15)  2 APR 2017 14:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.15)  9 APR 2017 14:37
 entering extended mode
 **./Mestre.tex
 (Mestre.tex
@@ -1164,20 +1164,79 @@ l.231 \end
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
+! Undefined control sequence.
+\@svsechd ... at\'e $x = 10 + 23y = 10 + 23 \codt 
+                                                  4 = 102$. Caso você venha ...
+l.238 \section
+              {Provando a funcionalidade do RSA}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 236.
+! Undefined control sequence.
+<argument> ...at\'e $x = 10 + 23y = 10 + 23 \codt 
+                                                  4 = 102$. Caso você venha ...
+l.238 \section
+              {Provando a funcionalidade do RSA}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 236.
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 236.
+
+Overfull \hbox (17.5989pt too wide) in paragraph at lines 242--242
+\OT1/cmr/bx/n/10.95 mos que fa-zer e pro-var que: [] [] 
+ []
+
+[31]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.244 $b \equiv
+                DC(b) (mod n) $
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.245 \end{array}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
 
-LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 236.
+Overfull \hbox (100.47311pt too wide) in paragraph at lines 250--250
+\OT1/cmr/bx/n/10.95 nar-mos am-bos as con-gru^encia ire-mos ob-ter [] [] 
+ []
 
-) [31] [32]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.252 $DC(b) \equiv
+                    D(b^3) \equiv b^{3d}(mod n) $
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.253 \end{array}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (142.47556pt too wide) in paragraph at lines 258--258
+\OT1/cmr/bx/n/10.95 de-finic~ao $\OT1/cmr/m/n/10.95 3\OML/cmm/m/it/10.95 d \OMS/cmsy/m/n/10.95  \OT1/cmr/m/n/10.95 1(\
+OML/cmm/m/it/10.95 mod\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 p \OMS/cmsy/m/n/10.95   \OT1/cmr/m/n/10.95 1)(\OML/cmm/m/i
+t/10.95 q \OMS/cmsy/m/n/10.95   \OT1/cmr/m/n/10.95 1))$\OT1/cmr/bx/n/10.95 , o que nos leva ate: [] [] 
+ []
+
+[32]) [33]
 
 Package babelbib Warning: Command \selectbiblanguage used without package
 (babelbib)                option fixlanguage. Ignored on input line 118.
@@ -1246,7 +1305,7 @@ Overfull \hbox (32.61884pt too wide) in paragraph at lines 52--59
 |   []\OT1/cmr/m/n/10.95 .
  []
 
-) [33
+) [34
 
 
 ] (Mestre.aux (Pref.aux) (Intro.aux) (Num.aux) (Mod.aux) (InvMod.aux) (TCR.aux) (Pot.aux) (RSA.aux)) )
@@ -1255,13 +1314,13 @@ Overfull \hbox (32.61884pt too wide) in paragraph at lines 52--59
 ### simple group (level 1) entered at line 102 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5892 strings out of 493333
- 74216 string characters out of 3139193
+ 5875 strings out of 493333
+ 73903 string characters out of 3139193
  199135 words of memory out of 3000000
- 9215 multiletter control sequences out of 15000+200000
- 15872 words of font info for 65 fonts, out of 3000000 for 9000
+ 9202 multiletter control sequences out of 15000+200000
+ 15617 words of font info for 64 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,10n,25p,3217b,597s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,10n,25p,3217b,599s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Progr
 am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
@@ -1271,9 +1330,9 @@ MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
 msfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Mestre.pdf (35 pages, 264896 bytes).
+Output written on Mestre.pdf (36 pages, 267571 bytes).
 PDF statistics:
- 174 PDF objects out of 1000 (max. 8388607)
+ 177 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -177,9 +177,16 @@
 \contentsline {subparagraph}{ Com ele n\'os iremos obter que }{31}
 \contentsline {paragraph}{ Obtendo assim: }{31}
 \contentsline {paragraph}{ Por\'em, $3$ \'e o inverso de $6$ no m\'odulo $17$, e por isso teremos }{31}
-\contentsline {subparagraph}{ Com isso iremos chegar at\'e $x = 10 + 23y = 10 + 23\IeC {\textperiodcentered }4 = 102$. Caso voc\^e venha a conferir na se\c {c}\~ao sobre codifica\c {c}\~ao de mensagens poder\'a confirmar o resultado. Os demais blocos podem ser decodificados da mesma forma, apenas n\~ao ser\~ao mostradas nesta obra por necessitar de muitos passos. }{31}
-\contentsline {section}{\numberline {7.3}Seguran\c {c}a}{32}
-\contentsline {chapter}{Bibliografia}{33}
+\contentsline {subparagraph}{ Com isso iremos chegar at\'e $x = 10 + 23y = 10 + 23 4 = 102$. Caso voc\^e venha a conferir na se\c {c}\~ao sobre codifica\c {c}\~ao de mensagens poder\'a confirmar o resultado. Os demais blocos podem ser decodificados da mesma forma, apenas n\~ao ser\~ao mostradas nesta obra por necessitar de muitos passos, o que tornaria este cap\'itulo inutilmente mais longo. }{32}
+\contentsline {section}{\numberline {7.3}Provando a funcionalidade do RSA}{32}
+\contentsline {subparagraph}{ Ao longo dessa se\c {c}\~ao vamos provar que o RSA funciona no processo de decodifica\c {c}\~ao, para podermos fazer isso tudo o que teremos que fazer \'e provar que: }{32}
+\contentsline {subparagraph}{ N\'os j\' vimos que $C(b) \equiv b^3 (mod n)$ e $D(a) \equiv a^d(mod n)$. Se combinarmos ambos as congru\^encia iremos obter }{32}
+\contentsline {subparagraph}{ Logo o que n\'os temos de provar \'e que $b^{3d} \equiv b (mod n)$. Como por defini\c {c}\~ao $3d \equiv 1 (mod(p-1)(q-1))$, o que nos leva at\'e: }{32}
+\contentsline {section}{\numberline {7.4}Discutindo a seguran\c {c}a do RSA}{32}
+\contentsline {subparagraph}{ Antes de mudarmos completamente o foco deste trabalho, vaos nos focar no que tange a seguran\c {c}a do RSA. Vamos supor que algu\'em, que vamos denominar Irineu, esteja com uma escuta em nossas mensagens, tendo assim acesso tanto a mensagem codificada quanto a chave p\'ublica $n$. Vamos lembrar que $n$ \'e a multiplica\c {c}\~ ao dos primos $p$ e $q$. Sabendo disso bastaria para Irineu fatorar $n$ para obter $p$ e $q$ e depois descobrir $d$ para poder decodificar a mensagem, como j\'a foi explicado neste cap\'itulo. }{32}
+\contentsline {subparagraph}{ Isto pode parecer muito simples, mas cmo j\'a mostramos na se\c c\~ao sobre fatora\c {c}\~ao n\~ao h\'a um algoritmo conhecido que possa fazer isso de forma eficiente. O que ocorre \'e que um algoritmo que fa\c {c}a a fatora\c {c}\~ao de forma eficinte pode vir a surgir a qualquer momento, do ponto que n\~ao h\'a nenhuma prova matem\'atica de que esse algoritmo n\~ao exista. }{33}
+\contentsline {subparagraph}{ O que iremos fazer nos pr\'oximos cap\'itulos consiste em propor uma varia\c {c}\~ao da criptografia RSA que n\~ao seja completamente vulner\'avel caso tal algoritmo sejja descoberto, a \textit {Criptografia RSA Gaussiana}. }{33}
+\contentsline {chapter}{Bibliografia}{34}
 \select@language {brazil}
 \select@language {brazil}
 \select@language {brazil}
