@@ -40,6 +40,13 @@
 \newblock \url{http://www.claymath.org/millennium-problems}.
 \newblock Acessado em 15/11/2016.
 
+\bibitem [{PR13}]{intGauss}
+\btxnamefont {\btxlastnamefont {Pacci}, Daniel\btxfnamespacelong Campolina}
+  \btxandlong {}\ \btxnamefont {Camila\btxfnamespacelong
+  Takeuti\btxfnamespacelong Vaz \btxlastnamefont {Rodrigues}}\btxauthorcolon\
+  \btxpublisherfont {\btxtitlefont {Inteiros De Gauss}}.
+\newblock 2013.
+
 \bibitem [{Rie59}]{riemann}
 \btxnamefont {\btxlastnamefont {Riemann}, Bernhard}\btxauthorcolon\
   \btxjtitlefont {\btxifchangecase {Ueber die anzahl der primzahlen unter einer
