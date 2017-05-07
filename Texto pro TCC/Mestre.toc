@@ -215,9 +215,13 @@
 \contentsline {subparagraph}{ Neste cap\'itulo veremos quem s\~ao os n\'umeros considerados primos em $Z[i]$, os famosos primos de Gauss. Observe que se $N(\pi )$ \'e primo em $Z$, n\'os teremos $\pi $ sendo primo em $Z[i]$, de acordo com a demontra\c {c}\~ao de fatora\c {c}\~ao \'unica. }{38}
 \contentsline {subparagraph}{ Atente-se ao fato de que todo o primo $\pi $ divide $N(\pi )$, portanto ele deve dividir ao menos um fator primo em $Z$ de $N(\pi )$. Caso $\pi $ venha a dividir dois fatores distintos $x$ e $y$, ambos primos em Z, n\'os ter\'iamos que $x|1$, o que seria um absurdo. Com isso \'e poss\'ivel se concluir que todo o primo de Gauss divide $1$ e somente $1$ primo inteiro positivo(al\'em de se oposto negativo). }{38}
 \contentsline {subparagraph}{ Considerando o caso acima e tomando o n\'umero primo com um inteiro positivo $p$, n\'os temos tr\^es casos que podemos prestar aten\c {c}\~ao. O primeiro ocorre quando $p$ \'e par, sendo que nesse caso $p=2$. Nesse caso obtemos como primos gaussianos $1+i$,$ 1-i$,$ -1+i $e$ -1-i $}{38}
-\contentsline {subparagraph}{ Caso tomemos $p \equiv 3(mod 4)$ sempre viremos a obter n\'umeros primos. J\~A\IeC {\textexclamdown } no caso de $p \equiv 1(mod 4)$, apenas os casos em que $a^2+b^2=p$ resultam em n\'umeros primos gaussianos. }{38}
-\contentsline {subparagraph}{ Como toda a criptografia de chave p\~A\IeC {\textordmasculine }blica necessita de um conjunto de chaves, foi-se definido que os n\'umeros primos gaussianos viriam a ser as chaves para a criptografia RSA Gaussiana. No pr\~A{^3}ximo ca\^A\'{}p\'itulo ser\'a apresentado o que j\'a est\'a feito neste algoritmo e o que ficar\'a como implica\c {c}\~ao futura para desenvolvimento.}{38}
-\contentsline {chapter}{Bibliografia}{39}
+\contentsline {subparagraph}{ Caso tomemos $p \equiv 3(mod 4)$ sempre viremos a obter n\'umeros primos. J\'a no caso de $p \equiv 1(mod 4)$, apenas os casos em que $a^2+b^2=p$ resultam em n\'umeros primos gaussianos. }{38}
+\contentsline {subparagraph}{ Como toda a criptografia de chave p\'ublica necessita de um conjunto de chaves, foi-se definido que os n\'umeros primos gaussianos viriam a ser as chaves para a criptografia RSA Gaussiana. No pr\'oximo cap\'itulo ser\'a apresentado o que j\'a est\'a feito neste algoritmo e o que ficar\'a como implica\c {c}\~ao futura para desenvolvimento.}{38}
+\contentsline {chapter}{\numberline {9}RSA Gaussiano e Conclus\~oes}{39}
+\contentsline {subparagraph}{ Chegamos ao \'ultimo cap\'itlo desta obra, aqui ser\'a debatido sobre tudo o que foi alcan\c cado at\'e o momento no que diz respeito ao RSA Gaussiano, veremos como sua forma \'e planejada e o que ter\'a de ser feito no futuro para que este algoritmo se torne uma op\c c\~ao entre os algoritmos criptogr\'aficos. }{39}
+\contentsline {section}{\numberline {9.1}O RSA Gaussiano}{39}
+\contentsline {subparagraph}{ Ao longo desse se\c {c}\~ao lhe ser\'a apresentado como o RSA Gaussiano dever\'a vir a funcionar. Para iniciarmos, teremos que, assim como na criptografia RSA fazer uma pr\'e-encripta\c {c}\~ao vindo a transformar todas as letras em n\'umero inteiros, da mesma forma que j\'a ocorre. }{39}
+\contentsline {chapter}{Bibliografia}{40}
 \select@language {brazil}
 \select@language {brazil}
 \select@language {brazil}
