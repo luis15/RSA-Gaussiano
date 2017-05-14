@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.7)  7 MAY 2017 19:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.7)  14 MAY 2017 16:12
 entering extended mode
 **./Mestre.tex
 (Mestre.tex
@@ -238,7 +238,8 @@ Writing index file Mestre.idx
 Package amsthm Warning: Unknown theoremstyle `alpha' on input line 24.
 
 \c@Th=\count102
-(Mestre.aux (Pref.aux) (Intro.aux) (Num.aux) (Mod.aux) (InvMod.aux) (TCR.aux) (Pot.aux) (RSA.aux) (IG.aux))
+(Mestre.aux (Ded.aux) (Agrad.aux) (Pref.aux) (Intro.aux) (Num.aux) (Mod.aux) (InvMod.aux) (TCR.aux) (Pot.aux) (RSA.aux)
+(IG.aux) (RSAG.aux))
 \openout1 = `Mestre.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
@@ -253,8 +254,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
 LaTeX Font Info:    ... okay on input line 68.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
 LaTeX Font Info:    ... okay on input line 68.
-
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+ ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count103
 \scratchdimen=\dimen143
@@ -331,10 +331,22 @@ Package xypdf Info: Line width: 0.43799pt on input line 68.
  [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+\openout2 = `Agrad.aux'.
+
+
+(Agrad.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 13--90
+
+ []
+
+[1
+
+]
 Abstract
 \openout2 = `Pref.aux'.
 
-(Pref.tex) [1
+(Pref.tex) [2
+
 
 ] (Mestre.toc [1
 
@@ -860,14 +872,27 @@ my insertion and my current dilemma will both disappear.
 
  (RSAG.tex
 Cap\'{\i }tulo 9.
-) [39
+
+Overfull \hbox (3.11818pt too wide) in paragraph at lines 18--18
+  \OT1/cmr/bx/n/10.95 Para o RSA Gaus-si-ano e pla-ne-jada a en-criptac~ao com a formula:
+ []
+
+[39
 
 
 
 ]
+! Double superscript.
+<recently read> ^
+                 
+l.38 \textit{$D'(b) \equiv b^d' (mod n')$}
+                                          
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+) [40]
 
 Package babelbib Warning: Command \selectbiblanguage used without package
-(babelbib)                option fixlanguage. Ignored on input line 120.
+(babelbib)                option fixlanguage. Ignored on input line 117.
 
 (Mestre.bbl
 babelbib: Using the BibTeX style's default font for `name'.
@@ -933,24 +958,20 @@ Overfull \hbox (32.61884pt too wide) in paragraph at lines 59--66
 |   []\OT1/cmr/m/n/10.95 .
  []
 
-) [40
+) [41
 
 
-] (Mestre.aux (Pref.aux) (Intro.aux) (Num.aux) (Mod.aux) (InvMod.aux) (TCR.aux) (Pot.aux) (RSA.aux) (IG.aux)
-(RSAG.aux))
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- )
+] (Mestre.aux (Agrad.aux) (Pref.aux) (Intro.aux) (Num.aux) (Mod.aux) (InvMod.aux) (TCR.aux) (Pot.aux) (RSA.aux)
+(IG.aux) (RSAG.aux)) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 102 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5891 strings out of 493328
- 73814 string characters out of 3139122
- 199693 words of memory out of 3000000
- 9210 multiletter control sequences out of 15000+200000
+ 5906 strings out of 493328
+ 73927 string characters out of 3139122
+ 200552 words of memory out of 3000000
+ 9213 multiletter control sequences out of 15000+200000
  15617 words of font info for 64 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,10n,25p,3217b,599s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -964,9 +985,9 @@ MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/
 msfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Mestre.pdf (42 pages, 288746 bytes).
+Output written on Mestre.pdf (44 pages, 293396 bytes).
 PDF statistics:
- 202 PDF objects out of 1000 (max. 8388607)
+ 209 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
