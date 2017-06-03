@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.7)  14 MAY 2017 16:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.7)  2 JUN 2017 23:10
 entering extended mode
 **./Mestre.tex
 (Mestre.tex
@@ -226,7 +226,68 @@ Xy-pic pdf driver: `rotate' extension support ("C:\Program Files\MiKTeX 2.9\tex\
 ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xycolor.tex"  Xy-pic option: Colour extension v.3.11 loaded)
 Xy-pic pdf driver: `color' extension support ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xypdf-co.tex" loaded)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xygraph.tex"  Xy-pic option: Graph feature v.3.11 loaded) loaded))
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\makeidx.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2016/11/05 v2.16a AMS math features
+\@mathmargin=\skip47
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks32
+\ex@=\dimen143
+)
+LaTeX Info: Redefining \text on input line 28.
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen144
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count102
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count103
+\leftroot@=\count104
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count105
+\DOTSCASE@=\count106
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box33
+\strutbox@=\box34
+\big@size=\dimen145
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count107
+\c@MaxMatrixCols=\count108
+\dotsspace@=\muskip10
+\c@parentequation=\count109
+\dspbrk@lvl=\count110
+\tag@help=\toks33
+\row@=\count111
+\column@=\count112
+\maxfields@=\count113
+\andhelp@=\toks34
+\eqnshift@=\dimen146
+\alignsep@=\dimen147
+\tagshift@=\dimen148
+\tagwidth@=\dimen149
+\totwidth@=\dimen150
+\lineht@=\dimen151
+\@envbody=\toks35
+\multlinegap=\skip48
+\multlinetaggap=\skip49
+\mathdisplay@stack=\toks36
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\jknappen\mathrsfs.sty"
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup7
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\makeidx.sty"
 Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 )
 \@indexfile=\write4
@@ -235,38 +296,37 @@ Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 
 Writing index file Mestre.idx
 
-Package amsthm Warning: Unknown theoremstyle `alpha' on input line 24.
+Package amsthm Warning: Unknown theoremstyle `alpha' on input line 27.
 
-\c@Th=\count102
-(Mestre.aux (Ded.aux) (Agrad.aux) (Pref.aux) (Intro.aux) (Num.aux) (Mod.aux) (InvMod.aux) (TCR.aux) (Pot.aux) (RSA.aux)
-(IG.aux) (RSAG.aux))
+\c@Th=\count114
+(Mestre.aux (Agrad.aux) (Pref.aux) (Intro.aux) (Num.aux) (InvMod.aux) (TCR.aux) (Pot.aux) (RSA.aux) (IG.aux) (RSAG.aux))
 \openout1 = `Mestre.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
- ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count103
-\scratchdimen=\dimen143
-\scratchbox=\box33
-\nofMPsegments=\count104
-\nofMParguments=\count105
-\everyMPshowfont=\toks32
-\MPscratchCnt=\count106
-\MPscratchDim=\dimen144
-\MPnumerator=\count107
-\makeMPintoPDFobject=\count108
-\everyMPtoPDFconversion=\toks33
+\scratchcounter=\count115
+\scratchdimen=\dimen152
+\scratchbox=\box35
+\nofMPsegments=\count116
+\nofMParguments=\count117
+\everyMPshowfont=\toks37
+\MPscratchCnt=\count118
+\MPscratchDim=\dimen153
+\MPnumerator=\count119
+\makeMPintoPDFobject=\count120
+\everyMPtoPDFconversion=\toks38
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
 Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO)
 
@@ -314,28 +374,32 @@ File: portuguese.bdf 2012/01/03 v1.31 babelbib: multilingual bibliographies (HH)
 babelbib extension \bibsbrazil added to \extrasbrazil
 babelbib extension \btxifchangecaseoff added to \extrasbrazil
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 68.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 71.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 68.
+LaTeX Font Info:    Try loading font information for U+msa on input line 71.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 68.
+LaTeX Font Info:    Try loading font information for U+msb on input line 71.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Package xypdf Info: Line width: 0.43799pt on input line 68.
- [1
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 71.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\jknappen\ursfs.fd"
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+Package xypdf Info: Line width: 0.43799pt on input line 71.
+
+[1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 \openout2 = `Agrad.aux'.
 
-
-(Agrad.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 13--90
+ (Agrad.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 13--93
 
  []
 
@@ -378,191 +442,242 @@ Cap\'{\i }tulo 2.
 
 
 ]
-Overfull \hbox (116.78355pt too wide) in paragraph at lines 51--51
-\OML/cmm/m/it/10.95 n \OMS/cmsy/m/n/10.95  \OT1/cmr/m/n/10.95 2$ \OT1/cmr/bx/n/10.95 pode-se es-crev^e-lo de forma uni
-ca como: [] [] 
+! Display math should end with $$.
+<to be read again> 
+                    
+l.19 	$$a=bq+r$ 
+                e $0\leq r <b$$
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 20.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.20 Al\'e
+          m disso, os valores de $q$ e $r$ satisfazendo as rela\c{c}\~oes ac...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.20 Al\'e
+          m disso, os valores de $q$ e $r$ satisfazendo as rela\c{c}\~oes ac...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no è in font cmex10!
+
+LaTeX Warning: Command \c invalid in math mode on input line 20.
+
+! Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.20 ...res de $q$ e $r$ satisfazendo as rela\c{c}
+                                                  \~oes acima s\~ao \'unicos.
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 20.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.20 ... de $q$ e $r$ satisfazendo as rela\c{c}\~o
+                                                  es acima s\~ao \'unicos.
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.20 ... de $q$ e $r$ satisfazendo as rela\c{c}\~o
+                                                  es acima s\~ao \'unicos.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 20.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.20 ... satisfazendo as rela\c{c}\~oes acima s\~a
+                                                  o \'unicos.
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.20 ... satisfazendo as rela\c{c}\~oes acima s\~a
+                                                  o \'unicos.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 20.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.20 ...sfazendo as rela\c{c}\~oes acima s\~ao \'u
+                                                  nicos.
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.20 ...sfazendo as rela\c{c}\~oes acima s\~ao \'u
+                                                  nicos.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: Command \end{Th} invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 \end{Th}
+             
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 \end{Th}
+             
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 \end{Th}
+             
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.21 \end{Th}
+             
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+
+Overfull \hbox (16.45625pt too wide) in paragraph at lines 19--22
+\OT1/cmr/m/it/10.95 e $\OT1/cmr/m/n/10.95 0 \OMS/cmsy/m/n/10.95  \OML/cmm/m/it/10.95 r < b$$Al[]mdisso; osvaloresde$\OT
+1/cmr/m/it/10.95 q$\OML/cmm/m/it/10.95 e$\OT1/cmr/m/it/10.95 r$\OML/cmm/m/it/10.95 satisfazendoasrela[][]esacimas[]o[]ni
+cos:$ 
  []
 
-[9]) [10]
-\openout2 = `Mod.aux'.
 
- (Mod.tex
-Cap\'{\i }tulo 3.
+Underfull \hbox (badness 10000) in paragraph at lines 23--26
 
-Overfull \hbox (141.8957pt too wide) in paragraph at lines 14--14
-\OT1/cmr/bx/n/10.95 m^es foi dia 4, e o ultimo sera dia 25, logo te-mos que [] [] 
  []
 
-[11
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
+ []
 
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
-]
-Overfull \hbox (173.28108pt too wide) in paragraph at lines 41--41
-  \OT1/cmr/bx/n/10.95 Caso mul-ti-pli-que-mos esta equac~ao por $\OMS/cmsy/m/n/10.95  \OT1/cmr/m/n/10.95 1$\OT1/cmr/bx/
-n/10.95 , va-mos ob-ter: [] [] 
  []
 
 
-Overfull \hbox (5.62697pt too wide) in paragraph at lines 52--52
-\OT1/cmr/bx/n/10.95 mos ob-ser-var as equac~oes [] [] 
+Underfull \hbox (badness 10000) in paragraph at lines 81--84
+
  []
 
 
-Overfull \hbox (162.68237pt too wide) in paragraph at lines 60--60
-\OT1/cmr/bx/n/10.95 equac~oes, po-de-mos so-mar as equac~oes, re-sul-tando em: [] [] 
+Underfull \hbox (badness 10000) in paragraph at lines 98--100
+
  []
 
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 105--109
 
-Overfull \hbox (35.29518pt too wide) in paragraph at lines 68--68
-  \OT1/cmr/bx/n/10.95 Que pode ser sim-pli-fi-cada em: [] [] 
  []
 
-) [12] [13]
+[12]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 130.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 130.
+ [13]) [14]
 \openout2 = `InvMod.aux'.
 
  (InvMod.tex
-Cap\'{\i }tulo 4.
-
-Overfull \hbox (52.44705pt too wide) in paragraph at lines 25--25
-\OT1/cmr/bx/n/10.95 ca-tivo de $\OT1/cmr/m/n/10.95 2$ \OT1/cmr/bx/n/10.95 no modulo $\OT1/cmr/m/n/10.95 8$\OT1/cmr/bx/n
-/10.95 , va-mos la: [] [] 
- []
-
-[14
+Cap\'{\i }tulo 3.
+[15
 
 
 
-]
-Overfull \hbox (20.87941pt too wide) in paragraph at lines 71--71
-\OML/cmm/m/it/10.95 y[]$\OT1/cmr/bx/n/10.95 , ou se pre-fe-rir $\OML/cmm/m/it/10.95 a[]$ \OT1/cmr/bx/n/10.95 e $\OML/cmm
-/m/it/10.95 k$\OT1/cmr/bx/n/10.95 , logo: [] [] 
- []
-
-[15]
-Overfull \hbox (105.09859pt too wide) in paragraph at lines 87--87
-  \OT1/cmr/bx/n/10.95 Caso ve-nha-mos a di-vi-dir $\OML/cmm/m/it/10.95 n$ \OT1/cmr/bx/n/10.95 por $\OML/cmm/m/it/10.95 m
-$\OT1/cmr/bx/n/10.95 , ob-te-mos: [] [] 
- []
-
-
-Overfull \hbox (42.16016pt too wide) in paragraph at lines 95--95
-  \OT1/cmr/bx/n/10.95 Que pode ser or-ga-ni-zada como: [] [] 
- []
-
-
+] [16]
 Overfull \hbox (2.77716pt too wide) in paragraph at lines 114--114
 \OT1/cmr/bx/n/10.95 muito im-por-tante para nosso pros-se-gui-mento e o se-guinte co-rolario:
  []
 
-[16]
-Overfull \hbox (170.34532pt too wide) in paragraph at lines 117--117
-  \OT1/cmr/bx/it/10.95 Se-jam $\OML/cmm/m/it/10.95 a < n$ \OT1/cmr/bx/it/10.95 in-tei-ros po-si-ti-vos sem fa-to-res co-
-muns, se : [] [] 
- []
-
-) [17]
+[17]) [18]
 \openout2 = `TCR.aux'.
 
  (TCR.tex
-Cap\'{\i }tulo 5.
-
-Overfull \hbox (49.33151pt too wide) in paragraph at lines 37--37
-  \OT1/cmr/bx/n/10.95 Como $\OT1/cmr/m/n/10.95 5 \OMS/cmsy/m/n/10.95  \OT1/cmr/m/n/10.95 2(\OML/cmm/m/it/10.95 mod\OT1/
-cmr/m/n/10.95 3)$\OT1/cmr/bx/n/10.95 , subs-titumos: [] [] 
- []
-
-[18
+Cap\'{\i }tulo 4.
+[19
 
 
 
-]
-Overfull \hbox (144.94954pt too wide) in paragraph at lines 45--45
-  \OT1/cmr/bx/n/10.95 Feito isso, pas-sa-mos $\OT1/cmr/m/n/10.95 2$ \OT1/cmr/bx/n/10.95 para o ou-tro lado da equac~ao 
-[] [] 
- []
-
-
-Overfull \hbox (37.53688pt too wide) in paragraph at lines 53--53
-\OT1/cmr/bx/n/10.95 mos a equac~ao por $\OT1/cmr/m/n/10.95 2$\OT1/cmr/bx/n/10.95 , e ob-te-mos [] [] 
- []
-
-
-Overfull \hbox (9.98108pt too wide) in paragraph at lines 61--61
-  \OT1/cmr/bx/n/10.95 Com isso, con-clumos que [] [] 
- []
-
-
-Overfull \hbox (161.85197pt too wide) in paragraph at lines 69--69
-\OT1/cmr/bx/n/10.95 soluc~ao mais com-plexa, mas va-mos a re-or-ga-ni-zar como [] [] 
- []
-
-
-Overfull \hbox (144.56232pt too wide) in paragraph at lines 93--93
-\OT1/cmr/bx/n/10.95 trado como ela deixa resto $\OT1/cmr/m/n/10.95 2$ \OT1/cmr/bx/n/10.95 quando di-vi-dida por $\OT1/cm
-r/m/n/10.95 5$\OT1/cmr/bx/n/10.95 . [] [] 
- []
-
-[19]
-Overfull \hbox (20.309pt too wide) in paragraph at lines 128--128
-\OT1/cmr/bx/n/10.95 equac~ao, nesse caso te-re-mos [] [] 
- []
-
-
-Overfull \hbox (11.19774pt too wide) in paragraph at lines 136--136
-  \OT1/cmr/bx/n/10.95 Feito isso, che-ga-re-mos em [] [] 
- []
-
-
-Overfull \hbox (25.49498pt too wide) in paragraph at lines 144--144
-  \OT1/cmr/bx/n/10.95 que pode ser subs-tituda por [] [] 
- []
-
-
-Overfull \hbox (29.37993pt too wide) in paragraph at lines 152--152
-\OT1/cmr/bx/n/10.95 a con-gru^encia por $\OML/cmm/m/it/10.95 m[]$ \OT1/cmr/bx/n/10.95 ob-te-mos [] [] 
- []
-
-
-Overfull \hbox (16.15562pt too wide) in paragraph at lines 160--160
-  \OT1/cmr/bx/n/10.95 que pode ser es-crita como: [] [] 
- []
-
-
-Overfull \hbox (98.02637pt too wide) in paragraph at lines 168--168
-  \OT1/cmr/bx/n/10.95 Subs-ti-tuindo a parte de $\OML/cmm/m/it/10.95 k$\OT1/cmr/bx/n/10.95 , nos ob-te-mos [] [] 
- []
-
-[20]) [21]
+] [20] [21]) [22]
 \openout2 = `Pot.aux'.
 
  (Pot.tex
-Cap\'{\i }tulo 6.
+Cap\'{\i }tulo 5.
 
 Overfull \hbox (5.04796pt too wide) in paragraph at lines 6--6
   \OT1/cmr/bx/n/10.95 Ao longo deste captulo va-mos es-tu-dar como tor-nar as operac~oes
  []
 
-
-Overfull \hbox (50.9404pt too wide) in paragraph at lines 13--13
-\OT1/cmr/bx/n/10.95 modulo $\OT1/cmr/m/n/10.95 7$\OT1/cmr/bx/n/10.95 . Logo te-re-mos a ta-bela: [] [] 
- []
-
-
-Overfull \hbox (96.86116pt too wide) in paragraph at lines 26--26
-\OT1/cmr/bx/n/10.95 press~ao nos le-vara a se-guinte con-gru^encia: [] [] 
- []
-
-[22
+[23
 
 
 
 ]
-Overfull \hbox (114.49571pt too wide) in paragraph at lines 34--34
-\OT1/cmr/bx/n/10.95 que e con-gru-ente a $\OT1/cmr/m/n/10.95 1$ \OT1/cmr/bx/n/10.95 no modulo $\OT1/cmr/m/n/10.95 31$\
-OT1/cmr/bx/n/10.95 . Ob-te-mos: [] [] 
- []
-
 ! Double superscript.
 \@svsechd ... podemos calcular o resto de $2^{13}^
                                                   {98765}$, \'e descobrir o ...
@@ -577,31 +692,7 @@ l.49 \section
              {O teorema de Fermat}
 I treat `x^1^2' essentially like `x^1{}^2'.
 
-
-Overfull \hbox (8.46863pt too wide) in paragraph at lines 53--53
-\OT1/cmr/bx/n/10.95 n~ao di-visvel por $\OML/cmm/m/it/10.95 p$\OT1/cmr/bx/n/10.95 , ent~ao: [] [] 
- []
-
-[23]
-Overfull \hbox (124.14473pt too wide) in paragraph at lines 88--88
-\OT1/cmr/bx/n/10.95 po-dem ser con-gru-en-tes se fo-rem iguais, logo se: [] [] 
- []
-
-
-Overfull \hbox (69.16289pt too wide) in paragraph at lines 96--96
-\OT1/cmr/bx/n/10.95 gunda. Com isso po-de-mos di-zer que: [] [] 
- []
-
-
-Overfull \hbox (13.02423pt too wide) in paragraph at lines 104--104
-  \OT1/cmr/bx/n/10.95 Sa-bendo disso ve-mos que: [] [] 
- []
-
-
-Overfull \hbox (65.84253pt too wide) in paragraph at lines 112--112
-  \OT1/cmr/bx/n/10.95 E ape-nas cor-tando os fa-to-res iguais: [] [] 
- []
-
+[24]
 ! Double superscript.
 \@svsechd ...brir quem \'e congruente a $3^{1034}^
                                                   {2}$ no m\'odulo $1033$. C...
@@ -609,32 +700,12 @@ l.124 \[
         
 I treat `x^1^2' essentially like `x^1{}^2'.
 
-[24]
-Overfull \hbox (70.10985pt too wide) in paragraph at lines 140--140
-  \OT1/cmr/bx/n/10.95 e com essa sim-pli-ficac~ao che-ga-mos a: [] [] 
- []
-
-
-Overfull \hbox (21.81308pt too wide) in paragraph at lines 148--148
-\OT1/cmr/bx/n/10.95 mos che-gar a con-clus~ao que: [] [] 
- []
-
-[25]
-Overfull \hbox (182.07896pt too wide) in paragraph at lines 188--188
-  \OT1/cmr/bx/n/10.95 Em se-guida subs-titumos nas con-gru^encias e as re-du-zi-mos [] [] 
- []
-
-
-Overfull \hbox (132.9077pt too wide) in paragraph at lines 199--199
-  \OT1/cmr/bx/n/10.95 Logo, nossa ta-refa con-siste em re-sol-ver o sis-tema [] [] 
- []
-
-) [26]
+[25] [26]) [27]
 \openout2 = `RSA.aux'.
 
  (RSA.tex
-Cap\'{\i }tulo 7.
-[27
+Cap\'{\i }tulo 6.
+[28
 
 
 
@@ -644,51 +715,15 @@ Overfull \hbox (7.2261pt too wide) in paragraph at lines 39--39
  []
 
 
-Overfull \hbox (133.00046pt too wide) in paragraph at lines 39--39
-\OT1/cmr/bx/n/10.95 Ao ter-mi-nar-mos va-mos obt^e-lo con-ver-tido como: [] [] 
- []
-
-
 Overfull \hbox (8.00311pt too wide) in paragraph at lines 53--53
   \OT1/cmr/bx/n/10.95 O ultimo passo da pre-encriptac~ao con-siste em que-brar o numero
  []
 
-
-Overfull \hbox (69.76668pt too wide) in paragraph at lines 53--53
-\OT1/cmr/bx/n/10.95 nossa men-sa-gem es-crita nesta forma. [] [] 
- []
-
-
-Overfull \hbox (121.94408pt too wide) in paragraph at lines 69--69
-\OT1/cmr/bx/n/10.95 Para obt^e-lo de-veos apli-car a se-guinte formula: [] [] 
- []
-
-[28]
-Overfull \hbox (64.86026pt too wide) in paragraph at lines 100--100
-\OT1/cmr/bx/n/10.95 ves pri-va-das $\OT1/cmr/m/n/10.95 17$ \OT1/cmr/bx/n/10.95 e $\OT1/cmr/m/n/10.95 23$ \OT1/cmr/bx/n/1
-0.95 e a publica $\OT1/cmr/m/n/10.95 391$ \OT1/cmr/bx/n/10.95 e: [] [] 
- []
-
-
-Overfull \hbox (3.62404pt too wide) in paragraph at lines 110--110
-\OT1/cmr/bx/n/10.95 finic~ao do in-verso te-mos: [] [] 
- []
-
-[29]
-Overfull \hbox (109.1753pt too wide) in paragraph at lines 170--170
-\OT1/cmr/bx/n/10.95 rema de Fer-mat a ou-tra congr^encia te-re-mos: [] [] 
- []
-
-[30]
+[29] [30] [31]
 Overfull \hbox (6.7498pt too wide) in paragraph at lines 203--203
   \OT1/cmr/bx/n/10.95 Te-mos as-sim as con-gru^encias $\OT1/cmr/m/n/10.95 34[] \OMS/cmsy/m/n/10.95  \OT1/cmr/m/n/10.95 
 0(\OML/cmm/m/it/10.95 mod\OT1/cmr/m/n/10.95 17)$ \OT1/cmr/bx/n/10.95 e $\OT1/cmr/m/n/10.95 34[] \OMS/cmsy/m/n/10.95  \O
 T1/cmr/m/n/10.95 10(\OML/cmm/m/it/10.95 mod\OT1/cmr/m/n/10.95 23)$\OT1/cmr/bx/n/10.95 .
- []
-
-
-Overfull \hbox (47.49701pt too wide) in paragraph at lines 212--212
-  \OT1/cmr/bx/n/10.95 Com ele nos ire-mos ob-ter que [] [] 
  []
 
 ! Undefined control sequence.
@@ -713,54 +748,11 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-
-Overfull \hbox (17.5989pt too wide) in paragraph at lines 242--242
-\OT1/cmr/bx/n/10.95 mos que fa-zer e pro-var que: [] [] 
- []
-
-[31]
-Overfull \hbox (100.47311pt too wide) in paragraph at lines 250--250
-\OT1/cmr/bx/n/10.95 nar-mos am-bos as con-gru^encia ire-mos ob-ter [] [] 
- []
-
-
-Overfull \hbox (142.47556pt too wide) in paragraph at lines 258--258
-\OT1/cmr/bx/n/10.95 de-finic~ao $\OT1/cmr/m/n/10.95 3\OML/cmm/m/it/10.95 d \OMS/cmsy/m/n/10.95  \OT1/cmr/m/n/10.95 1(\
-OML/cmm/m/it/10.95 mod\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 p \OMS/cmsy/m/n/10.95   \OT1/cmr/m/n/10.95 1)(\OML/cmm/m/i
-t/10.95 q \OMS/cmsy/m/n/10.95   \OT1/cmr/m/n/10.95 1))$\OT1/cmr/bx/n/10.95 , o que nos leva ate: [] [] 
- []
-
-
-Overfull \hbox (3.12454pt too wide) in paragraph at lines 266--266
-\OT1/cmr/bx/n/10.95 para ob-ter $\OT1/cmr/m/n/10.95 3\OML/cmm/m/it/10.95 d$ \OT1/cmr/bx/n/10.95 te-mos que: [] [] 
- []
-
-
-Overfull \hbox (23.69434pt too wide) in paragraph at lines 274--274
-\OT1/cmr/bx/n/10.95 de Fer-mat, de modo a ob-ter: [] [] 
- []
-
-
-Overfull \hbox (176.04684pt too wide) in paragraph at lines 298--298
-  \OT1/cmr/bx/n/10.95 Pelo mesmo metodo po-de-mos ob-ter $\OML/cmm/m/it/10.95 q$\OT1/cmr/bx/n/10.95 , ob-tendo o par: [
-] [] 
- []
-
-[32]
-Overfull \hbox (15.7711pt too wide) in paragraph at lines 307--307
-  \OT1/cmr/bx/n/10.95 Veja que $\OML/cmm/m/it/10.95 b$ \OT1/cmr/bx/n/10.95 e soluc~ao de: [] [] 
- []
-
-[33]) [34]
+[32] [33]) [34]
 \openout2 = `IG.aux'.
 
  (IG.tex
-Cap\'{\i }tulo 8.
-
-Overfull \hbox (16.11461pt too wide) in paragraph at lines 28--28
-\OT1/cmr/bx/n/10.95 que no con-junto $\OML/cmm/m/it/10.95 Z$ \OT1/cmr/bx/n/10.95 e primo: [] [] 
- []
-
+Cap\'{\i }tulo 7.
 [35
 
 
@@ -871,7 +863,7 @@ my insertion and my current dilemma will both disappear.
 \openout2 = `RSAG.aux'.
 
  (RSAG.tex
-Cap\'{\i }tulo 9.
+Cap\'{\i }tulo 8.
 
 Overfull \hbox (3.11818pt too wide) in paragraph at lines 18--18
   \OT1/cmr/bx/n/10.95 Para o RSA Gaus-si-ano e pla-ne-jada a en-criptac~ao com a formula:
@@ -889,10 +881,31 @@ l.38 \textit{$D'(b) \equiv b^d' (mod n')$}
                                           
 I treat `x^1^2' essentially like `x^1{}^2'.
 
+! Double superscript.
+<recently read> ^
+                 
+l.38 \textit{$D'(b) \equiv b^d' (mod n')$}
+                                          
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+! Double superscript.
+<recently read> ^
+                 
+l.38 \textit{$D'(b) \equiv b^d' (mod n')$}
+                                          
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+! Double superscript.
+<recently read> ^
+                 
+l.38 \textit{$D'(b) \equiv b^d' (mod n')$}
+                                          
+I treat `x^1^2' essentially like `x^1{}^2'.
+
 ) [40]
 
 Package babelbib Warning: Command \selectbiblanguage used without package
-(babelbib)                option fixlanguage. Ignored on input line 117.
+(babelbib)                option fixlanguage. Ignored on input line 119.
 
 (Mestre.bbl
 babelbib: Using the BibTeX style's default font for `name'.
@@ -926,7 +939,7 @@ Type  H <return>  for immediate help.
                                                   
 l.40 ...tp://www.claymath.org/millennium-problems}
                                                   .
-Please define a \url command for printing URLs before \begin{document}, e.\,g.
+Please define a \url command for printing URLs before \begin{document}, e.\tmspace +\thinmuskip {.1667em}g.
 by loading the package `url.sty'.
 
 
@@ -961,33 +974,34 @@ Overfull \hbox (32.61884pt too wide) in paragraph at lines 59--66
 ) [41
 
 
-] (Mestre.aux (Agrad.aux) (Pref.aux) (Intro.aux) (Num.aux) (Mod.aux) (InvMod.aux) (TCR.aux) (Pot.aux) (RSA.aux)
-(IG.aux) (RSAG.aux)) )
+] (Mestre.aux (Agrad.aux) (Pref.aux) (Intro.aux) (Num.aux) (InvMod.aux) (TCR.aux) (Pot.aux) (RSA.aux) (IG.aux)
+(RSAG.aux)) )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 102 ({)
+### simple group (level 1) entered at line 105 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5906 strings out of 493328
- 73927 string characters out of 3139122
- 200552 words of memory out of 3000000
- 9213 multiletter control sequences out of 15000+200000
- 15617 words of font info for 64 fonts, out of 3000000 for 9000
+ 6524 strings out of 493328
+ 81403 string characters out of 3139122
+ 210802 words of memory out of 3000000
+ 9804 multiletter control sequences out of 15000+200000
+ 20587 words of font info for 83 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,10n,25p,3217b,599s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,12n,25p,3237b,622s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Progr
 am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Mestre.pdf (44 pages, 293396 bytes).
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmu10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Mestre.pdf (44 pages, 324600 bytes).
 PDF statistics:
- 209 PDF objects out of 1000 (max. 8388607)
+ 217 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

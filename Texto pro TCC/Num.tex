@@ -1,62 +1,153 @@
 \chapter {Um passeio pela Teoria de N\'umeros}
 \label{Num}
-\subparagraph{
-A Teoria de n\'umeros \'e umas das mais antigas \'areas dentro da matem\'atica, ela \'e voltada ao estudo das propiedades dos n\'umeros inteiros. Ao longo deste cap\'itulo n\'os iremos passear pelas \'areas da teoria de n\'umeros que cuidam sobre os n\'umeros primos e a fatora\c{c}\~ao, ue s\~ao os alicerces da criptografia RSA.
-}
-\section{Ciclos e Restos}	
-\subparagraph{
-Para podermos compreender a aritm\'etica modular, precisamos come\c{c}ar entendendo o conceito de ciclicidade, que s\~ao os fatos que ocorrem sempre ap\'os um determinado per\'iodo constante. Um bom exemplo deste conceito \'e o nascer do sol, que \'e um evento que ocorre sempre ap\'os um ciclo de {24} horas, assim como o dia de seu anivers\'ario ocorre uma vez a cada ciclo de um ano.
-}
-\subparagraph{
-O mesmo tipo de evento \'e observado com o resto dos n\'umeros inteiros. Tomemos por exemplo os restos de divis\~ao dos n\'umeros inteiros, abaixo mostrados de 1 \`a 12, pelo n\'umero inteiro {4}:
-}
 
-\[
-\begin{array}{ccccccccccccc}
-  {Inteiro} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 &  11 & 12 \\  
-	{Resto} & 1 & 2 & 3 & 0 & 1 & 2 & 3 & 0 & 1 & 2  &  3 & 0 \\ 
-\end{array}
-\]
 
-\subparagraph{
-\'E vis\'ivel que ap\'os {4} n\'umeros o resto tende a se repetir. O mesmo feito ocorre a qualquer n\'umero inteiro $n$, onde o ciclo se repetir\'a sempre a cada $n$ itera\c{c}\~oes. Os n\'umeros que apresentam o resto {0} s\~ao conhecidos como m\'ultiplos de $n$.
-}
+\hspace{7mm}A teoria de n\'umeros \'e umas das mais antigas \'areas da matem\'atica e dedica-se ao estudo relacionado \`as propriedades relativas aos n\'umeros inteiros tais como a quest\~ao da fatora\c{c}\~ao, m\'aximo divisor comum, entre outras. Ao longo deste cap\'itulo mostraremos os principais resultados de teoria de n\'umeros essenciais para a compreens\~ao do m\'etodo de criptografia de chave p\'ublica conhecido como RSA.
 
-\section{N\'{u}meros Primos e Compostos}
 
-\subparagraph{
-Existe um tipo especial de n\'umero que s\'o \'e m\'ultiplo, ou seja, possui resto {0}, em duas condi\c{c}\~oes, quando $n$ \'e igual a {1} ou quando ele \'e igual a $n$. A esse conjunto de n\'umeros atribui-se o nome de \textit{n\'umeros primos}.
-}
-\subparagraph{
-\textit{Existem infinitos n\'umeros primos}, caso n\~ao acredite vamos supor que o conjunto finito de primos seja composto por $p_{1},  p_{2}, ..., p_{r} $. Considerando que o n\'umero inteiro $n=(p_{1})(p_{2})...(p_{r}) + 1$. $n$ deve possuir um fator $p$, que est\'a contido em $p_{1},  p_{2}, ..., p_{r} $, mas isso significa q $p$ divide $1$, o que \'e absurdo e prova que o conjunto n\~ao tem fim.
-}
-\subparagraph{
-Todo o n\'umero que n\~ao \'e primo \'e chamado de \textit{N\'umero Composto}, sendo que este n\'umero composto pode ser escrito em \textit {uma combina\c{c}\~ao \'unica de fatores primos}. O processo de se descobrir estes fatores \'e chamado de \textit{fatora\c{c}\~ao} e \'e detalhado na pr\'oxima se\c{c}\~ao.
-}
 
-\section{Fatora\c{c}\~{a}o}
+\section{N\'umeros Primos e Fatora\c{c}\~ao \'Unica}
 
-\subparagraph{
-Anteriormente falamos que todo o n\'umero pode ser escrito por uma combina\c{c}\~ao de fatores primos, neste cap\'itulo vamos abordar como se pode obter estes fatores.
-}
-\subparagraph{
-Come\c{c}amos por escolher o n\'umero inteiro $n$ ao qual iremos fatorar, em seguida testamos a sua divisibilidade por $2$, se for tente divid\'i-lo novamente por $2$, sen\~ao passa-se para o pr\'oximo n\'umero primo, o $3$. Repete-se esse procedimento at\'e chegarmos a $\sqrt{n}$, caso n\~ao achemos nenhum fator primo at\'e $\sqrt{n}$, $n$ \'e primo.
-}
-\subparagraph{
-Quando acabamos de realizar a fatora\c{c}\~ao, chegamos a um n\'umero fatorado da forma $n = (2^{a_{1}})(3^{a_{2}}) ... (p^{a_{p}})$, todo o n\'umero inteiro pode ser escrito nessa forma, chamada forma fatorada, veja, por exemplo o $12 = (2^2)(3^1)$ e o $19 = (19^1)$.
-}
-\subparagraph{
-Essa forma fatorada nos \'e formalmente apresentada pelo \textit{Teorema da Fatora\c{c}\~ao \'Unica}. Ele nos diz que dado um n\'umero inteiro $n\geq2$ pode-se escrev\^e-lo de forma \'unica como:
-}
-\[	
-	\begin{array}{c}
-		\textit{$n = (p^{e_{1}}_{1}) ... (p^{e_{k}}_{k}) $}
-	\end{array}
-\]
-\paragraph{
-onde $1 < p_1 < ... < p_k $ s\~ao primos e $e_1, ..., e_k$ s\~ao inteiros.
-}
-\subparagraph{
-Mesmo algoritmo da fatora\c{c}\~ao sendo t\~ao simples de se compreender, ele \'e demorado at\'e para os mais modernos computadores. Para se ter uma ideia disto, um computador comum executa cerca de {50} divis\~oes por segundo, para se calcular com certeza que um n\'umero pr\'oximo a $10^{100}$ \'e primo ele levaria cerca de {317} decilh\~oes de anos. Essa demora computacional que torna os primos t\~ao atraentes a criptografia, pois sua multipli\c{c}\~ao \'e f\'acil para se obter o resultado, mas muito complexa para que se descubram quais os n\'umeros envolvidos nela apenas com o resultado final.
-}
+\hspace{7mm}Os n\'umeros primos ocupam lugar importante tanto na teoria de n\'umeros quanto na criptografia RSA: na primeira por serem capazes de gerar todos os elementos do conjunto dos n\'umeros inteiros e suas consequentes propriedades; na segunda pelo fato de formarem um conjunto infinito e isso permite que se tome um primo de dimens\~ao extrondosa para codificar uma mensagem, consequentemente dificultando que o c\'odigo seja decifrado por terceiros em tempo razo\'avel,como mostraremos ao longo deste trabalho.
 
+Os primos atuam como \'atomos dentro do conjunto dos n\'umeros inteiros no sentido em que todo n\'umero pode ser escrito como um produto de primos. Esse fato \'e consequencia do chamado \textit{Teorema da Fatora\c{c}\~ao \'Unica} tamb\'em conhecido por \textit{Teorema Fundamental da Aritm\'etica}. Al\'em de ser um resultado fundamental para a teoria de n\'umeros, ele tamb\'em \'e um dos pilares da criptografia RSA, pois a decodifica\c{c}\~ao de uma mensagem vai passar pela fatora\c{c}\~ao de um n\'umero, e para demonstrar esse teorema \'e preciso ter a disposi\c{c}\~ao o chamado \textit{Teorema de Divis\~ao}. 
+
+
+\begin{Th}
+[Teorema de divis\~ao]
+Sejam $a$ e $b$ inteiros positivos. Existem n\'umeros inteiros $q$ (quociente) e $r$ (resto) tais que:	
+	$$a=bq+r$ e $0\leq r <b$$
+Al\'em disso, os valores de $q$ e $r$ satisfazendo as rela\c{c}\~oes acima s\~ao \'unicos.
+\end{Th} 
+
+\noindent{\textbf{\textit{Demonstra\c{c}\~ao}}}\\
+Confira em Coutinho \cite{coutinho}, se\c{c}\~ao 3 do cap\'itulo 1, p. 22.
+\hfill\newline
+
+O teorema acima faz duas afirma\c{c}\~oes: a primeira que o quociente e o resto da divis\~ao sempre existem; a segunda, que o quociente e o resto s\~ao \'unicos. A garantia da unicidade \'e o ponto crucial na aplica\c{c}\~ao \`a criptografia RSA, pois assim temos a garantia de que uma mensagem possa ser decodificada de maneira \'unica. Um outro resultado 
+igualmente importante \'e o \textit{Algoritmo de Euclides} mais conhecido como m\'etodo para se calcular o m\'aximo divisor comum entre dois n\'umeros. Esse resultado \'e importante para definir o que entendemos por n\'umeros primos e consequentemente para o teorema da fatora\c{c}\~ao \'unica que mostra como expressar um n\'umero em fatores primos de forma \'unica. Para este trabalho vamos precisar da vers\~ao estendida desse m\'etodo.
+
+\begin{Th}[Teorema do M\'aximo Divisor Comum]
+Sejam $a$ e $b$ inteiros positivos e seja $d$ o m\'aximo divisor comum entre $a$ e $b$. Existem
+inteiros $\alpha$ e $\beta$ tais que:
+	$$\alpha\cdot a+\beta\cdot b=d$$
+\end{Th}
+
+Diferente do teorema da divis\~ao, o teorema do m\'aximo divisor comum n\~ao garante a unicidade com rela\c{c}\~ao aos inteiros $\alpha$ e $\beta$. Isso acaba sendo um complicador para a criptografia RSA, mas veremos que esse problema acaba sendo contornado por temos a disposi\c{c}\~ao um m\'etodo eficiente para calcular esses n\'umeros.
+
+Tendo os resultados acima a nossa disposi\c{c}\~ao podemos, agora, definir o que entendemos por n\'umeros primos para ent\~ao atingir nossa meta com este cap\'itulo: o Teorema da Fatora\c{c}\~ao \'Unica.
+
+\begin{Df}
+Um n\'umero inteiro $p$ \'e \textit{primo} se $p\neq \pm 1$ e os \'unicos divisores de $p$ s\~ao $\pm 1$ e $\pm p$. 
+\end{Df} 
+
+S\~ao exemplos de n\'umeros primos: $\pm 2$, $\pm 3$, $\pm 5$, $\pm 7$, $\pm 11$, $\pm 13$, etc.
+
+Um n\'umero inteiro, diferente de $\pm 1$, que n\~ao \'e primo \'e chamado \textit{composto}. Observe que os n\'umeros $1$ e $-1$ n\~ao s\~ao nem primos e nem compostos. A exclus\~ao desses n\'umeros do conjunto dos primos \'e para garantir a unicidade da fatora\c{c}\~ao no teorema a seguir. Um outro aspecto a se destacar acerca desse par de n\'umeros \'e que eles s\~ao os \'unicos que admitem inverso multiplicativo, que vir\'a a ser explicado mais adiante.
+
+\begin{Th}
+[Teorema da Fatora\c{c}\~ao \'Unica]\label{fat.unica} 
+Dado um inteiro positivo $n\geq 2$ podemos sempre escrev\^e-lo, de modo \'unico, na forma
+$$n=p_{1}^{e_1}\dots p_{k}^{e_k}$$
+onde $1<p_1<p_2<p_3<\cdots<p_k$ s\~ao n\'umeros primos e $e_1, \cdots, e_k$ s\~ao inteiros positivos.
+\end{Th}
+
+No teorema acima, os expoentes $e_i$, para $1\leq i\leq k$ s\~ao chamados de \textit{multiplicidades}, pois indicam a quantidade de vezes que um mesmo n\'umero primo ocorre na fatora\c{c}\~ao. A prova de que \'e sempre poss\'ivel encontrar os fatores de usados decompor o n\'umero em fatores primos consiste no procedimento para fatorar um n\'umero, esse procedimento \'e chamado \textit{Algoritmo de Euclides}: trata-se do m\'etodo que se aprende na escola para fatorar
+um n\'umero e que n\~ao iremos detalhar aqui. Como bem sabemos, esse m\'etodo \'e bastante ineficaz quando pensamos em n\'umeros muito grande, pois depende de realizar uma sequ\^encia bem grande de divis\~oes, dependendo do n\'umero. A prova garante que o procedimento termina, mas o que se nota \'e que tal procedimento \'e muito ineficiente no sentido em que demanda muito tempo para se chegar a uma resposta dependendo do n\'umero de desejamos fatorar. Na literatura existem v\'arios algoritmos de fatora\c{c}\~ao que tornam o m\'etodo mais eficiente, no entanto nenhum desses m\'etodos funciona bem para todos os n\'umeros inteiros. A criptografia RSA aproveita a inefici\^encia do m\'etodo para fatorar um n\'umero para garantir a seguran\c{c}a do seu sistema. \'E um problema em aberto saber se existe ou n\~ao um m\'etodo r\'apido para fatorar n\'umeros inteiros.  
+
+A demonstra\c{c}\~ao do teorema acima requer uma s\'erie de resultados acerca de n\'umeros primos os quais detalharemos abaixo. O interesse em apresentar as demonstra\c{c}\~oes de tais resultados \'e devido ao fato de estarmos interessados em adaptar tais provas para o primos de Gauss se quisermos implementar um m\'etodo de criptografia RSA baseado nesses primos. 
+
+\begin{Th}\label{propriedade_de_primos}
+Sejam $a$ e $b$ inteiros positivos e suponhamos que $a$ e $b$ s\~ao primos entre si.
+\begin{enumerate}
+\item Se $b$ divide o produto $ac$ ent\~ao $b$ divide $c$.
+\item Se $a$ e $b$ dividem $c$ ent\~ao o produto $ab$ divide $c$.
+\end{enumerate}
+\end{Th}
+
+\noindent{\textbf{\textit{Demonstra\c{c}\~ao}}}\\
+\begin{enumerate}
+\item Se $a$ e $b$ s\~ao primos entre si, ent\~ao o m\'aximo divisor comum entre $a$ e $b$ \'e 1, isto \'e,$mdc(a,b)=1$. Pelo algoritmo euclideano estendido, temos que existem inteiros $\alpha$ e $\beta$ tais que $\alpha\cdot a+\beta\cdot b=1$. Da\'i, multiplicando toda a express\~ao por $c$ temos que: $\alpha\cdot ac+\beta\cdot bc=c\quad\quad (1)$. Dado que $b$ divide $ac$ e $b$ divide $cb$, ent\~ao $b$ divide $\alpha\cdot ac+\beta\cdot bc$. Portanto, a partir da igualdade (1) temos que $b$ divide $c$.
+
+\item Se $a$ divide $c$, ent\~ao existe $t\in \mathbb{Z}$ tal que $c=at$. Como, por hip\'otese, $b$ divide $c$ e $a$ e $b$ s\~ao primos entre si, ent\~ao $b$ tem que dividir $t$. Logo, para algum $t$ vale que $t=bk$. Portanto, $c=at=a(bk)=(ab)k$ \'e divis\'ivel por $ab$.  	
+\end{enumerate}	
+\hfill\newline
+
+\begin{Th}[Propriedade Fundamental dos Primos]
+Seja $p$ um n\'umero primo e $a$ e $b$ inteiros positivos. 
+Se $p$ divide o produto $ab$ ent\~ao $p$ divide $a$ ou $p$ divide $b$. 
+\end{Th}
+
+\noindent{\textbf{\textit{Demonstra\c{c}\~ao}}}\\
+Se $a$ e $p$ n\~ao forem primos entre si ent\~ao m\'aximo divisor comum entre eles \'e $p$, logo $p$ divide $a$. Suponhamos que $a$ e $p$ s\~ao primos entre si, isto \'e, $mdc(p,a)=1$. Como, por hip\'otese, $p$ divide $a\dot b$, ent\~ao pelo Teorema \ref{propriedade_de_primos} segue que $p$ divide $b$.
+\hfill\newline
+
+Estamos interessados, agora, em mostrar que a lista de primos \'e infinita, para tal vejamos o seguinte resultado intermedi\'ario.
+
+\begin{Th}[Exist\^encia de Divisor Primo]\label{divisor_primo}
+Se $n$ \'e um n\'umero inteiro positivo composto, ent\~ao $n$ tem um divisor primo
+$p$ tal que $p\leq\sqrt{p}$.
+\end{Th}
+
+\noindent{\textbf{\textit{Demonstra\c{c}\~ao:}}}\newline
+Se $n$ \'e um n\'umero composto e positivo, podemos supor que $n=a\cdot b$, com $1<a\leq b$.
+\begin{enumerate}
+\item De $1<a$, temos que existe um primo $p$ que divide $a$ (Teorema~\ref{fat.unica}), com $p\leq a$, da\'i $p^2\leq a^2$.
+\item De $a\leq b$ temos que $a^2\leq a\cdot a=n$
+\end{enumerate}
+De (1) e (2) segue que $p^2\leq n$, logo $p\leq\sqrt{n}$.
+\hfill \newline
+
+\begin{Th}[Infinidade de Primos]\label{inf.primos}
+Existe uma quantidade infinita de n\'umeros primos.
+\end{Th}
+
+\noindent{\textbf{\textit{Demonstra\c{c}\~ao:}}}\newline
+Suponha, por redu\c{c}\~ao ao absurdo, que exite apenas uma quantidade finita de n\'umeros primos: $p_1, p_2,\cdots p_n$. Tome $a=1+p_1\cdot p_2\cdot \cdots \cdot p_n$ um n\'umero inteiro. Claramente $a>p_i$ para cada $1\leq i\leq n$, ent\~ao $a$ deve ser um n\'umero composto, caso contr\'ario a 
+lista acima estaria incompleta. Dessa forma, pelo Teorema\ref{divisor_primo} existe um primo $p_i$ tal que divide $a$. Mas se $p_i$ divide $a$, ent\~ao $p_1$ divide $1$ e $p_i$ divide $p_1\cdot p_2\cdot \cdots \cdot p_n$. Absurdo, pois o \'unico divisor de $1$ \'e ele mesmo. Portanto, \'e falso supor que a lista de primos seja finita, logo ela deve ser infinita.
+\hfill\newline
+
+Existe, ainda, um outro debate acerca dos n\'umeros primos: como gerar os n\'umeros primos. Existem diversos m\'etodos para gerar os primos, como por exemplo, o Crivo de Erat\'ostenes, o mais antigos deles, mas n\~ao envolve nenhuma f\'ormula espec\'ifica. No entanto, todos esses m\'etodos s\~ao ineficazes. Para mais detalhes sobre esse tema recomendamos a leitura de Criptografia, de Coutinho\cite{coutinho}.
+
+Como mostramos, temos o Teorema \ref{fat.unica} que garante que um n\'umero possa ser decomposto
+em fatores primos de forma \'unica e o Terema \ref{inf.primos} que garante uma infinidade de n\'umeros primos, no entanto, como dissemos, os procedimentos atrelados a esses resultados s\~ao todos muito ineficientes em termos computacionais. Para implementar a criptografia RSA vamos precisar de procedimentos mais eficazes e por essa raz\~ao ser\'a conveniente trabalhar com o conjunto de n\'umeros inteiros. Para isso vamos separar os n\'umeros inteiros em classes de equival\^encias, pois dessa forma ser\'a poss\'ivel operar com essas classes de forma semelhante como fazemos com os inteiros. Esse \'e justamente o tema da pr\'oxima se\c{c}\~ao.  
+
+
+\section{Aritm\'etica Modular}
+
+\hspace{7mm}Para compreender a intui\c{c}\~ao por tr\'as da aritm\'etica modular \'e interessante pensar na ideia de \textit{ciclicidade}, isto \'e, fatos que ocorrem ap\'os um determinado per\'iodo constante. Por exemplo, o nascer do sol \'e um evento que ocorre sempre ap\'os um ciclo de 24 horas; a data de seu anivers\'ario ocorre a cada ciclo de um ano. Trabalhar com ciclos requer que tenhamos uma nova forma de operar com n\'umeros, pois quando somamos 13 com 15 o resultado pode ser 4 se estivermos pensando em termos de horas, pois ap\'os 24 horas retornamos ao marco zero e reiniciamos a contagem para facilitar o reconhecimento da hora em quest\~ao. 
+
+Quando mostramos o processo de codifica\c{c}\~ao e de decodifica\c{c}\~ao de um c\'odigo em 
+\textit{cifras de substitui\c{c}\~ao monoalfab\'eticas} voc\^e deve ter notado que precisamos repetir o alfabeto a fim de podermos operar com as posi\c{c}\~oes ocupadas por uma determinada letra do alfabeto. A repeti\c{c}\~ao do alfabeto foi usada para mostrar as diferentes representa\c{c}\~oes das letras dentro do ciclo estipulado.
+
+Podemos observar que os ciclos geram classes de n\'umeros, isto \'e, os n\'umeros 0, 24, 48, 72, etc. indicam todos o marco zero do rel\'ogio se estivermos iniciando a contagem das horas no marco zero. Esses n\'umeros formam a \textsl{classe da zero hora}. Da mesma forma podemos compor a \textsl{classe da uma hora}, \textsl{classe das duas horas} e assim por diante. No exemplo das posi\c{c}\~oes ocupadas pelas letras do alfabeto temos que a \textsl{classe da letra $A$} \'e composta pelos n\'umeros 1, 27, 53, etc. 
+
+Nosso interesse est\'a voltado para a uniformiza\c{c}\~ao do modo de separar tais classes para podemos operar com essas classes e da\'i fazer uso dessa intui\c{c}\~ao de forma operacionalizada. 
+
+\begin{Df}
+	Uma classe \'e chamada de \textsl{equival\^encia} se satisfaz as seguintes propriedades:
+	\begin{itemize}
+		\item Reflexividade: $\forall x, x=x$; 		
+		\item Simetria: se $x=y$, ent\~ao $y=x$; 
+		\item Transitividade: se $x=y$ e $y=z$, ent\~ao $x=z$.
+	\end{itemize}
+\end{Df}   
+
+Para exemplificar a defini\c{c}\~ao acima, cosidere o exemplo das horas: a propriedade reflexiva afirma que toda hora \'e igual a ela pr\'opria; a simetria afirma que se $0h$ \'e igual a $24h$, ent\~ao temos tamb\'em que $24h$ \' igual a $0h$; a transitividade afirma que $0h$ \'e igual a $24h$ e $24h$ \'e igual a $72h$, então $0h$ \'e igual a $72h$.
+
+Seja $X$ um conjunto e $\sim$ uma rela\c{c}\~ao de equival\^encia definida em $X$. Denotamos por $\overline{X}$ a classe de equival\^encia de $x$ e escrevemos, em s\'imbolos, da seguinte forma:	
+	                     $$\overline{x}=\{y\in X: y\sim x\}$$
+
+Nosso interesse ser\'a separar em classe de equival\^encia os n\'umeros inteiros, dessa forma o $X$ representa o conjunto $\mathbb{Z}$ enquanto que $x$ representa um n\'umero inteiro, enquanto que $\sim$ representa alguma rela\c{c}\~ao estabelecida entre os n\'umeros, por exemplo o resto da divis\~ao pelo n\'umero 5. Dessa forma, podemos formar cinco classes distintas:
+
+	\begin{itemize}
+		\item Classe dos restos 0: $\overline{0}=\{0, 5, 10, 15, 20, \cdots\}$
+		\item Classe dos restos 1: $\overline{1}=\{1, 6, 11, 16, 21, \cdots\}$
+		\item Classe dos restos 2: $\overline{2}=\{2, 7, 12, 17, 22, \cdots\}$
+		\item Classe dos restos 3: $\overline{3}=\{3, 8, 13, 18, 23, \cdots\}$
+		\item Classe dos restos 4: $\overline{4}=\{4, 9, 14, 19, 24, \cdots\}$
+	\end{itemize}
+
+O conjunto das classes de equival\^encia em $X$ \'e chamado \textit{conjunto quociente de $X$ por $\sim$}. No nosso exemplo $\{\bar{0}, \bar{1}, \bar{2}, \bar{3}, \bar{4}\}$ representa conjunto quociente de $\mathbb{Z}$ pela divis\~ao por 5. Esse conjunto ser\'a denotado por $\mathbb{Z}_{5}$. Em termos gerais, o conjunto quociente dos n\'umeros inteiros \'e denotado por:
+
+$$\mathbb{Z}_{n}=\{\overline{0}, \overline{1}, \overline{2}, \cdots, \overline{n-1}\}$$ 
