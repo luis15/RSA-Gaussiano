@@ -1,33 +1,33 @@
 \relax 
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Inversos Modulares}{15}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Inversos Modulares}{14}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{InvMod}{{3}{15}}
-\@writefile{toc}{\contentsline {subparagraph}{ Nosso objetivo com o decorrer deste cap\'itulo \'e o de explicar a opera\c {c}\~ao matem\'atica mais importante para para o algoritmo RSA. Para podermos comprend\^e-la vamos relembrar do conceito ensinado no col\'egio de inverso multiplicativo, que consiste em obter o n\'umero que multiplicado a um n\'umero $n$ qualquer resulte em $1$. Juntos, n\'os iremos ver que na opera\c {c}\~ao do inverso modular se segue do mesmo princ\'ipio. }{15}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}Inversos modulares}{15}}
-\@writefile{toc}{\contentsline {subparagraph}{ Para iniciarmos este cap\'itulo, vamos supor que queremos obter o inverso modular de $6$ para o m\'odulo $7$, o que n\'os teremos que fazer ent\~ao \'e encontrar qual o n\'umero que multiplicado por $6$ tem resto $1$ quando dividido por $7$. Come\c {c}amos pelo $1$, teremos que $6 \cdot 1 = 6$, $6 \equiv 6 (mod7)$. Com $2$ o resultado ser\'a $12$, logo $12 \equiv 5 (mod7)$, que para n\'os tamb\'em n\~ao serve. Tentando o $3$ obtemos $4$ e com $4$ obtemos $3$. Com o $5$ nosso retorno ser\'a $2$. Finalmente quando chegamos ao $6$ n\'os temos que $6 \cdot 6 = 36$, $36 \equiv 1 (mod 7)$. Com isso podemos concluir que o inverso multiplicativo de $6$ no m\'odulo $7$ \'e o pr\'opio $6$. }{15}}
-\@writefile{toc}{\contentsline {subparagraph}{ Para simplificar o que foi dito acima, podemos dizer a opera\c {c}\~ao de inverso multiplicativo no m\'odulo $n$ para $a$ consiste em encontar um n\'umero $a'$ tal que: }{15}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Inexist\^encia e exist\^encia de inversos}{16}}
-\@writefile{toc}{\contentsline {subparagraph}{ Antes de come\c {c}armos vamos tentar calcular o inverso multiplicativo de $2$ no m\'odulo $8$, vamos l\'a: }{16}}
-\@writefile{toc}{\contentsline {subparagraph}{ N\~ao encontramos nenhuma resposta pois, simplesmente, n\~ao h\'a. Antes que se pergunte o motivo de n\~ao tentarmos com n\'umeros maiores que $7$, \'e v\'alido lembrar que a partir do $8$ ter\'iamos a repeti\c {c}\~ao de resultados por conta das congru\^encias. }{16}}
-\@writefile{toc}{\contentsline {subparagraph}{ A opera\c {c}\~ao de inverso multiplicativo s\'o possui resultado em casos onde o n\'umero $a$ ao qual queremos calcular o inverso e o m'odulo s\~ao \textit  {primos entre si}, ou seja, n\~ao possuam nenhum fator em comum. Por conta disso usamos os n\'umeros primos no algoritmo RSA. }{16}}
-\@writefile{toc}{\contentsline {subparagraph}{ Para comprovar o que foi dito acima, vamos tomar um n\'umero $a$, tal que }{16}}
-\@writefile{toc}{\contentsline {paragraph}{ isso pode ser traduzido em linguagem humana como $n$ divide $ a \cdot a' - 1$. Isso em linguajar matem\'atico pode ser escrito como: }{16}}
-\@writefile{toc}{\contentsline {paragraph}{ como estamos atr\'as de saber se $a$ e $n$ n\~ao possuem fator comum, ent\~ao h\'a de haver um $k$ inteiro para a equa\c {c}\~ao acima. Nosso primeiro passo para provar isso ser\'a de se criar o conjunto $V(a,n)$, esse conjunto \'e formado por inteiros positivos e pode ser escrito como }{16}}
-\@writefile{toc}{\contentsline {subparagraph}{ Em um primeiro momento este conjunto e esta nova f\'ormula podem parecer estranhos ao que se via antes, mas se comprovarmos que $ 1 \in V(a,n)$, conclu\'imos que devem haver dois inteiros $x_0$ e $y_0$, ou se preferir $a'$ e $k$, logo: }{17}}
-\@writefile{toc}{\contentsline {subparagraph}{ Uma das propiedades deste conjunto \'e a de $n$ pertencer a ele quando $x = a' = 0$ e $y = k = 1$. Isto significa que os inteiros que podem completar a equa\c {c}\~ao est\~ao entre $m$ e $n$. Mas para podermos dar essa demonstra\c {c}\~ao como completa, precisamos provar que $m = 1$. Como $a$ e $n$ s\~ao primos entre si, basta mostrar que $m$ divide ambos. Vamos come\c {c}ar assumindo que $m \in V(a,m)$ , logo devem existir $x_1$ e $y_1$ tais que: }{17}}
-\@writefile{toc}{\contentsline {paragraph}{ Caso venhamos a dividir $n$ por $m$, obtemos: }{17}}
-\@writefile{toc}{\contentsline {paragraph}{ Que pode ser organizada como: }{17}}
-\@writefile{toc}{\contentsline {subparagraph}{ Com isso podemos concluir que $r \in V(a,n)$, como $r$ \'e o resto da divis\~ao de $n$ por $m$, de modo que $r = 0$ ou $r \not =0$. $r \not =0$ \'e absurdo por conta de $r<m$, com $m$ divisor de $n$, por $m$ ser o menor elemento de $V(a,n)$. Logo s\'o nos resta conferir se $r = 0$, o que prova que $m$ divide $n$. Pode se provar de forma semelhante que $m$ divide $a$. }{17}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Um teorema e um corol\'ario}{17}}
-\@writefile{toc}{\contentsline {subparagraph}{ Com base em tudo que j\'a foi lido e provado anteriormente neste cap\'itulo podems concluir o seguinte teorema: }{17}}
-\@writefile{toc}{\contentsline {paragraph}{ \textit  {Sejam $a<n$ inteiros positivos. O res\'iduo $a$ em inverso no m\'odulo $n$ se, e somente se, $a$ e $n$ n\~ao possuem fatores primos em comum.} }{17}}
-\@writefile{toc}{\contentsline {paragraph}{ Esta informa\c {c}\~ao nos ser\'a muito \'util mais a frente. Outra coisa muito importante para nosso prosseguimento \'e o seguinte corol\'ario: }{18}}
-\@writefile{toc}{\contentsline {paragraph}{ \textit  {Sejam $a<n$ inteiros positivos sem fatores comuns, se :} }{18}}
-\@writefile{toc}{\contentsline {paragraph}{ \textit  {ent\~ao:} }{18}}
-\@writefile{toc}{\contentsline {subparagraph}{ Nos cap\'itulos seguintes poderemos ver como iremos aplicar estas propiedades, que nos ser\~ao muito \'uteis para agilizar nossos c\'alculos. }{18}}
+\newlabel{InvMod}{{3}{14}}
+\@writefile{toc}{\contentsline {subparagraph}{ Nosso objetivo com o decorrer deste cap\'itulo \'e o de explicar a opera\c {c}\~ao matem\'atica mais importante para para o algoritmo RSA. Para podermos comprend\^e-la vamos relembrar do conceito ensinado no col\'egio de inverso multiplicativo, que consiste em obter o n\'umero que multiplicado a um n\'umero $n$ qualquer resulte em $1$. Juntos, n\'os iremos ver que na opera\c {c}\~ao do inverso modular se segue do mesmo princ\'ipio. }{14}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Inversos modulares}{14}}
+\@writefile{toc}{\contentsline {subparagraph}{ Para iniciarmos este cap\'itulo, vamos supor que queremos obter o inverso modular de $6$ para o m\'odulo $7$, o que n\'os teremos que fazer ent\~ao \'e encontrar qual o n\'umero que multiplicado por $6$ tem resto $1$ quando dividido por $7$. Come\c {c}amos pelo $1$, teremos que $6 \cdot 1 = 6$, $6 \equiv 6 (mod7)$. Com $2$ o resultado ser\'a $12$, logo $12 \equiv 5 (mod7)$, que para n\'os tamb\'em n\~ao serve. Tentando o $3$ obtemos $4$ e com $4$ obtemos $3$. Com o $5$ nosso retorno ser\'a $2$. Finalmente quando chegamos ao $6$ n\'os temos que $6 \cdot 6 = 36$, $36 \equiv 1 (mod 7)$. Com isso podemos concluir que o inverso multiplicativo de $6$ no m\'odulo $7$ \'e o pr\'opio $6$. }{14}}
+\@writefile{toc}{\contentsline {subparagraph}{ Para simplificar o que foi dito acima, podemos dizer a opera\c {c}\~ao de inverso multiplicativo no m\'odulo $n$ para $a$ consiste em encontar um n\'umero $a'$ tal que: }{14}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Inexist\^encia e exist\^encia de inversos}{15}}
+\@writefile{toc}{\contentsline {subparagraph}{ Antes de come\c {c}armos vamos tentar calcular o inverso multiplicativo de $2$ no m\'odulo $8$, vamos l\'a: }{15}}
+\@writefile{toc}{\contentsline {subparagraph}{ N\~ao encontramos nenhuma resposta pois, simplesmente, n\~ao h\'a. Antes que se pergunte o motivo de n\~ao tentarmos com n\'umeros maiores que $7$, \'e v\'alido lembrar que a partir do $8$ ter\'iamos a repeti\c {c}\~ao de resultados por conta das congru\^encias. }{15}}
+\@writefile{toc}{\contentsline {subparagraph}{ A opera\c {c}\~ao de inverso multiplicativo s\'o possui resultado em casos onde o n\'umero $a$ ao qual queremos calcular o inverso e o m'odulo s\~ao \textit  {primos entre si}, ou seja, n\~ao possuam nenhum fator em comum. Por conta disso usamos os n\'umeros primos no algoritmo RSA. }{15}}
+\@writefile{toc}{\contentsline {subparagraph}{ Para comprovar o que foi dito acima, vamos tomar um n\'umero $a$, tal que }{15}}
+\@writefile{toc}{\contentsline {paragraph}{ isso pode ser traduzido em linguagem humana como $n$ divide $ a \cdot a' - 1$. Isso em linguajar matem\'atico pode ser escrito como: }{15}}
+\@writefile{toc}{\contentsline {paragraph}{ como estamos atr\'as de saber se $a$ e $n$ n\~ao possuem fator comum, ent\~ao h\'a de haver um $k$ inteiro para a equa\c {c}\~ao acima. Nosso primeiro passo para provar isso ser\'a de se criar o conjunto $V(a,n)$, esse conjunto \'e formado por inteiros positivos e pode ser escrito como }{15}}
+\@writefile{toc}{\contentsline {subparagraph}{ Em um primeiro momento este conjunto e esta nova f\'ormula podem parecer estranhos ao que se via antes, mas se comprovarmos que $ 1 \in V(a,n)$, conclu\'imos que devem haver dois inteiros $x_0$ e $y_0$, ou se preferir $a'$ e $k$, logo: }{16}}
+\@writefile{toc}{\contentsline {subparagraph}{ Uma das propiedades deste conjunto \'e a de $n$ pertencer a ele quando $x = a' = 0$ e $y = k = 1$. Isto significa que os inteiros que podem completar a equa\c {c}\~ao est\~ao entre $m$ e $n$. Mas para podermos dar essa demonstra\c {c}\~ao como completa, precisamos provar que $m = 1$. Como $a$ e $n$ s\~ao primos entre si, basta mostrar que $m$ divide ambos. Vamos come\c {c}ar assumindo que $m \in V(a,m)$ , logo devem existir $x_1$ e $y_1$ tais que: }{16}}
+\@writefile{toc}{\contentsline {paragraph}{ Caso venhamos a dividir $n$ por $m$, obtemos: }{16}}
+\@writefile{toc}{\contentsline {paragraph}{ Que pode ser organizada como: }{16}}
+\@writefile{toc}{\contentsline {subparagraph}{ Com isso podemos concluir que $r \in V(a,n)$, como $r$ \'e o resto da divis\~ao de $n$ por $m$, de modo que $r = 0$ ou $r \not =0$. $r \not =0$ \'e absurdo por conta de $r<m$, com $m$ divisor de $n$, por $m$ ser o menor elemento de $V(a,n)$. Logo s\'o nos resta conferir se $r = 0$, o que prova que $m$ divide $n$. Pode se provar de forma semelhante que $m$ divide $a$. }{16}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Um teorema e um corol\'ario}{16}}
+\@writefile{toc}{\contentsline {subparagraph}{ Com base em tudo que j\'a foi lido e provado anteriormente neste cap\'itulo podems concluir o seguinte teorema: }{16}}
+\@writefile{toc}{\contentsline {paragraph}{ \textit  {Sejam $a<n$ inteiros positivos. O res\'iduo $a$ em inverso no m\'odulo $n$ se, e somente se, $a$ e $n$ n\~ao possuem fatores primos em comum.} }{16}}
+\@writefile{toc}{\contentsline {paragraph}{ Esta informa\c {c}\~ao nos ser\'a muito \'util mais a frente. Outra coisa muito importante para nosso prosseguimento \'e o seguinte corol\'ario: }{17}}
+\@writefile{toc}{\contentsline {paragraph}{ \textit  {Sejam $a<n$ inteiros positivos sem fatores comuns, se :} }{17}}
+\@writefile{toc}{\contentsline {paragraph}{ \textit  {ent\~ao:} }{17}}
+\@writefile{toc}{\contentsline {subparagraph}{ Nos cap\'itulos seguintes poderemos ver como iremos aplicar estas propiedades, que nos ser\~ao muito \'uteis para agilizar nossos c\'alculos. }{17}}
 \@setckpt{InvMod}{
-\setcounter{page}{19}
+\setcounter{page}{18}
 \setcounter{equation}{0}
 \setcounter{enumi}{2}
 \setcounter{enumii}{0}

@@ -1,63 +1,63 @@
 \relax 
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Aplicando a criptografia RSA}{28}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Aplicando a criptografia RSA}{27}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{RSA}{{6}{28}}
-\@writefile{toc}{\contentsline {subparagraph}{ A criptografia RSA tem suma import\^ancia para toda a comunica\c {c}\~ao moderna. Ela \'e t\~ao importante que a descoberta de uma forma de se desencript\'a-la colocaria em risco a sociedade como a conhecemos. }{28}}
-\@writefile{toc}{\contentsline {subparagraph}{ Ao longo deste cap\'itulo n\'os vamos ver como \'e seu funcionamento, unindo todos os conte\'udos j\'a vistos anteriormente. Al\'em disso }{28}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.1}Pr\'e-requisitos}{28}}
-\@writefile{toc}{\contentsline {subparagraph}{ Para que o algoritmo RSA possa encriptar de forma eficiente, primeiro n\'os precisaremos seguir uma s\'erie de passos. Estes s\~ao necess\'arios para que o RSA funcione, mas ainda n\~ao s\~ao parte do algoritmo. }{28}}
-\@writefile{toc}{\contentsline {subparagraph}{ O primeiro passo \'e a convers\~ao das letras da mensagem em n\'umeros. A essa etapa n\'os chamaremos de pr\'e-codifica\c {c}\~ao. Para que o RSA venha a funcionar precisamos seguir uma tabela como a abaixo: }{28}}
-\@writefile{toc}{\contentsline {subparagraph}{ Para o espa\c {c}o vamos usar o 99. Avisamos que esta \'e uma tabela apenas com fim did\'atico, e, por isso h\'a v\'arios caracteres desconsiderados. Como exemplo vamos pr\'e-encriptar o poema Amor, de Oswald de Andrade. O texto do poema a ser encriptado \'e o pr\'e-seguinte: }{29}}
-\@writefile{toc}{\contentsline {subparagraph}{ Como primeiro passo substituiremos cada letra da poesia por um n\'umero correspondente. Feito isso juntaremos todos os n\'umeros Ao terminarmos vamos obt\^e-lo convertido como: }{29}}
-\@writefile{toc}{\contentsline {subparagraph}{ Preste aten\c {c}\~ao ao fato de todo o caracter convertido ter sempre o mesmo n\'umero de algarismos. Isso \'e \'util para evitar ambiguidades na desencripta\c {c}\~ao. }{29}}
-\@writefile{toc}{\contentsline {subparagraph}{ Nosso pr'oximo passo nesta fase que antecede a encripta\c {c}\~ao consiste em definir que s\~ao os primos $p$ e $q$. Para nosso exemplo vamos usar $p=17$ e $q=23$, como $n = pq$. Temos que $n=391$ }{29}}
-\@writefile{toc}{\contentsline {subparagraph}{ O \'ultimo passo da pr\'e-encripta\c {c}\~ao consiste em quebrar o n\'umero qu obtemos acima em blocos menores. Essas blocos devem obedecer a duas regras b\'asicas, devem ser menores que $n$, ou no nosso exemplo $391$ e n\~ao podem se iniciar por 0, Vejamos como fica a nossa mensagem escrita nesta forma. }{29}}
-\@writefile{toc}{\contentsline {subparagraph}{ Perceba que n\~ao h\'a rela\c {c}\~ao entre nenhum dos n\'umeros obtidos com um caractere espec\'ifico, o que torna imposs\'ivel a associa\c {c}\~ao de um n\'umero a uma letra por frequ\^encia de aparecimento. }{29}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.2}Codificando e decodificando mensagens}{29}}
-\@writefile{toc}{\contentsline {subparagraph}{ Encerrada a fase de pr\'e-codificando vamos agora codificar nossas mensagens. Manteremos os valores e exemplos da se\c c\~ao anterior a fim de facilitar a compreens\~ao. }{29}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.1}Codificando uma mensagem}{30}}
-\@writefile{toc}{\contentsline {subparagraph}{ A esta altura n\'os j\'a conhecemos a $n$. Vamos chamar o bloco codificado que iremos encriptar de $b$, lembrando que $b$ \'e um n\'umero inteiro menor que $n$. Vamos chamar o bloco codificado de C(b). Para obt\^e-lo deveos aplicar a seguinte f\'ormula: }{30}}
-\@writefile{toc}{\contentsline {subparagraph}{ Podemos para facilitar dizer que $C(b)$ \'e o res\IeC {\'\i }duo de $b^3$ pelo m\'odulo $n$. Vamo a uma demonstra\c {c}\~ao pr\'atica com o primiro bloco de nossa mensagem, com o n\'umero $102$. Para simplificar o nosso trabalho vamos utilizar as opera\c {c}\~oes modulares. }{30}}
-\@writefile{toc}{\contentsline {subparagraph}{ Faremos o mesmo procedimento para todos nossos blocos }{30}}
-\@writefile{toc}{\contentsline {subparagraph}{ Portanto, ``Amor/Humor.'', encriptado pelo RSA com as chaves privadas $17$ e $23$ e a p\'ublica $391$ \'e: }{30}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.2}Decodificando uma mensagem}{30}}
-\@writefile{toc}{\contentsline {subparagraph}{ Para podermos desencriptar uma mensagem n\'os precisamos de dois n\'umeros. O primeiro \'e a nossa chave p\'ublica $n$. O segundo n\'umero \'e $d$, o $d$ \'e o inverso de $3$ para o m\'odulo $(p-1)(q-1)$. Mais a frente explicaremos o motivo de se adicionar este n\'umero. Pela defini\c {c}\~ao do inverso temos: }{30}}
-\@writefile{toc}{\contentsline {subparagraph}{ A partir do momento em que estamos de posse de $d$, podemos usar o par $(n,d)$ para desencriptar a mensagem, onde $a$ \'e o bloco encriptado e $D(a)$ a mensagem desencriptada, usando a f\'ormula: }{31}}
-\@writefile{toc}{\contentsline {subparagraph}{ Note que na fun\c {c}\~ao acima n\'os assumimos o compromisso de que $D(C(b)) = b$. Para comprov\'a-la vamos mais adiante fazer sua demonstra\c {c}\~ao. Neste momento vamos apenas aplic\'a-la ao nosso exemplo. O primeiro passo consiste em calcular $d$. Vamos supor que $p$ e $q$ deixam resto $5$ na divis\~ao por $6$. Com isso podemos afirmar que: }{31}}
-\@writefile{toc}{\contentsline {paragraph}{ ou seja: }{31}}
-\@writefile{toc}{\contentsline {subparagraph}{ No entanto, podemos dizer que $6 \cdot k - 2 \equiv 4 \cdot k - 1 (mod 3)$.Podendo dizer que assim que $d$ \'e igual a $4 \cdot k -1$. Feito isso vamos aos n\'umeros de nosso exemplo: $17$ e $23$, com isso vamos obter: }{31}}
-\@writefile{toc}{\contentsline {paragraph}{ Com isso obtemos que $k=59$. Aplicando k teremos que: }{31}}
-\@writefile{toc}{\contentsline {subparagraph}{ Agora que j\'a conhecemos a $d$ podemos decodificar a mensagem. Vamos fazer isso em nosso primeiro bloco codificado, que possui o valor $34$. Para achar a resposta precisaremos calcular $D(34) \equiv 34^{235} (mod 391)$. Esse c\'alculo seria praticamente imposs\'ivel sem o uso dos Teoremas chin\^es do resto e de Fermat. }{31}}
-\@writefile{toc}{\contentsline {subparagraph}{ Nosso primeiro passo ser\'a o de calcular $34^{235}$ nos m\'odulos $17$ e $23$, que s\~ao os primos em que $n$ fatora. Neste caso, come\c {c}amos com: }{31}}
-\@writefile{toc}{\contentsline {subparagraph}{ Assim teremos que $34^{235} \equiv 0^{235} \equiv 0 (mod 17)$. Aplicando o teorema de Fermat a outra congr\^encia teremos: }{32}}
-\@writefile{toc}{\contentsline {subparagraph}{ Como $ 11 \equiv -12 \equiv -4 \cdot 3(mod 23)$. Desse modo podemos afirmar que: }{32}}
-\@writefile{toc}{\contentsline {paragraph}{ Com isso, teremos: }{32}}
-\@writefile{toc}{\contentsline {paragraph}{ Concluindo assim: }{32}}
-\@writefile{toc}{\contentsline {subparagraph}{ Temos assim as congru\^encias $34^{235} \equiv 0 (mod 17)$ e $34^{235} \equiv 10 (mod 23)$. Com isso podemoa aplicaro o teorema chin\^es do resto no sistema: }{32}}
-\@writefile{toc}{\contentsline {subparagraph}{ Com ele n\'os iremos obter que }{32}}
-\@writefile{toc}{\contentsline {paragraph}{ Obtendo assim: }{32}}
-\@writefile{toc}{\contentsline {paragraph}{ Por\'em, $3$ \'e o inverso de $6$ no m\'odulo $17$, e por isso teremos }{32}}
-\@writefile{toc}{\contentsline {subparagraph}{ Com isso iremos chegar at\'e $x = 10 + 23y = 10 + 23 4 = 102$. Caso voc\^e venha a conferir na se\c {c}\~ao sobre codifica\c {c}\~ao de mensagens poder\'a confirmar o resultado. Os demais blocos podem ser decodificados da mesma forma, apenas n\~ao ser\~ao mostradas nesta obra por necessitar de muitos passos, o que tornaria este cap\'itulo inutilmente mais longo. }{32}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.3}Provando a funcionalidade do RSA}{33}}
-\@writefile{toc}{\contentsline {subparagraph}{ Ao longo dessa se\c {c}\~ao vamos provar que o RSA funciona no processo de decodifica\c {c}\~ao, para podermos fazer isso tudo o que teremos que fazer \'e provar que: }{33}}
-\@writefile{toc}{\contentsline {subparagraph}{ N\'os j\'a vimos que $C(b) \equiv b^3 (mod n)$ e $D(a) \equiv a^d(mod n)$. Se combinarmos ambos as congru\^encia iremos obter }{33}}
-\@writefile{toc}{\contentsline {subparagraph}{ Logo o que n\'os temos de provar \'e que $b^{3d} \equiv b (mod n)$. Como por defini\c {c}\~ao $3d \equiv 1 (mod(p-1)(q-1))$, o que nos leva at\'e: }{33}}
-\@writefile{toc}{\contentsline {subparagraph}{ Pelo Teorema Chin\^es do Resto e levando em conta a express\~ao para obter $3d$ temos que: }{33}}
-\@writefile{toc}{\contentsline {subparagraph}{ Tomando que $p$ n\~ao divide $b$, n\'os podemos vir usar o Teorema de Fermat, de modo a obter: }{33}}
-\@writefile{toc}{\contentsline {paragraph}{ Obtendo assim }{33}}
-\@writefile{toc}{\contentsline {subparagraph}{ Mesma que $b$ seja m\'ultiplo de $p$, teremos que $b$ e $b^{3d}$ s\~ao congruentes a $0$, logo nessa caso tamb\'em \'e v\'alida a congru\^encia, tendo assim: }{33}}
-\@writefile{toc}{\contentsline {subparagraph}{ Pelo mesmo m\'etodo podemos obter $q$, obtendo o par: }{33}}
-\@writefile{toc}{\contentsline {subparagraph}{ Veja que $b$ \'e solu\c {c}\~ao de: }{34}}
-\@writefile{toc}{\contentsline {paragraph}{ Pelo Teorema Chin\^es do resto esse sistema tem solu\c {c}\~ao igual: }{34}}
-\@writefile{toc}{\contentsline {paragraph}{ Onde $t\in \mathbb  {Z}$. Logo como provamos anteriormente temos que: }{34}}
-\@writefile{toc}{\contentsline {paragraph}{ para algum inteiro $k$. Isso equivale a $b^{3d} \equiv b (mod (pq))$. Isso comprova a congru\^encia que quer\'iamos a efici\^encia do RSA. }{34}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.4}Discutindo a seguran\c {c}a do RSA}{34}}
-\@writefile{toc}{\contentsline {subparagraph}{ Antes de mudarmos completamente o foco deste trabalho, vamos nos focar no que tange a seguran\c {c}a do RSA. Vamos supor que algu\'em, que vamos denominar Irineu, esteja com uma escuta em nossas mensagens, tendo assim acesso tanto a mensagem codificada quanto a chave p\'ublica $n$. Vamos lembrar que $n$ \'e a multiplica\c {c}\~ ao dos primos $p$ e $q$. Sabendo disso bastaria para Irineu fatorar $n$ para obter $p$ e $q$ e depois descobrir $d$ para poder decodificar a mensagem, como j\'a foi explicado neste cap\'itulo. }{34}}
-\@writefile{toc}{\contentsline {subparagraph}{ Isto pode parecer muito simples, mas como j\'a mostramos na se\c {c}\~ao sobre fatora\c {c}\~ao n\~ao h\'a um algoritmo conhecido que possa fazer isso de forma eficiente. O que ocorre \'e que um algoritmo que fa\c {c}a a fatora\c {c}\~ao de forma eficinte pode vir a surgir a qualquer momento, do ponto que n\~ao h\'a nenhuma prova matem\'atica de que esse algoritmo n\~ao exista. }{34}}
-\@writefile{toc}{\contentsline {subparagraph}{ O que iremos fazer nos pr\'oximos cap\'itulos consiste em propor uma varia\c {c}\~ao da criptografia RSA que n\~ao seja completamente vulner\'avel caso tal algoritmo seja descoberto, a \textit  {Criptografia RSA Gaussiana}. }{34}}
+\newlabel{RSA}{{6}{27}}
+\@writefile{toc}{\contentsline {subparagraph}{ A criptografia RSA tem suma import\^ancia para toda a comunica\c {c}\~ao moderna. Ela \'e t\~ao importante que a descoberta de uma forma de se desencript\'a-la colocaria em risco a sociedade como a conhecemos. }{27}}
+\@writefile{toc}{\contentsline {subparagraph}{ Ao longo deste cap\'itulo n\'os vamos ver como \'e seu funcionamento, unindo todos os conte\'udos j\'a vistos anteriormente. Al\'em disso }{27}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}Pr\'e-requisitos}{27}}
+\@writefile{toc}{\contentsline {subparagraph}{ Para que o algoritmo RSA possa encriptar de forma eficiente, primeiro n\'os precisaremos seguir uma s\'erie de passos. Estes s\~ao necess\'arios para que o RSA funcione, mas ainda n\~ao s\~ao parte do algoritmo. }{27}}
+\@writefile{toc}{\contentsline {subparagraph}{ O primeiro passo \'e a convers\~ao das letras da mensagem em n\'umeros. A essa etapa n\'os chamaremos de pr\'e-codifica\c {c}\~ao. Para que o RSA venha a funcionar precisamos seguir uma tabela como a abaixo: }{27}}
+\@writefile{toc}{\contentsline {subparagraph}{ Para o espa\c {c}o vamos usar o 99. Avisamos que esta \'e uma tabela apenas com fim did\'atico, e, por isso h\'a v\'arios caracteres desconsiderados. Como exemplo vamos pr\'e-encriptar o poema Amor, de Oswald de Andrade. O texto do poema a ser encriptado \'e o pr\'e-seguinte: }{28}}
+\@writefile{toc}{\contentsline {subparagraph}{ Como primeiro passo substituiremos cada letra da poesia por um n\'umero correspondente. Feito isso juntaremos todos os n\'umeros Ao terminarmos vamos obt\^e-lo convertido como: }{28}}
+\@writefile{toc}{\contentsline {subparagraph}{ Preste aten\c {c}\~ao ao fato de todo o caracter convertido ter sempre o mesmo n\'umero de algarismos. Isso \'e \'util para evitar ambiguidades na desencripta\c {c}\~ao. }{28}}
+\@writefile{toc}{\contentsline {subparagraph}{ Nosso pr'oximo passo nesta fase que antecede a encripta\c {c}\~ao consiste em definir que s\~ao os primos $p$ e $q$. Para nosso exemplo vamos usar $p=17$ e $q=23$, como $n = pq$. Temos que $n=391$ }{28}}
+\@writefile{toc}{\contentsline {subparagraph}{ O \'ultimo passo da pr\'e-encripta\c {c}\~ao consiste em quebrar o n\'umero qu obtemos acima em blocos menores. Essas blocos devem obedecer a duas regras b\'asicas, devem ser menores que $n$, ou no nosso exemplo $391$ e n\~ao podem se iniciar por 0, Vejamos como fica a nossa mensagem escrita nesta forma. }{28}}
+\@writefile{toc}{\contentsline {subparagraph}{ Perceba que n\~ao h\'a rela\c {c}\~ao entre nenhum dos n\'umeros obtidos com um caractere espec\'ifico, o que torna imposs\'ivel a associa\c {c}\~ao de um n\'umero a uma letra por frequ\^encia de aparecimento. }{28}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}Codificando e decodificando mensagens}{28}}
+\@writefile{toc}{\contentsline {subparagraph}{ Encerrada a fase de pr\'e-codificando vamos agora codificar nossas mensagens. Manteremos os valores e exemplos da se\c c\~ao anterior a fim de facilitar a compreens\~ao. }{28}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.1}Codificando uma mensagem}{29}}
+\@writefile{toc}{\contentsline {subparagraph}{ A esta altura n\'os j\'a conhecemos a $n$. Vamos chamar o bloco codificado que iremos encriptar de $b$, lembrando que $b$ \'e um n\'umero inteiro menor que $n$. Vamos chamar o bloco codificado de C(b). Para obt\^e-lo deveos aplicar a seguinte f\'ormula: }{29}}
+\@writefile{toc}{\contentsline {subparagraph}{ Podemos para facilitar dizer que $C(b)$ \'e o res\IeC {\'\i }duo de $b^3$ pelo m\'odulo $n$. Vamo a uma demonstra\c {c}\~ao pr\'atica com o primiro bloco de nossa mensagem, com o n\'umero $102$. Para simplificar o nosso trabalho vamos utilizar as opera\c {c}\~oes modulares. }{29}}
+\@writefile{toc}{\contentsline {subparagraph}{ Faremos o mesmo procedimento para todos nossos blocos }{29}}
+\@writefile{toc}{\contentsline {subparagraph}{ Portanto, ``Amor/Humor.'', encriptado pelo RSA com as chaves privadas $17$ e $23$ e a p\'ublica $391$ \'e: }{29}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.2}Decodificando uma mensagem}{29}}
+\@writefile{toc}{\contentsline {subparagraph}{ Para podermos desencriptar uma mensagem n\'os precisamos de dois n\'umeros. O primeiro \'e a nossa chave p\'ublica $n$. O segundo n\'umero \'e $d$, o $d$ \'e o inverso de $3$ para o m\'odulo $(p-1)(q-1)$. Mais a frente explicaremos o motivo de se adicionar este n\'umero. Pela defini\c {c}\~ao do inverso temos: }{29}}
+\@writefile{toc}{\contentsline {subparagraph}{ A partir do momento em que estamos de posse de $d$, podemos usar o par $(n,d)$ para desencriptar a mensagem, onde $a$ \'e o bloco encriptado e $D(a)$ a mensagem desencriptada, usando a f\'ormula: }{30}}
+\@writefile{toc}{\contentsline {subparagraph}{ Note que na fun\c {c}\~ao acima n\'os assumimos o compromisso de que $D(C(b)) = b$. Para comprov\'a-la vamos mais adiante fazer sua demonstra\c {c}\~ao. Neste momento vamos apenas aplic\'a-la ao nosso exemplo. O primeiro passo consiste em calcular $d$. Vamos supor que $p$ e $q$ deixam resto $5$ na divis\~ao por $6$. Com isso podemos afirmar que: }{30}}
+\@writefile{toc}{\contentsline {paragraph}{ ou seja: }{30}}
+\@writefile{toc}{\contentsline {subparagraph}{ No entanto, podemos dizer que $6 \cdot k - 2 \equiv 4 \cdot k - 1 (mod 3)$.Podendo dizer que assim que $d$ \'e igual a $4 \cdot k -1$. Feito isso vamos aos n\'umeros de nosso exemplo: $17$ e $23$, com isso vamos obter: }{30}}
+\@writefile{toc}{\contentsline {paragraph}{ Com isso obtemos que $k=59$. Aplicando k teremos que: }{30}}
+\@writefile{toc}{\contentsline {subparagraph}{ Agora que j\'a conhecemos a $d$ podemos decodificar a mensagem. Vamos fazer isso em nosso primeiro bloco codificado, que possui o valor $34$. Para achar a resposta precisaremos calcular $D(34) \equiv 34^{235} (mod 391)$. Esse c\'alculo seria praticamente imposs\'ivel sem o uso dos Teoremas chin\^es do resto e de Fermat. }{30}}
+\@writefile{toc}{\contentsline {subparagraph}{ Nosso primeiro passo ser\'a o de calcular $34^{235}$ nos m\'odulos $17$ e $23$, que s\~ao os primos em que $n$ fatora. Neste caso, come\c {c}amos com: }{30}}
+\@writefile{toc}{\contentsline {subparagraph}{ Assim teremos que $34^{235} \equiv 0^{235} \equiv 0 (mod 17)$. Aplicando o teorema de Fermat a outra congr\^encia teremos: }{31}}
+\@writefile{toc}{\contentsline {subparagraph}{ Como $ 11 \equiv -12 \equiv -4 \cdot 3(mod 23)$. Desse modo podemos afirmar que: }{31}}
+\@writefile{toc}{\contentsline {paragraph}{ Com isso, teremos: }{31}}
+\@writefile{toc}{\contentsline {paragraph}{ Concluindo assim: }{31}}
+\@writefile{toc}{\contentsline {subparagraph}{ Temos assim as congru\^encias $34^{235} \equiv 0 (mod 17)$ e $34^{235} \equiv 10 (mod 23)$. Com isso podemoa aplicaro o teorema chin\^es do resto no sistema: }{31}}
+\@writefile{toc}{\contentsline {subparagraph}{ Com ele n\'os iremos obter que }{31}}
+\@writefile{toc}{\contentsline {paragraph}{ Obtendo assim: }{31}}
+\@writefile{toc}{\contentsline {paragraph}{ Por\'em, $3$ \'e o inverso de $6$ no m\'odulo $17$, e por isso teremos }{31}}
+\@writefile{toc}{\contentsline {subparagraph}{ Com isso iremos chegar at\'e $x = 10 + 23y = 10 + 23 4 = 102$. Caso voc\^e venha a conferir na se\c {c}\~ao sobre codifica\c {c}\~ao de mensagens poder\'a confirmar o resultado. Os demais blocos podem ser decodificados da mesma forma, apenas n\~ao ser\~ao mostradas nesta obra por necessitar de muitos passos, o que tornaria este cap\'itulo inutilmente mais longo. }{31}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.3}Provando a funcionalidade do RSA}{32}}
+\@writefile{toc}{\contentsline {subparagraph}{ Ao longo dessa se\c {c}\~ao vamos provar que o RSA funciona no processo de decodifica\c {c}\~ao, para podermos fazer isso tudo o que teremos que fazer \'e provar que: }{32}}
+\@writefile{toc}{\contentsline {subparagraph}{ N\'os j\'a vimos que $C(b) \equiv b^3 (mod n)$ e $D(a) \equiv a^d(mod n)$. Se combinarmos ambos as congru\^encia iremos obter }{32}}
+\@writefile{toc}{\contentsline {subparagraph}{ Logo o que n\'os temos de provar \'e que $b^{3d} \equiv b (mod n)$. Como por defini\c {c}\~ao $3d \equiv 1 (mod(p-1)(q-1))$, o que nos leva at\'e: }{32}}
+\@writefile{toc}{\contentsline {subparagraph}{ Pelo Teorema Chin\^es do Resto e levando em conta a express\~ao para obter $3d$ temos que: }{32}}
+\@writefile{toc}{\contentsline {subparagraph}{ Tomando que $p$ n\~ao divide $b$, n\'os podemos vir usar o Teorema de Fermat, de modo a obter: }{32}}
+\@writefile{toc}{\contentsline {paragraph}{ Obtendo assim }{32}}
+\@writefile{toc}{\contentsline {subparagraph}{ Mesma que $b$ seja m\'ultiplo de $p$, teremos que $b$ e $b^{3d}$ s\~ao congruentes a $0$, logo nessa caso tamb\'em \'e v\'alida a congru\^encia, tendo assim: }{32}}
+\@writefile{toc}{\contentsline {subparagraph}{ Pelo mesmo m\'etodo podemos obter $q$, obtendo o par: }{32}}
+\@writefile{toc}{\contentsline {subparagraph}{ Veja que $b$ \'e solu\c {c}\~ao de: }{33}}
+\@writefile{toc}{\contentsline {paragraph}{ Pelo Teorema Chin\^es do resto esse sistema tem solu\c {c}\~ao igual: }{33}}
+\@writefile{toc}{\contentsline {paragraph}{ Onde $t\in \mathbb  {Z}$. Logo como provamos anteriormente temos que: }{33}}
+\@writefile{toc}{\contentsline {paragraph}{ para algum inteiro $k$. Isso equivale a $b^{3d} \equiv b (mod (pq))$. Isso comprova a congru\^encia que quer\'iamos a efici\^encia do RSA. }{33}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.4}Discutindo a seguran\c {c}a do RSA}{33}}
+\@writefile{toc}{\contentsline {subparagraph}{ Antes de mudarmos completamente o foco deste trabalho, vamos nos focar no que tange a seguran\c {c}a do RSA. Vamos supor que algu\'em, que vamos denominar Irineu, esteja com uma escuta em nossas mensagens, tendo assim acesso tanto a mensagem codificada quanto a chave p\'ublica $n$. Vamos lembrar que $n$ \'e a multiplica\c {c}\~ ao dos primos $p$ e $q$. Sabendo disso bastaria para Irineu fatorar $n$ para obter $p$ e $q$ e depois descobrir $d$ para poder decodificar a mensagem, como j\'a foi explicado neste cap\'itulo. }{33}}
+\@writefile{toc}{\contentsline {subparagraph}{ Isto pode parecer muito simples, mas como j\'a mostramos na se\c {c}\~ao sobre fatora\c {c}\~ao n\~ao h\'a um algoritmo conhecido que possa fazer isso de forma eficiente. O que ocorre \'e que um algoritmo que fa\c {c}a a fatora\c {c}\~ao de forma eficinte pode vir a surgir a qualquer momento, do ponto que n\~ao h\'a nenhuma prova matem\'atica de que esse algoritmo n\~ao exista. }{33}}
+\@writefile{toc}{\contentsline {subparagraph}{ O que iremos fazer nos pr\'oximos cap\'itulos consiste em propor uma varia\c {c}\~ao da criptografia RSA que n\~ao seja completamente vulner\'avel caso tal algoritmo seja descoberto, a \textit  {Criptografia RSA Gaussiana}. }{33}}
 \@setckpt{RSA}{
-\setcounter{page}{35}
+\setcounter{page}{34}
 \setcounter{equation}{0}
 \setcounter{enumi}{2}
 \setcounter{enumii}{0}

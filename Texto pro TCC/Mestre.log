@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.7)  2 JUN 2017 23:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.7)  2 JUN 2017 23:28
 entering extended mode
 **./Mestre.tex
 (Mestre.tex
@@ -427,243 +427,81 @@ Cap\'{\i }tulo 1.
 [3
 
 
-] [4]
-Overfull \hbox (60.72049pt too wide) detected at line 46
+]
+Overfull \hbox (60.72049pt too wide) detected at line 39
 []
  []
 
-[5] [6]) [7]
+[4] [5]) [6]
 \openout2 = `Num.aux'.
 
  (Num.tex
 Cap\'{\i }tulo 2.
-[8
+[7
 
 
 
 ]
-! Display math should end with $$.
-<to be read again> 
-                    
-l.19 	$$a=bq+r$ 
-                e $0\leq r <b$$
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
+Underfull \hbox (badness 10000) in paragraph at lines 25--28
 
-
-LaTeX Warning: Command \' invalid in math mode on input line 20.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ...@spacefactor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.20 Al\'e
-          m disso, os valores de $q$ e $r$ satisfazendo as rela\c{c}\~oes ac...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! You can't use `\spacefactor' in math mode.
-\add@accent ...}\accent #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.20 Al\'e
-          m disso, os valores de $q$ e $r$ satisfazendo as rela\c{c}\~oes ac...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no è in font cmex10!
-
-LaTeX Warning: Command \c invalid in math mode on input line 20.
-
-! Please use \mathaccent for accents in math mode.
-<recently read> \accent 
-                        
-l.20 ...res de $q$ e $r$ satisfazendo as rela\c{c}
-                                                  \~oes acima s\~ao \'unicos.
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-LaTeX Warning: Command \~ invalid in math mode on input line 20.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ...@spacefactor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.20 ... de $q$ e $r$ satisfazendo as rela\c{c}\~o
-                                                  es acima s\~ao \'unicos.
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! You can't use `\spacefactor' in math mode.
-\add@accent ...}\accent #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.20 ... de $q$ e $r$ satisfazendo as rela\c{c}\~o
-                                                  es acima s\~ao \'unicos.
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-LaTeX Warning: Command \~ invalid in math mode on input line 20.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ...@spacefactor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.20 ... satisfazendo as rela\c{c}\~oes acima s\~a
-                                                  o \'unicos.
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! You can't use `\spacefactor' in math mode.
-\add@accent ...}\accent #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.20 ... satisfazendo as rela\c{c}\~oes acima s\~a
-                                                  o \'unicos.
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-LaTeX Warning: Command \' invalid in math mode on input line 20.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ...@spacefactor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.20 ...sfazendo as rela\c{c}\~oes acima s\~ao \'u
-                                                  nicos.
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! You can't use `\spacefactor' in math mode.
-\add@accent ...}\accent #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.20 ...sfazendo as rela\c{c}\~oes acima s\~ao \'u
-                                                  nicos.
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-! LaTeX Error: Command \end{Th} invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.21 \end{Th}
-             
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.21 \end{Th}
-             
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.21 \end{Th}
-             
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.21 \end{Th}
-             
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-Missing character: There is no è in font cmex10!
-Missing character: There is no è in font cmex10!
-Missing character: There is no è in font cmex10!
-
-Overfull \hbox (16.45625pt too wide) in paragraph at lines 19--22
-\OT1/cmr/m/it/10.95 e $\OT1/cmr/m/n/10.95 0 \OMS/cmsy/m/n/10.95  \OML/cmm/m/it/10.95 r < b$$Al[]mdisso; osvaloresde$\OT
-1/cmr/m/it/10.95 q$\OML/cmm/m/it/10.95 e$\OT1/cmr/m/it/10.95 r$\OML/cmm/m/it/10.95 satisfazendoasrela[][]esacimas[]o[]ni
-cos:$ 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--26
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--86
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--102
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 81--84
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 98--100
+Underfull \hbox (badness 10000) in paragraph at lines 107--111
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 105--109
-
- []
-
-[12]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 130.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 132.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 130.
- [13]) [14]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 132.
+ [12]) [13]
 \openout2 = `InvMod.aux'.
 
  (InvMod.tex
 Cap\'{\i }tulo 3.
-[15
+[14
 
 
 
-] [16]
+] [15]
 Overfull \hbox (2.77716pt too wide) in paragraph at lines 114--114
 \OT1/cmr/bx/n/10.95 muito im-por-tante para nosso pros-se-gui-mento e o se-guinte co-rolario:
  []
 
-[17]) [18]
+[16]) [17]
 \openout2 = `TCR.aux'.
 
  (TCR.tex
 Cap\'{\i }tulo 4.
-[19
+[18
 
 
 
-] [20] [21]) [22]
+] [19] [20]) [21]
 \openout2 = `Pot.aux'.
 
  (Pot.tex
@@ -673,7 +511,7 @@ Overfull \hbox (5.04796pt too wide) in paragraph at lines 6--6
   \OT1/cmr/bx/n/10.95 Ao longo deste captulo va-mos es-tu-dar como tor-nar as operac~oes
  []
 
-[23
+[22
 
 
 
@@ -692,7 +530,7 @@ l.49 \section
              {O teorema de Fermat}
 I treat `x^1^2' essentially like `x^1{}^2'.
 
-[24]
+[23]
 ! Double superscript.
 \@svsechd ...brir quem \'e congruente a $3^{1034}^
                                                   {2}$ no m\'odulo $1033$. C...
@@ -700,12 +538,12 @@ l.124 \[
         
 I treat `x^1^2' essentially like `x^1{}^2'.
 
-[25] [26]) [27]
+[24] [25]) [26]
 \openout2 = `RSA.aux'.
 
  (RSA.tex
 Cap\'{\i }tulo 6.
-[28
+[27
 
 
 
@@ -719,7 +557,7 @@ Overfull \hbox (8.00311pt too wide) in paragraph at lines 53--53
   \OT1/cmr/bx/n/10.95 O ultimo passo da pre-encriptac~ao con-siste em que-brar o numero
  []
 
-[29] [30] [31]
+[28] [29] [30]
 Overfull \hbox (6.7498pt too wide) in paragraph at lines 203--203
   \OT1/cmr/bx/n/10.95 Te-mos as-sim as con-gru^encias $\OT1/cmr/m/n/10.95 34[] \OMS/cmsy/m/n/10.95  \OT1/cmr/m/n/10.95 
 0(\OML/cmm/m/it/10.95 mod\OT1/cmr/m/n/10.95 17)$ \OT1/cmr/bx/n/10.95 e $\OT1/cmr/m/n/10.95 34[] \OMS/cmsy/m/n/10.95  \O
@@ -748,12 +586,12 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[32] [33]) [34]
+[31] [32]) [33]
 \openout2 = `IG.aux'.
 
  (IG.tex
 Cap\'{\i }tulo 7.
-[35
+[34
 
 
 
@@ -859,7 +697,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[36] [37]) [38]
+[35] [36]) [37]
 \openout2 = `RSAG.aux'.
 
  (RSAG.tex
@@ -869,7 +707,7 @@ Overfull \hbox (3.11818pt too wide) in paragraph at lines 18--18
   \OT1/cmr/bx/n/10.95 Para o RSA Gaus-si-ano e pla-ne-jada a en-criptac~ao com a formula:
  []
 
-[39
+[38
 
 
 
@@ -902,7 +740,7 @@ l.38 \textit{$D'(b) \equiv b^d' (mod n')$}
                                           
 I treat `x^1^2' essentially like `x^1{}^2'.
 
-) [40]
+) [39]
 
 Package babelbib Warning: Command \selectbiblanguage used without package
 (babelbib)                option fixlanguage. Ignored on input line 119.
@@ -971,7 +809,7 @@ Overfull \hbox (32.61884pt too wide) in paragraph at lines 59--66
 |   []\OT1/cmr/m/n/10.95 .
  []
 
-) [41
+) [40
 
 
 ] (Mestre.aux (Agrad.aux) (Pref.aux) (Intro.aux) (Num.aux) (InvMod.aux) (TCR.aux) (Pot.aux) (RSA.aux) (IG.aux)
@@ -983,7 +821,7 @@ Overfull \hbox (32.61884pt too wide) in paragraph at lines 59--66
 Here is how much of TeX's memory you used:
  6524 strings out of 493328
  81403 string characters out of 3139122
- 210802 words of memory out of 3000000
+ 212800 words of memory out of 3000000
  9804 multiletter control sequences out of 15000+200000
  20587 words of font info for 83 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -999,9 +837,9 @@ msfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 /fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmu10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Mestre.pdf (44 pages, 324600 bytes).
+Output written on Mestre.pdf (43 pages, 323406 bytes).
 PDF statistics:
- 217 PDF objects out of 1000 (max. 8388607)
+ 214 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

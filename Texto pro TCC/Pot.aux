@@ -1,43 +1,43 @@
 \relax 
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Potencia\c {c}\~ao}{23}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Potencia\c {c}\~ao}{22}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{Pot}{{5}{23}}
-\@writefile{toc}{\contentsline {subparagraph}{ Ao longo deste cap\'itulo vamos estudar como tornar as opera\c {c}\~oes de potencia\c {c}\~ao e a obten\c {c}ao de seus restos calcal\'aveis de forma simpls e r\'apida. Para isso vamos dispor de algumas artimanhas matem\'aticas, como o famoso \textit  {Teorema de Fermat} e o Teorema chin\^es do resto. }{23}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}Restos na potencia\c {c}\~ao}{23}}
-\@writefile{toc}{\contentsline {subparagraph}{ Vamos come\c car tentando uma coisa que aparentemente \'e complexa, mas se converter\'a em uma opera\c {c}\~ao bem simples: Calcular o resto da divis\~ao de $10^{135}$ por $7$. Podemos fazer da forma tradicional, mas dividir um n\'umero t\~ao alto n\~ao seria nada pr\'atico. }{23}}
-\@writefile{toc}{\contentsline {subparagraph}{ O que faremos \'e tomar uma propiedade da multiplica\c {c}\~ao e da potencia\c {c}\~ao emprestadas, a do elemento neutro, nesse caso o $1$. O que faremos \'e calcular em qual pot\^encia $10$ \'e congruente a $1$ no m\'odulo $7$. Logo teremos a tabela: }{23}}
-\@writefile{toc}{\contentsline {subparagraph}{ Como sabemos agora que $10^6$ \'e o n\'umero que quer\'iamos, vamos decompor o $135$ em raz\~ao de $6$ e teremos que $135 = (6 \cdot 22)+3$, essa express\~ao nos levar\'a a seguinte congru\^encia: }{24}}
-\@writefile{toc}{\contentsline {subparagraph}{ Agora n\'os vamos deixar essa opera\c {c}\~ao um pouco mais complexa, ao passo que vamos calcular o resto por $31$ de $2^{124512}$. Vamos pelo mesmos caminho que anteriormente, buscando a pot\^encia de $2$ que \'e congruente a $1$ no m\'odulo $31$. Obtemos: }{24}}
-\@writefile{toc}{\contentsline {subparagraph}{ Vamos dividir $124512$ por $5$ e obteremos $4016$ com resto $2$, obtendo assim que $2^{124512} \equiv 2^2 \equiv 4 (mod31)$. }{24}}
-\@writefile{toc}{\contentsline {subparagraph}{ Tornando um pouco mais dif\'icil, podemos calcular o resto de $2^{13}^{98765}$, \'e descobrir o resto de ${13}^{98765}$ por $5$, podemos dizer que ${13}^{98765} \equiv {3}^{98765}(mod 5)$ como se sabe que $3^4 = 81 \equiv 1(mod 5)$, podemos usar isso em nosso favor, pois teremos ${3}^{98765}\equiv {3}^{4\cdot 24691 + 1}\equiv 3 (mod 5)$, logo o resultado de ${13}^{98765}$ \'e um n\'umero da forma $5q'+3$. Como isso, n\'os podemos dizer que $2^{13}^{98765} \equiv 2^{5q'+3} \equiv 2^{5q'}\cdot {2^3}\equiv {1}^{q'}\cdot {2^3} \equiv 8 (mod 31)$. }{24}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}O teorema de Fermat}{24}}
-\@writefile{toc}{\contentsline {subparagraph}{ \textit  {Teorema de Fermat} - Se $p$ \'e um n\'umero primo e $a$ \'e um inteiro n\~ao divis\'ivel por $p$, ent\~ao: }{24}}
-\@writefile{toc}{\contentsline {subparagraph}{ Embora esse seja denominado como o pequeno teorema de Fermat, ele possui suma import\^ancia para o algoritmo RSA cl\'assico. Vamos apresentar abaixo uma de suas demonstra\c {c}\~oes. }{24}}
-\@writefile{toc}{\contentsline {subparagraph}{ Sabemos que os poss\'iveis res\'iduos no m\'odulo $p$ s\~ao todos os inteiros entre $1$ e $p-1$. Vamos multiplic\'a-los por $a$, obtendo assim: }{25}}
-\@writefile{toc}{\contentsline {subparagraph}{ Vamos levar em conta que $r_1 \equiv a\cdot 1(mod p)$,$r_2 = a\cdot 2(mod p)$, e assim por diante at\'e $r_{p-1} = a\cdot (p-1)(mod p)$. Tomemos par $r_k$ e $r_l$ um par de inteiros $k$ e $l$ que est\'a entre $1$ e $p-1$. Com isso teremos: }{25}}
-\@writefile{toc}{\contentsline {paragraph}{ que equivale \`a: }{25}}
-\@writefile{toc}{\contentsline {subparagraph}{ Se viermos a cancelar pela equival\^encia, obteremos que $k \equiv l (mod p)$, mas sendo $k$ e $l$ positivos, inteiros e menores que $p$, estes s\'o podem ser congruentes se forem iguais, logo se: }{25}}
-\@writefile{toc}{\contentsline {subparagraph}{ Isto demonstra que $r_1, r_2, r_3,...r_{p-1}$ s\~ao $p-1$ res\'iduos n\~ao nulos de m\'odulo $p$, que ser\~ao $1, 2, 3, ..., p-1$, o que nos permite dizer que a primeira sequ\^encia n\~ao \'e nada al\'em de um reordenamento da segunda. Com isso podemos dizer que: }{25}}
-\@writefile{toc}{\contentsline {paragraph}{ Sabendo disso vemos que: }{25}}
-\@writefile{toc}{\contentsline {paragraph}{ E apenas cortando os fatores iguais: }{25}}
-\@writefile{toc}{\contentsline {paragraph}{ Provando assim o Teorema de Fermat. }{25}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}Aplicando o teorema de Fermat}{26}}
-\@writefile{toc}{\contentsline {paragraph}{ Antes de prosseguirmos para o pr\'oximo cap\'itulo, vamos utilizar o Teorema de Fermat para resolver uma congru\^encia. Neste caso vamos tentar descobrir quem \'e congruente a $3^{1034}^{2}$ no m\'odulo $1033$. Como $1033$ \'e primo n\'os podemos usar o teorema de Fermat. Neste caso teremos que: }{26}}
-\@writefile{toc}{\contentsline {subparagraph}{ O que faremos agora consiste em ``dividir'' $1034$ por $1032$, de forma a obter o resto da divis\~ao. e com isso vamos veirficar que: }{26}}
-\@writefile{toc}{\contentsline {paragraph}{ e com essa simplifica\c {c}\~ao chegamos \`a: }{26}}
-\@writefile{toc}{\contentsline {subparagraph}{ Agora com a simples aplica\c {c}\~ao do Teorema de Fermat, podemos chegar a conclus\~ao que: }{26}}
-\@writefile{toc}{\contentsline {paragraph}{ verificando assim que ${3^{1034}}^2$ deixa resto $81$ na divis\~ao por $1033$. }{26}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.4}Teorema de Fermat para pot\^encias compostas}{26}}
-\@writefile{toc}{\contentsline {subparagraph}{ Embora aplicar o teorema de Fermat diretamente sobre os n\'umeros compostos n\~ao seja poss\'ivel, n\'os ainda podemos resolver a estas congru\^encias com o aux\'ilio do teorema chin\^es d restos, como veremos a seguir. }{26}}
-\@writefile{toc}{\contentsline {subparagraph}{ Para que possamos entender como resolver este problema com n\'umeros compostos vamos tentar resolver um problema n\'umerico, nesse caso o c\'alculo do m\'odulo de $2^{6754}$ por $1155$. }{26}}
-\@writefile{toc}{\contentsline {subparagraph}{ Nosso primeiro passo \'e fatorar o $1155$. Ao fim da fatora\c {c}\~ao vamos obter que $1155 = 3 \cdot 5 \cdot 7 \cdot 11$. Em seguida vamos aplicar o teorema de Fermat a cada um dos primos, obtendo assim: }{27}}
-\@writefile{toc}{\contentsline {subparagraph}{ Agora dividimos $6754$ por $p-1$ para cada um dos m\'ultiplos: }{27}}
-\@writefile{toc}{\contentsline {paragraph}{ Em seguida substitu\'imos nas congru\^encias e as reduzimos }{27}}
-\@writefile{toc}{\contentsline {paragraph}{ Logo, nossa tarefa consiste em resolver o sistema }{27}}
-\@writefile{toc}{\contentsline {subparagraph}{ Podemos resolver esse sistema usando o algoritmo chin\^es, vamos come\c car substituindo na primeira congru\^encia, onde $x = 3y + 1$, em seguida substitu\'imos $x$ por $y$ na segunda congru\^encia, tornando-a $3y + 1 \equiv 4 (mod 5)$, que equivale a $y \equiv 1 (mod 5)$ como $3$ \'e invers\'ivel no m\'odulo $5$ ele pode ser anulado na equa\c c\~ao. Com isso temos $x = 4+15z$ que se substiutindo na terceira equa\c {c}\~ao e resolvendo obtemos $z \equiv 5 (mod 7)$, que significa que $x = 79 + 105t$. Finalmente substituindo na \'ultima equa\c {c}\~ao, teremos que $t \equiv 6 (mod 11)$, o que resulta em $x = 709+1155u$. Conclu\IeC {\'\i }mos com isso que $26754 \equiv 709 (mod 1155)$. }{27}}
+\newlabel{Pot}{{5}{22}}
+\@writefile{toc}{\contentsline {subparagraph}{ Ao longo deste cap\'itulo vamos estudar como tornar as opera\c {c}\~oes de potencia\c {c}\~ao e a obten\c {c}ao de seus restos calcal\'aveis de forma simpls e r\'apida. Para isso vamos dispor de algumas artimanhas matem\'aticas, como o famoso \textit  {Teorema de Fermat} e o Teorema chin\^es do resto. }{22}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Restos na potencia\c {c}\~ao}{22}}
+\@writefile{toc}{\contentsline {subparagraph}{ Vamos come\c car tentando uma coisa que aparentemente \'e complexa, mas se converter\'a em uma opera\c {c}\~ao bem simples: Calcular o resto da divis\~ao de $10^{135}$ por $7$. Podemos fazer da forma tradicional, mas dividir um n\'umero t\~ao alto n\~ao seria nada pr\'atico. }{22}}
+\@writefile{toc}{\contentsline {subparagraph}{ O que faremos \'e tomar uma propiedade da multiplica\c {c}\~ao e da potencia\c {c}\~ao emprestadas, a do elemento neutro, nesse caso o $1$. O que faremos \'e calcular em qual pot\^encia $10$ \'e congruente a $1$ no m\'odulo $7$. Logo teremos a tabela: }{22}}
+\@writefile{toc}{\contentsline {subparagraph}{ Como sabemos agora que $10^6$ \'e o n\'umero que quer\'iamos, vamos decompor o $135$ em raz\~ao de $6$ e teremos que $135 = (6 \cdot 22)+3$, essa express\~ao nos levar\'a a seguinte congru\^encia: }{23}}
+\@writefile{toc}{\contentsline {subparagraph}{ Agora n\'os vamos deixar essa opera\c {c}\~ao um pouco mais complexa, ao passo que vamos calcular o resto por $31$ de $2^{124512}$. Vamos pelo mesmos caminho que anteriormente, buscando a pot\^encia de $2$ que \'e congruente a $1$ no m\'odulo $31$. Obtemos: }{23}}
+\@writefile{toc}{\contentsline {subparagraph}{ Vamos dividir $124512$ por $5$ e obteremos $4016$ com resto $2$, obtendo assim que $2^{124512} \equiv 2^2 \equiv 4 (mod31)$. }{23}}
+\@writefile{toc}{\contentsline {subparagraph}{ Tornando um pouco mais dif\'icil, podemos calcular o resto de $2^{13}^{98765}$, \'e descobrir o resto de ${13}^{98765}$ por $5$, podemos dizer que ${13}^{98765} \equiv {3}^{98765}(mod 5)$ como se sabe que $3^4 = 81 \equiv 1(mod 5)$, podemos usar isso em nosso favor, pois teremos ${3}^{98765}\equiv {3}^{4\cdot 24691 + 1}\equiv 3 (mod 5)$, logo o resultado de ${13}^{98765}$ \'e um n\'umero da forma $5q'+3$. Como isso, n\'os podemos dizer que $2^{13}^{98765} \equiv 2^{5q'+3} \equiv 2^{5q'}\cdot {2^3}\equiv {1}^{q'}\cdot {2^3} \equiv 8 (mod 31)$. }{23}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}O teorema de Fermat}{23}}
+\@writefile{toc}{\contentsline {subparagraph}{ \textit  {Teorema de Fermat} - Se $p$ \'e um n\'umero primo e $a$ \'e um inteiro n\~ao divis\'ivel por $p$, ent\~ao: }{23}}
+\@writefile{toc}{\contentsline {subparagraph}{ Embora esse seja denominado como o pequeno teorema de Fermat, ele possui suma import\^ancia para o algoritmo RSA cl\'assico. Vamos apresentar abaixo uma de suas demonstra\c {c}\~oes. }{23}}
+\@writefile{toc}{\contentsline {subparagraph}{ Sabemos que os poss\'iveis res\'iduos no m\'odulo $p$ s\~ao todos os inteiros entre $1$ e $p-1$. Vamos multiplic\'a-los por $a$, obtendo assim: }{24}}
+\@writefile{toc}{\contentsline {subparagraph}{ Vamos levar em conta que $r_1 \equiv a\cdot 1(mod p)$,$r_2 = a\cdot 2(mod p)$, e assim por diante at\'e $r_{p-1} = a\cdot (p-1)(mod p)$. Tomemos par $r_k$ e $r_l$ um par de inteiros $k$ e $l$ que est\'a entre $1$ e $p-1$. Com isso teremos: }{24}}
+\@writefile{toc}{\contentsline {paragraph}{ que equivale \`a: }{24}}
+\@writefile{toc}{\contentsline {subparagraph}{ Se viermos a cancelar pela equival\^encia, obteremos que $k \equiv l (mod p)$, mas sendo $k$ e $l$ positivos, inteiros e menores que $p$, estes s\'o podem ser congruentes se forem iguais, logo se: }{24}}
+\@writefile{toc}{\contentsline {subparagraph}{ Isto demonstra que $r_1, r_2, r_3,...r_{p-1}$ s\~ao $p-1$ res\'iduos n\~ao nulos de m\'odulo $p$, que ser\~ao $1, 2, 3, ..., p-1$, o que nos permite dizer que a primeira sequ\^encia n\~ao \'e nada al\'em de um reordenamento da segunda. Com isso podemos dizer que: }{24}}
+\@writefile{toc}{\contentsline {paragraph}{ Sabendo disso vemos que: }{24}}
+\@writefile{toc}{\contentsline {paragraph}{ E apenas cortando os fatores iguais: }{24}}
+\@writefile{toc}{\contentsline {paragraph}{ Provando assim o Teorema de Fermat. }{24}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Aplicando o teorema de Fermat}{25}}
+\@writefile{toc}{\contentsline {paragraph}{ Antes de prosseguirmos para o pr\'oximo cap\'itulo, vamos utilizar o Teorema de Fermat para resolver uma congru\^encia. Neste caso vamos tentar descobrir quem \'e congruente a $3^{1034}^{2}$ no m\'odulo $1033$. Como $1033$ \'e primo n\'os podemos usar o teorema de Fermat. Neste caso teremos que: }{25}}
+\@writefile{toc}{\contentsline {subparagraph}{ O que faremos agora consiste em ``dividir'' $1034$ por $1032$, de forma a obter o resto da divis\~ao. e com isso vamos veirficar que: }{25}}
+\@writefile{toc}{\contentsline {paragraph}{ e com essa simplifica\c {c}\~ao chegamos \`a: }{25}}
+\@writefile{toc}{\contentsline {subparagraph}{ Agora com a simples aplica\c {c}\~ao do Teorema de Fermat, podemos chegar a conclus\~ao que: }{25}}
+\@writefile{toc}{\contentsline {paragraph}{ verificando assim que ${3^{1034}}^2$ deixa resto $81$ na divis\~ao por $1033$. }{25}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Teorema de Fermat para pot\^encias compostas}{25}}
+\@writefile{toc}{\contentsline {subparagraph}{ Embora aplicar o teorema de Fermat diretamente sobre os n\'umeros compostos n\~ao seja poss\'ivel, n\'os ainda podemos resolver a estas congru\^encias com o aux\'ilio do teorema chin\^es d restos, como veremos a seguir. }{25}}
+\@writefile{toc}{\contentsline {subparagraph}{ Para que possamos entender como resolver este problema com n\'umeros compostos vamos tentar resolver um problema n\'umerico, nesse caso o c\'alculo do m\'odulo de $2^{6754}$ por $1155$. }{25}}
+\@writefile{toc}{\contentsline {subparagraph}{ Nosso primeiro passo \'e fatorar o $1155$. Ao fim da fatora\c {c}\~ao vamos obter que $1155 = 3 \cdot 5 \cdot 7 \cdot 11$. Em seguida vamos aplicar o teorema de Fermat a cada um dos primos, obtendo assim: }{26}}
+\@writefile{toc}{\contentsline {subparagraph}{ Agora dividimos $6754$ por $p-1$ para cada um dos m\'ultiplos: }{26}}
+\@writefile{toc}{\contentsline {paragraph}{ Em seguida substitu\'imos nas congru\^encias e as reduzimos }{26}}
+\@writefile{toc}{\contentsline {paragraph}{ Logo, nossa tarefa consiste em resolver o sistema }{26}}
+\@writefile{toc}{\contentsline {subparagraph}{ Podemos resolver esse sistema usando o algoritmo chin\^es, vamos come\c car substituindo na primeira congru\^encia, onde $x = 3y + 1$, em seguida substitu\'imos $x$ por $y$ na segunda congru\^encia, tornando-a $3y + 1 \equiv 4 (mod 5)$, que equivale a $y \equiv 1 (mod 5)$ como $3$ \'e invers\'ivel no m\'odulo $5$ ele pode ser anulado na equa\c c\~ao. Com isso temos $x = 4+15z$ que se substiutindo na terceira equa\c {c}\~ao e resolvendo obtemos $z \equiv 5 (mod 7)$, que significa que $x = 79 + 105t$. Finalmente substituindo na \'ultima equa\c {c}\~ao, teremos que $t \equiv 6 (mod 11)$, o que resulta em $x = 709+1155u$. Conclu\IeC {\'\i }mos com isso que $26754 \equiv 709 (mod 1155)$. }{26}}
 \@setckpt{Pot}{
-\setcounter{page}{28}
+\setcounter{page}{27}
 \setcounter{equation}{0}
 \setcounter{enumi}{2}
 \setcounter{enumii}{0}
