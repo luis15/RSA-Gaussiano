@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.7)  3 JUN 2017 22:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.7)  4 JUN 2017 13:42
 entering extended mode
 **./Mestre.tex
 (Mestre.tex
@@ -572,150 +572,21 @@ Cap\'{\i }tulo 7.
 
 
 
-]
-! Improper \spacefactor.
-<recently read> \spacefactor 
-                             
-l.51 \subparagraph
-                  {
-You can refer to \spacefactor only in horizontal mode;
-you can refer to \prevdepth only in vertical mode; and
-neither of these is meaningful inside \write. So
-I'm forgetting what you said and using zero instead.
-
-! Extra }, or forgotten $.
-\add@accent ... \accent@spacefactor \spacefactor }
-                                                  \accent #1 #2\egroup \spac...
-l.51 \subparagraph
-                  {
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ...@spacefactor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.51 \subparagraph
-                  {
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! Missing { inserted.
-<to be read again> 
-                   $
-l.51 \subparagraph
-                  {
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.51 \subparagraph
-                  {
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Bad space factor (0).
-<recently read> \accent@spacefactor 
-                                    
-l.51 \subparagraph
-                  {
-I allow only values in the range 1..32767 here.
-
-! Extra }, or forgotten $.
-\@svsechd ...aussiano e seu s\'imbolo \' $N(x)$. }
-                                                  \csname subparagraphmark\e...
-l.51 \subparagraph
-                  {
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.51 \subparagraph
-                  {
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.51 \subparagraph
-                  {
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.51 \subparagraph
-                  {
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-[35] [36]) [37]
+] [35]) [36] [37]
 \openout2 = `RSAG.aux'.
 
  (RSAG.tex
 Cap\'{\i }tulo 8.
-
-Overfull \hbox (3.11818pt too wide) in paragraph at lines 18--18
-  \OT1/cmr/bx/n/10.95 Para o RSA Gaus-si-ano e pla-ne-jada a en-criptac~ao com a formula:
- []
-
 [38
 
 
 
 ]
-! Double superscript.
-<recently read> ^
-                 
-l.38 \textit{$D'(b) \equiv b^d' (mod n')$}
-                                          
-I treat `x^1^2' essentially like `x^1{}^2'.
-
-! Double superscript.
-<recently read> ^
-                 
-l.38 \textit{$D'(b) \equiv b^d' (mod n')$}
-                                          
-I treat `x^1^2' essentially like `x^1{}^2'.
-
-! Double superscript.
-<recently read> ^
-                 
-l.38 \textit{$D'(b) \equiv b^d' (mod n')$}
-                                          
-I treat `x^1^2' essentially like `x^1{}^2'.
-
-! Double superscript.
-<recently read> ^
-                 
-l.38 \textit{$D'(b) \equiv b^d' (mod n')$}
-                                          
-I treat `x^1^2' essentially like `x^1{}^2'.
+! Too many }'s.
+l.22 ...\'ormula an\'aloga a original, que seria:}
+                                                  
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
 
 ) [39]
 
@@ -792,13 +663,13 @@ Overfull \hbox (32.61884pt too wide) in paragraph at lines 59--66
 ] (Mestre.aux (Agrad.aux) (Pref.aux) (Intro.aux) (Num.aux) (InvMod.aux) (TCR.aux) (Pot.aux) (RSA.aux) (IG.aux)
 (RSAG.aux)) ) 
 Here is how much of TeX's memory you used:
- 6521 strings out of 493328
- 81376 string characters out of 3139122
+ 6516 strings out of 493328
+ 81309 string characters out of 3139122
  212800 words of memory out of 3000000
- 9802 multiletter control sequences out of 15000+200000
- 20292 words of font info for 82 fonts, out of 3000000 for 9000
+ 9797 multiletter control sequences out of 15000+200000
+ 18866 words of font info for 78 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,12n,25p,3237b,567s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,11n,25p,3237b,565s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
@@ -810,7 +681,7 @@ onts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 nts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/sy
 mbols/msbm10.pfb>
-Output written on Mestre.pdf (43 pages, 313273 bytes).
+Output written on Mestre.pdf (43 pages, 311862 bytes).
 PDF statistics:
  210 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
