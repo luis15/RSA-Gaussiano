@@ -3,13 +3,11 @@ A level-1 auxiliary file: Agrad.aux
 A level-1 auxiliary file: Pref.aux
 A level-1 auxiliary file: Intro.aux
 A level-1 auxiliary file: Num.aux
-A level-1 auxiliary file: TCR.aux
-A level-1 auxiliary file: Pot.aux
 A level-1 auxiliary file: RSA.aux
 A level-1 auxiliary file: IG.aux
 A level-1 auxiliary file: RSAG.aux
 The style file: babalpha.bst
-Illegal, another \bibstyle command---line 32 of file Mestre.aux
+Illegal, another \bibstyle command---line 31 of file Mestre.aux
  : \bibstyle
  :          {alpha}
 I'm skipping whatever remains of this command

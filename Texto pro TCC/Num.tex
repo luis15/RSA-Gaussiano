@@ -245,3 +245,139 @@ Obtemos assim que ${3^{1034}}^{2} \equiv 81 \pmod{1033}$.
 
 \section{Teorema Chin\^es do resto}
 
+Para sermos iniciados nesta t\'ecnica, vamos analisar o seguinte problema: Qual o menor inteiro que possui resto $1$ na divis\~ao por $3$ e resto $2$ na divis\~ao por $5$. Podemos vir a tranformar esse problema nas seguintes equa\c{c}\~oes:
+
+$$n = 3q_1 + 1$$ $$n = 5q_2 + 2$$
+
+Essas equa\c{c}\~oes tamb\'em podem ser denotadas em forma modular como:
+
+$$n \equiv 1\pmid{3}$$ $$n \equiv 2 \pmod{5}$$
+
+Essa sa\'ida modular nos deixou com apenas uma vari\'avel, mas ainda n\~ao resolveu o nosso problema. Para fazermos isso vamos substituir $n$ por $5q_2 + 2$, montando a seguine equa\c{c}\~ao modular:
+
+$$5q_2 + 2 \equiv 1 \pmod{3}$$
+
+Como $5 \equiv 2\pmod{3}$, substitu\'imos:
+
+$$ 2q_2 + 2 \equiv 1 \pmod{3}$$
+
+Feito isso, passamos $2$ para o outro lado da equa\c{c}\~ao
+
+$$ 2q_2  \equiv -1 \pmod{3}$$
+
+Como $-1 \equiv 2 \pmod{3}$, n\'os substitu\'imos novamente, e depois dividimos a equa\c{c}\~ao por $2$, e obtemos
+
+$$ q_2  \equiv 1 \pmod{3}$$
+
+Com isso, conclu\'imos que
+
+$$ q_2  \equiv q_3 + 1 \pmod{3}$$
+
+Embora pare\c{c}a mais uma equa\c{c}\~ao s\'o serve para tornar a resolu\c{c}\~ao mais complexa, vamos a reorganizar como
+
+$$ q_2 = 3q_3 + 1 $$
+
+Agora substitu\'imos
+
+$$n = 5(3q_3 + 1) + 2 = 15q_3 +7$$
+
+Feito isso, vamos por o $3$ em evid\^encia em todos os lugares, obtendo:
+
+$$n = 3(5q_3) +3(2) +1 = 3(5q_3 +2)+1$$
+
+Este procedimento foi feito apenas para provar que a equa\c{c}\~ao deixa resto 1 se dividida por 3, de forma an\'aloga, abaixo \'e mostrado como ela deixa resto $2$ quando dividida por $5$.
+
+$$n = 5(3q_3) +5(1) +2 = 5(3q_3 +1)+2$$
+
+Ap\'os tudo isso feito ainda n\~ao possu\'imos a solu\c{c}\~ao final, mas j\'a sabemos que \'e um n\'umero qualquer da forma $15q_3 + 7$, substituindo $q_3$ por $0$, obtemos $7$, que funciona como o resultado procurado.
+
+
+Para termos a defini\c{c}\~ao formal desse teorema, vamos considerar o sistema:
+
+$$x \equiv a \pmod{m}$$
+$$x \equiv b \pmod{n}$$
+
+Observe que, $n$ e $m$ s\~ao inteiros diferentes entre si. Tomemos $x_0$ como um n\'umero capaz de satisfazer ambas as congru\^encia de forma simult\^anea e teremos:
+
+$$x_0 \equiv a \pmod{m}$$
+$$x_0 \equiv b \pmod{n}$$
+
+Para podermos juntar ambas as equa\c{c}\~oes modulares converteremos uma em equa\c{c}\~ao alg\'ebrica, nesse caso teremos: 
+
+$$x_0 = a + m\cdot k$$, }\\
+
+$k$ \'e um inteiro qualquer Feito isso, chegaremos em:
+
+$$a + m\cdot k \equiv b \pmod{n}$$
+
+que pode ser substitu\'ida por:
+
+$$ m\cdot k \equiv (b-a) \pmod{n}$$
+
+Agora vamos supor que $m$ e $n$ s\~ao primos entre si. Pelo teorema de Invers\~ao multiplicativa (\ref{inversao}), n\'os j\'a sabemos que eles possuem inverso multiplicativo um para o outro. Tomemos $m'$ como o inverso de $m$ no m\'odulo $n$. Multiplicando toda a congru\^encia por $m'$ obtemos:
+
+$$ k \equiv m'\cdot(b-a) \pmod{n}$$
+
+que pode ser escrita como:
+
+$$ k \equiv m'\cdot(b-a)+n \cdot t$$
+
+
+Com $t$ um inteiro qualquer. Substituindo a parte de $k$, n\'os obtemos
+
+$$ x_0 \equiv a + m (m'\cdot(b-a)+n \cdot t) $$
+
+
+Podemos ver agora que para qualquer $t$, $a + m (m'\cdot(b-a)+n \cdot t$ \'e parte da solu\c{c}\~ao da congru\^encia, sabendo disso, agora podemos vamos a descri\c{c}\~ao do teorema.
+
+
+\begin{Th}[Teorema Chin\^es do Resto]\label{chines}
+
+Sejam $m$ e $n$ inteiros positivos primos entre si. Se $a$ e $b$ s\~ao inteiros quaisquer, ent\~ao o sistema
+
+$$ x \equiv a (mod m) $$
+$$ x \equiv b (mod n) $$
+
+Sempre tem solu\c{c}\~ao e qualquer uma de suas solu\c{c}\~oes pode ser escrita na forma
+
+$$ a + m \cdot(m' \cdot (b-a) + n \cdot n) $$
+
+Onde $t$ \'e um inteiro qualquer e $m'$ \'e o inverso de $m$ no m\'odulo $n$.
+
+\end{Th}
+
+\section{Aplica\c{c}\~ao conjunta de teoremas}
+
+Para encerrarmos este cap\'itulo, vejamos como usar o Teorema de Fermat(\ref{fermat}) e o Teorema Chin\^es do Resto(\ref{chines}) para resolvermos equa\c{c}\~oes modulares com n\'umeros compostos. A aplica\c{c}\~ao conjunta dos teoremas ter\'a grande valor no momento da desencripta\c{c}\~ao de uma mensagem. Tomemos por exemplo que queremos calcular:
+
+$$ 2^{6754} \pmod{1155}$$
+
+Nosso primeiro passo \'e fatorar o $1155$. Ao fim da fatora\c{c}\~ao vamos obter que $1155 = 3 \cdot 5 \cdot 7 \cdot 11$. Em seguida vamos aplicar o teorema de Fermat a cada um dos primos, obtendo assim:
+
+$$ 2^2 \equiv 1 \pmod{3}$$
+$$ 2^4 \equiv 1 \pmod{5}$$ 
+$$ 2^6 \equiv 1 \pmod{7}$$  
+$$ 2^{10} \equiv 1 \pmod{11}$$
+
+Agora dividimos $6754$ por $p-1$ para cada um dos m\'ultiplos:
+
+$$6754 = 2 \cdot 3377 $$
+$$6754 = 4 \cdot 1688 + 2$$
+$$6754 = 6 \cdot 1125 + 4$$
+$$6754 = 10 \cdot 675 + 4$$ 
+
+Em seguida substitu\'imos nas congru\^encias e as reduzimos
+
+$$2^{6754} \equiv {2^{3377}}^{2} \equiv 1 \pmod{3} $$  
+$$2^{6754} \equiv {2^{1688}}^{4} \cdot 2^2 \equiv 1 \cdot 4 \equiv  4 \pmod{5}$$  
+$$2^{6754} \equiv {2^{1125}}^{6} \cdot 2^4 \equiv 1 \cdot 16\equiv  2 \pmod{7}$$ 
+$$2^{6754} \equiv {2^{675}}^{10} \cdot 2^4 \equiv 1 \cdot 16\equiv  5 \pmod{11}$$  
+
+Logo, nossa tarefa consiste em resolver o sistema
+
+$$x \equiv 1 \pmod{3}$$
+$$x \equiv 4 \pmod{5}$$
+$$x \equiv 2 \pmod{7}$$
+$$x \equiv 5 \pmod{11}$$  
+
+Podemos resolver esse sistema usando o algoritmo chin\^es, vamos come\c{c}ar substituindo na primeira congru\^encia, onde $x = 3y + 1$, em seguida substitu\'imos $x$ por $y$ na segunda congru\^encia, tornando-a $3y + 1 \equiv 4 \pmod{5}$, que equivale a $y \equiv 1 \pmod{5}$, como $3$ \'e invers\'ivel no m\'odulo $5$ ele pode ser anulado na equa\c{c}\~ao. Com isso temos $x = 4+15z$ que se substituindo na terceira equa\c{c}\~ao e resolvendo obtemos $z \equiv 5 \pmod{7}$, que significa que $x = 79 + 105t$. Finalmente substituindo na \'ultima equa\c{c}\~ao, teremos que $t \equiv 6 \pmod{11}$, o que resulta em $x = 709+1155u$. Conclu\'imos com isso que $26754 \equiv 709 \pmod{1155}$. 
