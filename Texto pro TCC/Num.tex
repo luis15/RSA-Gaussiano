@@ -150,3 +150,98 @@ Nosso interesse ser\'a separar em classe de equival\^encia os n\'umeros inteiros
 O conjunto das classes de equival\^encia em $X$ \'e chamado \textit{conjunto quociente de $X$ por $\sim$}. No nosso exemplo $\{\bar{0}, \bar{1}, \bar{2}, \bar{3}, \bar{4}\}$ representa conjunto quociente de $\mathbb{Z}$ pela divis\~ao por 5. Esse conjunto ser\'a denotado por $\mathbb{Z}_{5}$. Em termos gerais, o conjunto quociente dos n\'umeros inteiros \'e denotado por:
 
 $$\mathbb{Z}_{n}=\{\overline{0}, \overline{1}, \overline{2}, \cdots, \overline{n-1}\}$$ 
+
+Seguindo esse conceito vamos trabalhar construindo rela\c{c}\~oes de equival\^encia entre inteiros. Se dissermos que os n\'umeros inteiros separados de um m\'ultiplo de $n$ s\~ao equivalentes, ter\'iamos que formalmente dizer que eles s\~ao \textit{congruentes no m\'odulo $n$}. Isso sempre ocorre em casos onde $a-b$ \'e um m\'ultiplo de $n$. Para representar n\'os escrevemos:
+
+$$a \equiv b \pmod{n}$$ 
+
+Uma das aplica\c{c}\~oes que n\'os iremos dar as congru\^encias ser\'a invers\~ao modular. 
+
+\begin{Th}[Invers\~ao Modular]\label{inversao}
+A classe $\overline{a}$ tem inverso em $Z_n$ se e somente se $a$ e $n$ n\~ao s\~ao primos entre si.
+\end{Th}
+
+\noindent{\textbf{\textit{Demonstra\c{c}\~ao:}}}\newline
+Suponha que $\overline{a}$ tenha inverso em n. Logo existe um $\overline{b}$ tal que:
+
+$$\overline{a} \cdot \overline{b} \equiv 1 \pmod{n}$$
+
+Logo
+
+$$a \cdot b - k \codt n = 1 $$
+
+e portanto $mdc(a,n) = 1$.
+
+Supondo que $mdc(a,n) = 1$, logo existem $\alpha$ e $\beta$ tais que:
+
+$$\alpha \cdot a + \beta \cdot n = 1$$
+
+Ou seja:
+
+$$\alpha \cdot a \equiv 1 \pmod{n}$$
+\hfill \newline
+
+O conjunto dos elementos invers\'iveis \'e muito importante. Iremos denot\'a-lo por $U(n)$. Para sintetizar podemos dizer que:
+
+$$U(n) = \left\{\overline{a} \in Z(n) | mdc(a,n) = 1\right\}$$
+
+Outra aplica\c{c}\~ao importante s\~ao as potencia\c{c}\~oes. Vamos ver como elas funcionam por meio de um exemplo. Supondo que iremos calcular
+
+$$10^{135} \pmod{7}$$
+
+Iniciaremos procurando por um elemento neutro, ou seja, por uma pot\^encia de $10$ congruente \`a $1$ no m\'odulo $7$. Procurando encontraremos que:
+
+  $$10^1 \equiv 3 \pmod{7}$$  
+	$$10^2 \equiv 2 \pmod{7}$$
+	$$10^3 \equiv 6 \pmod{7}$$ 
+	$$10^4 \equiv 4 \pmod{7}$$ 
+	$$10^5 \equiv 5 \pmod{7}$$ 
+	$$10^6 \equiv 1 \pmod{7}$$ 
+	
+Feito isso sabemos que $10^6$ \'e a pot\^encia a qual quer\'iamos, podemos agora decompor $135$ por $6$, obtendo que $135 = (6 \cdot 22) + 3$, o que nos leva à:
+
+$$10^{135} \equiv (10^6)^{22} \cdot 10^3 \equiv (1)^{22} \cdot 10^3 \equiv 10^3 \equiv 6 \pmod{7}$$
+
+Esse m\'etodos de simplifica\c{c}\~ao nos ajudar\~ao depois para as opera\c{c}\~oes aritm\'eticas relacionadas ao RSA, nas pr\'oximas sess\~oes teremos alguns teoremas que tamb\'em podem nos ajudar na simplifica\c{c}\~ao de processos.
+
+\section{Teorema de Fermat}
+
+\begin{Th}[Pequeno Teorema de Fermat]\label{fermat}
+Se $p$ \'e um n\'umero primo e $a$ \'e um inteiro n\~ao divis\'ivel por $p$, ent\~ao:
+$$a^{p-1}\equiv 1 \pmod{p}$$
+\end{Th}
+
+\noindent{\textbf{\textit{Demonstra\c{c}\~ao:}}}\newline
+Como $mdc(a,p)=1$ existe um $a'$ tal que
+
+$$aa' \equiv 1 \pmod{p}$$
+
+Multiplicando ambos os membros de $a^p \equiv a \pmod{p}$ por $a'$ obtemos:
+
+$$a'\cdot a \cdot \^{p-1} \equiv a' \equiv a \pmod{p}$$
+
+Logo,
+
+$$a^{p-1} \equiv 1 \pmod{p}$$
+\hfill \newline
+
+O \textit{Teorema de Fermat} \'e de grande valia para a obten\c{c}\~ao de congru\^encia, motivo pelo qual ele \'e usado no RSA, vejamos no exemplo como ele pode vir a ser \'util. Vamos tentar descobrir qual o valor da congru\^encia $3^{1034}^{2}$ no m\'odulo $1033$. Sabe-se que $1033$ \'e primo o que nos permite usar o teorema de Fermat. Aplicando-o teremos que:
+
+$$3^{1032} \equiv 1 \pmod{1033}$$
+
+O que faremos agora consiste em ``dividir'' $1034$ por $1032$, de forma a obter o resto da divis\~ao. Com isso iremos verificar que:
+
+$$1034^2 \equiv 2^2 \equiv 4 \pmod{1033}$$
+
+Chegando \`a:
+
+$$3^{1034} \equiv 3^{1032}\cdot q + 4 \equiv (3^{1032})^{q} + 3^4 \pmod{1033}$$
+
+Agora com a simples aplica\c{c}\~ao do Teorema de Fermat, podemos chegar a conclus\~ao que: 
+
+$${3^{1034}}^2 \equiv 1 \cdot 81 \pmod{1033}$$
+
+Obtemos assim que ${3^{1034}}^{2} \equiv 81 \pmod{1033}$.
+
+\section{Teorema Chin\^es do resto}
+

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.7)  4 JUN 2017 13:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.7)  4 JUN 2017 19:08
 entering extended mode
 **./Mestre.tex
 (Mestre.tex
@@ -299,7 +299,7 @@ Writing index file Mestre.idx
 Package amsthm Warning: Unknown theoremstyle `alpha' on input line 27.
 
 \c@Th=\count114
-(Mestre.aux (Agrad.aux) (Pref.aux) (Intro.aux) (Num.aux) (InvMod.aux) (TCR.aux) (Pot.aux) (RSA.aux) (IG.aux) (RSAG.aux))
+(Mestre.aux (Agrad.aux) (Pref.aux) (Intro.aux) (Num.aux) (TCR.aux) (Pot.aux) (RSA.aux) (IG.aux) (RSAG.aux))
 \openout1 = `Mestre.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
@@ -314,6 +314,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
 LaTeX Font Info:    ... okay on input line 71.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
 LaTeX Font Info:    ... okay on input line 71.
+
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count115
@@ -478,40 +479,79 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 129.
- [12]) [13]
-\openout2 = `InvMod.aux'.
+ [12]
+! Undefined control sequence.
+l.171 $$a \cdot b - k \codt
+                            n = 1 $$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
- (InvMod.tex
-Cap\'{\i }tulo 3.
-[14
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 181--183
 
-
-
-] [15]
-Overfull \hbox (2.77716pt too wide) in paragraph at lines 114--114
-\OT1/cmr/bx/n/10.95 muito im-por-tante para nosso pros-se-gui-mento e o se-guinte co-rolario:
  []
 
-[16]) [17]
+
+Overfull \hbox (8.49544pt too wide) in paragraph at lines 192--193
+[]\OT1/cmr/m/n/10.95 Iniciaremos pro-cu-rando por um ele-mento neu-tro, ou seja, por uma pot^encia
+ []
+
+[14]
+
+LaTeX Warning: Command \^ invalid in math mode on input line 221.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.221 $$a'\cdot a \cdot \^{p-1}
+                                \equiv a' \equiv a \pmod{p}$$
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `\spacefactor' in display math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.221 $$a'\cdot a \cdot \^{p-1}
+                                \equiv a' \equiv a \pmod{p}$$
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no è in font cmex10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--227
+
+ []
+
+! Double superscript.
+l.228 ... qual o valor da congru\^encia $3^{1034}^
+                                                  {2}$ no m\'odulo $1033$. S...
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+) [15] [16]
 \openout2 = `TCR.aux'.
 
  (TCR.tex
-Cap\'{\i }tulo 4.
-[18
+Cap\'{\i }tulo 3.
+[17
 
 
 
-] [19] [20]) [21]
+] [18] [19]) [20]
 \openout2 = `Pot.aux'.
 
  (Pot.tex
-Cap\'{\i }tulo 5.
+Cap\'{\i }tulo 4.
 
 Overfull \hbox (5.04796pt too wide) in paragraph at lines 6--6
   \OT1/cmr/bx/n/10.95 Ao longo deste captulo va-mos es-tu-dar como tor-nar as operac~oes
  []
 
-[22
+[21
 
 
 
@@ -530,7 +570,7 @@ l.49 \section
              {O teorema de Fermat}
 I treat `x^1^2' essentially like `x^1{}^2'.
 
-[23]
+[22]
 ! Double superscript.
 \@svsechd ...brir quem \'e congruente a $3^{1034}^
                                                   {2}$ no m\'odulo $1033$. C...
@@ -538,22 +578,22 @@ l.124 \[
         
 I treat `x^1^2' essentially like `x^1{}^2'.
 
-[24] [25]) [26]
+[23] [24]) [25]
 \openout2 = `RSA.aux'.
 
  (RSA.tex
-Cap\'{\i }tulo 6.
-[27
+Cap\'{\i }tulo 5.
+[26
 
 
 
-] [28] [29]
+] [27] [28]
 Overfull \hbox (7.35773pt too wide) in paragraph at lines 93--94
 []\OT1/cmr/m/n/10.95 Note que na func~ao acima nos as-su-mi-mos o com-pro-misso de que $\OML/cmm/m/it/10.95 D\OT1/cmr/
 m/n/10.95 (\OML/cmm/m/it/10.95 C\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 b\OT1/cmr/m/n/10.95 )) =
  []
 
-[30]
+[29]
 ! Undefined control sequence.
 l.147 ...hegar at\'e $x = 10 + 23y = 10 + 23 \codt
                                                    4 = 102$. Caso você venha...
@@ -563,21 +603,21 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[31] [32]) [33]
+[30] [31]) [32]
 \openout2 = `IG.aux'.
 
  (IG.tex
-Cap\'{\i }tulo 7.
-[34
+Cap\'{\i }tulo 6.
+[33
 
 
 
-] [35]) [36] [37]
+] [34]) [35] [36]
 \openout2 = `RSAG.aux'.
 
  (RSAG.tex
-Cap\'{\i }tulo 8.
-[38
+Cap\'{\i }tulo 7.
+[37
 
 
 
@@ -588,10 +628,10 @@ l.22 ...\'ormula an\'aloga a original, que seria:}
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
 
-) [39]
+) [38]
 
 Package babelbib Warning: Command \selectbiblanguage used without package
-(babelbib)                option fixlanguage. Ignored on input line 119.
+(babelbib)                option fixlanguage. Ignored on input line 118.
 
 (Mestre.bbl
 babelbib: Using the BibTeX style's default font for `name'.
@@ -657,33 +697,36 @@ Overfull \hbox (32.61884pt too wide) in paragraph at lines 59--66
 |   []\OT1/cmr/m/n/10.95 .
  []
 
-) [40
+) [39
 
 
-] (Mestre.aux (Agrad.aux) (Pref.aux) (Intro.aux) (Num.aux) (InvMod.aux) (TCR.aux) (Pot.aux) (RSA.aux) (IG.aux)
-(RSAG.aux)) ) 
+] (Mestre.aux (Agrad.aux) (Pref.aux) (Intro.aux) (Num.aux) (TCR.aux) (Pot.aux) (RSA.aux) (IG.aux) (RSAG.aux))
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 6516 strings out of 493328
- 81309 string characters out of 3139122
- 212800 words of memory out of 3000000
- 9797 multiletter control sequences out of 15000+200000
+ 6510 strings out of 493328
+ 81252 string characters out of 3139122
+ 212512 words of memory out of 3000000
+ 9798 multiletter control sequences out of 15000+200000
  18866 words of font info for 78 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,11n,25p,3237b,565s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/sy
-mbols/msbm10.pfb>
-Output written on Mestre.pdf (43 pages, 311862 bytes).
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
+y10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm1
+0.pfb>
+Output written on Mestre.pdf (42 pages, 306376 bytes).
 PDF statistics:
- 210 PDF objects out of 1000 (max. 8388607)
+ 206 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
