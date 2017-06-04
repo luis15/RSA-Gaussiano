@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.7)  2 JUN 2017 23:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.7)  3 JUN 2017 22:37
 entering extended mode
 **./Mestre.tex
 (Mestre.tex
@@ -442,42 +442,42 @@ Cap\'{\i }tulo 2.
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 25--28
+Underfull \hbox (badness 10000) in paragraph at lines 22--25
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--86
+Underfull \hbox (badness 10000) in paragraph at lines 80--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--102
+Underfull \hbox (badness 10000) in paragraph at lines 97--99
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 107--111
+Underfull \hbox (badness 10000) in paragraph at lines 104--108
 
  []
 
 [11]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 132.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 129.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 132.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 129.
  [12]) [13]
 \openout2 = `InvMod.aux'.
 
@@ -547,39 +547,16 @@ Cap\'{\i }tulo 6.
 
 
 
-]
-Overfull \hbox (7.2261pt too wide) in paragraph at lines 39--39
-\OT1/cmr/bx/n/10.95 um numero cor-res-pon-dente. Feito isso jun-ta-re-mos to-dos os numeros
+] [28] [29]
+Overfull \hbox (7.35773pt too wide) in paragraph at lines 93--94
+[]\OT1/cmr/m/n/10.95 Note que na func~ao acima nos as-su-mi-mos o com-pro-misso de que $\OML/cmm/m/it/10.95 D\OT1/cmr/
+m/n/10.95 (\OML/cmm/m/it/10.95 C\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 b\OT1/cmr/m/n/10.95 )) =
  []
 
-
-Overfull \hbox (8.00311pt too wide) in paragraph at lines 53--53
-  \OT1/cmr/bx/n/10.95 O ultimo passo da pre-encriptac~ao con-siste em que-brar o numero
- []
-
-[28] [29] [30]
-Overfull \hbox (6.7498pt too wide) in paragraph at lines 203--203
-  \OT1/cmr/bx/n/10.95 Te-mos as-sim as con-gru^encias $\OT1/cmr/m/n/10.95 34[] \OMS/cmsy/m/n/10.95  \OT1/cmr/m/n/10.95 
-0(\OML/cmm/m/it/10.95 mod\OT1/cmr/m/n/10.95 17)$ \OT1/cmr/bx/n/10.95 e $\OT1/cmr/m/n/10.95 34[] \OMS/cmsy/m/n/10.95  \O
-T1/cmr/m/n/10.95 10(\OML/cmm/m/it/10.95 mod\OT1/cmr/m/n/10.95 23)$\OT1/cmr/bx/n/10.95 .
- []
-
+[30]
 ! Undefined control sequence.
-\@svsechd ... at\'e $x = 10 + 23y = 10 + 23 \codt 
-                                                  4 = 102$. Caso você venha ...
-l.237 \section
-              {Provando a funcionalidade do RSA}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...at\'e $x = 10 + 23y = 10 + 23 \codt 
-                                                  4 = 102$. Caso você venha ...
-l.237 \section
-              {Provando a funcionalidade do RSA}
+l.147 ...hegar at\'e $x = 10 + 23y = 10 + 23 \codt
+                                                   4 = 102$. Caso você venha...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -813,33 +790,29 @@ Overfull \hbox (32.61884pt too wide) in paragraph at lines 59--66
 
 
 ] (Mestre.aux (Agrad.aux) (Pref.aux) (Intro.aux) (Num.aux) (InvMod.aux) (TCR.aux) (Pot.aux) (RSA.aux) (IG.aux)
-(RSAG.aux)) )
-(\end occurred inside a group at level 1)
-
-### simple group (level 1) entered at line 105 ({)
-### bottom level 
+(RSAG.aux)) ) 
 Here is how much of TeX's memory you used:
- 6524 strings out of 493328
- 81403 string characters out of 3139122
+ 6521 strings out of 493328
+ 81376 string characters out of 3139122
  212800 words of memory out of 3000000
- 9804 multiletter control sequences out of 15000+200000
- 20587 words of font info for 83 fonts, out of 3000000 for 9000
+ 9802 multiletter control sequences out of 15000+200000
+ 20292 words of font info for 82 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,12n,25p,3237b,622s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmu10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Mestre.pdf (43 pages, 323406 bytes).
+ 39i,12n,25p,3237b,567s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/sy
+mbols/msbm10.pfb>
+Output written on Mestre.pdf (43 pages, 313273 bytes).
 PDF statistics:
- 214 PDF objects out of 1000 (max. 8388607)
+ 210 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
