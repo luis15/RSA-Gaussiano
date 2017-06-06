@@ -1,55 +1,111 @@
 \chapter {Inteiros e Primos de Gauss}
 \label{IG}
-
-\hspace{7mm}At\'e o momento apenas os n\'umeros inteiros foram abordados neste projeto, mas para podermos entender a RSA Gaussiana \'e necess\'ario conhecer o conjunto dos n\'umeros inteiros gaussianos. Ao longo deste cap\'itulo vamos conhecer os inteiros e os primos gaussianos e suas propiedades aritm\'eticas b\'asicas. 
+At\'e o momento apenas os n\'umeros inteiros foram abordados neste projeto, mas para podermos entender a RSA Gaussiana \'e necess\'ario conhecer o conjunto dos n\'umeros inteiros gaussianos. Ao longo deste cap\'itulo vamos conhecer os inteiros e os primos gaussianos e suas propiedades aritm\'eticas b\'asicas. 
 
 \section{Inteiros de Gauss e suas propiedades}
 
-\hspace{7mm}Os inteiros gaussianos, conjunto que a partir de agora iremos nos referenciar por $Z[i]$, s\~ao um subconjuntos dos n\'umeros complexos, relembrando que os n\'umeros complexos s\~ao os n\'umeros de forma $a+b\textbf{i}$, onde $a$ e $b$ s\~ao reais e $\textbf{i}$ \'e a $\sqrt{-1}$. A diferen\c{c}a entre o conjunto $Z[i]$ e o conjunto $C$ reside no fato de em $Z[i]$ $a$ e $b$ serem n\'umeros inteiros.
+Os inteiros gaussianos, conjunto que a partir de agora iremos nos referenciar por $\mathbb{Z}[i]$, s\~ao um subconjuntos dos n\'umeros complexos, relembrando que os n\'umeros complexos s\~ao os n\'umeros de forma $a+b\textbf{i}$, onde $a$ e $b$ s\~ao reais e $\textbf{i}$ \'e a $\sqrt{-1}$. A diferen\c{c}a entre o conjunto $\mathbb{Z}[i]$ e o conjunto $C$ reside no fato de em $\mathbb{Z}[i]$ $a$ e $b$ serem n\'umeros inteiros. Formalmente dizemos que os inteiros gaussianos s\~ao:
 
-Por $Z[i]$ estar contido em $C$, as opera\c{c}\~oes deste conjunto podem ser realizadas, por exemplo, se tomarmos $z_1= a + b\textbf{i}$ e $z_2= c + d\textbf{i}$ n\'os iremos obter:
+$$\mathbb{Z}[i]= \left\{a+b\textbf{i} | a,b \in \mathbb{Z}  \right\}, \textrm{ onde } \textbf{i}^2 = -1$$
+
+Por $\mathbb{Z}[i]$ estar contido em $\mathbb{C}$, as opera\c{c}\~oes deste conjunto podem ser realizadas, por exemplo, se tomarmos $z_1= a + b\textbf{i}$ e $z_2= c + d\textbf{i}$ n\'os iremos obter:
 
 $$z_1   +   z_2 = (a + c) + (b + d)\textbf{i}$$
 $$z_1 \cdot z_2 = (ac - bd) + (ad + bc)\textbf{i}$$
 
 Outra propiedade herdada \'e a dos elementos neutros, o $0 = 0 + 0\textbf{i}$ continua sendo o elemento neutro da adi\c{c}\~ao, enquanto o $1 = 1 + 0\textbf{i}$ tamb\'em continua sendo o elemento neutro da multiplica\c{c}\~ao. As propiedades associativa da adi\c{c}\~ao e da multiplica\c{c}\~ao, comutativa da adi\c{c}\~ao e multiplica\c{c}\~ao e distributiva tamb\'em s\~ao herdadas do conjunto complexo.
 
-Observe que todo inteiro $n$ tem no conjunto $Z[i]$ uma nota\c{c}\~ao na forma $n + 0 \textbf{i}$ que pode ser suprimida. Feito isso vamos nos ater aos crit\'erios de divisibilidade em $Z[i]$. Vamos fatorar o n\'umero $5$, que no conjunto $Z$ \'e primo:
-
-$$(1 + 2\textbf{i}).(1 - 2\textbf{i}) = 1 - 2\textbf{i} + 2\textbf{i} - 4\textbf{i}^2 = 1 - 4(-1) = 5$$
-
-Vamos definir o que vem a ser divisibilidade em $Z[i]$ para que possamos progredir. Vamos supor que $x$ e $y$ perte\c{c}am a $Z[i]$ e sejam diferentes entre si e diferentes de $0$. Dizemos que $y$ divide $x$ e indicamos na forma de $y|x$, se e somente se existe um inteiro gaussiano $w$ tal que $x=yw$. Tome de exemplo $(1 + \textbf{i})|2$, pois $ 2 = (1 + \textbf{i})(1 - \textbf{i})$ e $(1 + \textbf{i})|(1 - \textbf{i})$, pois $ 1 + \textbf{i} = \textbf{i}(1 - \textbf{i})$.
-
-Como os resultados das fatora\c{c}\~oes n\~ao se equivalem, seria muito \'util a n\'os saber se a defini\c{c}\~ao de divisibilidade \'e a mesma tanto nos inteiros quanto nos gaussianos. Para podermos checar isso vamos supor que $x$ e $y$ existem em $Z$ e que $y|x$ em $Z[i]$. Com isso deve existir em $Z[i]$ um n\'umero $w = c + d\textbf{i}$ tal que $x=wy$, ou seja $x=(c + d\textbf{i})y = cy + dy\textbf{i})$. Com isso temos que $x=cy$ e $0 = dy$, o que implica em $d = 0$ e $w=c$, o que faz de $w$ um membro do conjunto $Z$. Logo $x=wy=cy$ e com isso conclu\'imos que se $y|x$ em $Z[i]$, ele tamb\'em o faz em $Z$.
-
-Sabemos que $\pm 1$ dividem qualquer elemento da conjunto inteiro, analogamente $\pm 1$ e $\pm \textbf{i}$ fazem isso no conjunto complexo e gaussiano, esses n\'umeros s\~ao as unidades b\'asicas do conjunto. Sendo $w$ uma unidade de inteiro gaussiano, e $x$ e $y$ inteiros gaussianos tais que $x = wy$ dizemos que $x$ e $y$ s\~ao elementos associados.
-
-Agora que sabemos sobre os elementos associados e as unidades b\'asicas podemos definir os primos gaussianos. 
+Repare que se considermos o plano complexo, os inteiros gaussianos ter\~ao uma marca\c{c}\~ao reticulada. Outro conceito importante para os inteiros gaussianos \'e a norma do n\'umero, ela \'e importante para auxiliar na defini\c{c}\~ao de um primo gaussiano, assim como s\~ao importantes os conceitos de n\'umero conjugado e n\'umero associado. Caso venhamos a tomar um n\'umero inteiro gaussiano de forma $a+b\textbf{i}$, sua norma ser\'a $a^2 +b^2$.
 
 \begin{Df}
-Um \textit{primo gaussiano} \'e um inteiro gaussiano que \'e divis\'ivel apenas pelos seus elementos associados e pelas unidades de $Z[i]$.
-\end{Df} 
+A norma de um n\'umero gaussiano \'e a soma dos quadrados de seus valores absolutos como n\'umero complexo. Ela \'e o resultado de:
 
-Al\'em de possuir primos, assim com em $Z$ eles s\~ao infinitos no conjuntos, fato que ser\'a demonstrado mais a frente.
+$$N(a+b\textbf{i}) = a^2 + b^2 = (a+b\textbf{i})(a-b\textbf{i}),$$
 
-\section{Fatora\c{c}\~ao \'unica}
+onde o $(a-b\textbf{i})$ \'e a conjugado de $(a+b\textbf{i})$, tamb\'em denotado por $\overline{(a+b\textbf{i})}$.
+\end{Df}
 
-\hspace{7mm}A fatora\c{c}\~ao \'unica \'e a propiedade base da Teoria de n\'umeros, para que possamos construir o algoritmo RSA gaussiano tal qual desejamos se torna necess\'aria que essa propiedade esteja presente no conjunto de inteiros gaussianos. Para podermos entender se isso \'e vi\'avel ou n\~ao, antes devemos conhecer o que \'e a \textit{norma} de um n\'umero gaussiano. Para obtermos a norma de $x=a+b\textbf{i}$ devemos aplicar a f\'ormula $N(x) = a^2 + b^2$.
+Uma das propiedades da norma \'e ser multiplicativa, ou seja, a norma de $N(zw)$ \'e igual a $N(z) \cdot N(w)$.
 
-Antes de provarmos a fatora\c{c}\~ao \'unica, provemos que todo o inteiro de Gauss com norma maior que $1$ pode ser escrito como produto de um ou mais primos de Gauss. Se $N(x)=2$, como $2$ \'e primo e a norma multiplicativa temos que $2$ \'e primo. Da mesma forma podemos estender para $N(x)>2$, se $x$ \'e primo a fatora\c{c}\~ao ser\'a imediata, se $x$ n\~ao for primos n\'os teremos que $x=a \cdot b \Rightarrow N(x) = N(a) \cdot N(b)$, com $ N(a), N(b) > 1$, logo $ N(a), N(b) < N(x)$. Podemos supor que $N(y) < N(x)$, $y$ \'e fator\'avel. Logo $a$, $b$ e $x$ tambem s\~ao fator\'aveis.
+Os inteiros gaussianos possuem como unidades b\'asicas $\pm 1$ e $\pm \textbf{i}$. Caso venhamos a multiplicar um inteiro gaussiano x, teremos que $\pm x$ e $\pm x\textbf{i}$ sendo seus elementos associados.
 
-Agora iremos provar a fatora\c{c}\~ao \'unica, para isso, vamos considerar as fatora\c{c}\~oes $p_1 \cdot p_2 \cdot ... \cdot p_n$ e $q_1 \cdot q_2 \cdot ... \cdot q_m$, sendo $\epsilon$  uma unidade que implica em que a sequencia$(p_i)$ seja uma permuta\c{c}\~ao, exceto em casos de multiplica\c{c}\~ao por unidade, de $(q_i)$. Se $max(m;n) = 1$, o resultado ser\'a imediato. Supondo que ele vale se $max(n';m') < max(m;n)$, como mostrado pelo teorema \ref{fundprimos}, que diz que se $n$ \'e um n\'umero inteiro e divide um produto $ab$ e \'e primo entre si com um fator, ent\~ao $n$ divide o outro fator, vemos que para algum $i, p_n| q_i$.
+\begin{Df}
 
-Para n\~ao perdermos a generalidade vamos tomar que $i=m$. Como $p_n$  $q_m$ s\~ao primos, ent\~ao $q_m = \epsilon' p_n$, com $\epsilon'$ sendo uma unidade. Logo $p_1 \cdot p_2 \cdot ... \cdot p_n = \epsilon'q_1 \cdot q_2 \cdot ... \cdot q_m \Leftrightarrow p_1 \cdot p_2 \cdot ... \cdot p_{n-1} = \epsilon\epsilon'q_1 \cdot q_2 \cdot ... \cdot q_{m-1} $. Como $p_1 \cdot p_2 \cdot ... \cdot p_n$ \'e uma permuta\c{c}\~ao de $q_1 \cdot q_2 \cdot ... \cdot q_m$, exceto em casos de multiplica\c{c}\~ao por unidades, fica provada por indu\c{c}\~ao a fatora\c{c}\~ao \'unica dos inteiros gaussianos.
+Os elementos associados de um n\'umero $x$, tal que $x \in \mathbb{Z}[i]$, s\~ao $\pm x$ e $\pm x\textbf{i}$.
 
-\section{Primos de Gauss}
+\end{Df}
 
-\hspace{7mm}Neste cap\'itulo veremos quem s\~ao os n\'umeros considerados primos em $Z[i]$, os famosos primos de Gauss. Observe que se $N(\pi)$ \'e primo em $Z$, n\'os teremos $\pi$ sendo primo em $Z[i]$, de acordo com a demontra\c{c}\~ao de fatora\c{c}\~ao \'unica. 
+Para podermos prosseguir at\'e chegarmos aos primos precisaremos demonstrar para o conjunto $\mathbb{Z}[i]$ uma s\'erie de resultados que j\'a \'e conhecida do conjunto dos n\'umeros inteiros, como o funcionamento da divis\~ao e o teorema da fatora\c{c}\~ao \'unica.
 
-Atente-se ao fato de que todo o primo $\pi$ divide $N(\pi)$, portanto ele deve dividir ao menos um fator primo em $Z$ de $N(\pi)$. Caso $\pi$ venha a dividir dois fatores distintos $x$ e $y$, ambos primos em Z, n\'os ter\'iamos que $x|1$, o que seria um absurdo. Com isso \'e poss\'ivel se concluir que todo o primo de Gauss divide $1$ e somente $1$ primo inteiro positivo(al\'em de se oposto negativo).
+Podemos definir a divisibilidade gaussiana por quando dizemos que $\beta$ divide $\alfa$, representado por $\beta | \alpha$ se $\alpha = \beta \gamma$, para qualquer $\gamma \in \mathbb{Z}[i] $. Nesse caso, $\beta$ \'e um fator de $\alpha$.
 
-Considerando o caso acima e tomando o n\'umero primo com um inteiro positivo $p$, n\'os temos tr\^es casos que podemos prestar aten\c{c}\~ao. O primeiro ocorre quando $p$ \'e par, sendo que nesse caso $p=2$. Nesse caso obtemos como primos gaussianos $1+i$,$ 1-i$,$ -1+i $e$ -1-i $
+\begin{Th}\label{div_gaussiana1}
 
-Caso tomemos $p \equiv 3 \pmod{4}$ sempre viremos a obter n\'umeros primos. J\'a no caso de $p \equiv 1\pmod{4}$, apenas os casos em que $a^2+b^2=p$ resultam em n\'umeros primos gaussianos.
+Um inteiro Gaussiano $\alpha = a+b\textbf{i}$ \'e dividido por um primo $c$ se e somente se $c|a$ e $c|b$ em $\mathbb{Z}$.
 
-Como toda a criptografia de chave p\'ublica necessita de um conjunto de chaves, foi-se definido que os n\'umeros primos gaussianos viriam a ser as chaves privadas para a criptografia RSA Gaussiana. No pr\'oximo cap\'itulo ser\'a apresentado o que j\'a est\'a feito neste algoritmo e o que ficar\'a como implica\c{c}\~ao futura para desenvolvimento.
+\end{Th}
+
+\noindent{\textbf{\textit{Demonstra\c{c}\~ao}}}\\
+
+Dizer que $c|(a+b\textbf{i})$ em $\mathbb{Z}$ \'e o mesmo que dizer que $a+b\textbf{i} = c(m +  n\textbf{i})$, para algum $m, n \in \mathbb{Z}$, que equivale a $a=cm$ e $b=cn$.
+
+\hfill\newline
+
+Tomemos uma divis\~ao entre inteiros gaussianos, onde $\alpha$ \'e o dividendo, $\beta$ o divisor, $\gamma$ o quociente e $\rho$ o dividendo
+
+\begin{Th}[Teorema da divis\~ao conjunto gaussiano  ]  \label{divgauss}
+
+Para $\alpha, \beta \in \mathbb{Z}$ com $\beta \neq 0$ existe um $\gama, \rho \in \mathbb{Z}$ tal qual $\alpha = \beta \gamma + \rho$ e $N(\rho) < N(\beta)$. De fato, podemos escolher $\rho$  de forma que $N(\rho) \leq (1/2)N(\beta)$
+
+\end{Th}
+
+Agora que j\'a entendemos a divis\~ao, vamos definir o m\'aximo divisor comum no conjunto $\mathbb{Z}[i]$.
+
+\begin{Th}[Algoritmo Euclidiano no conjunto gaussiano ]
+\label{euclideszi}
+
+Tomemos $\alpha , \beta \in \mathbb{Z}[i]$ e diferentes de $0$. Aplicamos recursivamente o teorema da divis\~ao em $\mathbb{Z}[i]$ (\ref{divgauss}), come\c{c}ando com esse par e fazendo com o resto uma  equa\c{c}\~ao com um novo dividendo e divisor no pr\'oximo caso, enquanto o resto for diferente de zero:
+
+\[
+\begin{array}{lcll}
+\alpha & = & \beta \gama_1 + \rho_1,  & N(\rho_1) < N(\beta)  \\
+\beta  & = & \rho_1 \gama_2 + \rho_2, & N(\rho_2) < N(\rho_1) \\
+\rho_1 & = & \rho_2 \gama_3 + \rho_3, & N(\rho_3) < N(\rho_2) \\
+& \vdots &  &\\
+\end{array}
+\]
+
+O \'ultimo elemento que n\~ao possua resto $0$ \'e divis\'ivel por todos os divisores comuns de $\alpha$ e $\beta$, sendo esse o maior divisor comum de $\alpha$ e $\beta$.
+
+\end{Th}
+
+Podemos dizer que se $\alpha$ e $\beta$ possuem apenas as unidades como fatores em comum eles s\~ao primos entre si. 
+
+
+Os elementos primos do conjunto $\mathbb{Z}[i]$ tamb\'em denomidados primos gaussianos. Eles s\~ao sim\'etricos tanto no eixo real quanto no imagin\'ario. 
+
+\begin{Df}
+
+Um inteiro gaussiano \'e um primo se e somente se:
+
+\begin{enumerate}
+	
+	\item um dos elementos, $a$ ou $b$, \'e igual a $0$ e o outro elemento \'e um primo de forma $(4n + 3)$ ou $-(4n + 3)$, com $n$ sendo um n\'umero inteiro positivo
+	
+	\item ambos os n\'umeros s\~ao diferentes de $0$ e $(a^2 + b^2)$ \'e um n\'umero primo
+	
+\end{enumerate}
+
+\end{Df}
+
+Para resurmimos, podemos dizer que um primo gaussiano \'e um inteiro gaussiano cuja a norma seja um n\'umero primo ou os elemetos associados de primo de forma $4n + 3$. H\'a tr\^es casos em que um n\'umero primo $p$ pode ser fatorado no conjunto gaussiano:
+
+\begin{enumerate}
+	
+	\item Se $p$ \'e congruente a $3$ no m\'odulo $4$ ele \'e primo gaussiano
+	
+	\item Se $p$ \'e congruente a $1$ no m\'odulo $4$ ele \'e fatorado pela multiplica\c{c}\~ao de um primo gaussiano por seu conjugado. Por exemplo: $5 = (2 + \textbf{i})(2 - \textbf{i})$ e $13 = (3+2\textbf{i})(3-2\textbf{i})$
+	
+	\item Se $p$ \'e igual a $2$, temos que $2 = \textbf{i}{(1-i)}^2$ 
+	
+\end{enumerate}

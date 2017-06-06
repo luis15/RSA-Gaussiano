@@ -66,9 +66,15 @@ Sejam $a$ e $b$ inteiros positivos e suponhamos que $a$ e $b$ s\~ao primos entre
 
 \noindent{\textbf{\textit{Demonstra\c{c}\~ao}}}\\
 \begin{enumerate}
-\item Se $a$ e $b$ s\~ao primos entre si, ent\~ao o m\'aximo divisor comum entre $a$ e $b$ \'e 1, isto \'e,$mdc(a,b)=1$. Pelo algoritmo euclideano estendido, temos que existem inteiros $\alpha$ e $\beta$ tais que $\alpha\cdot a+\beta\cdot b=1$. Ent\~ao, multiplicando toda a express\~ao por $c$ temos que: $\alpha\cdot ac+\beta\cdot bc=c\quad\quad (1)$. Dado que $b$ divide $ac$ e $b$ divide $cb$, ent\~ao $b$ divide $\alpha\cdot ac+\beta\cdot bc$. Portanto, a partir da igualdade (1) temos que $b$ divide $c$.
+\item Se $a$ e $b$ s\~ao primos entre si, ent\~ao o m\'aximo divisor comum entre $a$ e $b$ \'e 1, isto \'e,$mdc(a,b)=1$. Pelo algoritmo euclideano estendido, temos que existem inteiros $\alpha$ e $\beta$ tais que 
 
-\item Se $a$ divide $c$, ent\~ao existe $t\in \mathbb{Z}$ tal que $c=at$. Como, por hip\'otese, $b$ divide $c$ e $a$ e $b$ s\~ao primos entre si, ent\~ao $b$ tem que dividir $t$. Logo, para algum $t$ vale que $t=bk$. Portanto, $c=at=a(bk)=(ab)k$ \'e divis\'ivel por $ab$.  	
+$$\alpha\cdot a+\beta\cdot b=1$$
+
+Ent\~ao, multiplicando toda a express\~ao por $c$ temos que: $\alpha\cdot ac+\beta\cdot bc=c\quad\quad (1)$. Dado que $b$ divide $ac$ e $b$ divide $cb$, ent\~ao $b$ divide $\alpha\cdot ac+\beta\cdot bc$. Portanto, a partir da igualdade (1) temos que $b$ divide $c$.
+
+\item Se $a$ divide $c$, ent\~ao existe $t\in \mathbb{Z}$ tal que $c=at$. Como, por hip\'otese, $b$ divide $c$ e $a$ e $b$ s\~ao primos entre si, ent\~ao $b$ tem que dividir $t$. Logo, para algum $t$ vale que $t=bk$. Portanto, 
+$$c=at=a(bk)=(ab)k$$
+\'e divis\'ivel por $ab$.  	
 \end{enumerate}	
 \hfill\newline
 

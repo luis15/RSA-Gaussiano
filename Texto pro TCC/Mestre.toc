@@ -16,11 +16,9 @@
 \contentsline {section}{\numberline {3.4}Discutindo a seguran\c {c}a do RSA}{26}
 \contentsline {chapter}{\numberline {4}Inteiros e Primos de Gauss}{28}
 \contentsline {section}{\numberline {4.1}Inteiros de Gauss e suas propiedades}{28}
-\contentsline {section}{\numberline {4.2}Fatora\c {c}\~ao \'unica}{29}
-\contentsline {section}{\numberline {4.3}Primos de Gauss}{30}
-\contentsline {chapter}{\numberline {5}RSA Gaussiano e Conclus\~oes}{32}
-\contentsline {section}{\numberline {5.1}O RSA Gaussiano e seus trabalhos futuros}{32}
-\contentsline {chapter}{Bibliografia}{34}
+\contentsline {chapter}{\numberline {5}RSA Gaussiano e Conclus\~oes}{33}
+\contentsline {section}{\numberline {5.1}O RSA Gaussiano e seus trabalhos futuros}{33}
+\contentsline {chapter}{Bibliografia}{35}
 \select@language {brazil}
 \select@language {brazil}
 \select@language {brazil}

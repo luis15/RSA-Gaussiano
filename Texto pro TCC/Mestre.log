@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.7)  5 JUN 2017 22:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.7)  6 JUN 2017 19:04
 entering extended mode
 **./Mestre.tex
 (Mestre.tex
@@ -458,35 +458,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--68
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--83
+Underfull \hbox (badness 10000) in paragraph at lines 86--89
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 97--99
+Underfull \hbox (badness 10000) in paragraph at lines 103--105
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--108
+Underfull \hbox (badness 10000) in paragraph at lines 110--114
 
  []
 
 [10]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 129.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 135.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 129.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 135.
  [11] [12]
 ! Undefined control sequence.
-l.171 $$a \cdot b - k \codt
+l.177 $$a \cdot b - k \codt
                             n = 1 $$
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -495,23 +495,23 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--181
+Underfull \hbox (badness 10000) in paragraph at lines 185--187
 
  []
 
 
-Overfull \hbox (4.5959pt too wide) in paragraph at lines 190--191
+Overfull \hbox (4.5959pt too wide) in paragraph at lines 196--197
 []\OT1/cmr/m/n/12 Iniciaremos pro-cu-rando por um ele-mento neu-tro, ou seja, por uma pot^encia
  []
 
 [13]
 
-LaTeX Warning: Command \^ invalid in math mode on input line 219.
+LaTeX Warning: Command \^ invalid in math mode on input line 225.
 
 ! Please use \mathaccent for accents in math mode.
 \add@accent ...@spacefactor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.219 $$a'\cdot a \cdot \^{p-1}
+l.225 $$a'\cdot a \cdot \^{p-1}
                                 \equiv a' \equiv a \pmod{p}$$
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
@@ -519,7 +519,7 @@ I'm changing \accent to \mathaccent here; wish me luck.
 ! You can't use `\spacefactor' in display math mode.
 \add@accent ...}\accent #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.219 $$a'\cdot a \cdot \^{p-1}
+l.225 $$a'\cdot a \cdot \^{p-1}
                                 \equiv a' \equiv a \pmod{p}$$
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -528,17 +528,17 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 
 Missing character: There is no è in font cmex10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--225
+Underfull \hbox (badness 10000) in paragraph at lines 229--231
 
  []
 
 ! Double superscript.
-l.226 ... qual o valor da congru\^encia $3^{1034}^
+l.232 ... qual o valor da congru\^encia $3^{1034}^
                                                   {2}$ no m\'odulo $1033$. S...
 I treat `x^1^2' essentially like `x^1{}^2'.
 
 [14] [15] [16] [17]
-Overfull \hbox (27.31975pt too wide) in paragraph at lines 349--350
+Overfull \hbox (27.31975pt too wide) in paragraph at lines 355--356
  \OT1/cmr/m/n/12 Para en-cer-rar-mos este captulo, ve-ja-mos como usar o Te-o-rema de Fermat(2.3.1[])
  []
 
@@ -581,14 +581,86 @@ Cap\'{\i }tulo 4.
 
 
 
-] [29] [30]) [31]
+]
+! Undefined control sequence.
+<recently read> \alfa 
+                      
+l.40 ...r quando dizemos que $\beta$ divide $\alfa
+                                                  $, representado por $\beta...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+
+ []
+
+[29]
+! Undefined control sequence.
+<recently read> \gama 
+                      
+l.58 ...bb{Z}$ com $\beta \neq 0$ existe um $\gama
+                                                  , \rho \in \mathbb{Z}$ tal...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.71 \alpha & = & \beta \gama
+                             _1 + \rho_1,  & N(\rho_1) < N(\beta)  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.72 \beta  & = & \rho_1 \gama
+                              _2 + \rho_2, & N(\rho_2) < N(\rho_1) \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Double subscript.
+l.72 \beta  & = & \rho_1 \gama_
+                               2 + \rho_2, & N(\rho_2) < N(\rho_1) \\
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Undefined control sequence.
+l.73 \rho_1 & = & \rho_2 \gama
+                              _3 + \rho_3, & N(\rho_3) < N(\rho_2) \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Double subscript.
+l.73 \rho_1 & = & \rho_2 \gama_
+                               3 + \rho_3, & N(\rho_3) < N(\rho_2) \\
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+[30]) [31]
 \openout2 = `RSAG.aux'.
 
- (RSAG.tex
+ (RSAG.tex [32
+
+
+]
 Cap\'{\i }tulo 5.
-[32
-
-
+[33
 
 ]
 ! Too many }'s.
@@ -597,7 +669,7 @@ l.22 ...\'ormula an\'aloga a original, que seria:}
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
 
-) [33]
+) [34]
 
 Package babelbib Warning: Command \selectbiblanguage used without package
 (babelbib)                option fixlanguage. Ignored on input line 116.
@@ -686,34 +758,31 @@ Underfull \hbox (badness 1796) in paragraph at lines 80--85
 []\OT1/cmr/m/n/12 Shannon, Claude E: |   [].
  []
 
-[34
+[35
 
 
-]) [35] (Mestre.aux (Agrad.aux) (Pref.aux) (Intro.aux) (Num.aux) (RSA.aux) (IG.aux) (RSAG.aux))
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+]) [36] (Mestre.aux (Agrad.aux) (Pref.aux) (Intro.aux) (Num.aux) (RSA.aux) (IG.aux) (RSAG.aux)) ) 
 Here is how much of TeX's memory you used:
- 6491 strings out of 493328
- 81114 string characters out of 3139122
- 211906 words of memory out of 3000000
- 9797 multiletter control sequences out of 15000+200000
- 18239 words of font info for 78 fonts, out of 3000000 for 9000
+ 6502 strings out of 493328
+ 81228 string characters out of 3139122
+ 211954 words of memory out of 3000000
+ 9806 multiletter control sequences out of 15000+200000
+ 19658 words of font info for 82 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,8n,25p,3237b,565s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmbxti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
-y8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Mestre.pdf (38 pages, 251129 bytes).
+<C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Mestre.pdf (39 pages, 249843 bytes).
 PDF statistics:
- 186 PDF objects out of 1000 (max. 8388607)
+ 189 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
