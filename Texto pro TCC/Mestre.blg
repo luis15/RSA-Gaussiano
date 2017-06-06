@@ -7,7 +7,7 @@ A level-1 auxiliary file: RSA.aux
 A level-1 auxiliary file: IG.aux
 A level-1 auxiliary file: RSAG.aux
 The style file: babalpha.bst
-Illegal, another \bibstyle command---line 31 of file Mestre.aux
+Illegal, another \bibstyle command---line 40 of file Mestre.aux
  : \bibstyle
  :          {alpha}
 I'm skipping whatever remains of this command
@@ -16,5 +16,6 @@ Warning--entry type for "millenial" isn't style-file defined
 --line 58 of file Bibliografia.bib
 Warning--to sort, need author or key in millenial
 Warning--empty language in coutinho
+Warning--empty journal in pimentel
 Warning--empty publisher in intGauss
 (There was 1 error message)

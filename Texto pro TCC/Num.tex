@@ -5,9 +5,9 @@
 
 \section{N\'umeros Primos e Fatora\c{c}\~ao \'Unica}
 
-\hspace{7mm}Os n\'umeros primos ocupam lugar importante tanto na teoria de n\'umeros quanto na criptografia RSA: na primeira por serem capazes de gerar todos os elementos do conjunto dos n\'umeros inteiros e suas consequentes propriedades; na segunda pelo fato de formarem um conjunto infinito e isso permite que se tome um primo de dimens\~ao extrondosa para codificar uma mensagem, consequentemente dificultando que o c\'odigo seja decifrado por terceiros em tempo razo\'avel,como mostraremos ao longo deste trabalho.
+\hspace{7mm}Os n\'umeros primos ocupam lugar importante tanto na teoria de n\'umeros quanto na criptografia RSA: na primeira por serem capazes de gerar todos os elementos do conjunto dos n\'umeros inteiros e suas consequentes propriedades; na segunda pelo fato de formarem um conjunto infinito e isso permite que se tome um primo de dimens\~ao extrondosa para codificar uma mensagem, consequentemente dificultando que o c\'odigo seja decifrado por terceiros em tempo razo\'avel, como mostraremos ao longo deste trabalho.
 
-Os primos atuam como \'atomos dentro do conjunto dos n\'umeros inteiros no sentido em que todo n\'umero pode ser escrito como um produto de primos. Esse fato \'e consequencia do chamado \textit{Teorema da Fatora\c{c}\~ao \'Unica} tamb\'em conhecido por \textit{Teorema Fundamental da Aritm\'etica}. Al\'em de ser um resultado fundamental para a teoria de n\'umeros, ele tamb\'em \'e um dos pilares da criptografia RSA, pois a decodifica\c{c}\~ao de uma mensagem vai passar pela fatora\c{c}\~ao de um n\'umero, e para demonstrar esse teorema \'e preciso ter a disposi\c{c}\~ao o chamado \textit{Teorema de Divis\~ao}. 
+Os primos atuam como \'atomos dentro do conjunto dos n\'umeros inteiros no sentido em que todo n\'umero pode ser escrito como um produto de primos. Esse fato \'e consequ\^encia do chamado \textit{Teorema da Fatora\c{c}\~ao \'Unica} tamb\'em conhecido por \textit{Teorema Fundamental da Aritm\'etica}. Al\'em de ser um resultado fundamental para a teoria de n\'umeros, ele tamb\'em \'e um dos pilares da criptografia RSA, pois a decodifica\c{c}\~ao de uma mensagem vai passar pela fatora\c{c}\~ao de um n\'umero, e para demonstrar esse teorema \'e preciso ter a disposi\c{c}\~ao o chamado \textit{Teorema de Divis\~ao}. 
 
 
 \begin{Th}
@@ -52,7 +52,7 @@ onde $1<p_1<p_2<p_3<\cdots<p_k$ s\~ao n\'umeros primos e $e_1, \cdots, e_k$ s\~a
 \end{Th}
 
 No teorema acima, os expoentes $e_i$, para $1\leq i\leq k$ s\~ao chamados de \textit{multiplicidades}, pois indicam a quantidade de vezes que um mesmo n\'umero primo ocorre na fatora\c{c}\~ao. A prova de que \'e sempre poss\'ivel encontrar os fatores de usados decompor o n\'umero em fatores primos consiste no procedimento para fatorar um n\'umero, esse procedimento \'e chamado \textit{Algoritmo de Euclides}: trata-se do m\'etodo que se aprende na escola para fatorar
-um n\'umero e que n\~ao iremos detalhar aqui. Como bem sabemos, esse m\'etodo \'e bastante ineficaz quando pensamos em n\'umeros muito grande, pois depende de realizar uma sequ\^encia bem grande de divis\~oes, dependendo do n\'umero. A prova garante que o procedimento termina, mas o que se nota \'e que tal procedimento \'e muito ineficiente no sentido em que demanda muito tempo para se chegar a uma resposta dependendo do n\'umero de desejamos fatorar. Na literatura existem v\'arios algoritmos de fatora\c{c}\~ao que tornam o m\'etodo mais eficiente, no entanto nenhum desses m\'etodos funciona bem para todos os n\'umeros inteiros. A criptografia RSA aproveita a inefici\^encia do m\'etodo para fatorar um n\'umero para garantir a seguran\c{c}a do seu sistema. \'E um problema em aberto saber se existe ou n\~ao um m\'etodo r\'apido para fatorar n\'umeros inteiros.  
+um n\'umero e que n\~ao iremos detalhar aqui. Como bem sabemos, esse m\'etodo \'e bastante ineficaz quando pensamos em n\'umeros muito grande, pois depende de realizar uma sequ\^encia bem grande de divis\~oes, dependendo do n\'umero. A prova garante que o procedimento termina, mas o que se nota \'e que tal procedimento \'e muito ineficiente no sentido em que demanda muito tempo para se chegar a uma resposta dependendo do n\'umero de desejamos fatorar. Na literatura existem v\'arios algoritmos de fatora\c{c}\~ao que tornam o m\'etodo mais eficiente, no entanto nenhum desses m\'etodos funciona bem para todos os n\'umeros inteiros. A criptografia RSA aproveita a inefici\^encia dos m\'etodos para fatorar um n\'umero para garantir a seguran\c{c}a do seu sistema. \'E um problema em aberto saber se existe ou n\~ao um m\'etodo r\'apido para fatorar n\'umeros inteiros.  
 
 A demonstra\c{c}\~ao do teorema acima requer uma s\'erie de resultados acerca de n\'umeros primos os quais detalharemos abaixo. O interesse em apresentar as demonstra\c{c}\~oes de tais resultados \'e devido ao fato de estarmos interessados em adaptar tais provas para o primos de Gauss se quisermos implementar um m\'etodo de criptografia RSA baseado nesses primos. 
 
@@ -66,13 +66,13 @@ Sejam $a$ e $b$ inteiros positivos e suponhamos que $a$ e $b$ s\~ao primos entre
 
 \noindent{\textbf{\textit{Demonstra\c{c}\~ao}}}\\
 \begin{enumerate}
-\item Se $a$ e $b$ s\~ao primos entre si, ent\~ao o m\'aximo divisor comum entre $a$ e $b$ \'e 1, isto \'e,$mdc(a,b)=1$. Pelo algoritmo euclideano estendido, temos que existem inteiros $\alpha$ e $\beta$ tais que $\alpha\cdot a+\beta\cdot b=1$. Da\'i, multiplicando toda a express\~ao por $c$ temos que: $\alpha\cdot ac+\beta\cdot bc=c\quad\quad (1)$. Dado que $b$ divide $ac$ e $b$ divide $cb$, ent\~ao $b$ divide $\alpha\cdot ac+\beta\cdot bc$. Portanto, a partir da igualdade (1) temos que $b$ divide $c$.
+\item Se $a$ e $b$ s\~ao primos entre si, ent\~ao o m\'aximo divisor comum entre $a$ e $b$ \'e 1, isto \'e,$mdc(a,b)=1$. Pelo algoritmo euclideano estendido, temos que existem inteiros $\alpha$ e $\beta$ tais que $\alpha\cdot a+\beta\cdot b=1$. Ent\~ao, multiplicando toda a express\~ao por $c$ temos que: $\alpha\cdot ac+\beta\cdot bc=c\quad\quad (1)$. Dado que $b$ divide $ac$ e $b$ divide $cb$, ent\~ao $b$ divide $\alpha\cdot ac+\beta\cdot bc$. Portanto, a partir da igualdade (1) temos que $b$ divide $c$.
 
 \item Se $a$ divide $c$, ent\~ao existe $t\in \mathbb{Z}$ tal que $c=at$. Como, por hip\'otese, $b$ divide $c$ e $a$ e $b$ s\~ao primos entre si, ent\~ao $b$ tem que dividir $t$. Logo, para algum $t$ vale que $t=bk$. Portanto, $c=at=a(bk)=(ab)k$ \'e divis\'ivel por $ab$.  	
 \end{enumerate}	
 \hfill\newline
 
-\begin{Th}[Propriedade Fundamental dos Primos]
+\begin{Th}[Propriedade Fundamental dos Primos]\label{fundprimos}
 Seja $p$ um n\'umero primo e $a$ e $b$ inteiros positivos. 
 Se $p$ divide o produto $ab$ ent\~ao $p$ divide $a$ ou $p$ divide $b$. 
 \end{Th}
@@ -103,7 +103,7 @@ Existe uma quantidade infinita de n\'umeros primos.
 
 \noindent{\textbf{\textit{Demonstra\c{c}\~ao:}}}\newline
 Suponha, por redu\c{c}\~ao ao absurdo, que exite apenas uma quantidade finita de n\'umeros primos: $p_1, p_2,\cdots p_n$. Tome $a=1+p_1\cdot p_2\cdot \cdots \cdot p_n$ um n\'umero inteiro. Claramente $a>p_i$ para cada $1\leq i\leq n$, ent\~ao $a$ deve ser um n\'umero composto, caso contr\'ario a 
-lista acima estaria incompleta. Dessa forma, pelo Teorema\ref{divisor_primo} existe um primo $p_i$ tal que divide $a$. Mas se $p_i$ divide $a$, ent\~ao $p_1$ divide $1$ e $p_i$ divide $p_1\cdot p_2\cdot \cdots \cdot p_n$. Absurdo, pois o \'unico divisor de $1$ \'e ele mesmo. Portanto, \'e falso supor que a lista de primos seja finita, logo ela deve ser infinita.
+lista acima estaria incompleta. Dessa forma, pelo Teorema \ref{divisor_primo} existe um primo $p_i$ tal que divide $a$. Mas se $p_i$ divide $a$, ent\~ao $p_1$ divide $1$ e $p_i$ divide $p_1\cdot p_2\cdot \cdots \cdot p_n$. Absurdo, pois o \'unico divisor de $1$ \'e ele mesmo. Portanto, \'e falso supor que a lista de primos seja finita, logo ela deve ser infinita.
 \hfill\newline
 
 Existe, ainda, um outro debate acerca dos n\'umeros primos: como gerar os n\'umeros primos. Existem diversos m\'etodos para gerar os primos, como por exemplo, o Crivo de Erat\'ostenes, o mais antigos deles, mas n\~ao envolve nenhuma f\'ormula espec\'ifica. No entanto, todos esses m\'etodos s\~ao ineficazes. Para mais detalhes sobre esse tema recomendamos a leitura de Criptografia, de Coutinho\cite{coutinho}.
@@ -132,12 +132,12 @@ Nosso interesse est\'a voltado para a uniformiza\c{c}\~ao do modo de separar tai
 	\end{itemize}
 \end{Df}   
 
-Para exemplificar a defini\c{c}\~ao acima, cosidere o exemplo das horas: a propriedade reflexiva afirma que toda hora \'e igual a ela pr\'opria; a simetria afirma que se $0h$ \'e igual a $24h$, ent\~ao temos tamb\'em que $24h$ \' igual a $0h$; a transitividade afirma que $0h$ \'e igual a $24h$ e $24h$ \'e igual a $72h$, ent\~ao $0h$ \'e igual a $72h$.
+Para exemplificar a defini\c{c}\~ao acima, cosidere o exemplo das horas: a propriedade reflexiva afirma que toda hora \'e igual a ela pr\'opria; a simetria afirma que se $0h$ \'e igual a $24h$, ent\~ao temos tamb\'em que $24h$ \'e igual a $0h$; a transitividade afirma que $0h$ \'e igual a $24h$ e $24h$ \'e igual a $72h$, ent\~ao $0h$ \'e igual a $72h$.
 
 Seja $X$ um conjunto e $\sim$ uma rela\c{c}\~ao de equival\^encia definida em $X$. Denotamos por $\overline{X}$ a classe de equival\^encia de $x$ e escrevemos, em s\'imbolos, da seguinte forma:	
 	                     $$\overline{x}=\{y\in X: y\sim x\}$$
 
-Nosso interesse ser\'a separar em classe de equival\^encia os n\'umeros inteiros, dessa forma o $X$ representa o conjunto $\mathbb{Z}$ enquanto que $x$ representa um n\'umero inteiro, enquanto que $\sim$ representa alguma rela\c{c}\~ao estabelecida entre os n\'umeros, por exemplo o resto da divis\~ao pelo n\'umero 5. Dessa forma, podemos formar cinco classes distintas:
+Nosso interesse ser\'a separar em classe de equival\^encia os n\'umeros inteiros, dessa forma o $X$ representa o conjunto $\mathbb{Z}$ enquanto que $x$ representa um n\'umero inteiro e $\sim$ representa alguma rela\c{c}\~ao estabelecida entre os n\'umeros, por exemplo o resto da divis\~ao pelo n\'umero 5. Dessa forma, podemos formar cinco classes distintas:
 
 	\begin{itemize}
 		\item Classe dos restos 0: $\overline{0}=\{0, 5, 10, 15, 20, \cdots\}$
@@ -151,7 +151,7 @@ O conjunto das classes de equival\^encia em $X$ \'e chamado \textit{conjunto quo
 
 $$\mathbb{Z}_{n}=\{\overline{0}, \overline{1}, \overline{2}, \cdots, \overline{n-1}\}$$ 
 
-Seguindo esse conceito vamos trabalhar construindo rela\c{c}\~oes de equival\^encia entre inteiros. Se dissermos que os n\'umeros inteiros separados de um m\'ultiplo de $n$ s\~ao equivalentes, ter\'iamos que formalmente dizer que eles s\~ao \textit{congruentes no m\'odulo $n$}. Isso sempre ocorre em casos onde $a-b$ \'e um m\'ultiplo de $n$. Para representar n\'os escrevemos:
+Seguindo esse conceito vamos trabalhar construindo rela\c{c}\~oes de equival\^encia entre inteiros. Se dissermos que os n\'umeros inteiros separados de um m\'ultiplo de $n$ s\~ao equivalentes, ter\'iamos que formalmente dizer que eles s\~ao \textit{congruentes no m\'odulo $n$}. Isso sempre ocorre em casos onde $a-b$ \'e um m\'ultiplo de $n$. Para representar esse caso n\'os escrevemos:
 
 $$a \equiv b \pmod{n}$$ 
 
@@ -166,13 +166,11 @@ Suponha que $\overline{a}$ tenha inverso em n. Logo existe um $\overline{b}$ tal
 
 $$\overline{a} \cdot \overline{b} \equiv 1 \pmod{n}$$
 
-Logo
+Logo:
 
 $$a \cdot b - k \codt n = 1 $$
 
-e portanto $mdc(a,n) = 1$.
-
-Supondo que $mdc(a,n) = 1$, logo existem $\alpha$ e $\beta$ tais que:
+e portanto $mdc(a,n) = 1$.Supondo que $mdc(a,n) = 1$, logo existem $\alpha$ e $\beta$ tais que:
 
 $$\alpha \cdot a + \beta \cdot n = 1$$
 
@@ -198,11 +196,11 @@ Iniciaremos procurando por um elemento neutro, ou seja, por uma pot\^encia de $1
 	$$10^5 \equiv 5 \pmod{7}$$ 
 	$$10^6 \equiv 1 \pmod{7}$$ 
 	
-Feito isso sabemos que $10^6$ \'e a pot\^encia a qual quer\'iamos, podemos agora decompor $135$ por $6$, obtendo que $135 = (6 \cdot 22) + 3$, o que nos leva à:
+Feito isso sabemos que $10^6$ \'e a pot\^encia a qual quer\'iamos, agora n\'os podemos decompor $135$ por $6$, obtendo que $135 = (6 \cdot 22) + 3$, o que nos leva à:
 
 $$10^{135} \equiv (10^6)^{22} \cdot 10^3 \equiv (1)^{22} \cdot 10^3 \equiv 10^3 \equiv 6 \pmod{7}$$
 
-Esse m\'etodos de simplifica\c{c}\~ao nos ajudar\~ao depois para as opera\c{c}\~oes aritm\'eticas relacionadas ao RSA, nas pr\'oximas sess\~oes teremos alguns teoremas que tamb\'em podem nos ajudar na simplifica\c{c}\~ao de processos.
+Esse m\'etodos de simplifica\c{c}\~ao nos ajudar\~ao depois para as opera\c{c}\~oes aritm\'eticas relacionadas ao RSA, nas pr\'oximas sess\~oes teremos alguns teoremas que tamb\'em ir\~ao nos ajudar na simplifica\c{c}\~ao de processos.
 
 \section{Teorema de Fermat}
 
@@ -214,7 +212,7 @@ $$a^{p-1}\equiv 1 \pmod{p}$$
 \noindent{\textbf{\textit{Demonstra\c{c}\~ao:}}}\newline
 Como $mdc(a,p)=1$ existe um $a'$ tal que
 
-$$aa' \equiv 1 \pmod{p}$$
+$$a' \cdot a \equiv 1 \pmod{p}$$
 
 Multiplicando ambos os membros de $a^p \equiv a \pmod{p}$ por $a'$ obtemos:
 
@@ -245,13 +243,13 @@ Obtemos assim que ${3^{1034}}^{2} \equiv 81 \pmod{1033}$.
 
 \section{Teorema Chin\^es do resto}
 
-Para sermos iniciados nesta t\'ecnica, vamos analisar o seguinte problema: Qual o menor inteiro que possui resto $1$ na divis\~ao por $3$ e resto $2$ na divis\~ao por $5$. Podemos vir a tranformar esse problema nas seguintes equa\c{c}\~oes:
+\hspace{7mm}Para sermos iniciados nesta t\'ecnica, vamos analisar o seguinte problema: Qual o menor inteiro que possui resto $1$ na divis\~ao por $3$ e resto $2$ na divis\~ao por $5$. Podemos vir a tranformar esse problema nas seguintes equa\c{c}\~oes:
 
 $$n = 3q_1 + 1$$ $$n = 5q_2 + 2$$
 
 Essas equa\c{c}\~oes tamb\'em podem ser denotadas em forma modular como:
 
-$$n \equiv 1\pmid{3}$$ $$n \equiv 2 \pmod{5}$$
+$$n \equiv 1\pmod{3}$$ $$n \equiv 2 \pmod{5}$$
 
 Essa sa\'ida modular nos deixou com apenas uma vari\'avel, mas ainda n\~ao resolveu o nosso problema. Para fazermos isso vamos substituir $n$ por $5q_2 + 2$, montando a seguine equa\c{c}\~ao modular:
 
@@ -304,7 +302,7 @@ $$x_0 \equiv b \pmod{n}$$
 
 Para podermos juntar ambas as equa\c{c}\~oes modulares converteremos uma em equa\c{c}\~ao alg\'ebrica, nesse caso teremos: 
 
-$$x_0 = a + m\cdot k$$, }\\
+$$x_0 = a + m\cdot k$$
 
 $k$ \'e um inteiro qualquer Feito isso, chegaremos em:
 
@@ -328,7 +326,7 @@ Com $t$ um inteiro qualquer. Substituindo a parte de $k$, n\'os obtemos
 $$ x_0 \equiv a + m (m'\cdot(b-a)+n \cdot t) $$
 
 
-Podemos ver agora que para qualquer $t$, $a + m (m'\cdot(b-a)+n \cdot t$ \'e parte da solu\c{c}\~ao da congru\^encia, sabendo disso, agora podemos vamos a descri\c{c}\~ao do teorema.
+Podemos ver agora que para qualquer $t$, $a + m (m'\cdot(b-a)+n \cdot t$ \'e parte da solu\c{c}\~ao da congru\^encia, sabendo disso, agora vamos a descri\c{c}\~ao do teorema.
 
 
 \begin{Th}[Teorema Chin\^es do Resto]\label{chines}
@@ -340,7 +338,7 @@ $$ x \equiv b (mod n) $$
 
 Sempre tem solu\c{c}\~ao e qualquer uma de suas solu\c{c}\~oes pode ser escrita na forma
 
-$$ a + m \cdot(m' \cdot (b-a) + n \cdot n) $$
+$$ a + m \cdot(m' \cdot (b-a) + n \cdot t) $$
 
 Onde $t$ \'e um inteiro qualquer e $m'$ \'e o inverso de $m$ no m\'odulo $n$.
 
@@ -348,7 +346,7 @@ Onde $t$ \'e um inteiro qualquer e $m'$ \'e o inverso de $m$ no m\'odulo $n$.
 
 \section{Aplica\c{c}\~ao conjunta de teoremas}
 
-Para encerrarmos este cap\'itulo, vejamos como usar o Teorema de Fermat(\ref{fermat}) e o Teorema Chin\^es do Resto(\ref{chines}) para resolvermos equa\c{c}\~oes modulares com n\'umeros compostos. A aplica\c{c}\~ao conjunta dos teoremas ter\'a grande valor no momento da desencripta\c{c}\~ao de uma mensagem. Tomemos por exemplo que queremos calcular:
+\hspace{7mm}Para encerrarmos este cap\'itulo, vejamos como usar o Teorema de Fermat(\ref{fermat}) e o Teorema Chin\^es do Resto(\ref{chines}) para resolvermos equa\c{c}\~oes modulares com n\'umeros compostos. A aplica\c{c}\~ao conjunta dos teoremas ter\'a grande valor no momento da desencripta\c{c}\~ao de uma mensagem. Tomemos por exemplo que queremos calcular:
 
 $$ 2^{6754} \pmod{1155}$$
 
@@ -380,4 +378,4 @@ $$x \equiv 4 \pmod{5}$$
 $$x \equiv 2 \pmod{7}$$
 $$x \equiv 5 \pmod{11}$$  
 
-Podemos resolver esse sistema usando o algoritmo chin\^es, vamos come\c{c}ar substituindo na primeira congru\^encia, onde $x = 3y + 1$, em seguida substitu\'imos $x$ por $y$ na segunda congru\^encia, tornando-a $3y + 1 \equiv 4 \pmod{5}$, que equivale a $y \equiv 1 \pmod{5}$, como $3$ \'e invers\'ivel no m\'odulo $5$ ele pode ser anulado na equa\c{c}\~ao. Com isso temos $x = 4+15z$ que se substituindo na terceira equa\c{c}\~ao e resolvendo obtemos $z \equiv 5 \pmod{7}$, que significa que $x = 79 + 105t$. Finalmente substituindo na \'ultima equa\c{c}\~ao, teremos que $t \equiv 6 \pmod{11}$, o que resulta em $x = 709+1155u$. Conclu\'imos com isso que $26754 \equiv 709 \pmod{1155}$. 
+Podemos resolver esse sistema usando o algoritmo chin\^es, vamos come\c{c}ar substituindo na primeira congru\^encia, onde $x = 3y + 1$, em seguida substitu\'imos $x$ por $y$ na segunda congru\^encia, tornando-a $3y + 1 \equiv 4 \pmod{5}$, que equivale a $y \equiv 1 \pmod{5}$, como $3$ \'e invers\'ivel no m\'odulo $5$ ele pode ser anulado na equa\c{c}\~ao. Com isso temos $x = 4+15z$ que se substituindo na terceira equa\c{c}\~ao e resolvendo obtemos $z \equiv 5 \pmod{7}$, que significa que $x = 79 + 105t$. Finalmente substituindo na \'ultima equa\c{c}\~ao, teremos que $t \equiv 6 \pmod{11}$, o que resulta em $x = 709+1155u$. Conclu\'imos com isso que $26754 \equiv 709 \pmod{1155}$ resolvendo nosso problema. 

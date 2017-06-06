@@ -40,6 +40,12 @@
 \newblock \url{http://www.claymath.org/millennium-problems}.
 \newblock Acessado em 15/11/2016.
 
+\bibitem [{PIM06}]{pimentel}
+\btxnamefont {\btxlastnamefont {PIMENTEL}, Elaine\btxfnamespacelong
+  Gouvêa}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Teoria dos números
+  e criptografia rsa}{Teoria dos números e criptografia RSA}}.
+\newblock 2006.
+
 \bibitem [{PR13}]{intGauss}
 \btxnamefont {\btxlastnamefont {Pacci}, Daniel\btxfnamespacelong Campolina}
   \btxandlong {}\ \btxnamefont {Camila\btxfnamespacelong

@@ -1,7 +1,7 @@
 \chapter {Aplicando a criptografia RSA}
 \label{RSA}
 
-\hspace{7mm}A criptografia RSA tem suma import\^ancia para toda a comunica\c{c}\~ao moderna. Ela \'e t\~ao importante que a descoberta de uma forma de se desencript\'a-la colocaria em risco a sociedade como a conhecemos. Ao longo deste cap\'itulo n\'os vamos ver como \'e seu funcionamento, unindo todos os conte\'udos j\'a vistos anteriormente.
+\hspace{7mm}A criptografia RSA tem suma import\^ancia para toda a comunica\c{c}\~ao moderna. Ela \'e t\~ao importante que a descoberta de uma forma de se desencript\'a-la colocaria em risco a sociedade como a conhecemos. Ao longo deste cap\'itulo n\'os vamos ver como \'e seu funcionamento, usando so conte\'udos do cap\'itulo anterior.
 
 \section{Preparando-se para criptografar}
 
@@ -18,7 +18,7 @@ N & O  & P  & Q  & R  & S & T  & U  & V  & X  & Y  & W  & Z \\
 \end{array}
 \]
 
-Para representar espaços vamos usar o 99. Avisamos que esta \'e uma tabela apenas com finalidade did\'atico, e, por isso h\'a v\'arios caracteres desconsiderados. Como exemplo vamos pr\'e-encriptar o poema Amor, de Oswald de Andrade. O texto do poema a ser pr\'e-encriptado \'e o seguinte:
+Para representar espaços vamos usar o 99. Avisamos que esta \'e uma tabela apenas com finalidade did\'atica, e, por isso h\'a v\'arios caracteres desconsiderados. Como exemplo vamos pr\'e-encriptar o poema Amor, de Oswald de Andrade. O texto do poema a ser pr\'e-encriptado \'e o seguinte:
 
 \begin{center}
 Amor  \\ 
@@ -152,7 +152,7 @@ Com isso iremos chegar at\'e $x = 10 + 23y = 10 + 23 \codt 4 = 102$. Caso você v
 
 $$b \equiv DC(b) \pmod{n}$$
 
-N\'os j\'a vimos que $C(b) \equiv b^3 \pmod{n}$ e $D(a) \equiv a^d\pmod{n}$. Se combinarmos ambos as congru\^encia iremos obter
+N\'os j\'a vimos que $C(b) \equiv b^3 \pmod{n}$ e $D(a) \equiv a^d\pmod{n}$. Se combinarmos ambas as congru\^encia iremos obter
 
 $$D(C(b)) \equiv D(b^3) \equiv b^{3d}\pmod{n}$$
 

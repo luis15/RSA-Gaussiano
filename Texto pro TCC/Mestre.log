@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.7)  4 JUN 2017 20:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.7)  5 JUN 2017 22:07
 entering extended mode
 **./Mestre.tex
 (Mestre.tex
@@ -495,23 +495,23 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--183
+Underfull \hbox (badness 10000) in paragraph at lines 179--181
 
  []
 
 
-Overfull \hbox (4.5959pt too wide) in paragraph at lines 192--193
+Overfull \hbox (4.5959pt too wide) in paragraph at lines 190--191
 []\OT1/cmr/m/n/12 Iniciaremos pro-cu-rando por um ele-mento neu-tro, ou seja, por uma pot^encia
  []
 
 [13]
 
-LaTeX Warning: Command \^ invalid in math mode on input line 221.
+LaTeX Warning: Command \^ invalid in math mode on input line 219.
 
 ! Please use \mathaccent for accents in math mode.
 \add@accent ...@spacefactor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.221 $$a'\cdot a \cdot \^{p-1}
+l.219 $$a'\cdot a \cdot \^{p-1}
                                 \equiv a' \equiv a \pmod{p}$$
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
@@ -519,7 +519,7 @@ I'm changing \accent to \mathaccent here; wish me luck.
 ! You can't use `\spacefactor' in display math mode.
 \add@accent ...}\accent #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.221 $$a'\cdot a \cdot \^{p-1}
+l.219 $$a'\cdot a \cdot \^{p-1}
                                 \equiv a' \equiv a \pmod{p}$$
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -528,33 +528,18 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 
 Missing character: There is no è in font cmex10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--227
+Underfull \hbox (badness 10000) in paragraph at lines 223--225
 
  []
 
 ! Double superscript.
-l.228 ... qual o valor da congru\^encia $3^{1034}^
+l.226 ... qual o valor da congru\^encia $3^{1034}^
                                                   {2}$ no m\'odulo $1033$. S...
 I treat `x^1^2' essentially like `x^1{}^2'.
 
-[14]
-! Undefined control sequence.
-l.254 $$n \equiv 1\pmid
-                       {3}$$ $$n \equiv 2 \pmod{5}$$
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[15] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 307--308
-
- []
-
-[17]
-Overfull \hbox (7.40283pt too wide) in paragraph at lines 351--352
-\OT1/cmr/m/n/12 Para en-cer-rar-mos este captulo, ve-ja-mos como usar o Te-o-rema de Fermat(2.3.1[])
+[14] [15] [16] [17]
+Overfull \hbox (27.31975pt too wide) in paragraph at lines 349--350
+ \OT1/cmr/m/n/12 Para en-cer-rar-mos este captulo, ve-ja-mos como usar o Te-o-rema de Fermat(2.3.1[])
  []
 
 [18]) [19]
@@ -587,14 +572,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[24]
-! Too many }'s.
-l.176 }
-       
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
-[25]) [26] [27]
+[24] [25]) [26] [27]
 \openout2 = `IG.aux'.
 
  (IG.tex
@@ -674,8 +652,13 @@ Underfull \hbox (badness 4699) in paragraph at lines 39--42
 \OT1/cmtt/m/n/12 http://www.claymath.org/millennium-problems\OT1/cmr/m/n/12 .  Aces-sado
  []
 
+
+Overfull \hbox (10.48758pt too wide) in paragraph at lines 44--48
+[]\OT1/cmr/m/n/12 PIMENTEL, Elaine Gouv^ea: |   [].
+ []
+
 ! Undefined control sequence.
-l.56   Nachla{\s
+l.62   Nachla{\s
                 {s}}}, 2:145--155, 1859.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -684,50 +667,53 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (93.82835pt too wide) in paragraph at lines 51--57
+Overfull \hbox (93.82835pt too wide) in paragraph at lines 57--63
 []\OT1/cmr/m/n/12 Riemann, Ber-nhard: |   [].
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--66
+Underfull \hbox (badness 10000) in paragraph at lines 65--72
 []\OT1/cmr/m/n/12 Rivest, Ro-nald L, Adi Sha-mir e Le-o-nard Adle-man:
  []
 
 
-Overfull \hbox (31.19008pt too wide) in paragraph at lines 59--66
+Overfull \hbox (31.19008pt too wide) in paragraph at lines 65--72
 |   []\OT1/cmr/m/n/12 .
  []
 
 
-Underfull \hbox (badness 1796) in paragraph at lines 74--79
+Underfull \hbox (badness 1796) in paragraph at lines 80--85
 []\OT1/cmr/m/n/12 Shannon, Claude E: |   [].
  []
 
-) [34
+[34
 
 
-] (Mestre.aux (Agrad.aux) (Pref.aux) (Intro.aux) (Num.aux) (RSA.aux) (IG.aux) (RSAG.aux)) ) 
+]) [35] (Mestre.aux (Agrad.aux) (Pref.aux) (Intro.aux) (Num.aux) (RSA.aux) (IG.aux) (RSAG.aux))
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 6489 strings out of 493328
- 81092 string characters out of 3139122
- 211894 words of memory out of 3000000
- 9795 multiletter control sequences out of 15000+200000
+ 6491 strings out of 493328
+ 81114 string characters out of 3139122
+ 211906 words of memory out of 3000000
+ 9797 multiletter control sequences out of 15000+200000
  18239 words of font info for 78 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,8n,25p,3237b,565s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Mestre.pdf (37 pages, 250340 bytes).
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmbxti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
+y8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Mestre.pdf (38 pages, 251129 bytes).
 PDF statistics:
- 183 PDF objects out of 1000 (max. 8388607)
+ 186 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

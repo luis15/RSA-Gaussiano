@@ -1,11 +1,11 @@
 \chapter {Inteiros e Primos de Gauss}
 \label{IG}
 
-\hspace{7mm}At\'e o momento apenas os n\'umeros inteiros foram neste projeto, mas para podermos entender a RSA Gaussiana \'e necess\'ario conhecer o conjunto dos n\'umeros inteiros gaussianos. Ao longo deste cap\'itulo vamos conhecer os inteiros e os primos gaussianos e suas propiedades aritm\'eticas b\'asicas. 
+\hspace{7mm}At\'e o momento apenas os n\'umeros inteiros foram abordados neste projeto, mas para podermos entender a RSA Gaussiana \'e necess\'ario conhecer o conjunto dos n\'umeros inteiros gaussianos. Ao longo deste cap\'itulo vamos conhecer os inteiros e os primos gaussianos e suas propiedades aritm\'eticas b\'asicas. 
 
 \section{Inteiros de Gauss e suas propiedades}
 
-\hspace{7mm}Os inteiros gaussianos, conjunto que a partir de agora iremos nos referenciar por $Z[i]$, s\~ao um subconjuntos dos n\'umeros complexos, relembrando que os n\'umeros complexos s\~ao os n\'umeros de forma $a+b\textbf{i}$, onde $a$ e$b$ s\~ao reais e $\textbf{i}$ \'e a $\sqrt{-1}$. A diferen\c{c}a entre o conjunto $Z[i]$ e o conjunto $C$ reside no fato de em $Z[i]$ $a$ e $b$ serem n\'umeros inteiros.
+\hspace{7mm}Os inteiros gaussianos, conjunto que a partir de agora iremos nos referenciar por $Z[i]$, s\~ao um subconjuntos dos n\'umeros complexos, relembrando que os n\'umeros complexos s\~ao os n\'umeros de forma $a+b\textbf{i}$, onde $a$ e $b$ s\~ao reais e $\textbf{i}$ \'e a $\sqrt{-1}$. A diferen\c{c}a entre o conjunto $Z[i]$ e o conjunto $C$ reside no fato de em $Z[i]$ $a$ e $b$ serem n\'umeros inteiros.
 
 Por $Z[i]$ estar contido em $C$, as opera\c{c}\~oes deste conjunto podem ser realizadas, por exemplo, se tomarmos $z_1= a + b\textbf{i}$ e $z_2= c + d\textbf{i}$ n\'os iremos obter:
 
@@ -24,7 +24,13 @@ Como os resultados das fatora\c{c}\~oes n\~ao se equivalem, seria muito \'util a
 
 Sabemos que $\pm 1$ dividem qualquer elemento da conjunto inteiro, analogamente $\pm 1$ e $\pm \textbf{i}$ fazem isso no conjunto complexo e gaussiano, esses n\'umeros s\~ao as unidades b\'asicas do conjunto. Sendo $w$ uma unidade de inteiro gaussiano, e $x$ e $y$ inteiros gaussianos tais que $x = wy$ dizemos que $x$ e $y$ s\~ao elementos associados.
 
-Agora que sabemos sobre os elementos associados e as unidades b\'asicas podemos definir os primos gaussianos. Um \textit{primo gaussiano} \'e um inteiro gaussiano que \'e divis\'ivel apenas pelos seus elementos associados e pelas unidades de $Z[i]$. Al\'em de possuir primos, assim com em $Z$ eles s\~ao infinitos, fato que ser\'a demonstrado mais a frente.
+Agora que sabemos sobre os elementos associados e as unidades b\'asicas podemos definir os primos gaussianos. 
+
+\begin{Df}
+Um \textit{primo gaussiano} \'e um inteiro gaussiano que \'e divis\'ivel apenas pelos seus elementos associados e pelas unidades de $Z[i]$.
+\end{Df} 
+
+Al\'em de possuir primos, assim com em $Z$ eles s\~ao infinitos no conjuntos, fato que ser\'a demonstrado mais a frente.
 
 \section{Fatora\c{c}\~ao \'unica}
 
@@ -32,7 +38,7 @@ Agora que sabemos sobre os elementos associados e as unidades b\'asicas podemos 
 
 Antes de provarmos a fatora\c{c}\~ao \'unica, provemos que todo o inteiro de Gauss com norma maior que $1$ pode ser escrito como produto de um ou mais primos de Gauss. Se $N(x)=2$, como $2$ \'e primo e a norma multiplicativa temos que $2$ \'e primo. Da mesma forma podemos estender para $N(x)>2$, se $x$ \'e primo a fatora\c{c}\~ao ser\'a imediata, se $x$ n\~ao for primos n\'os teremos que $x=a \cdot b \Rightarrow N(x) = N(a) \cdot N(b)$, com $ N(a), N(b) > 1$, logo $ N(a), N(b) < N(x)$. Podemos supor que $N(y) < N(x)$, $y$ \'e fator\'avel. Logo $a$, $b$ e $x$ tambem s\~ao fator\'aveis.
 
-Agora iremos provar a fatora\c{c}\~ao \'unica, para isso, vamos considerar as fatora\c{c}\~oes $p_1 \cdot p_2 \cdot ... \cdot p_n$ e $q_1 \cdot q_2 \cdot ... \cdot q_m$, sendo $\epsilon$  uma unidade que implica em que a sequencia$(p_i)$ seja uma permuta\c{c}\~ao, exceto em casos de multiplica\c{c}\~ao por unidade, de $(q_i)$. Se $max(m;n) = 1$, o resultado ser\'a imediato. Supondo que ele vale se $max(n';m') < max(m;n)$, pelo Lema de Euclides, que diz que se $n$ \'e um n\'umero inteiro e divide um produto $ab$ e \'e primo entre si com um fator, ent\~ao $n$ divide o outro fator, vemos que para algum $i, p_n| q_i$.
+Agora iremos provar a fatora\c{c}\~ao \'unica, para isso, vamos considerar as fatora\c{c}\~oes $p_1 \cdot p_2 \cdot ... \cdot p_n$ e $q_1 \cdot q_2 \cdot ... \cdot q_m$, sendo $\epsilon$  uma unidade que implica em que a sequencia$(p_i)$ seja uma permuta\c{c}\~ao, exceto em casos de multiplica\c{c}\~ao por unidade, de $(q_i)$. Se $max(m;n) = 1$, o resultado ser\'a imediato. Supondo que ele vale se $max(n';m') < max(m;n)$, como mostrado pelo teorema \ref{fundprimos}, que diz que se $n$ \'e um n\'umero inteiro e divide um produto $ab$ e \'e primo entre si com um fator, ent\~ao $n$ divide o outro fator, vemos que para algum $i, p_n| q_i$.
 
 Para n\~ao perdermos a generalidade vamos tomar que $i=m$. Como $p_n$  $q_m$ s\~ao primos, ent\~ao $q_m = \epsilon' p_n$, com $\epsilon'$ sendo uma unidade. Logo $p_1 \cdot p_2 \cdot ... \cdot p_n = \epsilon'q_1 \cdot q_2 \cdot ... \cdot q_m \Leftrightarrow p_1 \cdot p_2 \cdot ... \cdot p_{n-1} = \epsilon\epsilon'q_1 \cdot q_2 \cdot ... \cdot q_{m-1} $. Como $p_1 \cdot p_2 \cdot ... \cdot p_n$ \'e uma permuta\c{c}\~ao de $q_1 \cdot q_2 \cdot ... \cdot q_m$, exceto em casos de multiplica\c{c}\~ao por unidades, fica provada por indu\c{c}\~ao a fatora\c{c}\~ao \'unica dos inteiros gaussianos.
 
