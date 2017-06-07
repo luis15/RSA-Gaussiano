@@ -55,11 +55,21 @@ Perceba que n\~ao h\'a rela\c{c}\~ao entre nenhum dos n\'umeros obtidos com um c
 
 \subsection{Codificando uma mensagem}
 
-\hspace{7mm}A esta altura n\'os j\'a conhecemos o n\'umero $n$, que em nosso exemplo possui o valor de $391$. Vamos chamar o bloco codificado que iremos encriptar de $b$, lembrando que $b$ \'e um n\'umero inteiro menor que $n$. Vamos chamar o bloco ap\'os a codifica\c{c}\~ao de $C(b)$. Para obtermos $C(b)$ devemos aplicar a seguinte f\'ormula:
+\hspace{7mm}A esta altura n\'os j\'a conhecemos o n\'umero $n$, que em nosso exemplo possui o valor de $391$. O outro n\'umero que iremos usar ser\'a o $\textbf{e}$. Tomaremos que o $mdc(\textbf{e}, \phi(n)) = 1$. Para calcularmos o valor de $\phi(n)$ precisaremos aplicar a seguinte receita:
 
-$$C(b) \equiv b^3 \pmod{n} $$
+$$\phi(n) = (p-1)(q-1)$$
 
-Podemos para facilitar dizer que $C(b)$ é o resíduo de $b^3$ pelo m\'odulo $n$. Vamos a uma demonstra\c{c}\~ao pr\'atica com o primeiro bloco de nossa mensagem, que possui o valor $102$. Para simplificar o nosso trabalho vamos utilizar as opera\c{c}\~oes modulares
+Que em nosso exemplo resulta em:
+
+$$\phi(391) = (17 - 1)(23 - 1) = 16 \cdot 22 = 352$$
+
+Para determinarmos o $\textbf{e}$ basta escolher o menor primo que $mdc(\textbf{e}, 352) = 1$, que no nosso caso ser\'a o $3$. Optamos por um primo n\~ao m\'ultiplo ao inv\'es de um composto para que possamos usar o teorema de Fermat mais adiante. Ao conjunto $(n, \textbf{e} )$ denominamos chave de encripta\c{c}\~ao.
+
+Vamos chamar o bloco codificado que iremos encriptar de $b$, lembrando que $b$ \'e um n\'umero inteiro menor que $n$. Vamos chamar o bloco ap\'os a codifica\c{c}\~ao de $C(b)$. Para obtermos $C(b)$ devemos aplicar a seguinte f\'ormula:
+
+$$C(b) \equiv b^\textbf{e} \pmod{n} $$
+
+Podemos para facilitar dizer que $C(b)$ é o resíduo de $b^\textbf{e}$ pelo m\'odulo $n$. Vamos a uma demonstra\c{c}\~ao pr\'atica com o primeiro bloco de nossa mensagem, que possui o valor $102$. Para simplificar o nosso trabalho vamos utilizar as opera\c{c}\~oes modulares
 
 $$102^3 \equiv 24276 \equiv 34 \pmod{391}$$
 
@@ -82,9 +92,7 @@ Portanto, ``Amor Humor'', encriptado pelo RSA com as chaves privadas $17$ e $23$
 
 \subsection{Decodificando uma mensagem}
 
-\hspace{7mm}Para podermos desencriptar uma mensagem n\'os precisamos de dois números. O primeiro \'e a nossa chave p\'ublica $n$. O segundo n\'umero \'e $d$, onde temos que $3d$ \'e congruente a $1$ para o m\'odulo $(p-1)(q-1)$. Mais a frente explicaremos o motivo de se adicionar este n\'umero. Para resumir o que dissemos neste par\'agrafo, temos que:
-
-$$3d \equiv 1 \pmod{(p-1)(q-1)}$$
+\hspace{7mm}Para podermos desencriptar uma mensagem n\'os precisamos de dois números. O primeiro \'e a nossa chave p\'ublica $n$. O segundo n\'umero \'e $d$, que consiste no inverso de $\texbf{e}$ em $\phi(n)$. Para o nosso exemplo $d= 235$.
 
 Agora que estamos de posse de $d$, podemos usar o par $(n,d)$ para desencriptar a mensagem, onde $a$ \'e o bloco encriptado e $D(a)$ a mensagem desencriptada, usando a f\'ormula:
 
@@ -152,17 +160,17 @@ Com isso iremos chegar at\'e $x = 10 + 23y = 10 + 23 \codt 4 = 102$. Caso você v
 
 $$b \equiv DC(b) \pmod{n}$$
 
-N\'os j\'a vimos que $C(b) \equiv b^3 \pmod{n}$ e $D(a) \equiv a^d\pmod{n}$. Se combinarmos ambas as congru\^encia iremos obter
+N\'os j\'a vimos que $C(b) \equiv b^\textbf{e} \pmod{n}$ e $D(a) \equiv a^d\pmod{n}$. Se combinarmos ambas as congru\^encia iremos obter
 
-$$D(C(b)) \equiv D(b^3) \equiv b^{3d}\pmod{n}$$
+$$D(C(b)) \equiv {(b^\textbf{e})}^d = b^{ed}\pmod{n}$$
 
-Logo o que n\'os temos de provar \'e que $b^{3d} \equiv b \pmod{n}$. Como por defini\c{c}\~ao $3d \equiv 1 \pmod{(p-1)(q-1)}$, o que nos leva at\'e:
+Logo o que n\'os temos de provar \'e que $b^{ed} \equiv b \pmod{n}$. Como por defini\c{c}\~ao $3d \equiv 1 \pmod{(p-1)(q-1)}$, o que nos leva at\'e:
 
-$$3d = 1+k(p-1)(q-1)$$
+$$ed = 1+k(p-1)(q-1)$$
 
 Pelo Teorema Chin\^es do Resto e levando em conta a express\~ao para obter $3d$ temos que:
 
-$$b^{3d} \equiv b(b^{p-1})^{k(q-1)}$$
+$$b^{ed} \equiv b(b^{p-1})^{k(q-1)}$$
 
 Tomando que $p$ n\~ao divide $b$, n\'os podemos vir usar o Teorema de Fermat, de modo a obter:
 
@@ -170,17 +178,17 @@ $$b^{p-1} \equiv 1 \pmod{p}$$
 
 Obtendo assim:
 
-$$b^{3d} \equiv b \cdot (1)^{k(q-1)}\equiv b \pmod{p}$$
+$$b^{ed} \equiv b \cdot (1)^{k(q-1)}\equiv b \pmod{p}$$
 
-Mesmo que tenhamos que $b$ seja m\'ultiplo de $p$, n\'os teremos que $b$ e $b^{3d}$ s\~ao congruentes a $0$, logo nessa caso tamb\'em \'e v\'alida a congru\^encia, tendo assim: 
+Mesmo que tenhamos que $b$ seja m\'ultiplo de $p$, n\'os teremos que $b$ e $b^{ed}$ s\~ao congruentes a $0$, logo nessa caso tamb\'em \'e v\'alida a congru\^encia, tendo assim: 
 }
 
-$$b^{3d} \equiv b \pmod{p}$$
+$$b^{ed} \equiv b \pmod{p}$$
 
 Pelo mesmo m\'etodo podemos  obter $q$, obtendo o par: 
 
-$$b^{3d} \equiv b \pmod{p}$$
-$$b^{3d} \equiv b \pmod{q}$$
+$$b^{ed} \equiv b \pmod{p}$$
+$$b^{ed} \equiv b \pmod{q}$$
 
 Veja que $b$ \'e solu\c{c}\~ao de: 
 
@@ -193,7 +201,7 @@ $$b + p \cdot q \cdot t$$
 
 Onde $t\in \mathbb{Z}$. Logo como provamos anteriormente temos que:
 
-$$b^{3d} \equiv b + p \cdot q \cdot k$$
+$$b^{ed} \equiv b + p \cdot q \cdot k$$
 
 Para algum inteiro $k$. Isso equivale a $b^{3d} \equiv b \pmod{p}$. Isso comprova aque $b = D(C(b))$.
 
