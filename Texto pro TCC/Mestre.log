@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.7)  6 JUN 2017 19:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.7)  6 JUN 2017 21:26
 entering extended mode
 **./Mestre.tex
 (Mestre.tex
@@ -652,15 +652,49 @@ l.73 \rho_1 & = & \rho_2 \gama_
                                3 + \rho_3, & N(\rho_3) < N(\rho_2) \\
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-[30]) [31]
+! Undefined control sequence.
+l.93 ...ns, logo a inequa\c{c}\~ao $N(\delta) \geg
+                                                   N(\delta')$ tem de ser um...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
+
+ []
+
+[31]) [32]
 \openout2 = `RSAG.aux'.
 
- (RSAG.tex [32
+ (RSAG.tex [33
 
 
 ]
 Cap\'{\i }tulo 5.
-[33
+[34
 
 ]
 ! Too many }'s.
@@ -669,7 +703,7 @@ l.22 ...\'ormula an\'aloga a original, que seria:}
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
 
-) [34]
+) [35]
 
 Package babelbib Warning: Command \selectbiblanguage used without package
 (babelbib)                option fixlanguage. Ignored on input line 116.
@@ -687,17 +721,17 @@ babelbib: Using the BibTeX style's default font for `ISSN'.
 babelbib: Using the BibTeX style's default font for `url'.
 babelbib: Using the BibTeX style's default font for `numeral'.
 
-Underfull \hbox (badness 3058) in paragraph at lines 17--22
+Underfull \hbox (badness 3058) in paragraph at lines 22--27
 []\OT1/cmr/m/n/12 Coutinho, Se-ve-rino Col-lier: |   [].  Rio de Ja-neiro,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--30
+Underfull \hbox (badness 10000) in paragraph at lines 29--35
 []\OT1/cmr/m/n/12 Diffie, Whit-fi-eld e Mar-tin Hell-man:
  []
 
 
-Underfull \hbox (badness 1394) in paragraph at lines 24--30
+Underfull \hbox (badness 1394) in paragraph at lines 29--35
 |   []\OT1/cmr/m/n/12 .  IEEE tran-sac-ti-ons on In-for-
  []
 
@@ -709,28 +743,28 @@ See the babelbib package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.40 ...tp://www.claymath.org/millennium-problems}
+l.45 ...tp://www.claymath.org/millennium-problems}
                                                   .
 Please define a \url command for printing URLs before \begin{document}, e.\tmspace +\thinmuskip {.1667em}g.
 by loading the package `url.sty'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--42
+Underfull \hbox (badness 10000) in paragraph at lines 44--47
 []|   []\OT1/cmr/m/n/12 .
  []
 
 
-Underfull \hbox (badness 4699) in paragraph at lines 39--42
+Underfull \hbox (badness 4699) in paragraph at lines 44--47
 \OT1/cmtt/m/n/12 http://www.claymath.org/millennium-problems\OT1/cmr/m/n/12 .  Aces-sado
  []
 
 
-Overfull \hbox (10.48758pt too wide) in paragraph at lines 44--48
+Overfull \hbox (10.48758pt too wide) in paragraph at lines 49--53
 []\OT1/cmr/m/n/12 PIMENTEL, Elaine Gouv^ea: |   [].
  []
 
 ! Undefined control sequence.
-l.62   Nachla{\s
+l.67   Nachla{\s
                 {s}}}, 2:145--155, 1859.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -739,50 +773,50 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (93.82835pt too wide) in paragraph at lines 57--63
+Overfull \hbox (93.82835pt too wide) in paragraph at lines 62--68
 []\OT1/cmr/m/n/12 Riemann, Ber-nhard: |   [].
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--72
+Underfull \hbox (badness 10000) in paragraph at lines 70--77
 []\OT1/cmr/m/n/12 Rivest, Ro-nald L, Adi Sha-mir e Le-o-nard Adle-man:
  []
 
 
-Overfull \hbox (31.19008pt too wide) in paragraph at lines 65--72
+Overfull \hbox (31.19008pt too wide) in paragraph at lines 70--77
 |   []\OT1/cmr/m/n/12 .
  []
 
+[36
 
-Underfull \hbox (badness 1796) in paragraph at lines 80--85
+
+]
+Underfull \hbox (badness 1796) in paragraph at lines 85--90
 []\OT1/cmr/m/n/12 Shannon, Claude E: |   [].
  []
 
-[35
-
-
-]) [36] (Mestre.aux (Agrad.aux) (Pref.aux) (Intro.aux) (Num.aux) (RSA.aux) (IG.aux) (RSAG.aux)) ) 
+) [37] (Mestre.aux (Agrad.aux) (Pref.aux) (Intro.aux) (Num.aux) (RSA.aux) (IG.aux) (RSAG.aux)) ) 
 Here is how much of TeX's memory you used:
- 6502 strings out of 493328
- 81228 string characters out of 3139122
- 211954 words of memory out of 3000000
- 9806 multiletter control sequences out of 15000+200000
+ 6507 strings out of 493328
+ 81293 string characters out of 3139122
+ 212016 words of memory out of 3000000
+ 9811 multiletter control sequences out of 15000+200000
  19658 words of font info for 82 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,8n,25p,3237b,565s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Mestre.pdf (39 pages, 249843 bytes).
+<C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+msl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Mestre.pdf (40 pages, 256184 bytes).
 PDF statistics:
- 189 PDF objects out of 1000 (max. 8388607)
+ 192 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

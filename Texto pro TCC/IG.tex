@@ -79,33 +79,69 @@ O \'ultimo elemento que n\~ao possua resto $0$ \'e divis\'ivel por todos os divi
 
 \end{Th}
 
+Outra possibilidade para simplificar esta mesma opera\c{c}\~ao \'e o uso do algoritmo eucliadiano extendido, para o conjunto dos $\mathbb{Z}[i]$ esse algoritmo \'e chamado de Teorema de Bezout.
+
+\begin{Cor} \label{cor}
+	Para $\alpha$ e $\beta$ diferentes de $0$ e existentes no conjunto gaussiano, tomemos $\delta$ como o maior divisor comum pelo algoritmo euclidiano no conjunto gaussiano(\ref{euclideszi}). Qualquer divisor comum de $\alpha$ e $\beta$ \'e um m\'ultiplo de $\delta$.
+\end{Cor}
+
+\noindent{\textbf{\textit{Demonstra\c{c}\~ao}}}\\
+	Tomemos $\delta'$ como o maior divisor de $\alpha$ e $\beta$. Pelo algoritmo euclidiano no conjunto gaussiano(\ref{euclideszi}), $\delta' | \delta$ (pois $\delta'$ \'e divisor comum). Tendo que $\delta = \delta' \gamma$, ent\~ao
+
+$$N(\delta) = N(\delta')N(\gamma) \geq N(\delta')$$
+
+Tendo $\delta'$ como o maior divisor comum, sua norma \'e a mior entre os divisores comuns, logo a inequa\c{c}\~ao $N(\delta) \geg N(\delta')$ tem de ser uma igualdade. Isso implica que $N(\gamma) = 1$, ent\~ao $\gamma = \pm 1$ ou $\pm \textbf{i}$. Ent\~ao $\delta$ e $\delta'$ s\~ao m\'ultiplos um do outro.
+
+\hfill\newline
+
+\begin{Th} \label{teoprimosentresi}
+	Sendo $\delta$ o maior divisor comum de dois inteiros gaussianos diferentes de zero $\alpha$ e $\beta$, ent\~ao $\delta = \alpha x + \beta y$ para qualquer $x, y \in \mathbb{Z}$ .
+\end{Th}
+
+
+\noindent{\textbf{\textit{Demonstra\c{c}\~ao}}}\\
+
+Sendo $\delta$ escrito com uma combina\c{c}\~ao em $\mathbb{Z}[i]$ de $\alpha$ e $\beta$, ele n\~ao \'e afetado por substituir $\delta$ como o m\'ultiplo por uma unidade. Por isso o Corol\'ario \ref{cor}, n\'os apena temos que provar que $\delta$ \'e o maior divisor comum pelo algoritmo euclidiano no conjunto gaussiano Para $\delta$, uma substitui\c{c}\~ao no algoritmo euclidiano mostra que $\delta$ \'e uma combina\c{c}\~ao em $\mathbb{Z}[i]$ de $\alpha$ e $\beta$. Todos os demais detalhes s\~ao id\^eticos aos da prova para inteiros.
+
+\hfill\newline
+
 Podemos dizer que se $\alpha$ e $\beta$ possuem apenas as unidades como fatores em comum eles s\~ao primos entre si. 
 
+\begin{Cor} \label{primosentresi}
 
-Os elementos primos do conjunto $\mathbb{Z}[i]$ tamb\'em denomidados primos gaussianos. Eles s\~ao sim\'etricos tanto no eixo real quanto no imagin\'ario. 
+Os inteiros gaussianos $\alpha$ e $\beta$ s\~ao primos entre si se e somente se podemos escrever:
+
+$$1 = \alpha x + \beta y$$
+
+para quaisquer $x, y \in \mathbb{Z}[i]$
+
+\end{Cor}
+\noindent{\textbf{\textit{Demonstra\c{c}\~ao}}}\\
+
+Se $\alpha$ e $\beta$ s\~ao primos entre si, ent\~ao $1$ \'e o maior divisor de $\alpha$ e $\beta$, ent\~ao $1 = \alpha x + \beta y$ para qualquer $\, y in \mathbb{Z}[i]$  pelo teorema \ref{teoprimosentresi}, por outro lado se $1 = \alpha x + \beta y$ para algum $x, y \in \mathbb{Z}[i]$, ent\~ao o m\'aximo divisor comum de $\alpha$ e $\beta$ \'e divisor de $1$, logo uma unidade, provando que $\alpha$ e $\beta$ s\~ao primos entre si.
+
+\hfill\newline
+
+
+Agora n\'os vamos definir o que vem a ser um inteiro gaussiano primo e composto, al\'em de falarmos sobre a fatora\c{c}\~ao \'unica.
 
 \begin{Df}
-
-Um inteiro gaussiano \'e um primo se e somente se:
-
-\begin{enumerate}
-	
-	\item um dos elementos, $a$ ou $b$, \'e igual a $0$ e o outro elemento \'e um primo de forma $(4n + 3)$ ou $-(4n + 3)$, com $n$ sendo um n\'umero inteiro positivo
-	
-	\item ambos os n\'umeros s\~ao diferentes de $0$ e $(a^2 + b^2)$ \'e um n\'umero primo
-	
-\end{enumerate}
-
+Se tomarmos um inteiro Gaussiano $\alpha$ com $N(\alpha) > 1$. \'e denominado \textit{composto} se o n\'umero possuir um fator n\~ao trivial. Caso ele possua apenas fatores triviais ele \'e denominado \textit{primo}.
 \end{Df}
 
-Para resurmimos, podemos dizer que um primo gaussiano \'e um inteiro gaussiano cuja a norma seja um n\'umero primo ou os elemetos associados de primo de forma $4n + 3$. H\'a tr\^es casos em que um n\'umero primo $p$ pode ser fatorado no conjunto gaussiano:
+Agora que n\'os j\'a sabemos o que \'e um n\'umero primo e composto, podemos definir como eles s\~ao fatorados de forma \'unica pelo teoremas abaixo, as provas de ambas podem ser lidas na sess\~ao 6 de ``The Gaussian Integers'' em \cite{conrad}, a partir da p\'agina 13.
 
-\begin{enumerate}
-	
-	\item Se $p$ \'e congruente a $3$ no m\'odulo $4$ ele \'e primo gaussiano
-	
-	\item Se $p$ \'e congruente a $1$ no m\'odulo $4$ ele \'e fatorado pela multiplica\c{c}\~ao de um primo gaussiano por seu conjugado. Por exemplo: $5 = (2 + \textbf{i})(2 - \textbf{i})$ e $13 = (3+2\textbf{i})(3-2\textbf{i})$
-	
-	\item Se $p$ \'e igual a $2$, temos que $2 = \textbf{i}{(1-i)}^2$ 
-	
-\end{enumerate}
+\begin{Th}
+ Todo $\alpha \in \mathbb{Z}[i]$ com $N(\alpha) > 1$ \'e um produto de primos em $\mathbb{Z}[i]$
+\end{Th}
+
+\begin{Th}[Fatora\c{c}\~ao \'Unica no conjunto gaussiano] \label{fatunicagaussiana}
+ Todo $\alpha \in \mathbb{Z}[i]$ com $N(\alpha) > 1$ possui uma \'unica fatoriza\c{c}\~ao baseada nos primos gaussianos com o formato:
+
+	$$\alpha = \pi_1 \pi_2 \cdots \pi_{r} = \pi'_1 \pi'_2 \cdots \pi'_{s'} $$
+
+onde os $\pi_i$ e os $\pi'_j$ s\~ao primos em $\mathbb{Z}[i]$, ent\~ao $r=s$ e cada membro de $\pi_i$ ap\'os o renumera\c{c}\~ao adequada \'e um m\'ultiplo por uma unidade de $\pi'_i$.
+
+\end{Th}
+
+Para demonstrar o que foi dito pelo Teorema da Fatora\c{c}\~ao \'Unica (\ref{fatunicagaussiana}), tomemos por exemplo o n\'umero $2$. Esse n\'umero \'e fatorado como $(1 + \textbf{i})(1 - \textbf{i})$, por\'em a propiedade da fatora\c{c}\~ao \'unica se estende aos elementos associados aos fatores, logo $2$ tamb\'em pode ser fatorado na forma $(-1 - \textbf{i})(-1 + \textbf{i})$. Essa forma consiste apenas na multiplica\c{c}\~ao pela unidade $-1$ dos fatores e n\~ao altera ao resultado final. O mesmo poder\'a ser obtido por qualquer outro elemento associado em qualquer outra fatora\c{c}\~ao.

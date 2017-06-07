@@ -13,6 +13,11 @@
   \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
 
 \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+\bibitem [{Con08}]{conrad}
+\btxnamefont {\btxlastnamefont {Conrad}, Keith}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {The gaussian integers}{The gaussian integers}}.
+\newblock \btxjournalfont {Pre-Print, paper edition}, 2008.
+
 \bibitem [{Cou07}]{coutinho}
 \btxnamefont {\btxlastnamefont {Coutinho}, Severino\btxfnamespacelong
   Collier}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase
