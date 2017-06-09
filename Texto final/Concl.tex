@@ -1,0 +1,30 @@
+%%%%%%%%%%%%CONSIDERAÇÕES FINAIS%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{fancy}
+\fancyhead[C]{\textsl{Considerações Finais}}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{}
+
+\addcontentsline{toc}{chapter}{Considerações Finais}
+
+\chapter*{Considerações Finais}
+
+Nesta sess\~ao n\'os viremos a fazer as \'ultimas considera\c{c}\~oes sobre a viabilidade do algoritmo RSA Gaussiano. Al\'em disso vamos ver o que outros pesquisadores j\'a est\~ao concluindo em suas pesquisas.
+
+A primeira coisa que devemos prestar aten\c{c}\~ao \'e que no decorrer deste artigo n\~ao viemos a encontrar nada que impedisse a realiza\c{c}\~ao de uma criptografia RSA Gaussiana, mas como foi visto no cap\'itulo \ref{IG}, ainda faltam a comprava\c{c}\~ao de alguns teoremas matem\'aticos importantes para a realiza\c{c}\~ao da criptografia RSA Gaussiana. 
+
+O material publicado por \cite{koval} e \cite{elkassar} nos leva a crer na viabiliadade do algoritmo. O que ocorre \'e que ambos possuem vis\~oes bem diferentes. \cite{koval} n\~ao defende o algoritmo, pois acredita que ele n\~ao acrescenta seguran\c{c}a ao algoritmo RSA, al\'em de deix\'a-lo menos pr\'atico. Abaixo citamos o trecho onde isso \'e afirmado:
+
+\begin{quote}
+``The extension of RSA algorithm into the field of Gaussian integers [...] is viable only if real primes p congruent to 3 modulo 4 are used [...]. The extended algorithm could add security only if breaking the original RSA is not as hard as factoring. Even in this case, it is not clear whether the extended algorithm would increase security. The Gaussian integer RSA is slightly less efficient than the original, therefore the original real integer RSA is more practical.''
+\end{quote}
+
+Enquanto isso, \cite{elkassar} defende o algoritmo Gaussiano por aumentar a seguran\c{c}a comparado ao cl\'assico, como pode ser lido abaixo:
+
+\begin{quote}
+
+``Arithmetic needed for the RSA cryptosystem in the domains of Gaussian integers and polynomials over finite fields were modified and computational procedures were described. There are advantages for the new schemes over the classical one. First, generating the odd prime numbers in both the classical and the modified methods requires the same amount of efforts. Second, the modified method provides an extension to the range of chosen messages and the trials will be more complicated. ''
+
+\end{quote}
+
+Baseado nos textos de ambos podemos concluir que al\'em da realiza\c{c}\~ao de tal algoritmo, outro problema a ser investigado em um trabalho futuro consiste na an\'alise de seguran\c{c}a e complexidade do algoritmo, visto que ainda n\~ao possu\'imos uma conclus\~ao definitiva sobre isso.

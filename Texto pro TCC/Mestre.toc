@@ -16,6 +16,7 @@
 \contentsline {section}{\numberline {3.4}Discutindo a seguran\c {c}a do RSA}{26}
 \contentsline {chapter}{\numberline {4}Inteiros e Primos de Gauss}{28}
 \contentsline {section}{\numberline {4.1}Inteiros de Gauss e suas propiedades}{28}
+\contentsline {section}{\numberline {4.2}Aritm\'etica modular Gaussiana}{32}
 \contentsline {chapter}{\numberline {5}RSA Gaussiano e Conclus\~oes}{34}
 \contentsline {section}{\numberline {5.1}O RSA Gaussiano e seus trabalhos futuros}{34}
 \contentsline {chapter}{Bibliografia}{36}

@@ -1,0 +1,69 @@
+\begin{thebibliography}{EKHAD05}
+
+\bibitem[Con08]{conrad}
+Keith Conrad.
+\newblock The gaussian integers.
+\newblock {\em Pre-Print, paper edition}, 2008.
+
+\bibitem[Cou07]{coutinho}
+Severino~Collier Coutinho.
+\newblock {\em Criptografia}.
+\newblock Editora IMPA/SBM, 2007.
+\newblock Cole\c{c}\~{a} de livros de Inicia{\c{c}}{\~a}o Cient{\'\i}fica da
+  OBMEP.
+
+\bibitem[Cou14]{cou:2014}
+Severino~Collier Coutinho.
+\newblock {\em Números {I}nteiros e {C}riptografia {R}{S}{A}}.
+\newblock Editora IMPA, 2014.
+
+\bibitem[DH76]{newdirections}
+Whitfield Diffie and Martin Hellman.
+\newblock New directions in cryptography.
+\newblock {\em IEEE transactions on Information Theory}, 22(6):644--654, 1976.
+
+\bibitem[EKHAD05]{elkassar}
+Abdul~Nasser El-Kassar, Ramzi~A Haraty, YA~Awad, and Narayan~C Debnath.
+\newblock Modified rsa in the domains of gaussian integers and polynomials over
+  finite fields.
+\newblock In {\em CAINE}, pages 298--303, 2005.
+
+\bibitem[Gau15]{gauss}
+Carl~Friedrich Gauss.
+\newblock {\em Methodus nova integralium valores per approximationem
+  inveniendi}.
+\newblock Apvd Henricvm Dieterich, 1815.
+
+\bibitem[KV08]{koval}
+Aleksey Koval and Boris~S Verkhovsky.
+\newblock Analysis of rsa over gaussian integers algorithm.
+\newblock In {\em Information Technology: New Generations, 2008. ITNG 2008.
+  Fifth International Conference on}, pages 101--105. IEEE, 2008.
+
+\bibitem[Pim06]{pimentel}
+Elaine~Gouv\^{e}a Pimentel.
+\newblock Teoria dos n\'{u}meros e criptografia rsa.
+\newblock Notas de aula, 2006.
+
+\bibitem[PR13]{intGauss}
+Daniel~Campolina Pacci and Camila Takeuti~Vaz Rodrigues.
+\newblock {\em Inteiros De Gauss}.
+\newblock 2013.
+
+\bibitem[RSA78]{rivest}
+Ronald~L. Rivest, Adi Shamir, and Leonard Adleman.
+\newblock A method for obtaining digital signatures and public-key
+  cryptosystems.
+\newblock {\em Communications of the ACM}, 21(2):120--126, 1978.
+
+\bibitem[SF09]{sinkov}
+Abraham Sinkov and Todd Feil.
+\newblock {\em Elementary cryptanalysis}, volume~22.
+\newblock MAA, 2009.
+
+\bibitem[Sha49]{shannon}
+Claude~E. Shannon.
+\newblock Communication theory of secrecy systems.
+\newblock {\em Bell system technical journal}, 28(4):656--715, 1949.
+
+\end{thebibliography}

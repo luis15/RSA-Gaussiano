@@ -1,0 +1,87 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% DISSERTAÇÃO OU TESE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt]{thesis}
+\usepackage[brazil]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{babelbib} % Esse pacote gera a bibliografia em Português. Acho que deve ser instalado algum pacote, não me recordo.
+\usepackage{latexsym}
+\usepackage{fancyhdr}
+\usepackage{amsthm}
+\usepackage{amssymb}
+
+
+\usepackage{makeidx} %cria o índice remissivo
+\makeindex
+
+\vfuzz2pt % Don't report over-full v-boxes if over-edge is small
+\hfuzz2pt % Don't report over-full h-boxes if over-edge is small
+% TEOREMAS -------------------------------------------------------
+\theoremstyle{plain}
+\newtheorem{Th}{Teorema}[section]
+\newtheorem{Cor}[Th]{Corolário}
+\newtheorem{Le}[Th]{Lema}
+\newtheorem{Pro}[Th]{Proposição}
+\theoremstyle{definition}
+\newtheorem{Df}[Th]{Definição}
+\newtheorem{Obs}[Th]{Observação}
+\newtheorem{Ex}[Th]{Exemplo}
+
+\begin{document}
+
+\title{\textbf{Criptografia RSA Gaussiana}}
+\author{\textbf{Luis Antonio Co\^{e}lho}\vspace{2cm}\\
+Trabalho de Conclus\~{a}o de Curso - apresentado \`{a}\\ Faculdade de Tecnologia da\\ Universidade Estadual de Campinas \vspace{2cm}\\
+Orientadora:
+\textbf{Profa. Dra. Juliana Bueno-Soler}\vspace{2cm}\\}
+ \maketitle
+
+
+
+% ------------------------------------------------------------------------
+%{
+%\include{Ded}                   % dedicatória
+%}
+% ------------------------------------------------------------------------
+%{
+%\include{Inv}                   % invocação
+%}
+% ------------------------------------------------------------------------
+%{
+%\typeout{Acknowledgements}
+\include{Agrad}                   % agradecimentos
+%}
+% -----------------------------------------------------------------------
+{ \typeout{Abstract}
+\include{Pref}                    % resumo
+\setcounter{page}{7}
+\tableofcontents                     % cria o índice
+\fancyhead[C]{\textsl{Sumário}}
+\fancyhead[L]{}
+\fancyhead[R]{11}
+
+}
+% ------------------------------------------------------------------------
+
+\setcounter{page}{1}
+\tableofcontents                  % cria o índice
+
+% ------------------------------------------------------------------------
+{ 				
+\include{Intro}        
+\include{Num}
+\include{RSA}
+\include{IG}
+\include{Concl}
+
+
+\addcontentsline{toc}{chapter}{Bibliografia} %para aparecer a  bibliografia no índice
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Comandos para gerar a bibliografia em Português %%%%%%%%%%%%%%%%%%%%%%%%
+
+\selectbiblanguage{brazil}
+%\bibliographystyle{babplain}
+\bibliographystyle{alpha}
+\bibliography{Bibliografia}
+\nocite{*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
