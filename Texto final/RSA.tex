@@ -22,7 +22,7 @@ N & O  & P  & Q  & R  & S & T  & U  & V  & X  & Y  & W  & Z \\
 \end{array}
 \]
 
-Para representar espa?os vamos usar o 99. Avisamos que esta \'e uma tabela apenas com finalidade did\'atica, e, por isso h\'a v\'arios caracteres desconsiderados. Como exemplo vamos pr\'e-encriptar o poema Amor, de Oswald de Andrade. O texto do poema a ser pr\'e-encriptado \'e o seguinte:
+Para representar espa\c{c}os vamos usar o 99. Avisamos que esta \'e uma tabela apenas com finalidade did\'atica, e, por isso h\'a v\'arios caracteres desconsiderados. Como exemplo vamos pr\'e-encriptar o poema Amor, de Oswald de Andrade. O texto do poema a ser pr\'e-encriptado \'e o seguinte:
 
 \begin{center}
 Amor  \\ 
@@ -35,7 +35,7 @@ Como primeiro passo vamos converter todas as letras em n\'umeros, resultando em:
 10 22 24 27 99 17 30 22 24 27
 \end{center}
 
-Feito isso, n\'os agrupamos o conjunto em um bloco \'unico de caracteres:
+Feito isso, agrupamos o conjunto em um bloco \'unico de caracteres:
 
 \begin{center}
 10222427991730222427
@@ -45,7 +45,7 @@ Atente-se ao fato de todo o caractere convertido possuir sempre o mesmo n\'umero
 
 Nosso pr\'oximo passo nesta fase que antecede a encripta\c{c}\~ao, consiste em definir quais ser\~ao os primos $p$ e $q$. Para nosso exemplo vamos usar $p=17$ e $q=23$, como mencionado na Introdu\c{c}\~ao desta obra, temos que $n = pq$, logo $n=391$.
 
-O \'ultimo passo da pr\'e-encripta\c{c}\~ao consiste em quebrar o n\'umero que obtemos acima em blocos menores. Esses blocos devem obedecer \`a duas regras b\'asicas: serem menores que $n$, ou no nosso exemplo $391$, pois iremos trabalhar com m\'odulos de $391$ durante a encripta\c{c}\~ao, e n\~ao podem se iniciar por $0$, para n?o haver ambiguidades na desencripta\c{c}\~ao. Vejamos como a nossa mensagem fica quando pr\'e-encriptada.
+O \'ultimo passo da pr\'e-encripta\c{c}\~ao consiste em quebrar o n\'umero que obtemos acima em blocos menores. Esses blocos devem obedecer \`a duas regras b\'asicas: serem menores que $n$, ou no nosso exemplo $391$, pois iremos trabalhar com m\'odulos de $391$ durante a encripta\c{c}\~ao, e n\~ao podem se iniciar por $0$, para n\~ao haver ambiguidades na desencripta\c{c}\~ao. Vejamos como a nossa mensagem fica quando pr\'e-encriptada.
 
 \begin{center}
 $102$ | $224$ | $279$ | $91$ | $7$ | $30$ | $222$ | $42$ | $7$
@@ -67,27 +67,29 @@ Que em nosso exemplo resulta em:
 
 $$\phi(391) = (17 - 1)(23 - 1) = 16 \cdot 22 = 352$$
 
-Para determinarmos o $\textbf{e}$ basta escolher o menor primo que $mdc(\textbf{e}, 352) = 1$, que no nosso caso ser\'a o $3$. Optamos por um primo n\~ao m\'ultiplo ao inv\'es de um composto para que possamos usar o teorema de Fermat mais adiante. Ao conjunto $(n, \textbf{e} )$ denominamos chave de encripta\c{c}\~ao.
+Para determinarmos o $\textbf{e}$ basta escolher o menor primo que $mdc(\textbf{e}, 352) = 1$, que no nosso caso ser\'a o $3$. Optamos por um primo n\~ao m\'ultiplo ao inv\'es de um composto para podermos usar o teorema de Fermat mais adiante. Ao conjunto $(n, \textbf{e} )$ denominamos chave de encripta\c{c}\~ao.
 
 Vamos chamar o bloco codificado que iremos encriptar de $b$, lembrando que $b$ \'e um n\'umero inteiro menor que $n$. Tambem chamaremos o bloco ap\'os a codifica\c{c}\~ao de $C(b)$. Para obtermos $C(b)$ devemos aplicar a seguinte f\'ormula:
 
 $$C(b) \equiv b^\textbf{e} \pmod{n} $$
 
-Podemos para facilitar dizer que $C(b)$ ? o res?duo de $b^\textbf{e}$ pelo m\'odulo $n$. Vamos \`a uma demonstra\c{c}\~ao pr\'atica com o primeiro bloco de nossa mensagem, que possui o valor $102$. Para simplificar o nosso trabalho vamos utilizar as opera\c{c}\~oes modulares.
+Podemos para facilitar dizer que $C(b)$ \'e o res\'iduo de $b^\textbf{e}$ pelo m\'odulo $n$. Vamos \`a uma demonstra\c{c}\~ao pr\'atica com o primeiro bloco de nossa mensagem, que possui o valor $102$. Para simplificar o nosso trabalho vamos utilizar as opera\c{c}\~oes modulares.
 
 $$102^3 \equiv 24276 \equiv 34 \pmod{391}$$
 
 Faremos o mesmo procedimento para todos nossos blocos:
-
-$$224^3 \equiv 11239424 \equiv 129 \pmod{391} $$
-$$279^3 \equiv 21717639 \equiv 326 \pmod{391} $$
-$$91^3  \equiv 753571   \equiv 114 \pmod{391} $$
-$$7^3   \equiv 343      \equiv 343 \pmod{391} $$
-$$30^3  \equiv 27000    \equiv 21  \pmod{391} $$
-$$222^3 \equiv 10941048 \equiv 86  \pmod{391} $$
-$$42^3  \equiv 74088    \equiv 189 \pmod{391} $$
-$$7^3   \equiv 343      \equiv 343 \pmod{391} $$
-
+\[
+\begin{array}{cccccc}
+224^3& \equiv& 11239424& \equiv& 129& \pmod{391}\\
+279^3& \equiv& 21717639& \equiv& 326& \pmod{391}\\
+91^3&  \equiv& 753571&   \equiv& 114& \pmod{391}\\
+7^3&   \equiv& 343&      \equiv& 343& \pmod{391}\\
+30^3&  \equiv& 27000&    \equiv& 21&  \pmod{391}\\
+222^3& \equiv& 10941048& \equiv& 86&  \pmod{391}\\
+42^3&  \equiv& 74088&    \equiv& 189& \pmod{391}\\
+7^3&   \equiv& 343&      \equiv& 343& \pmod{391}\\
+\end{array}
+\]
 Portanto, ``Amor Humor'', encriptado pelo RSA com as chaves $(391 , 3)$ \'e: 
 
 \begin{center}
@@ -96,7 +98,7 @@ Portanto, ``Amor Humor'', encriptado pelo RSA com as chaves $(391 , 3)$ \'e:
 
 \subsection{Decodificando uma mensagem}
 
-Para podermos desencriptar uma mensagem n\'os precisamos de dois n?meros. O primeiro \'e a nossa chave p\'ublica $n$. O segundo n\'umero \'e $d$, que consiste no inverso de $\texbf{e}$ em $\phi(n)$. Para o nosso exemplo $d= 235$.
+Para podermos desencriptar uma mensagem n\'os precisamos de dois n\'umeros. O primeiro \'e a nossa chave p\'ublica $n$. O segundo n\'umero \'e $d$, que consiste no inverso de $\texbf{e}$ em $\phi(n)$. Para o nosso exemplo $d= 235$.
 
 Agora que estamos de posse de $d$, podemos usar o par $(n,d)$ para desencriptar a mensagem, onde $a$ \'e o bloco encriptado e $D(a)$ a mensagem desencriptada, usando a f\'ormula:
 
@@ -156,7 +158,7 @@ Por\'em, $3$ \'e o inverso de $6$ no m\'odulo $17$, e por isso teremos:
 
 $$y \equiv 3 \cdot 7 \equiv 4 \pmod{17}$$
 
-Com isso iremos chegar at\'e $x = 10 + 23y = 10 + 23 \codt 4 = 102$. Caso voc? venha a conferir na se\c{c}\~ao sobre codifica\c{c}\~ao de mensagens poder\'a confirmar o resultado. Os demais blocos podem ser decodificados da mesma forma, apenas n\~ao ser\~ao mostradas nesta obra por necessitar de muitos passos, o que tornaria este cap\'itulo inutilmente mais longo.
+Com isso iremos chegar at\'e $x = 10 + 23y = 10 + 23 \codt 4 = 102$. Caso voc\ê venha a conferir na se\c{c}\~ao sobre codifica\c{c}\~ao de mensagens poder\'a confirmar o resultado. Os demais blocos podem ser decodificados da mesma forma, apenas n\~ao ser\~ao mostrados neste artigo por necessitar de muitos passos, o que tornaria este cap\'itulo inutilmente mais longo.
 
 \section{Provando a funcionalidade do RSA}
 
@@ -170,11 +172,11 @@ $$D(C(b)) \equiv {(b^\textbf{e})}^d = b^{ed}\pmod{n}$$
 
 Logo o que temos de provar \'e que $b^{ed} \equiv b \pmod{n}$. Como por defini\c{c}\~ao $\textbf{e}d \equiv 1 \pmod{(p-1)(q-1)}$, o que nos leva at\'e:
 
-$$ed = 1+k(p-1)(q-1)$$
+$$\textbf{e}d = 1+k(p-1)(q-1)$$
 
 Pelo Teorema Chin\^es do Resto e levando em conta a express\~ao para obter $3d$ temos que:
 
-$$b^{ed} \equiv b(b^{p-1})^{k(q-1)}$$
+$$b^{\textbf{e}d} \equiv b(b^{p-1})^{k(q-1)}$$
 
 Tomando que $p$ n\~ao divide $b$, n\'os podemos vir usar o Teorema de Fermat, de modo a obter:
 
@@ -182,17 +184,17 @@ $$b^{p-1} \equiv 1 \pmod{p}$$
 
 Obtendo assim:
 
-$$b^{ed} \equiv b \cdot (1)^{k(q-1)}\equiv b \pmod{p}$$
+$$b^{\textbf{e}d} \equiv b \cdot (1)^{k(q-1)}\equiv b \pmod{p}$$
 
 Mesmo considerando que $b$ seja m\'ultiplo de $p$, teremos que $b$ e $b^{ed}$ s\~ao congruentes a $0$, logo nesse caso tamb\'em \'e v\'alida a congru\^encia, tendo assim: 
 }
 
-$$b^{ed} \equiv b \pmod{p}$$
+$$b^{\textbf{e}d} \equiv b \pmod{p}$$
 
 Pelo mesmo m\'etodo podemos  obter $q$, obtendo o par: 
 
-$$b^{ed} \equiv b \pmod{p}$$
-$$b^{ed} \equiv b \pmod{q}$$
+$$b^{\textbf{e}d} \equiv b \pmod{p}$$
+$$b^{\textbf{e}d} \equiv b \pmod{q}$$
 
 Veja que $b$ \'e solu\c{c}\~ao de: 
 
@@ -205,9 +207,9 @@ $$b + p \cdot q \cdot t$$
 
 Onde $t\in \mathbb{Z}$. Logo, como provamos anteriormente, temos que:
 
-$$b^{ed} \equiv b + p \cdot q \cdot k$$
+$$b^{\textbf{e}d} \equiv b + p \cdot q \cdot k$$
 
-Para algum inteiro $k$. Isso equivale a $b^{3d} \equiv b \pmod{p}$. Isso comprova que $b = D(C(b))$.
+Para algum inteiro $k$. Caso tomemos $k=0$ teremos $b^{\textbf{e}d} \equiv b \pmod{p}$,  Comprovando $b = D(C(b))$.
 
 \section{Discutindo a seguran\c{c}a do RSA}
 

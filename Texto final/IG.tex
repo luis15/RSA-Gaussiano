@@ -62,7 +62,7 @@ Tomemos uma divis\~ao entre inteiros gaussianos, onde $\alpha$ \'e o dividendo, 
 
 \begin{Th}[Teorema da divis\~ao conjunto gaussiano  ]  \label{divgauss}
 
-Para $ \alpha, \beta \in \mathbb{Z} $ com $\beta \neq 0$ existe um $\gama, \rho \in \mathbb{Z}$ tal qual $\alpha = \beta \gamma + \rho$ e $N(\rho) < N(\beta)$. De fato, podemos escolher $\rho$  de forma que $N(\rho) \leq (1/2)N(\beta)$
+Para $ \alpha, \beta \in \mathbb{Z} $ com $\beta \neq 0$ existe um $\gamma, \rho \in \mathbb{Z}$ tal qual $\alpha = \beta \gamma + \rho$ e $N(\rho) < N(\beta)$. De fato, podemos escolher $\rho$  de forma que $N(\rho) \leq (1/2)N(\beta)$
 
 \end{Th}
 
@@ -97,7 +97,7 @@ Outra possibilidade para simplificar esta mesma opera\c{c}\~ao \'e o uso do algo
 
 $$N(\delta) = N(\delta')N(\gamma) \geq N(\delta')$$
 
-Tendo $\delta'$ como o maior divisor comum, sua norma \'e a mior entre os divisores comuns, logo a inequa\c{c}\~ao $N(\delta) \geg N(\delta')$ tem de ser uma igualdade. Isso implica que $N(\gamma) = 1$, ent\~ao $\gamma = \pm 1$ ou $\pm \textbf{i}$. Ent\~ao $\delta$ e $\delta'$ s\~ao m\'ultiplos um do outro.
+Tendo $\delta'$ como o maior divisor comum, sua norma \'e a maior entre os divisores comuns, logo a inequa\c{c}\~ao $N(\delta) \geq N(\delta')$ tem de ser uma igualdade. Isso implica que $N(\gamma) = 1$, ent\~ao $\gamma = \pm 1$ ou $\pm \textbf{i}$. Ent\~ao $\delta$ e $\delta'$ s\~ao m\'ultiplos um do outro.
 
 \end{proof}
 
@@ -135,21 +135,21 @@ Agora n\'os vamos definir o que vem a ser um inteiro gaussiano primo e composto,
 Se tomarmos um inteiro Gaussiano $\alpha$ com $N(\alpha) > 1$. \'e denominado \textit{composto} se o n\'umero possuir um fator n\~ao trivial. Caso ele possua apenas fatores triviais ele \'e denominado \textit{primo}.
 \end{Df}
 
-Agora que n\'os j\'a sabemos o que \'e um n\'umero primo e composto, podemos definir como eles s\~ao fatorados de forma \'unica pelo teoremas abaixo, as provas de ambas podem ser lidas na sess\~ao 6 de ``The Gaussian Integers'' em \cite{conrad}, a partir da p\'agina 13.
+Agora que n\'os j\'a sabemos o que \'e um n\'umero primo e composto, podemos definir como eles s\~ao fatorados de forma \'unica pelo teoremas abaixo, as provas de ambas podem ser lidas na sess\~ao 6 de ``The Gaussian Integers'' em \cite{conrad}, a partir da p\'agina 13. As provas dos outros teoremas desta sess\~ao tamb\'em foram baseadas no trabalho de \cite{conrad}.
 
 \begin{Th}
  Todo $\alpha \in \mathbb{Z}[i]$ com $N(\alpha) > 1$ \'e um produto de primos em $\mathbb{Z}[i]$
 \end{Th}
 
 \begin{Th}[Fatora\c{c}\~ao \'Unica no conjunto gaussiano] \label{fatunicagaussiana}
- Todo $\alpha \in \mathbb{Z}[i]$ com $N(\alpha) > 1$ possui uma \'unica fatoriza\c{c}\~ao baseada nos primos gaussianos com o formato:
+ Todo $\alpha \in \mathbb{Z}[i]$ com $N(\alpha) > 1$ possui uma \'unica fatora\c{c}\~ao baseada nos primos gaussianos com o formato:
 
 	$$\alpha = \pi_1 \pi_2 \cdots \pi_{r} = \pi'_1 \pi'_2 \cdots \pi'_{s'} $$
 
-onde os $\pi_i$ e os $\pi'_j$ s\~ao primos em $\mathbb{Z}[i]$, ent\~ao $r=s$ e cada membro de $\pi_i$ ap\'os o renumera\c{c}\~ao adequada \'e um m\'ultiplo por uma unidade de $\pi'_i$.
+onde os $\pi_i$ e os $\pi'_j$ s\~ao primos em $\mathbb{Z}[i]$, ent\~ao $r=s$ e cada membro de $\pi_i$ ap\'os uma renumera\c{c}\~ao adequada \'e um m\'ultiplo por uma unidade de $\pi'_i$.
 
 \end{Th}
 
 Para exemplificar o que foi dito pelo Teorema da Fatora\c{c}\~ao \'Unica (\ref{fatunicagaussiana}), tomemos o n\'umero $2$. Esse n\'umero \'e fatorado como $(1 + \textbf{i})(1 - \textbf{i})$, por\'em a propiedade da fatora\c{c}\~ao \'unica se estende aos elementos associados aos fatores, logo $2$ tamb\'em pode ser fatorado na forma $(-1 - \textbf{i})(-1 + \textbf{i})$. Essa forma consiste apenas na multiplica\c{c}\~ao pela unidade $-1$ dos fatores e n\~ao altera ao resultado final. O mesmo poder\'a ser obtido por qualquer outro elemento associado em qualquer outra fatora\c{c}\~ao.
 
-Al\'em desses resultados apresentados acima ouros ainda nos s\~ao necess\'arios para a realiza\c{c}\~ao de uma criptografia RSA Gaussiana, como uma aritm\'eica modular gaussiana e teorema an\'alogos ao teorema chin\^es do resto e ao Teorema de Fermat. No pr\'oximo cap\'itulo iremos discutir sobre a viabilidade ou n\~ao do algoritmo RSA Gaussiano, al\'em de conhecer alguns resultados relacionados a \'area pelo ponto de vista de outros pesquisadores do mesmo algoritmo.
+Al\'em desses resultados apresentados acima outros ainda nos s\~ao necess\'arios para a realiza\c{c}\~ao de uma criptografia RSA Gaussiana, como uma aritm\'eica modular gaussiana e teorema an\'alogos ao teorema chin\^es do resto e ao Teorema de Fermat. No pr\'oximo cap\'itulo iremos discutir sobre a viabilidade ou n\~ao do algoritmo RSA Gaussiano, al\'em de conhecer alguns resultados relacionados a \'area pelo ponto de vista de outros pesquisadores do mesmo algoritmo.
