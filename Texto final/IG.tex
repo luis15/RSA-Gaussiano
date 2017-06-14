@@ -7,11 +7,11 @@
 
 \chapter {Inteiros e Primos de Gauss}
 \label{IG}
-At\'e o momento apenas os n\'umeros inteiros foram abordados neste projeto, mas para podermos entender a RSA Gaussiana \'e necess\'ario conhecer o conjunto dos n\'umeros inteiros gaussianos. Ao longo deste cap\'itulo vamos conhecer os inteiros e os primos gaussianos e suas propiedades aritm\'eticas b\'asicas. 
+At\'e o momento apenas os n\'umeros inteiros foram abordados neste projeto, mas para podermos entender a RSA Gaussiana \'e necess\'ario conhecer o conjunto dos n\'umeros inteiros gaussianos. Ao longo deste cap\'itulo vamos conhecer os inteiros e os primos gaussianos e suas propriedades aritm\'eticas b\'asicas. 
 
 \section{Inteiros de Gauss e suas propiedades}
 
-Os inteiros gaussianos, conjunto que a partir de agora iremos nos referenciar por $\mathbb{Z}[i]$, s\~ao um subconjuntos dos n\'umeros complexos, relembrando que os n\'umeros complexos s\~ao os n\'umeros de forma $a+b\textbf{i}$, onde $a$ e $b$ s\~ao reais e $\textbf{i}$ \'e a $\sqrt{-1}$. A diferen\c{c}a entre o conjunto $\mathbb{Z}[i]$ e o conjunto $C$ reside no fato de em $\mathbb{Z}[i]$ $a$ e $b$ serem n\'umeros inteiros. Formalmente dizemos que os inteiros gaussianos s\~ao:
+Os inteiros gaussianos, conjunto que a partir de agora iremos nos referenciar por $\mathbb{Z}[i]$, s\~ao um subconjunto dos n\'umeros complexos, relembrando que os n\'umeros complexos s\~ao os n\'umeros de forma $a+b\textbf{i}$, onde $a$ e $b$ s\~ao reais e $\textbf{i}$ \'e a $\sqrt{-1}$. A diferen\c{c}a entre o conjunto $\mathbb{Z}[i]$ e o conjunto $C$ reside no fato de em $\mathbb{Z}[i]$ $a$ e $b$ serem n\'umeros inteiros. Formalmente dizemos que os inteiros gaussianos s\~ao:
 
 $$\mathbb{Z}[i]= \left\{a+b\textbf{i} | a,b \in \mathbb{Z}  \right\}, \textrm{ onde } \textbf{i}^2 = -1$$
 
@@ -44,7 +44,7 @@ Os elementos associados de um n\'umero $x$, tal que $x \in \mathbb{Z}[i]$, s\~ao
 
 Para chegarmos aos primos Gaussianos precisaremos demonstrar para o conjunto $\mathbb{Z}[i]$ uma s\'erie de resultados que j\'a s\~ao conhecidos do conjunto dos n\'umeros inteiros, como o funcionamento da divis\~ao e o teorema da fatora\c{c}\~ao \'unica.
 
-Podemos definir a divisibilidade gaussiana por quando dizemos que $\beta$ divide $\alfa$, representado por $\beta | \alpha$ se $\alpha = \beta \gamma$, para qualquer $\gamma \in \mathbb{Z}[i] $. Nesse caso, $\beta$ \'e um fator de $\alpha$.
+Podemos definir a divisibilidade gaussiana por quando dizemos que $\beta$ divide $\alpha$, representado por $\beta | \alpha$ se $\alpha = \beta \gamma$, para qualquer $\gamma \in \mathbb{Z}[i] $. Nesse caso, $\beta$ \'e um fator de $\alpha$.
 
 \begin{Th}\label{div_gaussiana1}
 
@@ -75,9 +75,9 @@ Tomemos $\alpha , \beta \in \mathbb{Z}[i]$ e diferentes de $0$. Aplicamos recurs
 
 \[
 \begin{array}{lcll}
-\alpha & = & \beta \gama_1 + \rho_1,  & N(\rho_1) < N(\beta)  \\
-\beta  & = & \rho_1 \gama_2 + \rho_2, & N(\rho_2) < N(\rho_1) \\
-\rho_1 & = & \rho_2 \gama_3 + \rho_3, & N(\rho_3) < N(\rho_2) \\
+\alpha & = & \beta \gamma_1 + \rho_1,  & N(\rho_1) < N(\beta)  \\
+\beta  & = & \rho_1 \gamma_2 + \rho_2, & N(\rho_2) < N(\rho_1) \\
+\rho_1 & = & \rho_2 \gamma_3 + \rho_3, & N(\rho_3) < N(\rho_2) \\
 & \vdots &  &\\
 \end{array}
 \]
@@ -106,7 +106,7 @@ Tendo $\delta'$ como o maior divisor comum, sua norma \'e a maior entre os divis
 \end{Th}
 
 \begin{proof}
-Sendo $\delta$ escrito com uma combina\c{c}\~ao em $\mathbb{Z}[i]$ de $\alpha$ e $\beta$, ele n\~ao \'e afetado por substituir $\delta$ como o m\'ultiplo por uma unidade. Por isso o Corol\'ario \ref{cor}, n\'os apena temos que provar que $\delta$ \'e o maior divisor comum pelo algoritmo euclidiano no conjunto gaussiano Para $\delta$, uma substitui\c{c}\~ao no algoritmo euclidiano mostra que $\delta$ \'e uma combina\c{c}\~ao em $\mathbb{Z}[i]$ de $\alpha$ e $\beta$. Todos os demais detalhes s\~ao id\^eticos aos da prova para inteiros.
+Sendo $\delta$ escrito com uma combina\c{c}\~ao em $\mathbb{Z}[i]$ de $\alpha$ e $\beta$, ele n\~ao \'e afetado por substituir $\delta$ como o m\'ultiplo por uma unidade. Por isso o Corol\'ario \ref{cor}, n\'os apenas temos que provar que $\delta$ \'e o maior divisor comum pelo algoritmo euclidiano no conjunto gaussiano Para $\delta$, uma substitui\c{c}\~ao no algoritmo euclidiano mostra que $\delta$ \'e uma combina\c{c}\~ao em $\mathbb{Z}[i]$ de $\alpha$ e $\beta$. Todos os demais detalhes s\~ao id\^eticos aos da prova para inteiros.
 
 \end{proof}
 
@@ -124,7 +124,7 @@ para quaisquer $x, y \in \mathbb{Z}[i]$
 
 \begin{proof}
 
-Se $\alpha$ e $\beta$ s\~ao primos entre si, ent\~ao $1$ \'e o maior divisor de $\alpha$ e $\beta$, ent\~ao $1 = \alpha x + \beta y$ para qualquer $\, y in \mathbb{Z}[i]$  pelo teorema \ref{teoprimosentresi}, por outro lado se $1 = \alpha x + \beta y$ para algum $x, y \in \mathbb{Z}[i]$, ent\~ao o m\'aximo divisor comum de $\alpha$ e $\beta$ \'e divisor de $1$, logo uma unidade, provando que $\alpha$ e $\beta$ s\~ao primos entre si.
+Se $\alpha$ e $\beta$ s\~ao primos entre si, ent\~ao $1$ \'e o maior divisor de $\alpha$ e $\beta$, ent\~ao $1 = \alpha x + \beta y$ para qualquer $\, y \in \mathbb{Z}[i]$  pelo teorema \ref{teoprimosentresi}, por outro lado se $1 = \alpha x + \beta y$ para algum $x, y \in \mathbb{Z}[i]$, ent\~ao o m\'aximo divisor comum de $\alpha$ e $\beta$ \'e divisor de $1$, logo uma unidade, provando que $\alpha$ e $\beta$ s\~ao primos entre si.
 
 \end{proof}
 
@@ -152,4 +152,4 @@ onde os $\pi_i$ e os $\pi'_j$ s\~ao primos em $\mathbb{Z}[i]$, ent\~ao $r=s$ e c
 
 Para exemplificar o que foi dito pelo Teorema da Fatora\c{c}\~ao \'Unica (\ref{fatunicagaussiana}), tomemos o n\'umero $2$. Esse n\'umero \'e fatorado como $(1 + \textbf{i})(1 - \textbf{i})$, por\'em a propiedade da fatora\c{c}\~ao \'unica se estende aos elementos associados aos fatores, logo $2$ tamb\'em pode ser fatorado na forma $(-1 - \textbf{i})(-1 + \textbf{i})$. Essa forma consiste apenas na multiplica\c{c}\~ao pela unidade $-1$ dos fatores e n\~ao altera ao resultado final. O mesmo poder\'a ser obtido por qualquer outro elemento associado em qualquer outra fatora\c{c}\~ao.
 
-Al\'em desses resultados apresentados acima outros ainda nos s\~ao necess\'arios para a realiza\c{c}\~ao de uma criptografia RSA Gaussiana, como uma aritm\'eica modular gaussiana e teorema an\'alogos ao teorema chin\^es do resto e ao Teorema de Fermat. No pr\'oximo cap\'itulo iremos discutir sobre a viabilidade ou n\~ao do algoritmo RSA Gaussiano, al\'em de conhecer alguns resultados relacionados a \'area pelo ponto de vista de outros pesquisadores do mesmo algoritmo.
+Al\'em desses resultados apresentados acima outros ainda nos s\~ao necess\'arios para a realiza\c{c}\~ao de uma criptografia RSA Gaussiana, como uma aritm\'etica modular gaussiana e teorema an\'alogos ao teorema chin\^es do resto e ao Teorema de Fermat. No pr\'oximo cap\'itulo iremos discutir sobre a viabilidade ou n\~ao do algoritmo RSA Gaussiano, al\'em de conhecer alguns resultados relacionados a \'area pelo ponto de vista de outros pesquisadores do mesmo algoritmo.
