@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.7)  14 JUN 2017 12:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.8)  9 JUL 2017 16:50
 entering extended mode
 **./Mestre.tex
 (Mestre.tex
 LaTeX2e <2017-04-15>
-Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
-(C:\Users\Raquel\AppData\Roaming\MiKTeX\2.9\tex\latex\thesis\thesis.cls
+Babel <3.10> and hyphenation patterns for 75 language(s) loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\thesis\thesis.cls"
 Document Class: thesis 1996/25/01 1.0g LaTeX document class (wm).
 \hours=\count79
 \minutes=\count80
@@ -26,42 +26,60 @@ File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip44
 \belowcaptionskip=\skip45
 \bibindent=\dimen102
-) ("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
-Package: babel 2016/04/23 3.9r The Babel package
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2017/05/19 3.10 The Babel package
 
 *************************************
 * Local config file bblopts.cfg used
 *
 ("C:\Program Files\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
-File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\babel-portuges\portuges.ldf"
 Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
-File: babel.def 2016/04/23 3.9r Babel common definitions
+File: babel.def 2017/05/19 3.10 Babel common definitions
 \babel@savecnt=\count90
 \U@D=\dimen103
 )
 \l@brazil = a dialect from \language\l@portuges 
 Package babel Info: Making " an active character on input line 145.
-)) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
+
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\latin1.def"
 File: latin1.def 2015/03/17 v1.2c Input encoding file
-)) ("C:\Program Files\MiKTeX 2.9\tex\latex\babelbib\babelbib.sty"
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\babelbib\babelbib.sty"
 Package: babelbib 2012/01/03 v1.31 babelbib: multilingual bibliographies (HH)
 \c@btxromaniannumeral=\count91
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\latexsym.sty"
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\latexsym.sty"
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks16
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
-Package: fancyhdr 2016/10/11 v3.9 Extensive control of page headers and footers
+Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
+s
 \f@nch@headwidth=\skip46
 \f@nch@O@elh=\skip47
 \f@nch@O@erh=\skip48
@@ -71,28 +89,20 @@ Package: fancyhdr 2016/10/11 v3.9 Extensive control of page headers and footers
 \f@nch@O@erf=\skip52
 \f@nch@O@olf=\skip53
 \f@nch@O@orf=\skip54
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
 Package: amsthm 2015/03/04 v2.20.2
-\thm@style=\toks16
-\thm@bodyfont=\toks17
-\thm@headfont=\toks18
-\thm@notefont=\toks19
-\thm@headpunct=\toks20
+\thm@style=\toks17
+\thm@bodyfont=\toks18
+\thm@headfont=\toks19
+\thm@notefont=\toks20
+\thm@headpunct=\toks21
 \thm@preskip=\skip55
 \thm@postskip=\skip56
 \thm@headsep=\skip57
-\dth@everypar=\toks21
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
-Package: amssymb 2013/01/14 v3.01 AMS font symbols
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks22
-\symAMSa=\mathgroup5
-\symAMSb=\mathgroup6
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\makeidx.sty"
+\dth@everypar=\toks22
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\makeidx.sty"
 Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 )
 \@indexfile=\write3
@@ -101,50 +111,53 @@ Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 
 Writing index file Mestre.idx
 \c@Th=\count92
-(Mestre.aux (Agrad.aux) (Pref.aux) (Intro.aux) (Num.aux) (RSA.aux) (IG.aux) (Concl.aux))
+(Mestre.aux (Agrad.aux) (Pref.aux) (Intro.aux) (Num.aux) (RSA.aux) (IG.aux)
+(Concl.aux))
 \openout1 = `Mestre.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
 
 babelbib: Use citation-dependent languages in bibliography
 babelbib: Set bibliography fall-back language to brazil
 ("C:\Program Files\MiKTeX 2.9\tex\latex\babelbib\portuguese.bdf"
-File: portuguese.bdf 2012/01/03 v1.31 babelbib: multilingual bibliographies (HH)
+File: portuguese.bdf 2012/01/03 v1.31 babelbib: multilingual bibliographies (HH
+)
 
 babelbib extension \bibsbrazil added to \extrasbrazil
 babelbib extension \btxifchangecaseoff added to \extrasbrazil
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 36.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 37.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 36.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+LaTeX Font Info:    Try loading font information for U+msa on input line 37.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 36.
+LaTeX Font Info:    Try loading font information for U+msb on input line 37.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 
-{C:/Users/Raquel/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 \openout2 = `Agrad.aux'.
 
  (Agrad.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 15--51
+Underfull \hbox (badness 10000) in paragraph at lines 15--52
 
  []
 
@@ -185,7 +198,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [3]
 Overfull \hbox (10.14862pt too wide) in paragraph at lines 62--63
-\OT1/cmr/m/n/12 pos-suir al-guns co-nhe-ci-men-tos em te-o-ria de numeros como fa-torac~ao e aritmetica
+\OT1/cmr/m/n/12 pos-suir al-guns co-nhe-ci-men-tos em te-o-ria de numeros como
+ fa-torac~ao e aritmetica
  []
 
 [4]) [5]
@@ -197,72 +211,97 @@ Cap\'{\i }tulo 1.
 
 
 
-] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19] [20] [21] [22] [23] [24]) [25]
+] [7] [8] [9] [10] [11] [12] [13]
+Overfull \hbox (3.09038pt too wide) in paragraph at lines 313--315
+[]\OT1/cmr/m/n/12 Para im-ple-men-tar a crip-to-gra-fia RSA, como ire-mos tra-b
+a-lhar com numeros
+ []
+
+[14] [15] [16] [17] [18] [19] [20] [21] [22] [23] [24] [25]) [26]
 \openout2 = `RSA.aux'.
 
  (RSA.tex
 Cap\'{\i }tulo 2.
-[26
+[27
 
 
 
-] [27] [28]
-Overfull \hbox (7.3021pt too wide) in paragraph at lines 127--128
-[]\OT1/cmr/m/n/12 Temos as-sim as con-gru^encias $34[] \OMS/cmsy/m/n/12  \OT1/cmr/m/n/12 0([]  17)$ e $34[] \OMS/cmsy/m
-/n/12  \OT1/cmr/m/n/12 10([]  23)$.
+] [28]
+Overfull \hbox (8.47371pt too wide) in paragraph at lines 70--71
+[]\OT1/cmr/m/n/12 Para de-ter-mi-nar-mos o $[]$ basta es-co-lher o me-nor primo
+ tal que $\OML/cmm/m/it/12 mdc\OT1/cmr/m/n/12 ([]\OML/cmm/m/it/12 ; \OT1/cmr/m/
+n/12 352) =
  []
 
-[29] [30] [31]) [32]
+[29]
+Overfull \hbox (7.3021pt too wide) in paragraph at lines 127--128
+[]\OT1/cmr/m/n/12 Temos as-sim as con-gru^encias $34[] \OMS/cmsy/m/n/12  \OT1/
+cmr/m/n/12 0([]  17)$ e $34[] \OMS/cmsy/m/n/12  \OT1/cmr/m/n/12 10([]  23)$.
+ []
+
+[30] [31] [32]) [33]
 \openout2 = `IG.aux'.
 
  (IG.tex
 Cap\'{\i }tulo 3.
-[33
 
-
-
-] [34] [35] [36])
-Overfull \hbox (5.77089pt too wide) in paragraph at lines 155--72
-[]\OT1/cmr/m/n/12 Alem des-ses re-sul-ta-dos apre-sen-ta-dos acima ou-tros ainda nos s~ao ne-cessarios
+Overfull \hbox (16.15411pt too wide) in paragraph at lines 10--11
+\OT1/cmr/m/n/12 va-mos co-nhe-cer os in-tei-ros e os pri-mos gaus-si-a-nos e su
+as pro-pri-e-da-des aritmeticas
  []
 
-[37]
+[34
+
+
+
+] [35] [36] [37])
+Overfull \hbox (5.77089pt too wide) in paragraph at lines 155--73
+[]\OT1/cmr/m/n/12 Alem des-ses re-sul-ta-dos apre-sen-ta-dos acima ou-tros ain
+da nos s~ao ne-cessarios
+ []
+
+[38]
 \openout2 = `Concl.aux'.
 
- (Concl.tex [38
+ (Concl.tex [39
 
 
 
-]) [39]
+]) [40]
 
 Package babelbib Warning: Command \selectbiblanguage used without package
-(babelbib)                option fixlanguage. Ignored on input line 79.
+(babelbib)                option fixlanguage. Ignored on input line 80.
 
-(Mestre.bbl [40
+(Mestre.bbl [41
 
 
-]) [41] (Mestre.aux (Agrad.aux) (Pref.aux) (Intro.aux) (Num.aux) (RSA.aux) (IG.aux) (Concl.aux)) ) 
+]) [42] (Mestre.aux (Agrad.aux) (Pref.aux) (Intro.aux) (Num.aux) (RSA.aux) (IG.
+aux) (Concl.aux)) ) 
 Here is how much of TeX's memory you used:
- 1892 strings out of 493328
- 23212 string characters out of 3139122
- 94923 words of memory out of 3000000
- 5372 multiletter control sequences out of 15000+200000
+ 1925 strings out of 493323
+ 23611 string characters out of 3139064
+ 96581 words of memory out of 3000000
+ 5410 multiletter control sequences out of 15000+200000
  11224 words of font info for 43 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 26i,11n,43p,942b,425s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/m
-sam10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Mestre.pdf (44 pages, 292513 bytes).
+ 28i,11n,43p,942b,420s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Mestre.pdf (45 pages, 296338 bytes).
 PDF statistics:
- 205 PDF objects out of 1000 (max. 8388607)
+ 208 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

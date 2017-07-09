@@ -7,11 +7,11 @@
 \chapter{Um passeio pela Teoria de N\'umeros}
 \label{Num}
 
-A teoria de n\'umeros \'e umas das mais antigas \'areas da matem\'atica e dedica-se ao estudo relacionado a propriedades relativas aos n\'umeros inteiros tais como: a quest\~ao da fatora\c{c}\~ao, m\'aximo divisor comum, primalidade, entre outras. Ao longo deste cap\'itulo mostraremos os principais resultados de teoria de n\'umeros essenciais para a compreens\~ao do m\'etodo de criptografia de chave p\'ublica conhecido como RSA.
+A teoria de n\'umeros \'e umas das mais antigas \'areas da matem\'atica e dedica-se ao estudo relacionado a propriedades relativas aos n\'umeros inteiros naturais tais como: a quest\~ao da fatora\c{c}\~ao, m\'aximo divisor comum, primalidade, entre outras. Para a criptografia RSA utiliza-se estes resultados aplicados apenas ao conjunto dos n\'umeros naturais, mas para uma apresenta\c{c}\~ao mais completa sobre o assunto iremos trabalhar com o conjunto inteiro neste cap\'itulo, onde mostraremos os principais resultados de teoria de n\'umeros essenciais para a compreens\~ao do m\'etodo de criptografia de chave p\'ublica conhecido como RSA.
 
 \section{N\'umeros Primos e Fatora\c{c}\~ao \'Unica}
 
-Os n\'umeros primos ocupam lugar importante tanto na teoria de n\'umeros quanto na criptografia RSA: na primeira por serem capazes de gerar todos os elementos do conjunto dos n\'umeros inteiros e suas consequentes propriedades; na segunda pelo fato de formarem um conjunto infinito e permiir com isso que se tome um primo de dimens\~ao estrondosa para codificar uma mensagem, consequentemente dificultando que um c\'odigo seja decifrado por terceiros em tempo razo\'avel, como mostraremos ao longo desta monografia.
+Os n\'umeros primos ocupam lugar importante tanto na teoria de n\'umeros quanto na criptografia RSA: na primeira por serem capazes de gerar todos os elementos do conjunto dos n\'umeros inteiros e suas consequentes propriedades; na segunda pelo fato de formarem um conjunto infinito e permitir com isso que se tome um primo de dimens\~ao estrondosa para codificar uma mensagem, consequentemente dificultando que um c\'odigo seja decifrado por terceiros em tempo razo\'avel, como mostraremos ao longo desta monografia.
 
 Os primos atuam como \'atomos dentro do conjunto dos n\'umeros inteiros no sentido em que todo n\'umero pode ser escrito de forma 
 \'{u}nica como um produto de primos. Esse fato \'e consequ\^encia do chamado \textit{Teorema da Fatora\c{c}\~ao \'Unica} tamb\'em conhecido por \textit{Teorema Fundamental da Aritm\'etica}. Al\'em de ser um resultado fundamental para a teoria de n\'umeros, ele tamb\'em \'e um dos pilares da criptografia RSA, pois a decodifica\c{c}\~ao de uma mensagem vai passar pela fatora\c{c}\~ao de um n\'umero. Para demonstrar esse teorema \'e preciso ter a disposi\c{c}\~ao o seguinte teorema. 
@@ -55,6 +55,21 @@ Descri\c{c}\~{a}o do \textit{algoritmo euclidiano}:
 		\item E assim por diante.
 \end{itemize}
 
+Em pseudoc\'ogico este algoritmo pode ser escrito na seguinte forma:
+\[
+\begin{array}{l}
+\textmd{fun\c{c}\~ao  euclides} (a, b)\{\\
+ \hspace{10mm}	\textrm{enquanto} (b <> 0)\{\\
+ \hspace{10mm}	 \hspace{10mm}q = a / b \\
+ \hspace{10mm}	 \hspace{10mm}r = a \% b\\
+ \hspace{10mm}	 \hspace{10mm}a = b \\
+ \hspace{10mm}     \hspace{10mm}b = r \\
+ \hspace{10mm}	\textrm{retorne}\hspace{2mm} a\\
+ \hspace{10mm} \}\\
+\}
+\end{array} 
+\]
+
 O algoritmo acima produz a seguinte sequ\^{e}ncia de divis\~{o}es, e o processo segue at\'{e}
 que se obtenha um resto igual a zero, nesse caso o procedimento termina:
 \[
@@ -69,7 +84,7 @@ r_{k-1} & =      & r_{k}q_{k+1}+ 0        & \textrm{ e } & 0\leq 0    <r_{k} \\
 \end{array}
 \]  
 
-As informa\c{c}\~{e}s relevantes obtidas no procedimento podem ser organizado em uma tabela do seguinte modo:
+As informa\c{c}\~{e}s relevantes obtidas no procedimento podem ser organizadas em uma tabela do seguinte modo:
 
 \[
 \begin{array}{|c|c|c|c|c|c|c|}\hline
@@ -82,10 +97,10 @@ A constru\c{c}\~{a}o da tabela se inicia com a inser\c{c}\~{a}o dos n\'{u}meros 
 a o primeiro bloco da linha de baixo com o valor do resto da divis\~{a}o de $a$ por $b$. Se o resto for diferente de zero, 
 inserimos $r_{1}$ no terceiro bloco da linha de cima e fazemos a divis\~{a}o de $b$ por $r_{1}$ e escrevemos
 $r_{2}$ no segundo bloco da linha de baixo.
-O processo termina quando obtiver um zero na linha de baixo da tabela e o m\'{a}ximo divisor comum ser\'{a} o 
+O processo termina quando obtivermos um zero na linha de baixo da tabela e o m\'{a}ximo divisor comum ser\'{a} o 
 \'{u}ltimo valor inserido na primeira linha da tabela antes do processo terminar. 
 
-Vejamos como exemplo, como obter o m\'{a}ximo divisor comum entre 1234 e 54 usando o algoritmo acima. 
+Vejamos como exemplo, como obter o m\'{a}ximo divisor comum entre 1234 e 54 usando o algoritmo acima. Perceba que o MDC entre os dois n\'umeros \'e $2$.
 
 \[
 \begin{array}{|c|c|c|c|c|c|}\hline
@@ -147,6 +162,36 @@ As informa\c{c}\~{o}es obtidas acima podem ser inseridas numa tabela da seguinte
 \end{array}
 \]
 
+Podemos tamb\'em escrev\^e-lo em pseudo\'odigo na seguinte fun\c{c}\~ao:
+
+\[
+\begin{array}{l}
+\textmd{fun\c{c}\~ao  euclidesExtendido} (a, b)\{\\
+\hspace{10mm} \textmd{var}\hspace{2mm} r = a;\\
+\hspace{10mm} \textmd{var}\hspace{2mm} r1 = b;\\
+\hspace{10mm} \textmd{var}\hspace{2mm} u = 1;\\
+\hspace{10mm} \textmd{var}\hspace{2mm} v = 0;\\
+\hspace{10mm} \textmd{var}\hspace{2mm} u1 = 0;\\
+\hspace{10mm} \textmd{var}\hspace{2mm} v1 = 1;\\
+\hspace{10mm} \textmd{var}\hspace{2mm} rs, us, vs, q;\\
+\hspace{10mm} \textmd{enquanto} (r1 <> 0)\{\\
+\hspace{10mm}\hspace{10mm}		q = r / r1; \\
+\hspace{10mm}\hspace{10mm}		rs = r;\\
+\hspace{10mm}\hspace{10mm}		us = u;\\
+\hspace{10mm}\hspace{10mm}		vs = v;\\
+\hspace{10mm}\hspace{10mm}		r = r1;\\
+\hspace{10mm}\hspace{10mm}		u = u1;\\
+\hspace{10mm}\hspace{10mm}		v = v1;\\
+\hspace{10mm}\hspace{10mm}		r1 = rs - q *r1;\\
+\hspace{10mm}\hspace{10mm}		u1 = us - q*u;\\
+\hspace{10mm}\hspace{10mm}		v1 = vs - q*v1;\\
+\hspace{10mm}	\}\\
+	
+\hspace{10mm}	\textmd{retorne} (r, u, v); \\
+\}\\
+\end{array}
+\]
+
 Para fins pr\'{a}ticos iniciamos o processo fixando os seguintes valores para as vari\'{a}veis inciais
 que n\~{a}o aparecem no processo: $x_{-1}=y_{0}=1$ e $x_{0}=y_{-1}=0$. Com isso o processo se inicia e 
 uma sequ\^{e}ncia de divis\~{o}es \'{e} gerada at\'{e} que se obtenha resto zero, finalizando o processo. 
@@ -197,7 +242,7 @@ onde $1<p_1<p_2<p_3<\cdots<p_k$ s\~ao n\'umeros primos e $e_1, \cdots, e_k$ s\~a
 \end{proof}
 
 No teorema acima, os expoentes $e_i$, para $1\leq i\leq k$ s\~ao chamados de \textit{multiplicidades}, pois indicam a quantidade de vezes que um mesmo n\'umero primo ocorre na fatora\c{c}\~ao. A prova de que \'e sempre poss\'ivel encontrar os fatores usados para decompor o n\'umero em fatores primos consiste no procedimento para fatorar um n\'umero, esse procedimento \'e chamado \textit{Algoritmo de Euclides}: trata-se do m\'etodo que se aprende na escola para fatorar
-um n\'umero e que n\~ao iremos detalhar aqui. Como bem sabemos, esse m\'etodo \'e bastante ineficaz quando pensamos em n\'umeros muito grande, pois pode requerer que se realize uma sequ\^encia bem grande de divis\~oes. A prova garante que o procedimento termina, mas o que se nota \'e que tal procedimento \'e muito ineficiente no sentido em que demanda muito tempo para se chegar a uma resposta dependendo do n\'umero que desejamos fatorar. Na literatura existem v\'arios algoritmos de fatora\c{c}\~ao que tornam o m\'etodo mais eficiente, no entanto nenhum desses m\'etodos funciona bem para todos os n\'umeros inteiros. A criptografia RSA aproveita a inefici\^encia dos m\'etodos para fatorar um n\'umero para garantir a seguran\c{c}a do seu sistema. \'E um problema em aberto saber se existe ou n\~ao um m\'etodo r\'apido para fatorar n\'umeros inteiros.  
+um n\'umero e que n\~ao iremos detalhar aqui. Como bem sabemos, esse m\'etodo \'e bastante ineficaz quando pensamos em n\'umeros muito grandes, pois pode requerer que se realize uma sequ\^encia bem grande de divis\~oes. A prova garante que o procedimento termina, mas o que se nota \'e que tal procedimento \'e muito ineficiente no sentido em que demanda muito tempo para se chegar a uma resposta dependendo do n\'umero que desejamos fatorar. Na literatura existem v\'arios algoritmos de fatora\c{c}\~ao que tornam o m\'etodo mais eficiente, no entanto nenhum desses m\'etodos funciona bem para todos os n\'umeros inteiros. A criptografia RSA aproveita a inefici\^encia dos m\'etodos para fatorar um n\'umero para garantir a seguran\c{c}a do seu sistema. \'E um problema em aberto saber se existe ou n\~ao um m\'etodo r\'apido para fatorar n\'umeros inteiros.  
 
 A demonstra\c{c}\~ao do teorema acima requer uma s\'erie de resultados acerca de n\'umeros primos os quais detalharemos abaixo. O interesse em apresentar as demonstra\c{c}\~oes de tais resultados \'e devido ao fato de estarmos interessados em adaptar tais provas para os primos de Gauss, cujo objetivo \'{e} compreender as dificuldades para implementar um m\'etodo de criptografia RSA baseado em primos de Gauss. 
 
@@ -263,9 +308,9 @@ Existe, ainda, um outro debate acerca de como gerar os n\'umeros primos. Existem
 de Erat\'ostenes, o mais antigo deles, mas n\~ao envolve nenhuma f\'ormula espec\'ifica. No entanto, todos esses 
 m\'etodos mostram-se ineficazes, como mostra Coutinho em \cite{cou:2014}.
 
-Como vimos, o Teorema~\ref{fat.unica} garante que um n\'umero pode ser decomposto
-em fatores primos de forma \'unica e o Teorema~\ref{inf.primos} garante a exist\^{e}ncia de uma infinidade de n\'umeros primos, no entanto, 
-os procedimentos atrelados a esses resultados s\~ao todos muito ineficientes em termos computacionais. Para implementar a criptografia RSA, como iremos trabalhar com n\'{u}meros muito grandes, vamos precisar denot\'{a}-los por meio de pot\^{e}ncias e isso requer m\'{e}todos 
+Como vimos, o Teorema~\ref{fat.unica} garante que um n\'umero pode ser decompostoem fatores primos de forma \'unica e o Teorema~\ref{inf.primos} garante a exist\^{e}ncia de uma infinidade de n\'umeros primos, no entanto, os procedimentos atrelados a esses resultados s\~ao todos muito ineficientes em termos computacionais. N\~ao \'e conhecido se existe ou n\~ao um algoritmo que possa fazer essa opera\c{c}\~ao rapidamente, no entanto este problema \'e categorizado como um problema de classe NP e aceito como sem resolu\c{c}\~ao.
+
+Para implementar a criptografia RSA, como iremos trabalhar com n\'{u}meros muito grandes, vamos precisar denot\'{a}-los por meio de pot\^{e}ncias e isso requer m\'{e}todos 
 eficazes para trabalhar com esses n\'{u}meros, por essa raz\~ao vamos precisar da aritm\'{e}tica modular.  
 
 
@@ -274,7 +319,7 @@ eficazes para trabalhar com esses n\'{u}meros, por essa raz\~ao vamos precisar d
 Para compreender a intui\c{c}\~{a}o por tr\'{a}s da aritm\'{e}tica modular \'{e} interessante pensar na ideia de \textit{ciclicidade}, 
 isto \'{e}, em
 fatos que ocorrem ap\'{o}s um determinado per\'{i}odo constante ou ciclo. Por exemplo, o nascer do sol \'{e} um evento que 
-permite marcar um ciclo, pois ocorre sempre ap\'{o}s um ciclo de 24 horas; a data de seu anivers\'{a}rio \'{e} outro evento que permite marcar um ciclo, pois ocorre a cada 12 meses; e assim por diante. Trabalhar com objetos que t\^{e}m um corportamento c\'{i}clico requer que tenhamos uma nova forma de operar, pois quando somamos 13 com 15 o resultado pode ser 4 se estivermos pensando em termos de horas. Quando termina um ciclo de 24 horas, nesse mesmo instante inicia-se um novo ciclo (do dia seguinte). A repeti\c{c}\~{a}o de uma mesma hora indica o completamento de um ciclo (24 horas) a partir do ponto estabelecido como marco inicial. 
+permite marcar um ciclo, pois ocorre sempre ap\'{o}s um ciclo de 24 horas; a data de seu anivers\'{a}rio \'{e} outro evento que permite marcar um ciclo, pois ocorre a cada 12 meses; e assim por diante. Trabalhar com objetos que t\^{e}m um corportamento c\'{i}clico requer que tenhamos uma nova forma de operar, pois quando somamos 13 com 15 o resultado pode ser 4 se estivermos pensando em termos de horas. Quando termina um ciclo de 24 horas, nesse mesmo instante inicia-se um novo ciclo (do dia seguinte). A repeti\c{c}\~{a}o de uma mesma hora indica o fechamento de um ciclo (24 horas) a partir do ponto estabelecido como marco inicial. 
 
 Quando mostramos o processo de codifica\c{c}\~{a}o e de decodifica\c{c}\~{a}o de um c\'{o}digo em 
 \textit{cifras de substitui\c{c}\~{a}o polialfab\'{e}ticas} voc\^{e} deve ter notado que precisamos repetir o alfabeto 
@@ -293,7 +338,7 @@ no caso das horas temos as seguintes classes:
 	\item $23h=\{x\in\mathbb{N}: x=23+24\}=\{23, 47, 71, 95, \cdots\}$
 \end{itemize}
 
-No exemplo das posi\c{o}\~{e}es ocupadas pelas letras do alfabeto temos as seguintes classes: 
+No exemplo das posi\c{c}\~{o}es ocupadas pelas letras do alfabeto temos as seguintes classes: 
 
 \begin{itemize}
 	\item $A=\{x\in\mathbb{N^*}: x=1+26\}=\{1, 27, 53, 79, \cdots\}$ 
@@ -367,11 +412,11 @@ e o contexto em que desejamos trabalhar para ent\~{a}o podermos definir as opera
 	Considere o exemplo em que as classes s\~{a}o compostas aqueles n\'{u}meros que partilham do mesmo resto quando s\~{a}o divididos por 
 	5. Neste caso podemos formar cinco classes distintas em $\mathbb{Z}$, a saber:
 	\begin{itemize}
-		\item Classe do resto zero: $\overline{0}=\{0, 5, 10, 15, 20, \cdots\}$
-		\item Classe do resto um: $\overline{1}=\{1, 6, 11, 16, 21, \cdots\}$
-		\item Classe do resto dois: $\overline{2}=\{2, 7, 12, 17, 22, \cdots\}$
-		\item Classe do resto tr\^{e}s: $\overline{3}=\{3, 8, 13, 18, 23, \cdots\}$
-		\item Classe do resto quatro: $\overline{4}=\{4, 9, 14, 19, 24, \cdots\}$
+		\item Classe do resto zero: $\overline{0}=\{\cdots, -10, -5, 0, 5, 10, 15, 20, \cdots\}$
+		\item Classe do resto um: $\overline{1}=\{\cdots, -9, -4, 1, 6, 11, 16, 21, \cdots\}$
+		\item Classe do resto dois: $\overline{2}=\{\cdots, -8, -3, 2, 7, 12, 17, 22, \cdots\}$
+		\item Classe do resto tr\^{e}s: $\overline{3}=\{\cdots, -7, -2, 3, 8, 13, 18, 23, \cdots\}$
+		\item Classe do resto quatro: $\overline{4}=\{\cdots, -6, -1, 4, 9, 14, 19, 24, \cdots\}$
 	\end{itemize}
 
 	
@@ -401,7 +446,7 @@ pelos exemplos dados. Vejamos mais alguns exemplos de elementos equivalentes seg
 	\item $25 \equiv 5 \pmod{5}$, pois $25-5=20$ e 20 \'{e} um m\'{u}ltiplo de 5;
 \end{itemize}
 
-Observe que a congru\^{e}ncia entre dois n\'{u}meros depende do m\'{o}dulo esculhido, isto \'{e}, do tamanho 
+Observe que a congru\^{e}ncia entre dois n\'{u}meros depende do m\'{o}dulo escolhido, isto \'{e}, do tamanho 
 do pulo que a ser dado. Pode-se mostrar que a congu\^{e}ncia m\'{o}dulo $n$ forma uma rela\c{c}\~{a}o de 
 equival\^{e}ncia. N\~{a}o daremos essa demonstra\c{c}\~{a}o aqui e o leitor interessado pode encontr\'{a}-la no 
 cap\'{i}tulo 4 em \cite{cou:2014}.
@@ -450,7 +495,7 @@ As seguintes propriedades s\~{a}o v\'{a}lidas para a adi\c{c}\~{a}o e multiplica
 
 A demonstra\c{c}\~{a}o dessas propriedades seguem imediatamente das propriedades correspondentes em $\mathbb{Z}$.
 Vejamos onde a aritm\'{e}tica modular se difere da aritim\'{e}tica em $\mathbb{Z}$. Considere as classes 
-$\overline{2}$ e $\overline{6}$ em $\mathbb{Z}_{6}$. Claramente essas classes s\~{a}o diferentes
+$\overline{2}$ e $\overline{3}$ em $\mathbb{Z}_{6}$. Claramente essas classes s\~{a}o diferentes
 da classe $\overline{0}$, no entanto vale que:
 
 $$\overline{2}\times\overline{3}=\overline{6}=\overline{0}$$
@@ -466,7 +511,7 @@ Em $\mathbb{Z}_{n}$ a divis\~{a}o \'{e} definida nessa formula\c{c}\~{a}o equiva
 
 \begin{Df}
  Sejam $\overline{a},\overline{\alpha}\in\mathbb{Z}_{n}$. Dizemos que $\overline{\alpha}$ \'{e} o
-iverso de $\overline{a}$ se a seguinte equa\c{c}\~{a}o for satisfeita em $\mathbb{Z}_{n}$:
+inverso de $\overline{a}$ se a seguinte equa\c{c}\~{a}o for satisfeita em $\mathbb{Z}_{n}$:
 							$$\overline{a}\times\overline{\alpha}=1$$  
 \end{Df}
 
@@ -475,9 +520,11 @@ A exist\^{e}ncia de elemento inverso em $\mathbb{Z}_{n}$ ser\'{a} de suma import
 pois ser\'{a} justamente essa opera\c{c}\~{a}o que ir\'{a} permitir que uma mensagem seja decodificada uma vez que teremos 
 um modo de fazer o percurso inverso. Para que isso seja poss\'{i}vel ser\'{a} conveniente coletar todos os elementos que admitem 
 inverso num mesmo conjunto para serem usados na codifica\c{c}\~{a}o de uma mensagem, como veremos mais adiante.
-  
+\begin{Df}
+	S\~ao definidos como n\'umeros primos entre si o conjunto de n\'umeros onde o MDC equivale a $1$.
+\end{Df}
 \begin{Th}[Teorema de Invers\~ao]\label{inversao}
-A classe $\overline{a}$ tem inverso em $\mathbb{Z}_n$ se, e somente se, $a$ e $n$ n\~ao s\~ao primos entre si.
+A classe $\overline{a}$ tem inverso em $\mathbb{Z}_n$ se, e somente se, $a$ e $n$ s\~ao primos entre si.
 \end{Th}
 
 \begin{proof}
@@ -545,7 +592,7 @@ s\~{a}o respectivamente os inversos de  $\overline{a}$ e $\overline{b}$,  ent\~{
 
 \'{E} poss\'{i}vel determinar a quantidade de elementos do conjunto $\mathcal{U}(n)$ usando a chamada \textsl{fun\c{c}\~{a}o 
 totiente} ou \textsl{fun\c{c}\~{a}o de Euler} $\phi(n)$, a qual denota a ordem de $\mathcal{U}(n)$. Para nosso 
-prop\'{o}sito vamos precisar apenas tratar do conjunto $\mathcal{U}(p)$ para $p$ um n\'{u}mero primo e isso nos polpar\'{a} de 
+prop\'{o}sito vamos precisar apenas tratar do conjunto $\mathcal{U}(p)$ para $p$ um n\'{u}mero primo e isso nos poupar\'{a} de 
 uma s\'{e}rie de resultados t\'{e}cnicos envolvendo teoria de grupos. Para detalhes acerca deste tema sugerimos
 o cap\'{i}tulo 8 de \cite{cou:2014}. 
 
@@ -601,14 +648,13 @@ $$a^{p-1}\equiv 1 \pmod{p}$$
 	Substituindo $a\cdot\alpha\equiv 1 \pmod{p}$ em (1.3) obtemos que $a^{p-1} \equiv 1 \pmod{p}$.
 \end{proof}
 
-O Teorema de Fermat \'e usado para simplificar os c\'{a}lculos na obten\c{c}\~{a}o de congru\^encias e isso ser\'{a}
+O Pequeno Teorema de Fermat \'e usado para simplificar os c\'{a}lculos na obten\c{c}\~{a}o de congru\^encias e isso ser\'{a}
 muito \'{u}til porque teremos que trabalhar com n\'{u}meros muito grandes para poder garantir a seguran\c{c}a na criptografia RSA.
 
 Vejamos como aplicar o teorema para simplificar os c\'{a}lculos na pr\'{a}tica.
 
 Para calcular $2^{5432675}$ m\'{o}dulo 13, usando o Teorema~\ref{pequeno.fermat} basta calcular o resto da 
-divis\~{a}o de $5432675$ por $12=13-1$, que resulta em $11$. Assim, 
-temos que $2^{5432675}\equiv 2^{11}\equiv 7 \pmod{13}$. 
+divis\~{a}o de $5432675$ por $12=13-1$, que resulta em $11$.  Assim temos que $2^{5432675}\equiv 2^{11}\equiv 7 \pmod{13}$. 
 
 
 
@@ -666,12 +712,12 @@ O sistema pode ser resolvido seguindo os seguintes passos:
 \end{enumerate}
 
 Considere, como exemplo, o problema de calcular o menor inteiro $x$ cujo resto \'{e} $1$ na divis\~ao por $3$, 
-e cujo resto \'{e} $2$ na divis\~ao por $5$. Esse problema pode ser descrito pelo seguinte sistema de equa\c{c}\~oes:
+e cujo resto \'{e} $2$ na divis\~ao por $5$. Esse problema pode ser descrito pelo seguinte sistema de congru\^encias:
 
 \[
 \begin{array}{ccc}
-x & = & 1\pmod{3} \\
-x & = & 2 \pmod{5}\\
+x & \equiv & 1\pmod{3} \\
+x & \equiv & 2 \pmod{5}\\
 \end{array}
 \]
 
@@ -688,10 +734,10 @@ O procedimento exemplicado acima pode ser sintetizado pelo seguinte teorema:
 Sejam $n_1, n_2, \cdots n_k$ inteiros positivos dois a dois primos entre si. O sistema
 \[
 \begin{array}{ccc}
- x & \equiv & a_1 \pmod n_1\\ 
- x & \equiv & a_2 \pmod n_2 \\
+ x & \equiv & a_1 \pmod{n_1}\\ 
+ x & \equiv & a_2 \pmod{n_2} \\
    & \vdots &   \\
-x & \equiv & a_k \pmod n_k \\	
+x & \equiv & a_k \pmod{n_k} \\	
 \end{array}
 \]
 sempre tem uma solu\c{c}\~ao em $\mathbb{Z}_{n_1\cdots n_k}$.
@@ -738,10 +784,10 @@ Agora, dividindo $6754$ por $p-1$, para $p\in\{3, 5, 7, 11\}$, temos:
 Em seguida substitu\'imos as identidades acima nas congru\^encias e as reduzimos
 \[
 \begin{array}{cccccc}
-2^{6754} & = & 2^{2\times 3377}   & = & (2^{3377})^{2} & \equiv 1 \pmod{3} \\  
-2^{6754} & = & 2^{4\times 1688+2} & = & (2^{1688})^{4} & \equiv 4 \pmod{5}\\  
-2^{6754} & = & 2^{6\times 1125+4} & = & (2^{1125})^{6} & \equiv 2 \pmod{7}\\ 
-2^{6754} & = & 2^{10\times 675+4} & = & (2^{675})^{10} & \equiv 5 \pmod{11}\\  
+2^{6754} & = & 2^{2\times 3377}   & \Rightarrow & (2^{3377})^{2} & \equiv 1 \pmod{3} \\  
+2^{6754} & = & 2^{4\times 1688+2} & \Rightarrow & (2^{1688})^{4} & \equiv 4 \pmod{5}\\  
+2^{6754} & = & 2^{6\times 1125+4} & \Rightarrow & (2^{1125})^{6} & \equiv 2 \pmod{7}\\ 
+2^{6754} & = & 2^{10\times 675+4} & \Rightarrow & (2^{675})^{10} & \equiv 5 \pmod{11}\\  
 \end{array}
 \]
 Logo, a tarefa, agora, consiste em resolver o seguinte sistema:

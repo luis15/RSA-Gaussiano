@@ -43,7 +43,7 @@ Feito isso, agrupamos o conjunto em um bloco \'unico de caracteres:
 
 Atente-se ao fato de todo o caractere convertido possuir sempre o mesmo n\'umero de algarismos. Isso \'e \'util para evitar ambiguidades na fase de desencripta\c{c}\~ao.
 
-Nosso pr\'oximo passo nesta fase que antecede a encripta\c{c}\~ao consiste em definir quais ser\~ao os primos $p$ e $q$. Para nosso exemplo vamos usar $p=17$ e $q=23$, como mencionado na Introdu\c{c}\~ao deste artigo, temos que $n = pq$, logo $n=391$.
+Nosso pr\'oximo passo nesta fase que antecede a encripta\c{c}\~ao consiste em definir quais ser\~ao os primos $p$ e $q$. Para nosso exemplo vamos usar $p=17$ e $q=23$, como mencionado na Introdu\c{c}\~ao desta monografia, temos que $n = pq$, logo $n=391$.
 
 O \'ultimo passo da pr\'e-encripta\c{c}\~ao consiste em quebrar o n\'umero que obtemos acima em blocos menores. Esses blocos devem obedecer \`a duas regras b\'asicas: serem menores que $n$, ou no nosso exemplo $391$, pois iremos trabalhar com  o m\'odulo $391$ durante a encripta\c{c}\~ao, e n\~ao podem se iniciar por $0$, para n\~ao haver ambiguidades na desencripta\c{c}\~ao. Vejamos como a nossa mensagem fica quando pr\'e-encriptada.
 
@@ -61,13 +61,13 @@ Encerrada a fase de pr\'e-codifica\c{c}\~ao vamos agora codificar nossas mensage
 
 A esta altura n\'os j\'a conhecemos o n\'umero $n$, que em nosso exemplo possui o valor de $391$. O outro n\'umero que iremos usar ser\'a o $\textbf{e}$. Tomaremos que o $mdc(\textbf{e}, \phi(n)) = 1$. Para calcularmos o valor de $\phi(n)$, conforme j\'a comentamos em \ref{totiente} precisaremos aplicar a seguinte receita:
 
-$$\phi(n) = (p-1)(q-1)$$
+$$\phi(n) = \phi(p)\phi(q) = (p-1)(q-1)$$
 
 Que em nosso exemplo resulta em:
 
 $$\phi(391) = (17 - 1)(23 - 1) = 16 \cdot 22 = 352$$
 
-Para determinarmos o $\textbf{e}$ basta escolher o menor primo que $mdc(\textbf{e}, 352) = 1$, que no nosso caso ser\'a o $3$. Optamos por um primo n\~ao m\'ultiplo ao inv\'es de um composto para podermos aplicar o teorema de Fermat  (Teorema \ref{pequeno.fermat}) mais adiante. Ao conjunto $(n, \textbf{e} )$ denominamos chave de encripta\c{c}\~ao.
+Para determinarmos o $\textbf{e}$ basta escolher o menor primo tal que $mdc(\textbf{e}, 352) = 1$, que no nosso caso ser\'a o $3$. Optamos por um primo n\~ao m\'ultiplo ao inv\'es de um composto para podermos aplicar o teorema de Fermat  (Teorema \ref{pequeno.fermat}) mais adiante. Ao conjunto $(n, \textbf{e} )$ denominamos chave de encripta\c{c}\~ao.
 
 Vamos chamar o bloco codificado que iremos encriptar de $b$, lembrando que $b$ \'e um n\'umero inteiro menor que $n$. Tambem chamaremos o bloco ap\'os a codifica\c{c}\~ao de $C(b)$. Para obtermos $C(b)$ devemos aplicar a seguinte f\'ormula:
 
@@ -198,6 +198,6 @@ Para algum inteiro $k$. Caso tomemos $k=0$ teremos $b^{\textbf{e}d} \equiv b \pm
 
 Antes de mudarmos o foco deste trabalho, vamos prestar aten\c{c}\~ao no que tange a seguran\c{c}a do RSA. Vamos supor que algu\'em, que vamos denominar Irineu, esteja com uma escuta em nossas mensagens, tendo assim acesso tanto \`a mensagem codificada quanto \`a chave p\'ublica $n$. Vamos lembrar que $n$ \'e a multiplica\c{c}\~ ao dos primos $p$ e $q$. Sabendo disso, bastaria para Irineu fatorar $n$ para obter $p$ e $q$ e depois descobrir $d$ para poder decodificar a mensagem, como j\'a foi explicado neste cap\'itulo.
 
-Isso pode parecer muito simples, mas como j\'a mostramos na se\c{c}\~ao sobre fatora\c{c}\~ao, n\~ao h\'a um algoritmo conhecido que possa fazer isso de forma eficiente. O que ocorre \'e que um algoritmo que fa\c{c}a a fatora\c{c}\~ao de forma eficiente pode vir a surgir a qualquer momento, do ponto que n\~ao h\'a nenhuma prova matem\'atica de que esse algoritmo n\~ao exista.
+Isso pode parecer muito simples, mas como j\'a mostramos na se\c{c}\~ao sobre fatora\c{c}\~ao, n\~ao h\'a um algoritmo conhecido que possa fazer isso de forma eficiente. O que ocorre \'e que um algoritmo que fa\c{c}a a fatora\c{c}\~ao de forma eficiente n\~ao tem sua inexist\^encia compravada, como j\'a comentamos no cap\'itulo \ref{Num}, embora sua inexist\^encia seja praticamente consenso pela comunidade acad\^emica, posto o fato deste problema ser qualificado em NP.
 
-O que iremos fazer nos pr\'oximo cap\'itulo, consiste em analisar a viabilidade de uma varia\c{c}\~ao da criptografia RSA que n\~ao seja completamente vulner\'avel caso uma fatora\c{c}\~ao eficiente no conjunto $\mathbb{Z}$ seja descoberta: a \textit{Criptografia RSA Gaussiana}.
+O que iremos fazer nos pr\'oximo cap\'itulo, consiste em analisar a viabilidade de uma varia\c{c}\~ao da criptografia RSA que acreditamos n\~ao ser completamente vulner\'avel caso uma fatora\c{c}\~ao eficiente no conjunto $\mathbb{Z}$ seja descoberta: a \textit{Criptografia RSA Gaussiana}.

@@ -3,15 +3,15 @@
 \contentsline {chapter}{Introdu\c c\~ao}{2}
 \contentsline {chapter}{\numberline {1.}Um passeio pela Teoria de N\'umeros}{6}
 \contentsline {section}{\numberline {1.1}N\'umeros Primos e Fatora\c {c}\~ao \'Unica}{6}
-\contentsline {section}{\numberline {1.2}Aritm\'{e}tica Modular}{13}
-\contentsline {chapter}{\numberline {2.}Aplicando a criptografia RSA}{26}
-\contentsline {section}{\numberline {2.1}Preparando-se para criptografar}{26}
-\contentsline {section}{\numberline {2.2}Codificando e decodificando mensagens}{27}
-\contentsline {subsection}{\numberline {2.2.1}Codificando uma mensagem}{27}
-\contentsline {subsection}{\numberline {2.2.2}Decodificando uma mensagem}{29}
-\contentsline {section}{\numberline {2.3}Provando a funcionalidade do RSA}{30}
-\contentsline {section}{\numberline {2.4}Discutindo a seguran\c {c}a do RSA}{32}
-\contentsline {chapter}{\numberline {3.}Inteiros e Primos de Gauss}{33}
-\contentsline {section}{\numberline {3.1}Inteiros de Gauss e suas propiedades}{33}
-\contentsline {chapter}{Considera\c c\~oes Finais}{38}
-\contentsline {chapter}{Bibliografia}{40}
+\contentsline {section}{\numberline {1.2}Aritm\'{e}tica Modular}{14}
+\contentsline {chapter}{\numberline {2.}Aplicando a criptografia RSA}{27}
+\contentsline {section}{\numberline {2.1}Preparando-se para criptografar}{27}
+\contentsline {section}{\numberline {2.2}Codificando e decodificando mensagens}{28}
+\contentsline {subsection}{\numberline {2.2.1}Codificando uma mensagem}{28}
+\contentsline {subsection}{\numberline {2.2.2}Decodificando uma mensagem}{30}
+\contentsline {section}{\numberline {2.3}Provando a funcionalidade do RSA}{31}
+\contentsline {section}{\numberline {2.4}Discutindo a seguran\c {c}a do RSA}{33}
+\contentsline {chapter}{\numberline {3.}Primeiros passos com o conjunto de Inteiros Gaussiano}{34}
+\contentsline {section}{\numberline {3.1}Inteiros de Gauss e suas propiedades}{34}
+\contentsline {chapter}{Considera\c c\~oes Finais}{39}
+\contentsline {chapter}{Bibliografia}{41}

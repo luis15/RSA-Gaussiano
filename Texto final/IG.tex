@@ -5,9 +5,9 @@
 
 
 
-\chapter {Inteiros e Primos de Gauss}
+\chapter {Primeiros passos com o conjunto de Inteiros Gaussiano}
 \label{IG}
-At\'e o momento apenas os n\'umeros inteiros foram abordados neste projeto, mas para podermos entender a RSA Gaussiana \'e necess\'ario conhecer o conjunto dos n\'umeros inteiros gaussianos. Ao longo deste cap\'itulo vamos conhecer os inteiros e os primos gaussianos e suas propriedades aritm\'eticas b\'asicas. 
+At\'e o momento apenas os n\'umeros inteiros foram abordados neste projeto, mas para podermos entender a criptografia RSA Gaussiana \'e necess\'ario conhecer o conjunto dos n\'umeros inteiros gaussianos. Ao longo deste cap\'itulo vamos conhecer os inteiros e os primos gaussianos e suas propriedades aritm\'eticas b\'asicas. 
 
 \section{Inteiros de Gauss e suas propiedades}
 
@@ -22,7 +22,7 @@ $$z_1 \cdot z_2 = (ac - bd) + (ad + bc)\textbf{i}$$
 
 Outra propiedade herdada \'e a dos elementos neutros, o $0 = 0 + 0\textbf{i}$ continua sendo o elemento neutro da adi\c{c}\~ao, enquanto o $1 = 1 + 0\textbf{i}$ tamb\'em continua sendo o elemento neutro da multiplica\c{c}\~ao. As propiedades associativa da adi\c{c}\~ao e da multiplica\c{c}\~ao, comutativa da adi\c{c}\~ao e multiplica\c{c}\~ao e distributiva tamb\'em s\~ao herdadas do conjunto complexo.
 
-Repare que se considermos o plano complexo, os inteiros gaussianos ter\~ao uma marca\c{c}\~ao reticulada. Outro conceito importante para os inteiros gaussianos \'e a norma do n\'umero, ela \'e importante para auxiliar na defini\c{c}\~ao de um primo gaussiano, assim como s\~ao importantes os conceitos de n\'umero conjugado e n\'umero associado. Caso venhamos a tomar um n\'umero inteiro gaussiano de forma $a+b\textbf{i}$, sua norma ser\'a $a^2 +b^2$.
+Repare que se considerarmos o plano complexo, os inteiros gaussianos ter\~ao uma marca\c{c}\~ao reticulada. Outro conceito importante para os inteiros gaussianos \'e a norma do n\'umero, ela \'e importante para auxiliar na defini\c{c}\~ao de um primo gaussiano, assim como s\~ao importantes os conceitos de n\'umero conjugado e n\'umero associado. Caso venhamos a tomar um n\'umero inteiro gaussiano de forma $a+b\textbf{i}$, sua norma ser\'a $a^2 +b^2$.
 
 \begin{Df}
 A norma de um n\'umero gaussiano \'e a soma dos quadrados de seus valores absolutos como n\'umero complexo. Ela \'e o resultado de:
@@ -48,7 +48,7 @@ Podemos definir a divisibilidade gaussiana por quando dizemos que $\beta$ divide
 
 \begin{Th}\label{div_gaussiana1}
 
-Um inteiro Gaussiano $\alpha = a+b\textbf{i}$ \'e dividido por um primo $c$ se e somente se $c|a$ e $c|b$ em $\mathbb{Z}$.
+Um inteiro Gaussiano $\alpha = a+b\textbf{i}$ \'e dividido por um primo inteiro $c$ se e somente se $c|a$ e $c|b$ em $\mathbb{Z}$.
 
 \end{Th}
 
@@ -60,9 +60,9 @@ Dizer que $c|(a+b\textbf{i})$ em $\mathbb{Z}$ \'e o mesmo que dizer que $a+b\tex
 
 Tomemos uma divis\~ao entre inteiros gaussianos, onde $\alpha$ \'e o dividendo, $\beta$ o divisor, $\gamma$ o quociente e $\rho$ o dividendo
 
-\begin{Th}[Teorema da divis\~ao conjunto gaussiano  ]  \label{divgauss}
+\begin{Th}[Teorema da divis\~ao no conjunto gaussiano  ]  \label{divgauss}
 
-Para $ \alpha, \beta \in \mathbb{Z} $ com $\beta \neq 0$ existe um $\gamma, \rho \in \mathbb{Z}$ tal qual $\alpha = \beta \gamma + \rho$ e $N(\rho) < N(\beta)$. De fato, podemos escolher $\rho$  de forma que $N(\rho) \leq (1/2)N(\beta)$
+Para $ \alpha, \beta \in \mathbb{Z} $ com $\beta \neq 0$ existe um $\gamma, \rho \in \mathbb{Z}[i]$ tal qual $\alpha = \beta \gamma + \rho$ e $N(\rho) < N(\beta)$. De fato, podemos escolher $\rho$  de forma que $N(\rho) \leq (1/2)N(\beta)$
 
 \end{Th}
 
@@ -82,14 +82,14 @@ Tomemos $\alpha , \beta \in \mathbb{Z}[i]$ e diferentes de $0$. Aplicamos recurs
 \end{array}
 \]
 
-O \'ultimo elemento que n\~ao possua resto $0$ \'e divis\'ivel por todos os divisores comuns de $\alpha$ e $\beta$, sendo esse o maior divisor comum de $\alpha$ e $\beta$.
+O \'ultimo elemento que n\~ao possui resto $0$ \'e divis\'ivel por todos os divisores comuns de $\alpha$ e $\beta$, sendo esse o maior divisor comum de $\alpha$ e $\beta$.
 
 \end{Th}
 
-Outra possibilidade para simplificar esta mesma opera\c{c}\~ao \'e o uso do algoritmo eucliadiano extendido, para o conjunto dos $\mathbb{Z}[i]$ esse algoritmo \'e chamado de Teorema de Bezout.
+Outra possibilidade para simplificar esta mesma opera\c{c}\~ao \'e o uso do algoritmo eucliadiano estendido, para o conjunto dos $\mathbb{Z}[i]$ esse algoritmo \'e chamado de Teorema de Bezout.
 
 \begin{Cor} \label{cor}
-	Para $\alpha$ e $\beta$ diferentes de $0$ e existentes no conjunto gaussiano, tomemos $\delta$ como o maior divisor comum pelo algoritmo euclidiano no conjunto gaussiano(\ref{euclideszi}). Qualquer divisor comum de $\alpha$ e $\beta$ \'e um m\'ultiplo de $\delta$.
+	Para $\alpha$ e $\beta$ diferentes de $0$ e existentes no conjunto gaussiano, tomemos $\delta$ como o maior divisor comum pelo algoritmo euclidiano no conjunto gaussiano(\ref{euclideszi}). Qualquer divisor comum de $\alpha$ e $\beta$ \'e um divisor de $\delta$.
 \end{Cor}
 
 \begin{proof}
@@ -132,7 +132,7 @@ Se $\alpha$ e $\beta$ s\~ao primos entre si, ent\~ao $1$ \'e o maior divisor de 
 Agora n\'os vamos definir o que vem a ser um inteiro gaussiano primo e composto, al\'em de falarmos sobre a fatora\c{c}\~ao \'unica.
 
 \begin{Df}
-Se tomarmos um inteiro Gaussiano $\alpha$ com $N(\alpha) > 1$. \'e denominado \textit{composto} se o n\'umero possuir um fator n\~ao trivial. Caso ele possua apenas fatores triviais ele \'e denominado \textit{primo}.
+Se tomarmos um inteiro Gaussiano $\alpha$ com $N(\alpha) > 1$. \'e denominado \textit{composto} se o n\'umero possuir um fator diferente das unidades de $\mathbb{Z}[i]$ e dos conjugados do n\'umero. Caso ele n\~ao seja composto ele \'e denominado \textit{primo}.
 \end{Df}
 
 Agora que n\'os j\'a sabemos o que \'e um n\'umero primo e composto, podemos definir como eles s\~ao fatorados de forma \'unica pelo teoremas abaixo, as provas de ambas podem ser lidas na sess\~ao 6 de ``The Gaussian Integers'' em \cite{conrad}, a partir da p\'agina 13. As provas dos outros teoremas desta sess\~ao tamb\'em foram baseadas no trabalho de \cite{conrad}.
