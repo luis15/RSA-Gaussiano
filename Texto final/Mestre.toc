@@ -1,6 +1,6 @@
 \select@language {brazil}
 \select@language {brazil}
-\contentsline {chapter}{Introdu\GenericError {(inputenc) }{Package inputenc Error: Unicode char ção (U+7)\MessageBreak not set up for use with LaTeX}{See the inputenc package documentation for explanation.}{Your command was ignored.\MessageBreak Type I <command> <return> to replace it with another command,\MessageBreak or <return> to continue without it.}}{2}
+\contentsline {chapter}{Introdu\c c\~ao}{2}
 \contentsline {chapter}{\numberline {1.}Um passeio pela Teoria de N\'umeros}{6}
 \contentsline {section}{\numberline {1.1}N\'umeros Primos e Fatora\c {c}\~ao \'Unica}{6}
 \contentsline {section}{\numberline {1.2}Aritm\'{e}tica Modular}{14}
@@ -13,5 +13,5 @@
 \contentsline {section}{\numberline {2.4}Discutindo a seguran\c {c}a do RSA}{33}
 \contentsline {chapter}{\numberline {3.}Primeiros passos com o conjunto de Inteiros Gaussiano}{34}
 \contentsline {section}{\numberline {3.1}Inteiros de Gauss e suas propriedades}{34}
-\contentsline {chapter}{Considera\GenericError {(inputenc) }{Package inputenc Error: Unicode char çõe (U+7)\MessageBreak not set up for use with LaTeX}{See the inputenc package documentation for explanation.}{Your command was ignored.\MessageBreak Type I <command> <return> to replace it with another command,\MessageBreak or <return> to continue without it.}s Finais}{39}
+\contentsline {chapter}{Considera\c c\~oes Finais}{39}
 \contentsline {chapter}{Bibliografia}{41}

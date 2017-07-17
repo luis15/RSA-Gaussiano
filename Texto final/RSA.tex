@@ -22,7 +22,7 @@ N & O  & P  & Q  & R  & S & T  & U  & V  & X  & Y  & W  & Z \\
 \end{array}
 \]
 
-Para representar espa\c{c}os vamos usar o 99. Alertamos que esta \'e uma tabela apenas com finalidade did\'atica, e, por isso h\'a v\'arios caracteres que não estão sendo considerado. Como exemplo vamos pr\'e-encriptar o poema Amor, de Oswald de Andrade. O texto do poema a ser pr\'e-encriptado \'e o seguinte:
+Para representar espa\c{c}os vamos usar o 99. Alertamos que esta \'e uma tabela apenas com finalidade did\'atica, e, por isso h\'a v\'arios caracteres que n\~ao est\~ao sendo considerado. Como exemplo vamos pr\'e-encriptar o poema Amor, de Oswald de Andrade. O texto do poema a ser pr\'e-encriptado \'e o seguinte:
 
 \begin{center}
 Amor  \\ 
@@ -41,7 +41,7 @@ Feito isso, agrupamos o conjunto em um bloco \'unico de caracteres:
 10222427991730222427
 \end{center}
 
-Observe que inicamos a pré-codificação atribuindo a letra \textbf{A} o número 10 e não o 1. Isso evitará ambiguidades, pois se tivéssemos iniciados com o 1 quando fossemos desencriptar por exemplo o número 11 não seríamos capazes de diferenciar \textbf{AA} e \textbf{K}, por exemplo.
+Observe que inicamos a pr\'e-codifica\c{c}\~ao atribuindo a letra \textbf{A} o n\'umero 10 e n\~ao o 1. Isso evitar\'a ambiguidades, pois se tiv\'essemos iniciados com o 1 quando fossemos desencriptar por exemplo o n\'umero 11 n\~ao ser\'iamos capazes de diferenciar \textbf{AA} e \textbf{K}, por exemplo.
 
 Nosso pr\'oximo passo nesta fase que antecede a encripta\c{c}\~ao consiste em definir quais ser\~ao os primos $p$ e $q$. Para nosso exemplo vamos usar $p=17$ e $q=23$. Como mencionado na Introdu\c{c}\~ao desta monografia, temos que $n = pq$, logo $n=391$.
 
@@ -196,8 +196,8 @@ Para algum inteiro $k$. Caso tomemos $k=0$ teremos $b^{\textbf{e}d} \equiv b \pm
 
 \section{Discutindo a seguran\c{c}a do RSA}
 
-Antes de passarmos para a generalização do RSA, vamos falar sobre a seguran\c{c}a do RSA. Vamos supor que algu\'em, que vamos chamar por Irineu, esteja com uma escuta em nossa troca de mensagens, tendo assim acesso tanto \`a mensagem codificada quanto \`a chave p\'ublica $n$. Vamos lembrar que $n$ \'e a multiplica\c{c}\~ ao dos primos $p$ e $q$. Sabendo disso, bastaria Irineu fatorar $n$ para obter $p$ e $q$ e depois descobrir $d$ para poder decodificar a mensagem, como j\'a foi explicado neste cap\'itulo.
+Antes de passarmos para a generaliza\c{c}\~ao do RSA, vamos falar sobre a seguran\c{c}a do RSA. Vamos supor que algu\'em, que vamos chamar por Irineu, esteja com uma escuta em nossa troca de mensagens, tendo assim acesso tanto \`a mensagem codificada quanto \`a chave p\'ublica $n$. Vamos lembrar que $n$ \'e a multiplica\c{c}\~ ao dos primos $p$ e $q$. Sabendo disso, bastaria Irineu fatorar $n$ para obter $p$ e $q$ e depois descobrir $d$ para poder decodificar a mensagem, como j\'a foi explicado neste cap\'itulo.
 
-Isso pode parecer muito simples, mas como j\'a mostramos na se\c{c}\~ao sobre fatora\c{c}\~ao, n\~ao h\'a um algoritmo conhecido que possa fazer isso de forma eficiente. O que ocorre \'e que um algoritmo que fa\c{c}a a fatora\c{c}\~ao de forma eficiente n\~ao tem sua inexist\^encia compravada, como j\'a comentamos no cap\'itulo \ref{Num}, embora sua inexist\^encia seja praticamente consenso pela comunidade acad\^emica, posto o fato deste problema ser qualificado em NP-difícil.
+Isso pode parecer muito simples, mas como j\'a mostramos na se\c{c}\~ao sobre fatora\c{c}\~ao, n\~ao h\'a um algoritmo conhecido que possa fazer isso de forma eficiente. O que ocorre \'e que um algoritmo que fa\c{c}a a fatora\c{c}\~ao de forma eficiente n\~ao tem sua inexist\^encia compravada, como j\'a comentamos no cap\'itulo \ref{Num}, embora sua inexist\^encia seja praticamente consenso pela comunidade acad\^emica, posto o fato deste problema ser qualificado em NP-dif\'icil.
 
 O que iremos fazer no pr\'oximo cap\'itulo, consiste em analisar a viabilidade de uma varia\c{c}\~ao da criptografia RSA que acreditamos n\~ao ser completamente vulner\'avel caso uma fatora\c{c}\~ao eficiente no conjunto $\mathbb{Z}$ seja descoberta: a \textit{Criptografia RSA Gaussiana}.

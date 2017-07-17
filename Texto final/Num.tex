@@ -59,7 +59,7 @@ Descri\c{c}\~{a}o do \textit{algoritmo euclidiano}:
 Em pseudoc\'odigo este algoritmo pode ser escrito na seguinte forma:
 
 \begin{verbatim}
-função  euclides(a, b){
+funcao  euclides(a, b){
     enquanto (b <> 0){
         q = a / b 
         r = a % b
@@ -165,7 +165,7 @@ As informa\c{c}\~{o}es obtidas acima podem ser inseridas numa tabela da seguinte
 Podemos tamb\'em escrev\^e-lo em pseudoc\'odigo na seguinte fun\c{c}\~ao:
 
 \begin{verbatim}
-função  euclidesExtendido(a, b){
+funcao  euclidesExtendido(a, b){
      var r = a
      var r1 = b
      var u = 1
@@ -227,7 +227,7 @@ Um n\'umero inteiro $p$ \'e \textit{primo} se $p\neq \pm 1$ e os \'unicos diviso
 
 S\~ao exemplos de n\'umeros primos: $\pm 2$, $\pm 3$, $\pm 5$, $\pm 7$, $\pm 11$, $\pm 13$, etc.
 
-Um n\'umero inteiro, diferente de $\pm 1$, que n\~ao \'e primo \'e chamado \textit{composto}. Observe que os n\'umeros $1$ e $-1$ n\~ao s\~ao nem primos e nem compostos. A exclus\~ao desses n\'umeros do conjunto dos primos tem a finalidade de garantir a unicidade da fatora\c{c}\~ao no teorema a seguir. Um outro aspecto a se destacar acerca desse par de n\'umeros \'e que eles s\~ao os \'unicos em $\mathbb{Z}$ que admitem inverso multiplicativo. Falaremos mais sobre esse assunto mais adiante. Para este trabalho iremos usar apenas os números inteiros positivos.
+Um n\'umero inteiro, diferente de $\pm 1$, que n\~ao \'e primo \'e chamado \textit{composto}. Observe que os n\'umeros $1$ e $-1$ n\~ao s\~ao nem primos e nem compostos. A exclus\~ao desses n\'umeros do conjunto dos primos tem a finalidade de garantir a unicidade da fatora\c{c}\~ao no teorema a seguir. Um outro aspecto a se destacar acerca desse par de n\'umeros \'e que eles s\~ao os \'unicos em $\mathbb{Z}$ que admitem inverso multiplicativo. Falaremos mais sobre esse assunto mais adiante. Para este trabalho iremos usar apenas os n\'umeros inteiros positivos.
 
 \begin{Th}
 [Teorema da Fatora\c{c}\~ao \'Unica]\label{fat.unica} 
@@ -240,7 +240,7 @@ onde $1<p_1<p_2<p_3<\cdots<p_k$ s\~ao n\'umeros primos e $e_1, \cdots, e_k$ s\~a
 \end{proof}
 
 No teorema acima, os expoentes $e_i$, para $1\leq i\leq k$ s\~ao chamados de \textit{multiplicidades}, pois indicam a quantidade de vezes que um mesmo n\'umero primo ocorre na fatora\c{c}\~ao. A prova de que \'e sempre poss\'ivel encontrar os fatores usados para decompor o n\'umero em fatores primos consiste no procedimento para fatorar um n\'umero, esse procedimento \'e chamado \textit{Algoritmo de Euclides}: trata-se do m\'etodo que se aprende na escola para fatorar
-um n\'umero e que n\~ao iremos detalhar aqui. Como bem sabemos, esse m\'etodo \'e bastante ineficaz quando pensamos em n\'umeros muito grandes, pois pode requerer que se realize uma sequ\^encia bem grande de divis\~oes. A prova garante que o procedimento termina, mas o que se nota \'e que tal procedimento \'e muito ineficiente no sentido em que demanda muito tempo para se chegar a uma resposta dependendo do n\'umero que desejamos fatorar. Na literatura existem v\'arios algoritmos de fatora\c{c}\~ao que tornam o m\'etodo mais eficiente, no entanto nenhum desses m\'etodos funciona bem para todos os n\'umeros inteiros. A criptografia RSA aproveita da inefici\^encia dos m\'etodos para fatorar um n\'umero para garantir a seguran\c{c}a do seu sistema. \'E um problema em aberto saber se existe ou n\~ao um m\'etodo r\'apido para fatorar n\'umeros inteiros, na computação este problema é qualificado como NP-difícil.  
+um n\'umero e que n\~ao iremos detalhar aqui. Como bem sabemos, esse m\'etodo \'e bastante ineficaz quando pensamos em n\'umeros muito grandes, pois pode requerer que se realize uma sequ\^encia bem grande de divis\~oes. A prova garante que o procedimento termina, mas o que se nota \'e que tal procedimento \'e muito ineficiente no sentido em que demanda muito tempo para se chegar a uma resposta dependendo do n\'umero que desejamos fatorar. Na literatura existem v\'arios algoritmos de fatora\c{c}\~ao que tornam o m\'etodo mais eficiente, no entanto nenhum desses m\'etodos funciona bem para todos os n\'umeros inteiros. A criptografia RSA aproveita da inefici\^encia dos m\'etodos para fatorar um n\'umero para garantir a seguran\c{c}a do seu sistema. \'E um problema em aberto saber se existe ou n\~ao um m\'etodo r\'apido para fatorar n\'umeros inteiros, na computa\c{c}\~ao este problema \'e qualificado como NP-dif\'icil.  
 
 A demonstra\c{c}\~ao do teorema acima requer uma s\'erie de resultados acerca de n\'umeros primos os quais detalharemos abaixo. O interesse em apresentar as demonstra\c{c}\~oes de tais resultados \'e devido ao fato de estaremos interessados em
 compreender as dificuldades para implementar um m\'etodo de criptografia RSA baseado em primos de Gauss. 
@@ -307,7 +307,7 @@ Existe, ainda, um outro debate acerca de como gerar os n\'umeros primos. Existem
 de Erat\'ostenes, o mais antigo deles, mas n\~ao envolve nenhuma f\'ormula espec\'ifica. No entanto, todos esses 
 m\'etodos mostram-se ineficazes, como mostra Coutinho em \cite{cou:2014}.
 
-Como vimos, o Teorema~\ref{fat.unica} garante que um n\'umero pode ser decomposto em fatores primos de forma \'unica e o Teorema~\ref{inf.primos} garante a exist\^{e}ncia de uma infinidade de n\'umeros primos, no entanto, os procedimentos atrelados a esses resultados s\~ao todos muito ineficientes em termos computacionais. N\~ao \'e conhecido se existe ou n\~ao um algoritmo que possa fazer essa opera\c{c}\~ao rapidamente, no entanto este problema \'e categorizado como um problema de classe NP-difícil.
+Como vimos, o Teorema~\ref{fat.unica} garante que um n\'umero pode ser decomposto em fatores primos de forma \'unica e o Teorema~\ref{inf.primos} garante a exist\^{e}ncia de uma infinidade de n\'umeros primos, no entanto, os procedimentos atrelados a esses resultados s\~ao todos muito ineficientes em termos computacionais. N\~ao \'e conhecido se existe ou n\~ao um algoritmo que possa fazer essa opera\c{c}\~ao rapidamente, no entanto este problema \'e categorizado como um problema de classe NP-dif\'icil.
 
 Para implementar a criptografia RSA, como iremos trabalhar com n\'{u}meros muito grandes, vamos precisar denot\'{a}-los por meio de pot\^{e}ncias e isso requer m\'{e}todos 
 eficazes para trabalhar com esses n\'{u}meros, por essa raz\~ao vamos precisar da aritm\'{e}tica modular.  
@@ -797,7 +797,7 @@ Logo, a tarefa, agora, consiste em resolver o seguinte sistema:
 \end{array}
 \]
 
-Vamos resolvê-lo usando o Algoritmo Chin\^{e}s. 
+Vamos resolv\^e-lo usando o Algoritmo Chin\^{e}s. 
 \begin{enumerate}
 \item A primeira congru\^{e}ncia equivale a dizer que $x = 3y + 1$; 
 \item Substituindo $x$ na segunda congru\^encia temos que $3y + 1 \equiv 4 \pmod{5}$. Isso equivale a dizer que $y \equiv 1 \pmod{5}$, 
