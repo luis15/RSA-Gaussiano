@@ -9,18 +9,18 @@
 \label{IG}
 At\'e o momento apenas os n\'umeros inteiros foram abordados neste projeto, mas para podermos entender a criptografia RSA Gaussiana \'e necess\'ario conhecer o conjunto dos n\'umeros inteiros gaussianos. Ao longo deste cap\'itulo vamos conhecer os inteiros e os primos gaussianos e suas propriedades aritm\'eticas b\'asicas. 
 
-\section{Inteiros de Gauss e suas propiedades}
+\section{Inteiros de Gauss e suas propriedades}
 
-Os inteiros gaussianos, conjunto que a partir de agora iremos nos referenciar por $\mathbb{Z}[i]$, s\~ao um subconjunto dos n\'umeros complexos, relembrando que os n\'umeros complexos s\~ao os n\'umeros de forma $a+b\textbf{i}$, onde $a$ e $b$ s\~ao reais e $\textbf{i}$ \'e a $\sqrt{-1}$. A diferen\c{c}a entre o conjunto $\mathbb{Z}[i]$ e o conjunto $C$ reside no fato de em $\mathbb{Z}[i]$ $a$ e $b$ serem n\'umeros inteiros. Formalmente dizemos que os inteiros gaussianos s\~ao:
+Os inteiros gaussianos, conjunto que a partir de agora iremos denotar por $\mathbb{Z}[i]$, s\~ao um subconjunto dos n\'umeros complexos, relembrando que os n\'umeros complexos s\~ao os n\'umeros da forma $a+b\textbf{i}$, onde $a$ e $b$ s\~ao reais e $\textbf{i}$ \'e a $\sqrt{-1}$. A diferen\c{c}a entre o conjunto $\mathbb{Z}[i]$ e o conjunto $\mathbb{C}$ reside no fato de que em $\mathbb{Z}[i]$ $a$ e $b$ serem n\'umeros inteiros. Formalmente dizemos que os inteiros gaussianos s\~ao:
 
 $$\mathbb{Z}[i]= \left\{a+b\textbf{i} | a,b \in \mathbb{Z}  \right\}, \textrm{ onde } \textbf{i}^2 = -1$$
 
-Por $\mathbb{Z}[i]$ estar contido em $\mathbb{C}$, as opera\c{c}\~oes deste conjunto podem ser realizadas, por exemplo, se tomarmos $z_1= a + b\textbf{i}$ e $z_2= c + d\textbf{i}$ n\'os iremos obter:
+Por $\mathbb{Z}[i]$ estar contido em $\mathbb{C}$, as opera\c{c}\~oes deste conjunto podem ser definidas da mesma forma que em $\mathbb{C}$ para, se tomarmos $z_1= a + b\textbf{i}$ e $z_2= c + d\textbf{i}$ n\'os iremos obter:
 
 $$z_1   +   z_2 = (a + c) + (b + d)\textbf{i}$$
 $$z_1 \cdot z_2 = (ac - bd) + (ad + bc)\textbf{i}$$
 
-Outra propiedade herdada \'e a dos elementos neutros, o $0 = 0 + 0\textbf{i}$ continua sendo o elemento neutro da adi\c{c}\~ao, enquanto o $1 = 1 + 0\textbf{i}$ tamb\'em continua sendo o elemento neutro da multiplica\c{c}\~ao. As propiedades associativa da adi\c{c}\~ao e da multiplica\c{c}\~ao, comutativa da adi\c{c}\~ao e multiplica\c{c}\~ao e distributiva tamb\'em s\~ao herdadas do conjunto complexo.
+Outra propriedade herdada \'e a dos elementos neutros, o $0 = 0 + 0\textbf{i}$ continua sendo o elemento neutro da adi\c{c}\~ao, enquanto o $1 = 1 + 0\textbf{i}$ tamb\'em continua sendo o elemento neutro da multiplica\c{c}\~ao. As propriedades associativa da adi\c{c}\~ao e da multiplica\c{c}\~ao, comutativa da adi\c{c}\~ao e multiplica\c{c}\~ao e distributiva tamb\'em s\~ao herdadas do conjunto complexo.
 
 Repare que se considerarmos o plano complexo, os inteiros gaussianos ter\~ao uma marca\c{c}\~ao reticulada. Outro conceito importante para os inteiros gaussianos \'e a norma do n\'umero, ela \'e importante para auxiliar na defini\c{c}\~ao de um primo gaussiano, assim como s\~ao importantes os conceitos de n\'umero conjugado e n\'umero associado. Caso venhamos a tomar um n\'umero inteiro gaussiano de forma $a+b\textbf{i}$, sua norma ser\'a $a^2 +b^2$.
 
@@ -29,10 +29,10 @@ A norma de um n\'umero gaussiano \'e a soma dos quadrados de seus valores absolu
 
 $$N(a+b\textbf{i}) = a^2 + b^2 = (a+b\textbf{i})(a-b\textbf{i}),$$
 
-onde o $(a-b\textbf{i})$ \'e a conjugado de $(a+b\textbf{i})$, tamb\'em denotado por $\overline{(a+b\textbf{i})}$.
+onde o $(a-b\textbf{i})$ \'e o conjugado de $(a+b\textbf{i})$, tamb\'em denotado por $\overline{(a+b\textbf{i})}$.
 \end{Df}
 
-Uma das propiedades da norma \'e ser multiplicativa, ou seja, a norma de $N(zw)$ \'e igual a $N(z) \cdot N(w)$.
+Uma das propriedades da norma \'e ser multiplicativa, ou seja, a norma de $N(zw)$ \'e igual a $N(z) \cdot N(w)$.
 
 Os inteiros gaussianos possuem como unidades b\'asicas $\pm 1$ e $\pm \textbf{i}$. Caso venhamos a multiplicar um inteiro gaussiano x, teremos que $\pm x$ e $\pm x\textbf{i}$ sendo seus elementos associados.
 
@@ -42,13 +42,13 @@ Os elementos associados de um n\'umero $x$, tal que $x \in \mathbb{Z}[i]$, s\~ao
 
 \end{Df}
 
-Para chegarmos aos primos Gaussianos precisaremos demonstrar para o conjunto $\mathbb{Z}[i]$ uma s\'erie de resultados que j\'a s\~ao conhecidos do conjunto dos n\'umeros inteiros, como o funcionamento da divis\~ao e o teorema da fatora\c{c}\~ao \'unica.
+Para chegarmos aos primos Gaussianos precisamos demonstrar para o conjunto $\mathbb{Z}[i]$ uma s\'erie de resultados que j\'a s\~ao conhecidos do conjunto dos n\'umeros inteiros, como o algoritmo da divis\~ao e o Teorema da Fatora\c{c}\~ao \'Unica.
 
 Podemos definir a divisibilidade gaussiana por quando dizemos que $\beta$ divide $\alpha$, representado por $\beta | \alpha$ se $\alpha = \beta \gamma$, para qualquer $\gamma \in \mathbb{Z}[i] $. Nesse caso, $\beta$ \'e um fator de $\alpha$.
 
 \begin{Th}\label{div_gaussiana1}
 
-Um inteiro Gaussiano $\alpha = a+b\textbf{i}$ \'e dividido por um primo inteiro $c$ se e somente se $c|a$ e $c|b$ em $\mathbb{Z}$.
+Um inteiro Gaussiano $\alpha = a+b\textbf{i}$ \'e dividido por um primo inteiro $c$, se e somente se, $c|a$ e $c|b$ em $\mathbb{Z}$.
 
 \end{Th}
 
@@ -58,11 +58,11 @@ Dizer que $c|(a+b\textbf{i})$ em $\mathbb{Z}$ \'e o mesmo que dizer que $a+b\tex
 
 \end{proof}
 
-Tomemos uma divis\~ao entre inteiros gaussianos, onde $\alpha$ \'e o dividendo, $\beta$ o divisor, $\gamma$ o quociente e $\rho$ o dividendo
+Tomemos uma divis\~ao entre inteiros gaussianos, onde $\alpha$ \'e o dividendo, $\beta$ o divisor, $\gamma$ o quociente e $\rho$ o resto
 
-\begin{Th}[Teorema da divis\~ao no conjunto gaussiano  ]  \label{divgauss}
+\begin{Th}[Teorema da Divis\~ao no conjunto gaussiano]  \label{divgauss}
 
-Para $ \alpha, \beta \in \mathbb{Z} $ com $\beta \neq 0$ existe um $\gamma, \rho \in \mathbb{Z}[i]$ tal qual $\alpha = \beta \gamma + \rho$ e $N(\rho) < N(\beta)$. De fato, podemos escolher $\rho$  de forma que $N(\rho) \leq (1/2)N(\beta)$
+Para $ \alpha, \beta \in \mathbb{Z} $ com $\beta \neq 0$ existe um $\gamma, \rho \in \mathbb{Z}[i]$ tal que $\alpha = \beta \gamma + \rho$ e $N(\rho) < N(\beta)$. De fato, podemos escolher $\rho$  de forma que $N(\rho) \leq (1/2)N(\beta)$
 
 \end{Th}
 
@@ -71,7 +71,7 @@ Agora que j\'a entendemos a divis\~ao, vamos definir o m\'aximo divisor comum no
 \begin{Th}[Algoritmo Euclidiano no conjunto gaussiano ]
 \label{euclideszi}
 
-Tomemos $\alpha , \beta \in \mathbb{Z}[i]$ e diferentes de $0$. Aplicamos recursivamente o teorema da divis\~ao em $\mathbb{Z}[i]$ (\ref{divgauss}), come\c{c}ando com esse par e fazendo com o resto uma  equa\c{c}\~ao com um novo dividendo e divisor no pr\'oximo caso, enquanto o resto for diferente de zero:
+Tomemos $\alpha , \beta \in \mathbb{Z}[i]$ e diferentes de $0$. Aplicamos recursivamente o Teorema da Divis\~ao em $\mathbb{Z}[i]$ (\ref{divgauss}), come\c{c}ando com esse par e fazendo com o resto uma  equa\c{c}\~ao com um novo dividendo e divisor no pr\'oximo caso, enquanto o resto for diferente de zero:
 
 \[
 \begin{array}{lcll}
@@ -86,7 +86,7 @@ O \'ultimo elemento que n\~ao possui resto $0$ \'e divis\'ivel por todos os divi
 
 \end{Th}
 
-Outra possibilidade para simplificar esta mesma opera\c{c}\~ao \'e o uso do algoritmo eucliadiano estendido, para o conjunto dos $\mathbb{Z}[i]$ esse algoritmo \'e chamado de Teorema de Bezout.
+Outra possibilidade para simplificar esta mesma opera\c{c}\~ao \'e o uso do algoritmo eucliadiano estendido, para o conjunto $\mathbb{Z}[i]$,conhecido por Teorema de Bezout.
 
 \begin{Cor} \label{cor}
 	Para $\alpha$ e $\beta$ diferentes de $0$ e existentes no conjunto gaussiano, tomemos $\delta$ como o maior divisor comum pelo algoritmo euclidiano no conjunto gaussiano(\ref{euclideszi}). Qualquer divisor comum de $\alpha$ e $\beta$ \'e um divisor de $\delta$.
@@ -114,7 +114,7 @@ Podemos dizer que se $\alpha$ e $\beta$ possuem apenas as unidades como fatores 
 
 \begin{Cor} \label{primosentresi}
 
-Os inteiros gaussianos $\alpha$ e $\beta$ s\~ao primos entre si se e somente se podemos escrever:
+Os inteiros gaussianos $\alpha$ e $\beta$ s\~ao primos entre si, se e somente se, podemos escrever:
 
 $$1 = \alpha x + \beta y$$
 
@@ -129,10 +129,10 @@ Se $\alpha$ e $\beta$ s\~ao primos entre si, ent\~ao $1$ \'e o maior divisor de 
 \end{proof}
 
 
-Agora n\'os vamos definir o que vem a ser um inteiro gaussiano primo e composto, al\'em de falarmos sobre a fatora\c{c}\~ao \'unica.
+Agora, vamos definir o que vem a ser um inteiro gaussiano primo e composto, al\'em de falarmos sobre a fatora\c{c}\~ao \'unica.
 
 \begin{Df}
-Se tomarmos um inteiro Gaussiano $\alpha$ com $N(\alpha) > 1$. \'e denominado \textit{composto} se o n\'umero possuir um fator diferente das unidades de $\mathbb{Z}[i]$ e dos conjugados do n\'umero. Caso ele n\~ao seja composto ele \'e denominado \textit{primo}.
+Se tomarmos um inteiro Gaussiano $\alpha$ com $N(\alpha) > 1$, \'e denominado \textit{composto} se o n\'umero possuir um fator diferente das unidades de $\mathbb{Z}[i]$ e dos conjugados do n\'umero. Caso ele n\~ao seja composto ele \'e denominado \textit{primo}.
 \end{Df}
 
 Agora que n\'os j\'a sabemos o que \'e um n\'umero primo e composto, podemos definir como eles s\~ao fatorados de forma \'unica pelo teoremas abaixo, as provas de ambas podem ser lidas na sess\~ao 6 de ``The Gaussian Integers'' em \cite{conrad}, a partir da p\'agina 13. As provas dos outros teoremas desta sess\~ao tamb\'em foram baseadas no trabalho de \cite{conrad}.
@@ -150,6 +150,6 @@ onde os $\pi_i$ e os $\pi'_j$ s\~ao primos em $\mathbb{Z}[i]$, ent\~ao $r=s$ e c
 
 \end{Th}
 
-Para exemplificar o que foi dito pelo Teorema da Fatora\c{c}\~ao \'Unica (\ref{fatunicagaussiana}), tomemos o n\'umero $2$. Esse n\'umero \'e fatorado como $(1 + \textbf{i})(1 - \textbf{i})$, por\'em a propiedade da fatora\c{c}\~ao \'unica se estende aos elementos associados aos fatores, logo $2$ tamb\'em pode ser fatorado na forma $(-1 - \textbf{i})(-1 + \textbf{i})$. Essa forma consiste apenas na multiplica\c{c}\~ao pela unidade $-1$ dos fatores e n\~ao altera ao resultado final. O mesmo poder\'a ser obtido por qualquer outro elemento associado em qualquer outra fatora\c{c}\~ao.
+Para exemplificar o que foi dito pelo Teorema da Fatora\c{c}\~ao \'Unica (\ref{fatunicagaussiana}), tomemos o n\'umero $2$. Esse n\'umero \'e fatorado como $(1 + \textbf{i})(1 - \textbf{i})$, por\'em a propriedade da fatora\c{c}\~ao \'unica se estende aos elementos associados aos fatores, logo $2$ tamb\'em pode ser fatorado na forma $(-1 - \textbf{i})(-1 + \textbf{i})$. Essa forma consiste apenas na multiplica\c{c}\~ao pela unidade $-1$ dos fatores e n\~ao altera ao resultado final. O mesmo poder\'a ser obtido por qualquer outro elemento associado em qualquer outra fatora\c{c}\~ao.
 
-Al\'em desses resultados apresentados acima outros ainda nos s\~ao necess\'arios para a realiza\c{c}\~ao de uma criptografia RSA Gaussiana, como uma aritm\'etica modular gaussiana e teorema an\'alogos ao teorema chin\^es do resto e ao Teorema de Fermat. No pr\'oximo cap\'itulo iremos discutir sobre a viabilidade ou n\~ao do algoritmo RSA Gaussiano, al\'em de conhecer alguns resultados relacionados a \'area pelo ponto de vista de outros pesquisadores do mesmo algoritmo.
+Al\'em desses resultados apresentados acima outros ainda nos s\~ao necess\'arios para a realiza\c{c}\~ao de uma criptografia RSA Gaussiana, como uma aritm\'etica modular gaussiana e teorema an\'alogos ao Teorema Chin\^es do Resto e ao Teorema de Fermat. Nas considerações finais vamos tecer alguns comentários sobre a viabilidade ou n\~ao do algoritmo RSA Gaussiano, mostrando algumas conclusões relacionadas a \'area sobre o ponto de vista de outros pesquisadores do mesmo algoritmo.

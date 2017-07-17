@@ -1,3 +1,4 @@
+
 \pagestyle{fancy}
 \fancyhead[C]{\textsl{1. Um passeio pela Teoria de N\'umeros}}
 \fancyhead[R]{\thepage}
@@ -7,11 +8,11 @@
 \chapter{Um passeio pela Teoria de N\'umeros}
 \label{Num}
 
-A teoria de n\'umeros \'e umas das mais antigas \'areas da matem\'atica e dedica-se ao estudo relacionado a propriedades relativas aos n\'umeros inteiros naturais tais como: a quest\~ao da fatora\c{c}\~ao, m\'aximo divisor comum, primalidade, entre outras. Para a criptografia RSA utiliza-se estes resultados aplicados apenas ao conjunto dos n\'umeros naturais, mas para uma apresenta\c{c}\~ao mais completa sobre o assunto iremos trabalhar com o conjunto inteiro neste cap\'itulo, onde mostraremos os principais resultados de teoria de n\'umeros essenciais para a compreens\~ao do m\'etodo de criptografia de chave p\'ublica conhecido como RSA.
+A teoria de n\'umeros \'e umas das mais antigas \'areas da matem\'atica e dedica-se ao estudo relacionado a propriedades relativas aos n\'umeros inteiros tais como: a quest\~ao da fatora\c{c}\~ao, m\'aximo divisor comum, primalidade, entre outras. Para a criptografia RSA utiliza-se estes resultados aplicados apenas ao conjunto dos n\'umeros naturais, mas para uma apresenta\c{c}\~ao mais completa sobre o assunto iremos trabalhar com o conjunto dos inteiros neste cap\'itulo, onde mostraremos os principais resultados de teoria de n\'umeros essenciais para a compreens\~ao do m\'etodo de criptografia de chave p\'ublica conhecido como RSA.
 
 \section{N\'umeros Primos e Fatora\c{c}\~ao \'Unica}
 
-Os n\'umeros primos ocupam lugar importante tanto na teoria de n\'umeros quanto na criptografia RSA: na primeira por serem capazes de gerar todos os elementos do conjunto dos n\'umeros inteiros e suas consequentes propriedades; na segunda pelo fato de formarem um conjunto infinito e permitir com isso que se tome um primo de dimens\~ao estrondosa para codificar uma mensagem, consequentemente dificultando que um c\'odigo seja decifrado por terceiros em tempo razo\'avel, como mostraremos ao longo desta monografia.
+Os n\'umeros primos ocupam lugar importante tanto na teoria de n\'umeros quanto na criptografia RSA: na primeira por serem capazes de gerar todos os elementos do conjunto dos n\'umeros inteiros e suas consequentes propriedades; na segunda pelo fato de formarem um conjunto infinito e permitir com isso que se tome um primo de dimens\~ao estrondosa para codificar uma mensagem, consequentemente dificultando que um c\'odigo seja decifrado por terceiros em tempo razo\'avel, como mostraremos ao longo desta Monografia.
 
 Os primos atuam como \'atomos dentro do conjunto dos n\'umeros inteiros no sentido em que todo n\'umero pode ser escrito de forma 
 \'{u}nica como um produto de primos. Esse fato \'e consequ\^encia do chamado \textit{Teorema da Fatora\c{c}\~ao \'Unica} tamb\'em conhecido por \textit{Teorema Fundamental da Aritm\'etica}. Al\'em de ser um resultado fundamental para a teoria de n\'umeros, ele tamb\'em \'e um dos pilares da criptografia RSA, pois a decodifica\c{c}\~ao de uma mensagem vai passar pela fatora\c{c}\~ao de um n\'umero. Para demonstrar esse teorema \'e preciso ter a disposi\c{c}\~ao o seguinte teorema. 
@@ -32,14 +33,14 @@ Confira em \cite{cou:2014}, se\c{c}\~ao 3 do cap\'itulo 1, p. 22.
 
 O teorema acima faz duas afirma\c{c}\~oes: a primeira que o quociente e o resto da divis\~ao sempre existem; a segunda, que o quociente e o resto s\~ao \'unicos. A garantia da unicidade \'e o ponto crucial na aplica\c{c}\~ao \`a criptografia RSA, pois assim temos a garantia de que uma mensagem possa ser decodificada de maneira \'unica. Um outro resultado 
 igualmente importante \'e o \textit{Algoritmo de Euclides} mais conhecido como m\'etodo para se calcular o m\'aximo divisor comum entre dois 
-n\'umeros. Esse resultado \'e importante para definir o que entendemos por n\'umeros primos e consequentemente para o teorema da fatora\c{c}\~ao \'unica, o qual mostra como expressar um n\'umero em fatores primos de forma \'unica. 
+n\'umeros. Esse resultado \'e importante para definir o que entendemos por n\'umeros primos e consequentemente para o Teorema da Fatora\c{c}\~ao \'Unica, o qual mostra como expressar um n\'umero em fatores primos de forma \'unica. 
 
 Descri\c{c}\~{a}o do \textit{algoritmo euclidiano}: 
 
 \begin{itemize}
 		\item \textbf{Entrada - etapa 1:} divida $a$ por $b$ e ache o resto $r_{1}$;
 						\begin{itemize}
-								\item Se $r_{1}=0$, escreva ``$mdc(a,b)=1$'' e pare o processo.
+								\item Se $r_{1}=0$, escreva ``$mdc(a,b)=b$'' e pare o processo.
 								\item Se $r_{1}\neq 0$, volte para a entrada.
 						\end{itemize}
 		\item \textbf{Entrada - etapa 2:} divida $b$ por $r_{1}$ e ache o resto $r_{2}$;  
@@ -55,20 +56,19 @@ Descri\c{c}\~{a}o do \textit{algoritmo euclidiano}:
 		\item E assim por diante.
 \end{itemize}
 
-Em pseudoc\'ogico este algoritmo pode ser escrito na seguinte forma:
-\[
-\begin{array}{l}
-\textmd{fun\c{c}\~ao  euclides} (a, b)\{\\
- \hspace{10mm}	\textrm{enquanto} (b <> 0)\{\\
- \hspace{10mm}	 \hspace{10mm}q = a / b \\
- \hspace{10mm}	 \hspace{10mm}r = a \% b\\
- \hspace{10mm}	 \hspace{10mm}a = b \\
- \hspace{10mm}     \hspace{10mm}b = r \\
- \hspace{10mm}	\textrm{retorne}\hspace{2mm} a\\
- \hspace{10mm} \}\\
-\}
-\end{array} 
-\]
+Em pseudoc\'odigo este algoritmo pode ser escrito na seguinte forma:
+
+\begin{verbatim}
+função  euclides(a, b){
+    enquanto (b <> 0){
+        q = a / b 
+        r = a % b
+        a = b 
+        b = r
+    }
+    retorne a
+}
+\end{verbatim} 
 
 O algoritmo acima produz a seguinte sequ\^{e}ncia de divis\~{o}es, e o processo segue at\'{e}
 que se obtenha um resto igual a zero, nesse caso o procedimento termina:
@@ -162,35 +162,33 @@ As informa\c{c}\~{o}es obtidas acima podem ser inseridas numa tabela da seguinte
 \end{array}
 \]
 
-Podemos tamb\'em escrev\^e-lo em pseudo\'odigo na seguinte fun\c{c}\~ao:
+Podemos tamb\'em escrev\^e-lo em pseudoc\'odigo na seguinte fun\c{c}\~ao:
 
-\[
-\begin{array}{l}
-\textmd{fun\c{c}\~ao  euclidesExtendido} (a, b)\{\\
-\hspace{10mm} \textmd{var}\hspace{2mm} r = a;\\
-\hspace{10mm} \textmd{var}\hspace{2mm} r1 = b;\\
-\hspace{10mm} \textmd{var}\hspace{2mm} u = 1;\\
-\hspace{10mm} \textmd{var}\hspace{2mm} v = 0;\\
-\hspace{10mm} \textmd{var}\hspace{2mm} u1 = 0;\\
-\hspace{10mm} \textmd{var}\hspace{2mm} v1 = 1;\\
-\hspace{10mm} \textmd{var}\hspace{2mm} rs, us, vs, q;\\
-\hspace{10mm} \textmd{enquanto} (r1 <> 0)\{\\
-\hspace{10mm}\hspace{10mm}		q = r / r1; \\
-\hspace{10mm}\hspace{10mm}		rs = r;\\
-\hspace{10mm}\hspace{10mm}		us = u;\\
-\hspace{10mm}\hspace{10mm}		vs = v;\\
-\hspace{10mm}\hspace{10mm}		r = r1;\\
-\hspace{10mm}\hspace{10mm}		u = u1;\\
-\hspace{10mm}\hspace{10mm}		v = v1;\\
-\hspace{10mm}\hspace{10mm}		r1 = rs - q *r1;\\
-\hspace{10mm}\hspace{10mm}		u1 = us - q*u;\\
-\hspace{10mm}\hspace{10mm}		v1 = vs - q*v1;\\
-\hspace{10mm}	\}\\
-	
-\hspace{10mm}	\textmd{retorne} (r, u, v); \\
-\}\\
-\end{array}
-\]
+\begin{verbatim}
+função  euclidesExtendido(a, b){
+     var r = a
+     var r1 = b
+     var u = 1
+     var v = 0
+     var u1 = 0
+     var v1 = 1
+     var rs, us, vs, q
+     var enquanto(r1 <> 0){
+          q = r / r1
+          rs = r
+          us = u
+          vs = v
+          r = r1
+          u = u1
+          v = v1
+          r1 = rs - q *r1
+          u1 = us - q*u
+          v1 = vs - q*v1
+     }
+     retorne(r, u, v)
+}
+\end{verbatim}
+
 
 Para fins pr\'{a}ticos iniciamos o processo fixando os seguintes valores para as vari\'{a}veis inciais
 que n\~{a}o aparecem no processo: $x_{-1}=y_{0}=1$ e $x_{0}=y_{-1}=0$. Com isso o processo se inicia e 
@@ -221,7 +219,7 @@ Como dissemos, a vantagem em usar o algoritmo acima est\'{a} no fato de termos u
 $\alpha$ e $\beta$, que como veremos ser\~{a}o \'{u}teis para o RSA.
 
 Agora, estamos em condi\c{c}\~{o}es de definir o que entendemos por n\'umeros primos para ent\~ao atingir nossa meta com este 
-cap\'itulo: o teorema da fatora\c{c}\~ao \'unica.
+cap\'itulo: o Teorema da Fatora\c{c}\~ao \'Unica.
 
 \begin{Df}
 Um n\'umero inteiro $p$ \'e \textit{primo} se $p\neq \pm 1$ e os \'unicos divisores de $p$ s\~ao $\pm 1$ e $\pm p$. 
@@ -229,7 +227,7 @@ Um n\'umero inteiro $p$ \'e \textit{primo} se $p\neq \pm 1$ e os \'unicos diviso
 
 S\~ao exemplos de n\'umeros primos: $\pm 2$, $\pm 3$, $\pm 5$, $\pm 7$, $\pm 11$, $\pm 13$, etc.
 
-Um n\'umero inteiro, diferente de $\pm 1$, que n\~ao \'e primo \'e chamado \textit{composto}. Observe que os n\'umeros $1$ e $-1$ n\~ao s\~ao nem primos e nem compostos. A exclus\~ao desses n\'umeros do conjunto dos primos tem a finalidade de garantir a unicidade da fatora\c{c}\~ao no teorema a seguir. Um outro aspecto a se destacar acerca desse par de n\'umeros \'e que eles s\~ao os \'unicos em $\mathbb{Z}$ que admitem inverso multiplicativo. Falaremos mais sobre esse assundo mais adiante.
+Um n\'umero inteiro, diferente de $\pm 1$, que n\~ao \'e primo \'e chamado \textit{composto}. Observe que os n\'umeros $1$ e $-1$ n\~ao s\~ao nem primos e nem compostos. A exclus\~ao desses n\'umeros do conjunto dos primos tem a finalidade de garantir a unicidade da fatora\c{c}\~ao no teorema a seguir. Um outro aspecto a se destacar acerca desse par de n\'umeros \'e que eles s\~ao os \'unicos em $\mathbb{Z}$ que admitem inverso multiplicativo. Falaremos mais sobre esse assunto mais adiante. Para este trabalho iremos usar apenas os números inteiros positivos.
 
 \begin{Th}
 [Teorema da Fatora\c{c}\~ao \'Unica]\label{fat.unica} 
@@ -242,9 +240,10 @@ onde $1<p_1<p_2<p_3<\cdots<p_k$ s\~ao n\'umeros primos e $e_1, \cdots, e_k$ s\~a
 \end{proof}
 
 No teorema acima, os expoentes $e_i$, para $1\leq i\leq k$ s\~ao chamados de \textit{multiplicidades}, pois indicam a quantidade de vezes que um mesmo n\'umero primo ocorre na fatora\c{c}\~ao. A prova de que \'e sempre poss\'ivel encontrar os fatores usados para decompor o n\'umero em fatores primos consiste no procedimento para fatorar um n\'umero, esse procedimento \'e chamado \textit{Algoritmo de Euclides}: trata-se do m\'etodo que se aprende na escola para fatorar
-um n\'umero e que n\~ao iremos detalhar aqui. Como bem sabemos, esse m\'etodo \'e bastante ineficaz quando pensamos em n\'umeros muito grandes, pois pode requerer que se realize uma sequ\^encia bem grande de divis\~oes. A prova garante que o procedimento termina, mas o que se nota \'e que tal procedimento \'e muito ineficiente no sentido em que demanda muito tempo para se chegar a uma resposta dependendo do n\'umero que desejamos fatorar. Na literatura existem v\'arios algoritmos de fatora\c{c}\~ao que tornam o m\'etodo mais eficiente, no entanto nenhum desses m\'etodos funciona bem para todos os n\'umeros inteiros. A criptografia RSA aproveita a inefici\^encia dos m\'etodos para fatorar um n\'umero para garantir a seguran\c{c}a do seu sistema. \'E um problema em aberto saber se existe ou n\~ao um m\'etodo r\'apido para fatorar n\'umeros inteiros.  
+um n\'umero e que n\~ao iremos detalhar aqui. Como bem sabemos, esse m\'etodo \'e bastante ineficaz quando pensamos em n\'umeros muito grandes, pois pode requerer que se realize uma sequ\^encia bem grande de divis\~oes. A prova garante que o procedimento termina, mas o que se nota \'e que tal procedimento \'e muito ineficiente no sentido em que demanda muito tempo para se chegar a uma resposta dependendo do n\'umero que desejamos fatorar. Na literatura existem v\'arios algoritmos de fatora\c{c}\~ao que tornam o m\'etodo mais eficiente, no entanto nenhum desses m\'etodos funciona bem para todos os n\'umeros inteiros. A criptografia RSA aproveita da inefici\^encia dos m\'etodos para fatorar um n\'umero para garantir a seguran\c{c}a do seu sistema. \'E um problema em aberto saber se existe ou n\~ao um m\'etodo r\'apido para fatorar n\'umeros inteiros, na computação este problema é qualificado como NP-difícil.  
 
-A demonstra\c{c}\~ao do teorema acima requer uma s\'erie de resultados acerca de n\'umeros primos os quais detalharemos abaixo. O interesse em apresentar as demonstra\c{c}\~oes de tais resultados \'e devido ao fato de estarmos interessados em adaptar tais provas para os primos de Gauss, cujo objetivo \'{e} compreender as dificuldades para implementar um m\'etodo de criptografia RSA baseado em primos de Gauss. 
+A demonstra\c{c}\~ao do teorema acima requer uma s\'erie de resultados acerca de n\'umeros primos os quais detalharemos abaixo. O interesse em apresentar as demonstra\c{c}\~oes de tais resultados \'e devido ao fato de estaremos interessados em
+compreender as dificuldades para implementar um m\'etodo de criptografia RSA baseado em primos de Gauss. 
 
 \begin{Th}\label{propriedade_de_primos}
 Sejam $a$ e $b$ inteiros positivos e suponhamos que $a$ e $b$ s\~ao primos entre si.
@@ -283,16 +282,16 @@ Estamos interessados, agora, em mostrar que a lista de primos \'e infinita, para
 
 \begin{Th}[Exist\^encia de Divisor Primo]\label{divisor_primo}
 Se $n$ \'e um n\'umero inteiro positivo composto, ent\~ao $n$ tem um divisor primo
-$p$ tal que $p\leq\sqrt{n}$.
+$|p|$ tal que $|p|\leq\sqrt{n}$.
 \end{Th}
 
 \begin{proof}
 Se $n$ \'e um n\'umero composto e positivo, podemos supor que $n=a\cdot b$, com $1<a\leq b$.
 \begin{enumerate}
-\item De $1<a$, temos que existe um primo $p$ que divide $a$ (Teorema~\ref{fat.unica}), com $p\leq a$, da\'i $p^2\leq a^2$.
+\item De $1<a$, temos que existe um primo $p$ que divide $a$ (Teorema~\ref{fat.unica}), com $|p|\leq a$, da\'i $p^2\leq a^2$.
 \item De $a\leq b$ temos que $a^2\leq a\cdot b=n$
 \end{enumerate}
-De (1) e (2) segue que $p^2\leq n$, logo $p\leq\sqrt{n}$.
+De (1) e (2) segue que $p^2\leq n$, logo $|p|\leq\sqrt{n}$.
 \end{proof}
 
 \begin{Th}[Infinidade de Primos]\label{inf.primos}
@@ -308,7 +307,7 @@ Existe, ainda, um outro debate acerca de como gerar os n\'umeros primos. Existem
 de Erat\'ostenes, o mais antigo deles, mas n\~ao envolve nenhuma f\'ormula espec\'ifica. No entanto, todos esses 
 m\'etodos mostram-se ineficazes, como mostra Coutinho em \cite{cou:2014}.
 
-Como vimos, o Teorema~\ref{fat.unica} garante que um n\'umero pode ser decompostoem fatores primos de forma \'unica e o Teorema~\ref{inf.primos} garante a exist\^{e}ncia de uma infinidade de n\'umeros primos, no entanto, os procedimentos atrelados a esses resultados s\~ao todos muito ineficientes em termos computacionais. N\~ao \'e conhecido se existe ou n\~ao um algoritmo que possa fazer essa opera\c{c}\~ao rapidamente, no entanto este problema \'e categorizado como um problema de classe NP e aceito como sem resolu\c{c}\~ao.
+Como vimos, o Teorema~\ref{fat.unica} garante que um n\'umero pode ser decomposto em fatores primos de forma \'unica e o Teorema~\ref{inf.primos} garante a exist\^{e}ncia de uma infinidade de n\'umeros primos, no entanto, os procedimentos atrelados a esses resultados s\~ao todos muito ineficientes em termos computacionais. N\~ao \'e conhecido se existe ou n\~ao um algoritmo que possa fazer essa opera\c{c}\~ao rapidamente, no entanto este problema \'e categorizado como um problema de classe NP-difícil.
 
 Para implementar a criptografia RSA, como iremos trabalhar com n\'{u}meros muito grandes, vamos precisar denot\'{a}-los por meio de pot\^{e}ncias e isso requer m\'{e}todos 
 eficazes para trabalhar com esses n\'{u}meros, por essa raz\~ao vamos precisar da aritm\'{e}tica modular.  
@@ -376,7 +375,7 @@ e o contexto em que desejamos trabalhar para ent\~{a}o podermos definir as opera
 	Dizemos, nesse caso, que a rela\c{c}\~ao $\sim$ \'e uma rela\c{c}\~{a}o de equival\^encia. 
 		
 	Seja $X$ um conjunto e $\sim$ uma rela\c{c}\~{a}o de equival\^{e}ncia definida em $X$. Denotamos por $\overline{x}$ 
-	a classe de equival\^{e}ncia de $x$ e escrevemos, em s\'{i}mbolos, da seguinte forma:
+	a classe de equival\^{e}ncia de $x$ e a escrevemos, em s\'{i}mbolos, da seguinte forma:
 	
 	                     $$\overline{x}=\{y\in X: y\sim x\}$$
 	
@@ -409,7 +408,7 @@ e o contexto em que desejamos trabalhar para ent\~{a}o podermos definir as opera
 	o conjunto $\mathbb{Z}$, e $x$ um n\'{u}mero inteiro enquanto que
 	$\sim$ representa alguma rela\c{c}\~{a}o estabelecida entre os n\'{u}meros inteiros. 
 	
-	Considere o exemplo em que as classes s\~{a}o compostas aqueles n\'{u}meros que partilham do mesmo resto quando s\~{a}o divididos por 
+	Considere o exemplo em que as classes s\~{a}o compostas por aqueles n\'{u}meros que partilham do mesmo resto quando s\~{a}o divididos por 
 	5. Neste caso podemos formar cinco classes distintas em $\mathbb{Z}$, a saber:
 	\begin{itemize}
 		\item Classe do resto zero: $\overline{0}=\{\cdots, -10, -5, 0, 5, 10, 15, 20, \cdots\}$
@@ -426,7 +425,7 @@ e o contexto em que desejamos trabalhar para ent\~{a}o podermos definir as opera
 
 	$$\mathbb{Z}_{n}=\{\overline{0}, \overline{1}, \overline{2}, \cdots, \overline{n-1}\}$$ 
 
-Pelo teorema de divis\~{a}o (Teorema~\ref{teo.div}) sabemos que a divis\~{a}o de $a$ pode $n$ \'{e} expressa como:
+Pelo teorema de divis\~{a}o (Teorema~\ref{teo.div}) sabemos que a divis\~{a}o de $a$ por $n$ \'{e} expressa como:
 $a=kn+r$, com $0\leq r< k$. Dessa forma, podemos expressar esse fato como $a-r=kn$, para algum $k\in\mathbb{Z}$. Isso 
 quer dizer que a diferen\c{c}a $a-r$ \'{e} um m\'{u}ltiplo de $n$. Ser\'{a} conveniente nos referirmos aos elementos 
 de uma mesma classe em $\mathbb{Z}_{n}$ dessa maneira olhando para a diferen\c{c}a entre eles, como mostramos a seguir. 
@@ -447,12 +446,12 @@ pelos exemplos dados. Vejamos mais alguns exemplos de elementos equivalentes seg
 \end{itemize}
 
 Observe que a congru\^{e}ncia entre dois n\'{u}meros depende do m\'{o}dulo escolhido, isto \'{e}, do tamanho 
-do pulo que a ser dado. Pode-se mostrar que a congu\^{e}ncia m\'{o}dulo $n$ forma uma rela\c{c}\~{a}o de 
+do pulo a ser dado. Pode-se mostrar que a congu\^{e}ncia m\'{o}dulo $n$ forma uma rela\c{c}\~{a}o de 
 equival\^{e}ncia. N\~{a}o daremos essa demonstra\c{c}\~{a}o aqui e o leitor interessado pode encontr\'{a}-la no 
 cap\'{i}tulo 4 em \cite{cou:2014}.
 
 Nosso principal objetivo, agora, \'{e} mostrar como podemos operar com essas classes. Veremos que as 
-opera\c{c}\~{o}es em $\mathbb{Z}_{n}$ mant\'{e}m as mesmas propriedade satisfeitas em $\mathbb{Z}$.
+opera\c{c}\~{o}es em $\mathbb{Z}_{n}$ mant\'{e}m as mesmas propriedades satisfeitas em $\mathbb{Z}$.
 
 \begin{Df}
 Sejam $\overline{a},\overline{b}\in\mathbb{Z}_{n}$. As opera\c{c}\~{o}es \textit{adi\c{c}\~{a}o}, 
@@ -466,7 +465,7 @@ Sejam $\overline{a},\overline{b}\in\mathbb{Z}_{n}$. As opera\c{c}\~{o}es \textit
 
 Como estamos operando com classes, qualquer elemento da classe pode ser tomado como representando 
 a classe a qual ele pertence, dessa forma, precisamos nos certificar de que o resultado dessas opera\c{c}\~{o}es 
-independem do representante da classe. Vejamos, por meio do exemplo, a validade desta propriedade para a soma.
+independem do representante da classe. Vejamos, por meio de um exemplo, a validade desta propriedade para a soma.
 
 Sejam $\overline{4},\overline{3}\in\mathbb{Z}_{5}$. Queremos mostrar que a soma desses elementos independe do 
 elemento tomado na classe como sendo seu representante.Tome 4 e 9 como representantes da classe $\overline{4}$ e
@@ -618,9 +617,9 @@ Na criptografia RSA usaremos o resultado acima para construir a chave de codific
 no pr\'{o}ximo cap\'{i}tulo. 
 
 Nesse momento temos a nossa disposi\c{c}\~{a}o todos os resultados que precisamos para construir o algoritmo RSA, mas
-vamos usar o chamado \textit{teorema de Fermat} para efetuar simplica\c{c}\~{o}es de n\'{u}meros envolvendo pot\^{e}ncias
-muito altas. O teorema de Fermat aparece em duas vers\~{o}es e para o nosso prop\'{o}sito vamos precisar apenas da 
-vers\~{a}o chamada \textit{pequeno teorema de Fermat}.
+vamos usar o chamado \textit{Teorema de Fermat} para efetuar simplica\c{c}\~{o}es de n\'{u}meros envolvendo pot\^{e}ncias
+muito altas. O Teorema de Fermat aparece em duas vers\~{o}es e para o nosso prop\'{o}sito vamos precisar apenas da 
+vers\~{a}o chamada \textit{Pequeno Teorema de Fermat}.
 
 \begin{Th}[Teorema de Fermat]\label{fermat}
 	Seja $p$ um n\'{u}mero primo e $a$ um n\'{u}mero inteiro, ent\~{a}o
@@ -653,15 +652,13 @@ muito \'{u}til porque teremos que trabalhar com n\'{u}meros muito grandes para p
 
 Vejamos como aplicar o teorema para simplificar os c\'{a}lculos na pr\'{a}tica.
 
-Para calcular $2^{5432675}$ m\'{o}dulo 13, usando o Teorema~\ref{pequeno.fermat} basta calcular o resto da 
+Para calcular $2^{5432675}$ m\'{o}dulo 13, usando o Teorema~\ref{pequeno.fermat}, basta calcular o resto da 
 divis\~{a}o de $5432675$ por $12=13-1$, que resulta em $11$.  Assim temos que $2^{5432675}\equiv 2^{11}\equiv 7 \pmod{13}$. 
 
-
-
 Outro resultado usado para decodificar uma mensagem na criptografia RSA \'{e} o chamado \textit{Teorema Chin\^{e}s do resto}. Esse teorema
-\'{e} \'{u}til para resolver sistemas de congru\^{e}ncias, isto \'{e}, sistemas envolvendo situa\c{c}\~{o}es com ciclos, por exemplo: para saber quando tr\^{e}s sat\'{e}lites que giram em torno da Terra com ciclos diferentes estar\~{a}o alinhados usamos o teorema chin\^es do resto. 
+\'{e} \'{u}til para resolver sistemas de congru\^{e}ncias, isto \'{e}, sistemas envolvendo situa\c{c}\~{o}es com ciclos, por exemplo: para saber quando tr\^{e}s sat\'{e}lites que giram em torno da Terra com ciclos diferentes estar\~{a}o alinhados usamos o Teorema Chin\^es do Resto. 
 
-Na pr\'{a}tica, o teorema chin\^{e}s do resto \'{e} um procedimento usado para encontrar uma classe de equival\^{e}ncia 
+Na pr\'{a}tica, o Teorema Chin\^{e}s do Resto \'{e} um procedimento usado para encontrar uma classe de equival\^{e}ncia 
 adequada para ser solu\c{c}\~{a}o do sistema, mas em uma outra base. Uma equa\c{c}\~{a}o
 envolvendo congru\^{e}ncias \'{e} dada pela express\~{a}o:
 $$ax\equiv b  \pmod{n}\hfill\eqno(1.4)$$
@@ -692,7 +689,7 @@ Queremos determinar o valor de $x$ de modo a tornar verdadeira a equa\c{c}\~{a}o
 
 Para decodificar uma mensagem criptografada pelo RSA ser\'{a} necess\'{a}rio resolver sistemas envolvendo apenas duas 
 equa\c{c}\~{o}es de congru\^{e}ncias por isso optamos por n\~{a}o trabalhar com o caso geral de sistemas envolvendo 
-mais de duas equa\c{c}\~{o}es nesta monografia.
+mais de duas equa\c{c}\~{o}es nesta Monografia.
 
 Considere o seguinte sistema:
 \[
@@ -746,8 +743,8 @@ sempre tem uma solu\c{c}\~ao em $\mathbb{Z}_{n_1\cdots n_k}$.
   Veja a se\c{c}\~{a}o 5 do cap\'{i}tulo 7 em \cite{cou:2014}.  
 \end{proof}
 
-Para encerrarmos este cap\'itulo vejamos como podemos combinar o teorema de Fermat (Teorema~\ref{fermat}) 
-e o teorema chin\^es do resto (Teorema~\ref{chines}) a fim de simplificar o c\'{a}lculo de pot\^{e}ncias 
+Para encerrarmos este cap\'itulo vejamos como podemos combinar o Teorema de Fermat (Teorema~\ref{fermat}) 
+e o Teorema Chin\^es do Resto (Teorema~\ref{chines}) a fim de simplificar o c\'{a}lculo de pot\^{e}ncias 
 m\'{o}dulo $n$. Mostraremos esse procedimento por meio de um exemplo.
 
 
@@ -756,7 +753,7 @@ todos os fatores primos que ocorrem na fatora\c{c}\~{a}o tem multiplicidade igua
 caso que vamos utilizar neste trabalho. Claramente os fatores primos s\~{a}o dois a dois primos entre si,
 da\'{i} o Teorema~\ref{chines} afirma que existe uma \'{u}nica solu\c{c}\~{a}o para um sistema 
 cujos os m\'{o}dulos s\~{a}o dados por tais fatores. Para cada fator primo obtido na fatora\c{c}\~{a}o iremos encontrar a 
-classe a qual a pot\^{e}ncia dada no problema pertence usando o Teorema~\ref{fermat}, e com isso podemos construir um 
+classe a qual a pot\^{e}ncia dada no problema irá pertencer, usando o Teorema~\ref{fermat} podemos construir um 
 sistema cuja solu\c{c}\~{a}o resultar\'{a} na simplifica\c{c}\~{a}o da pot\^{e}ncia dada. 
 
 Vejamos como calcular $2^{6754} \pmod{1155}$. 					
@@ -781,7 +778,7 @@ Agora, dividindo $6754$ por $p-1$, para $p\in\{3, 5, 7, 11\}$, temos:
   6754 & = & 10 \times 675 + 4 \\ 
 \end{array}
 \]
-Em seguida substitu\'imos as identidades acima nas congru\^encias e as reduzimos
+Em seguida substitu\'imos as identidades pelas congru\^encias acima e as reduzimos
 \[
 \begin{array}{cccccc}
 2^{6754} & = & 2^{2\times 3377}   & \Rightarrow & (2^{3377})^{2} & \equiv 1 \pmod{3} \\  
@@ -800,7 +797,7 @@ Logo, a tarefa, agora, consiste em resolver o seguinte sistema:
 \end{array}
 \]
 
-Agora, basta resolver o sistema usando o algoritmo chin\^{e}s. 
+Vamos resolvê-lo usando o Algoritmo Chin\^{e}s. 
 \begin{enumerate}
 \item A primeira congru\^{e}ncia equivale a dizer que $x = 3y + 1$; 
 \item Substituindo $x$ na segunda congru\^encia temos que $3y + 1 \equiv 4 \pmod{5}$. Isso equivale a dizer que $y \equiv 1 \pmod{5}$, 

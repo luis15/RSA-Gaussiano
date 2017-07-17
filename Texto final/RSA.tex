@@ -2,10 +2,10 @@
 \fancyhead[C]{\textsl{2. Sobre a Criptografia RSA}}
 \fancyhead[R]{\thepage}
 \fancyfoot[C]{}
-\chapter {Aplicando a criptografia RSA}
+\chapter {Criptografia RSA: Um estudo de caso}
 \label{RSA}
 
-A criptografia RSA tem suma import\^ancia para toda a comunica\c{c}\~ao moderna. Ela \'e t\~ao importante que a descoberta de uma forma de se desencript\'a-la colocaria em risco a sociedade como a conhecemos. Ao longo deste cap\'itulo vamos ver como \'e seu funcionamento usando os conte\'udos do cap\'itulo anterior.
+A criptografia RSA tem suma import\^ancia para toda a comunica\c{c}\~ao moderna. Ela \'e t\~ao importante que a descoberta de uma forma de se desencript\'a-la colocaria em risco todo o sistema financeiro e portanto toda a sociedade. Ao longo deste cap\'itulo vamos ver como \'e seu funcionamento usando os conte\'udos do cap\'itulo anterior.
 
 \section{Preparando-se para criptografar}
 
@@ -22,7 +22,7 @@ N & O  & P  & Q  & R  & S & T  & U  & V  & X  & Y  & W  & Z \\
 \end{array}
 \]
 
-Para representar espa\c{c}os vamos usar o 99. Avisamos que esta \'e uma tabela apenas com finalidade did\'atica, e, por isso h\'a v\'arios caracteres desconsiderados. Como exemplo vamos pr\'e-encriptar o poema Amor, de Oswald de Andrade. O texto do poema a ser pr\'e-encriptado \'e o seguinte:
+Para representar espa\c{c}os vamos usar o 99. Alertamos que esta \'e uma tabela apenas com finalidade did\'atica, e, por isso h\'a v\'arios caracteres que não estão sendo considerado. Como exemplo vamos pr\'e-encriptar o poema Amor, de Oswald de Andrade. O texto do poema a ser pr\'e-encriptado \'e o seguinte:
 
 \begin{center}
 Amor  \\ 
@@ -41,11 +41,11 @@ Feito isso, agrupamos o conjunto em um bloco \'unico de caracteres:
 10222427991730222427
 \end{center}
 
-Atente-se ao fato de todo o caractere convertido possuir sempre o mesmo n\'umero de algarismos. Isso \'e \'util para evitar ambiguidades na fase de desencripta\c{c}\~ao.
+Observe que inicamos a pré-codificação atribuindo a letra \textbf{A} o número 10 e não o 1. Isso evitará ambiguidades, pois se tivéssemos iniciados com o 1 quando fossemos desencriptar por exemplo o número 11 não seríamos capazes de diferenciar \textbf{AA} e \textbf{K}, por exemplo.
 
-Nosso pr\'oximo passo nesta fase que antecede a encripta\c{c}\~ao consiste em definir quais ser\~ao os primos $p$ e $q$. Para nosso exemplo vamos usar $p=17$ e $q=23$, como mencionado na Introdu\c{c}\~ao desta monografia, temos que $n = pq$, logo $n=391$.
+Nosso pr\'oximo passo nesta fase que antecede a encripta\c{c}\~ao consiste em definir quais ser\~ao os primos $p$ e $q$. Para nosso exemplo vamos usar $p=17$ e $q=23$. Como mencionado na Introdu\c{c}\~ao desta monografia, temos que $n = pq$, logo $n=391$.
 
-O \'ultimo passo da pr\'e-encripta\c{c}\~ao consiste em quebrar o n\'umero que obtemos acima em blocos menores. Esses blocos devem obedecer \`a duas regras b\'asicas: serem menores que $n$, ou no nosso exemplo $391$, pois iremos trabalhar com  o m\'odulo $391$ durante a encripta\c{c}\~ao, e n\~ao podem se iniciar por $0$, para n\~ao haver ambiguidades na desencripta\c{c}\~ao. Vejamos como a nossa mensagem fica quando pr\'e-encriptada.
+O \'ultimo passo da pr\'e-encripta\c{c}\~ao consiste em quebrar o n\'umero que obtivemos acima em blocos menores. Esses blocos devem obedecer \`a duas regras b\'asicas: serem menores que $n$, ou no nosso exemplo $391$, pois iremos trabalhar com  o m\'odulo $391$ durante a encripta\c{c}\~ao, e n\~ao podem se iniciar por $0$, para n\~ao haver ambiguidade na desencripta\c{c}\~ao. Vejamos como nossa mensagem fica quando pr\'e-encriptada.
 
 \begin{center}
 $102$ | $224$ | $279$ | $91$ | $7$ | $30$ | $222$ | $42$ | $7$
@@ -55,25 +55,25 @@ Perceba que n\~ao h\'a rela\c{c}\~ao entre nenhum dos n\'umeros obtidos com um c
 
 \section{Codificando e decodificando mensagens}
 
-Encerrada a fase de pr\'e-codifica\c{c}\~ao vamos agora codificar nossas mensagens. Manteremos os valores e exemplos da se\c{c}\~ao anterior a fim de facilitar a compreens\~ao.
+Encerrada a fase de pr\'e-codifica\c{c}\~ao vamos agora codificar a mensagem. Manteremos os valores e exemplos da se\c{c}\~ao anterior a fim de facilitar a compreens\~ao.
 
 \subsection{Codificando uma mensagem}
 
-A esta altura n\'os j\'a conhecemos o n\'umero $n$, que em nosso exemplo possui o valor de $391$. O outro n\'umero que iremos usar ser\'a o $\textbf{e}$. Tomaremos que o $mdc(\textbf{e}, \phi(n)) = 1$. Para calcularmos o valor de $\phi(n)$, conforme j\'a comentamos em \ref{totiente} precisaremos aplicar a seguinte receita:
+A esta altura n\'os j\'a conhecemos o n\'umero $n$, que em nosso exemplo possui o valor de $391$. O outro n\'umero que iremos usar ser\'a o número $\textbf{e}$, tal que o $mdc(\textbf{e}, \phi(n)) = 1$. Para calcularmos o valor de $\phi(n)$, conforme j\'a comentamos pelo Teorema ~\ref{totiente} precisamos aplicar a seguinte receita:
 
-$$\phi(n) = \phi(p)\phi(q) = (p-1)(q-1)$$
+$$\phi(n) = \phi(p \cdot q) = (p-1)(q-1)$$
 
 Que em nosso exemplo resulta em:
 
 $$\phi(391) = (17 - 1)(23 - 1) = 16 \cdot 22 = 352$$
 
-Para determinarmos o $\textbf{e}$ basta escolher o menor primo tal que $mdc(\textbf{e}, 352) = 1$, que no nosso caso ser\'a o $3$. Optamos por um primo n\~ao m\'ultiplo ao inv\'es de um composto para podermos aplicar o teorema de Fermat  (Teorema \ref{pequeno.fermat}) mais adiante. Ao conjunto $(n, \textbf{e} )$ denominamos chave de encripta\c{c}\~ao.
+Para determinarmos o $\textbf{e}$ basta escolher o menor primo ímpar tal que $mdc(\textbf{e}, 352) = 1$, que no nosso caso ser\'a o $3$. Ao conjunto $(n, \textbf{e} )$ denominamos chave de encripta\c{c}\~ao.
 
-Vamos chamar o bloco codificado que iremos encriptar de $b$, lembrando que $b$ \'e um n\'umero inteiro menor que $n$. Tambem chamaremos o bloco ap\'os a codifica\c{c}\~ao de $C(b)$. Para obtermos $C(b)$ devemos aplicar a seguinte f\'ormula:
+Vamos chamar o bloco codificado que iremos encriptar de $b$, lembrando que $b$ \'e um n\'umero inteiro menor que $n$. Também chamaremos o bloco ap\'os a codifica\c{c}\~ao de $C(b)$. Para obtermos $C(b)$ devemos aplicar a seguinte f\'ormula:
 
 $$C(b) \equiv b^\textbf{e} \pmod{n} $$
 
-Podemos para facilitar dizer que $C(b)$ \'e o res\'iduo de $b^\textbf{e}$ pelo m\'odulo $n$. Vamos \`a uma demonstra\c{c}\~ao pr\'atica com o primeiro bloco de nossa mensagem, que possui o valor $102$. Para simplificar o nosso trabalho vamos utilizar as opera\c{c}\~oes modulares.
+Podemos para facilitar, dizer que $C(b)$ \'e o res\'iduo de $b^\textbf{e}$ pelo m\'odulo $n$. Vejamos como o procedimento funciona com o primeiro bloco de nossa mensagem, que possui o valor $102$. Para simplificar o nosso trabalho vamos utilizar as opera\c{c}\~oes modulares.
 
 $$102^3 \equiv 24276 \equiv 34 \pmod{391}$$
 
@@ -98,16 +98,16 @@ Portanto, ``Amor Humor'', encriptado pelo RSA com as chaves $(391 , 3)$ \'e:
 
 \subsection{Decodificando uma mensagem}
 
-Para podermos desencriptar uma mensagem n\'os precisamos de dois n\'umeros. O primeiro \'e a nossa chave p\'ublica $n$. O segundo n\'umero \'e $d$, que consiste no inverso de $\textbf{e}$ no m\'odulo $\phi(n)$, ou seja $\textbf{e} \cdot d \equiv 1 \pmod{\phi(n)}$ (vide Teorema \ref{inversao}). Para o nosso exemplo $d= 235$.
+Para podermos desencriptar uma mensagem precisamos de dois n\'umeros. O primeiro \'e a chave p\'ublica $n$. O segundo n\'umero \'e $d$, o qual é o inverso de $e \pmod{\phi{n}}$ no inverso de $\textbf{e}$ no m\'odulo $\phi(n)$, ou seja, $\textbf{e} \cdot d \equiv 1 \pmod{\phi(n)}$ (vide Teorema \ref{inversao}). Para o nosso exemplo $d= 235$.
 
-Agora que j\'a conhecemos a $d$ podemos decodificar a mensagem. Vamos fazer isso em nosso primeiro bloco codificado, que possui o valor $34$. Para achar a resposta precisaremos calcular $D(34) \equiv 34^{235} \pmod{391}$. Esse c\'alculo seria praticamente imposs\'ivel sem o uso dos Teoremas: chin\^es do resto (Teorema \ref{chines}) e de Fermat (Teorema \ref{pequeno.fermat}).
+Agora que j\'a conhecemos $d$, podemos decodificar a mensagem. Vamos fazer isso em nosso primeiro bloco codificado, o qual possui o valor $34$. Para achar a resposta precisaremos calcular $D(34) \equiv 34^{235} \pmod{391}$. Esse c\'alculo seria praticamente imposs\'ivel sem o uso dos Teoremas: Chin\^es do Resto (Teorema \ref{chines}) e de Fermat (Teorema \ref{pequeno.fermat}).
 
 Nosso primeiro passo ser\'a o de calcular $34^{235}$ nos m\'odulos $17$ e $23$, que s\~ao os primos resultantes da fatora\c{c}\~ao de $n$. Neste caso, come\c{c}amos com:
 
 $$34 \equiv 0 \pmod{17}$$
 $$34 \equiv 11 \pmod{23}$$
 
-Assim teremos que $34^{235} \equiv 0^{235} \equiv 0 \pmod{17}$. Aplicando o teorema de Fermat (Teorema \ref{pequeno.fermat}) na outra congr\^encia teremos:
+Assim teremos que $34^{235} \equiv 0^{235} \equiv 0 \pmod{17}$. Aplicando o Teorema de Fermat (Teorema \ref{pequeno.fermat}) na outra congr\^encia temos:
 
 $$11^{235} \equiv (11^{22})^{10} \cdot 11^{15} \equiv 11^{15} \pmod{23}$$
 
@@ -124,12 +124,12 @@ Concluindo assim:
 
 $$112^{35} \equiv -4^{15} \cdot 3^{15} \equiv -3 \cdot 12 \equiv 10 \pmod{23}$$
 
-Temos assim as congru\^encias $34^{235} \equiv 0 \pmod{17}$ e $34^{235} \equiv 10 \pmod{23}$. Com isso podemos aplicar o teorema chin\^es do resto (Teorema \ref{chines}) no sistema:
+Temos assim as congru\^encias $34^{235} \equiv 0 \pmod{17}$ e $34^{235} \equiv 10 \pmod{23}$. Com isso podemos aplicar o Teorema Chin\^es do Resto (Teorema \ref{chines}) no sistema:
 
 $$x \equiv 0 \pmod{17}$$
 $$x \equiv 10 \pmod{23})$$
 
-Com ele iremos obter: 
+Dessa forma, temos: 
 
 $$10 + 23y \equiv 0 \pmod{17})$$
 
@@ -137,23 +137,23 @@ Obtendo assim:
 
 $$6y \equiv 7 \pmod{17}$$
 
-Por\'em, $3$ \'e o inverso de $6$ no m\'odulo $17$, e por isso teremos:
+Por\'em, $3$ \'e o inverso de $6 \pmod{17}$, e por isso teremos:
 
 $$y \equiv 3 \cdot 7 \equiv 4 \pmod{17}$$
 
-Com isso iremos chegar at\'e $x = 10 + 23y = 10 + 23 \cdot 4 = 102$. Caso voc\^e venha a conferir na se\c{c}\~ao sobre codifica\c{c}\~ao de mensagens poder\'a confirmar o resultado. Os demais blocos podem ser decodificados da mesma forma, apenas n\~ao ser\~ao mostrados neste artigo por necessitar de muitos passos, o que tornaria este cap\'itulo inutilmente mais longo.
+Com isso iremos chegar at\'e $x = 10 + 23y = 10 + 23 \cdot 4 = 102$. Caso voc\^e venha a conferir na se\c{c}\~ao sobre codifica\c{c}\~ao de mensagens poder\'a confirmar o resultado. Os demais blocos podem ser decodificados da mesma forma, apenas n\~ao ser\~ao mostrados neste trabalho por necessitar de muitos passos, o que tornaria o cap\'itulo inutilmente mais longo.
 
 \section{Provando a funcionalidade do RSA}
 
-Ao longo desta se\c{c}\~ao vamos provar que o RSA funciona no processo de decodifica\c{c}\~ao. Para podermos fazer isso teremos que  provar que:
+Ao longo desta se\c{c}\~ao vamos mostrar como o RSA funciona no processo de decodifica\c{c}\~ao. Para podermos fazer isso teremos que  verificar que:
 
 $$b \equiv D(C(b)) \pmod{n}$$
 
-N\'os j\'a vimos que $C(b) \equiv b^\textbf{e} \pmod{n}$ e $D(b) \equiv b^d\pmod{n}$. Se combinarmos ambas as congru\^encia iremos obter:
+J\'a vimos que $C(b) \equiv b^\textbf{e} \pmod{n}$ e $D(b) \equiv b^d\pmod{n}$. Se combinarmos ambas as congru\^encia obtemos:
 
 $$D(C(b)) \equiv {(b^\textbf{e})}^d = b^{ed}\pmod{n}$$
 
-Logo o que temos de provar \'e que $b^{\textbf{e}d} \equiv b \pmod{n}$. Como por defini\c{c}\~ao $\textbf{e}d \equiv 1 \pmod{(p-1)(q-1)}$, n\'os veremos que:
+Logo falta mostrar que $b^{\textbf{e}d} \equiv b \pmod{n}$. Como por defini\c{c}\~ao $\textbf{e}d \equiv 1 \pmod{(p-1)(q-1)}$,temos que:
 
 $$\textbf{e}d = 1+k(p-1)(q-1)$$
 
@@ -161,7 +161,7 @@ Pelo Teorema Chin\^es do Resto (Teorema \ref{chines}) e levando em conta a expre
 
 $$b^{\textbf{e}d} \equiv b(b^{p-1})^{k(q-1)}$$
 
-Tomando que $p$ n\~ao divide $b$, n\'os podemos vir usar o Teorema de Fermat (Teorema \ref{pequeno.fermat}), de modo a obter:
+Dado que $p$ n\~ao divide $b$, podemos usar o Teorema de Fermat (Teorema \ref{pequeno.fermat}), de modo a obter:
 
 $$b^{p-1} \equiv 1 \pmod{p}$$
 
@@ -169,7 +169,7 @@ Obtendo assim:
 
 $$b^{\textbf{e}d} \equiv b \cdot (1)^{k(q-1)}\equiv b \pmod{p}$$
 
-Mesmo considerando que $b$ seja m\'ultiplo de $p$, teremos que $b$ e $b^{ed}$ s\~ao congruentes a $0$, logo nesse caso tamb\'em \'e v\'alida a congru\^encia, tendo assim: 
+Mesmo considerando que $b$ seja m\'ultiplo de $p$, temos que $b$ e $b^{\textbf{e}d}$ s\~ao congruentes a $0$, logo nesse caso tamb\'em \'e v\'alida a congru\^encia, tendo assim: 
 }
 
 $$b^{\textbf{e}d} \equiv b \pmod{p}$$
@@ -184,7 +184,7 @@ Veja que $b$ \'e solu\c{c}\~ao de:
 $$x \equiv b \pmod{p}$$
 $$x \equiv b \pmod{q}$$
 
-Pelo Teorema Chin\^es do resto (Teorema \ref{chines}) esse sistema tem solu\c{c}\~ao igual:
+Pelo Teorema Chin\^es do Resto (Teorema \ref{chines}) esse sistema tem solu\c{c}\~ao igual:
 
 $$b + p \cdot q \cdot t$$
 
@@ -196,8 +196,8 @@ Para algum inteiro $k$. Caso tomemos $k=0$ teremos $b^{\textbf{e}d} \equiv b \pm
 
 \section{Discutindo a seguran\c{c}a do RSA}
 
-Antes de mudarmos o foco deste trabalho, vamos prestar aten\c{c}\~ao no que tange a seguran\c{c}a do RSA. Vamos supor que algu\'em, que vamos denominar Irineu, esteja com uma escuta em nossas mensagens, tendo assim acesso tanto \`a mensagem codificada quanto \`a chave p\'ublica $n$. Vamos lembrar que $n$ \'e a multiplica\c{c}\~ ao dos primos $p$ e $q$. Sabendo disso, bastaria para Irineu fatorar $n$ para obter $p$ e $q$ e depois descobrir $d$ para poder decodificar a mensagem, como j\'a foi explicado neste cap\'itulo.
+Antes de passarmos para a generalização do RSA, vamos falar sobre a seguran\c{c}a do RSA. Vamos supor que algu\'em, que vamos chamar por Irineu, esteja com uma escuta em nossa troca de mensagens, tendo assim acesso tanto \`a mensagem codificada quanto \`a chave p\'ublica $n$. Vamos lembrar que $n$ \'e a multiplica\c{c}\~ ao dos primos $p$ e $q$. Sabendo disso, bastaria Irineu fatorar $n$ para obter $p$ e $q$ e depois descobrir $d$ para poder decodificar a mensagem, como j\'a foi explicado neste cap\'itulo.
 
-Isso pode parecer muito simples, mas como j\'a mostramos na se\c{c}\~ao sobre fatora\c{c}\~ao, n\~ao h\'a um algoritmo conhecido que possa fazer isso de forma eficiente. O que ocorre \'e que um algoritmo que fa\c{c}a a fatora\c{c}\~ao de forma eficiente n\~ao tem sua inexist\^encia compravada, como j\'a comentamos no cap\'itulo \ref{Num}, embora sua inexist\^encia seja praticamente consenso pela comunidade acad\^emica, posto o fato deste problema ser qualificado em NP.
+Isso pode parecer muito simples, mas como j\'a mostramos na se\c{c}\~ao sobre fatora\c{c}\~ao, n\~ao h\'a um algoritmo conhecido que possa fazer isso de forma eficiente. O que ocorre \'e que um algoritmo que fa\c{c}a a fatora\c{c}\~ao de forma eficiente n\~ao tem sua inexist\^encia compravada, como j\'a comentamos no cap\'itulo \ref{Num}, embora sua inexist\^encia seja praticamente consenso pela comunidade acad\^emica, posto o fato deste problema ser qualificado em NP-difícil.
 
-O que iremos fazer nos pr\'oximo cap\'itulo, consiste em analisar a viabilidade de uma varia\c{c}\~ao da criptografia RSA que acreditamos n\~ao ser completamente vulner\'avel caso uma fatora\c{c}\~ao eficiente no conjunto $\mathbb{Z}$ seja descoberta: a \textit{Criptografia RSA Gaussiana}.
+O que iremos fazer no pr\'oximo cap\'itulo, consiste em analisar a viabilidade de uma varia\c{c}\~ao da criptografia RSA que acreditamos n\~ao ser completamente vulner\'avel caso uma fatora\c{c}\~ao eficiente no conjunto $\mathbb{Z}$ seja descoberta: a \textit{Criptografia RSA Gaussiana}.
